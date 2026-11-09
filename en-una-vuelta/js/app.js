@@ -341,12 +341,20 @@
       const next = cards[(i + 1) % cards.length];
       const letter = String.fromCharCode(65 + i); // 'A', 'B', 'C'...
 
+      const prevNumStr = prev.number === 0 ? '100/0' : prev.number;
+      const nextNumStr = next.number === 0 ? '100/0' : next.number;
+
       gaps.push({
         id: letter,
         index: i,
         prevCard: prev,
         nextCard: next,
-        description: `Entre [${prev.number === 0 ? '100/0' : prev.number}: ${prev.word}] y [${next.number === 0 ? '100/0' : next.number}: ${next.word}]`
+        prevCardIndex: i,
+        nextCardIndex: (i + 1) % cards.length,
+        prevNumStr,
+        nextNumStr,
+        label: `Hueco ${letter}: [${prevNumStr} ${prev.word}] ↔ [${nextNumStr} ${next.word}]`,
+        description: `Entre [${prevNumStr}: ${prev.word}] y [${nextNumStr}: ${next.word}]`
       });
     }
     return gaps;
@@ -1201,38 +1209,72 @@
     gapsLayer.innerHTML = '';
     if (gapsArcs) gapsArcs.innerHTML = '';
 
-    // 1. Ticks cada 10 unidades si no están dibujados
+    const cards = [...state.placedCards].sort((a, b) => a.number - b.number);
+    const N = cards.length;
+    if (N === 0) return;
+
+    // Radio único para el carril circular donde se intercalan cartas y huecos
+    const R_TRACK = 295;
+    const scale = N > 12 ? 0.76 : (N > 10 ? 0.86 : 1.0);
+    const gapScale = N > 12 ? 0.80 : (N > 10 ? 0.88 : 1.0);
+
+    const gaps = calculateCurrentGaps();
+    const selectedGap = gaps.find(g => g.id === state.selectedGapId);
+
+    // 1. Ticks decorativos en el borde exterior de la mesa
     if (ticksGroup && !ticksGroup.children.length) {
       for (let i = 0; i < 100; i += 10) {
         const angle = (i / 100) * 360 - 90;
         const rad = (angle * Math.PI) / 180;
-        const x1 = 400 + 300 * Math.cos(rad);
-        const y1 = 400 + 300 * Math.sin(rad);
-        const x2 = 400 + 320 * Math.cos(rad);
-        const y2 = 400 + 320 * Math.sin(rad);
+        const x1 = 400 + 360 * Math.cos(rad);
+        const y1 = 400 + 360 * Math.sin(rad);
+        const x2 = 400 + 375 * Math.cos(rad);
+        const y2 = 400 + 375 * Math.sin(rad);
         const line = document.createElementNS('http://www.w3.org/2000/svg', 'line');
-        line.setAttribute('x1', x1);
-        line.setAttribute('y1', y1);
-        line.setAttribute('x2', x2);
-        line.setAttribute('y2', y2);
+        line.setAttribute('x1', x1.toFixed(1));
+        line.setAttribute('y1', y1.toFixed(1));
+        line.setAttribute('x2', x2.toFixed(1));
+        line.setAttribute('y2', y2.toFixed(1));
         ticksGroup.appendChild(line);
       }
     }
 
-    const cards = [...state.placedCards].sort((a, b) => a.number - b.number);
-    const R_CARDS = 310;
-    const R_GAPS = 220;
+    // 2. Arco conector iluminado entre las dos cartas del hueco seleccionado
+    if (selectedGap && state.phase >= 2 && gapsArcs) {
+      const idx = selectedGap.index;
+      const angleStart = -90 + (idx * (360 / N));
+      const angleEnd = -90 + ((idx + 1) * (360 / N));
+      const radStart = (angleStart * Math.PI) / 180;
+      const radEnd = (angleEnd * Math.PI) / 180;
+      const p1x = 400 + R_TRACK * Math.cos(radStart);
+      const p1y = 400 + R_TRACK * Math.sin(radStart);
+      const p2x = 400 + R_TRACK * Math.cos(radEnd);
+      const p2y = 400 + R_TRACK * Math.sin(radEnd);
 
-    // 2. Dibujar Cartas Colocadas
-    cards.forEach(card => {
-      const angle = (card.number / 100) * 360 - 90;
+      const arcPath = document.createElementNS('http://www.w3.org/2000/svg', 'path');
+      arcPath.setAttribute('d', `M ${p1x.toFixed(1)} ${p1y.toFixed(1)} A ${R_TRACK} ${R_TRACK} 0 0 1 ${p2x.toFixed(1)} ${p2y.toFixed(1)}`);
+      arcPath.setAttribute('fill', 'none');
+      arcPath.setAttribute('stroke', '#f59e0b');
+      arcPath.setAttribute('stroke-width', '6');
+      arcPath.setAttribute('stroke-linecap', 'round');
+      arcPath.setAttribute('filter', 'url(#goldGlowEffect)');
+      gapsArcs.appendChild(arcPath);
+    }
+
+    // 3. Dibujar Cartas Colocadas (Distribución equidistante: ángulo = -90 + i * (360 / N))
+    cards.forEach((card, i) => {
+      const angle = -90 + (i * (360 / N));
       const rad = (angle * Math.PI) / 180;
-      const cx = 400 + R_CARDS * Math.cos(rad);
-      const cy = 400 + R_CARDS * Math.sin(rad);
+      const cx = 400 + R_TRACK * Math.cos(rad);
+      const cy = 400 + R_TRACK * Math.sin(rad);
       const col = getCardColor(card.number);
 
+      // Iluminar cartas vecinas si su hueco intermedio está seleccionado
+      const isNeighborOfSelected = (state.phase >= 2) && selectedGap &&
+        (selectedGap.prevCardIndex === i || selectedGap.nextCardIndex === i);
+
       const g = document.createElementNS('http://www.w3.org/2000/svg', 'g');
-      g.setAttribute('transform', `translate(${cx}, ${cy})`);
+      g.setAttribute('transform', `translate(${cx.toFixed(1)}, ${cy.toFixed(1)}) scale(${scale})`);
 
       // Fondo píldora de la carta
       const rect = document.createElementNS('http://www.w3.org/2000/svg', 'rect');
@@ -1241,10 +1283,10 @@
       rect.setAttribute('width', '100');
       rect.setAttribute('height', '44');
       rect.setAttribute('rx', '10');
-      rect.setAttribute('fill', '#021a14');
-      rect.setAttribute('stroke', col.bg);
-      rect.setAttribute('stroke-width', '2');
-      rect.setAttribute('filter', 'url(#glowEffect)');
+      rect.setAttribute('fill', isNeighborOfSelected ? '#06382b' : '#021a14');
+      rect.setAttribute('stroke', isNeighborOfSelected ? '#f59e0b' : col.bg);
+      rect.setAttribute('stroke-width', isNeighborOfSelected ? '3.5' : '2');
+      rect.setAttribute('filter', isNeighborOfSelected ? 'url(#goldGlowEffect)' : 'url(#glowEffect)');
       g.appendChild(rect);
 
       // Número
@@ -1254,7 +1296,7 @@
       txtNum.setAttribute('text-anchor', 'middle');
       txtNum.setAttribute('font-family', 'Bebas Neue');
       txtNum.setAttribute('font-size', '19');
-      txtNum.setAttribute('fill', col.bg);
+      txtNum.setAttribute('fill', isNeighborOfSelected ? '#fef08a' : col.bg);
       txtNum.textContent = card.number === 0 ? '100 / 0' : card.number;
       g.appendChild(txtNum);
 
@@ -1273,47 +1315,93 @@
       cardsLayer.appendChild(g);
     });
 
-    // 3. Dibujar Huecos Disponibles (solo visibles si estamos en Fase 2 o Fase 3)
+    // 4. Dibujar Huecos Disponibles sobre el mismo anillo (Ángulo medio: -90 + (i + 0.5) * (360 / N))
+    // Casillero / Slot punteado con signo "+" y la letra grande (+ A, + B...)
     if (state.phase >= 2) {
-      const gaps = calculateCurrentGaps();
-
-      gaps.forEach(gap => {
-        // Calcular ángulo medio entre prev y next
-        const nPrev = gap.prevCard.number;
-        const nNext = gap.nextCard.number === 0 ? 100 : gap.nextCard.number;
-        const midNum = (nPrev + nNext) / 2;
-        const midAngle = (midNum / 100) * 360 - 90;
-        const rad = (midAngle * Math.PI) / 180;
-        const gx = 400 + R_GAPS * Math.cos(rad);
-        const gy = 400 + R_GAPS * Math.sin(rad);
+      gaps.forEach((gap, i) => {
+        const angleGap = -90 + ((i + 0.5) * (360 / N));
+        const radGap = (angleGap * Math.PI) / 180;
+        const gx = 400 + R_TRACK * Math.cos(radGap);
+        const gy = 400 + R_TRACK * Math.sin(radGap);
 
         const isSelected = state.selectedGapId === gap.id;
 
+        // Comprobación de estado en Fase 3 (Resultado)
+        let isCorrectReveal = false;
+        let isWrongReveal = false;
+        if (state.phase === 3 && state.lastResolution) {
+          if (state.lastResolution.correctGapId === gap.id) isCorrectReveal = true;
+          if (!state.lastResolution.correct && state.lastResolution.chosenGapId === gap.id) isWrongReveal = true;
+        }
+
         const g = document.createElementNS('http://www.w3.org/2000/svg', 'g');
-        g.setAttribute('transform', `translate(${gx}, ${gy})`);
+        g.setAttribute('class', 'gap-slot-group');
+        g.setAttribute('transform', `translate(${gx.toFixed(1)}, ${gy.toFixed(1)}) scale(${gapScale})`);
         g.style.cursor = 'pointer';
 
-        // Círculo del hueco
-        const circle = document.createElementNS('http://www.w3.org/2000/svg', 'circle');
-        circle.setAttribute('cx', '0');
-        circle.setAttribute('cy', '0');
-        circle.setAttribute('r', isSelected ? '20' : '16');
-        circle.setAttribute('fill', isSelected ? '#f59e0b' : '#04241c');
-        circle.setAttribute('stroke', isSelected ? '#fef08a' : '#34d399');
-        circle.setAttribute('stroke-width', isSelected ? '3' : '2');
-        if (isSelected) circle.setAttribute('filter', 'url(#goldGlowEffect)');
-        g.appendChild(circle);
+        // Slot punteado del casillero
+        const rect = document.createElementNS('http://www.w3.org/2000/svg', 'rect');
+        rect.setAttribute('x', '-35');
+        rect.setAttribute('y', '-18');
+        rect.setAttribute('width', '70');
+        rect.setAttribute('height', '36');
+        rect.setAttribute('rx', '10');
+        rect.setAttribute('class', 'gap-slot-rect');
 
-        // Letra del hueco (A, B, C...)
+        if (isCorrectReveal) {
+          rect.setAttribute('fill', '#10b981');
+          rect.setAttribute('stroke', '#6ee7b7');
+          rect.setAttribute('stroke-width', '3');
+          rect.setAttribute('filter', 'url(#glowEffect)');
+        } else if (isWrongReveal) {
+          rect.setAttribute('fill', '#ef4444');
+          rect.setAttribute('stroke', '#fca5a5');
+          rect.setAttribute('stroke-width', '3');
+        } else if (isSelected) {
+          rect.setAttribute('fill', '#f59e0b');
+          rect.setAttribute('stroke', '#fef08a');
+          rect.setAttribute('stroke-width', '3');
+          rect.setAttribute('filter', 'url(#goldGlowEffect)');
+        } else {
+          rect.setAttribute('fill', '#021a14');
+          rect.setAttribute('stroke', 'rgba(52, 211, 153, 0.7)');
+          rect.setAttribute('stroke-width', '2');
+          rect.setAttribute('stroke-dasharray', '4 3');
+        }
+        g.appendChild(rect);
+
+        // Texto "+ A", "+ B"...
         const txt = document.createElementNS('http://www.w3.org/2000/svg', 'text');
         txt.setAttribute('x', '0');
         txt.setAttribute('y', '6');
         txt.setAttribute('text-anchor', 'middle');
         txt.setAttribute('font-family', 'Bebas Neue');
-        txt.setAttribute('font-size', isSelected ? '20' : '16');
-        txt.setAttribute('fill', isSelected ? '#000000' : '#34d399');
-        txt.textContent = gap.id;
+        txt.setAttribute('font-size', isSelected || isCorrectReveal ? '20' : '17');
+        txt.setAttribute('letter-spacing', '1');
+
+        if (isCorrectReveal || isWrongReveal || isSelected) {
+          txt.setAttribute('fill', '#021a14');
+          txt.setAttribute('font-weight', '900');
+        } else {
+          txt.setAttribute('fill', '#34d399');
+          txt.setAttribute('font-weight', 'bold');
+        }
+        txt.textContent = `+ ${gap.id}`;
         g.appendChild(txt);
+
+        // Permitir clic directo en pantalla para seleccionar el hueco
+        g.addEventListener('click', () => {
+          if (state.phase === 2 || (state.phase === 3 && state.lastResolution && state.lastResolution.awaitingSteal)) {
+            state.selectedGapId = gap.id;
+            if (state.role === 'remote') {
+              sendRemoteAction('SELECT_GAP_PREVIEW', { gapId: gap.id });
+              renderRemoteUI();
+            } else {
+              renderTvBoard();
+              if (state.role === 'single') renderSingleControls();
+            }
+          }
+        });
 
         gapsLayer.appendChild(g);
       });
@@ -1525,10 +1613,15 @@
           <div class="gaps-select-grid">
             ${gaps.map(g => `
               <button type="button" class="gap-select-btn ${state.selectedGapId === g.id ? 'selected' : ''}" data-gap="${g.id}">
-                <div class="d-flex align-items-center">
+                <div class="d-flex align-items-center w-100">
                   <span class="gap-letter-tag">${g.id}</span>
-                  <div style="font-size: 0.92rem; line-height: 1.2;">
-                    ${escapeHtml(g.description)}
+                  <div class="gap-desc-content">
+                    <div class="gap-title-line">Hueco ${g.id}</div>
+                    <div class="gap-neighbors-line">
+                      <span class="badge-neighbor">[${g.prevNumStr} ${escapeHtml(g.prevCard.word)}]</span>
+                      <span class="gap-arrow">↔</span>
+                      <span class="badge-neighbor">[${g.nextNumStr} ${escapeHtml(g.nextCard.word)}]</span>
+                    </div>
                   </div>
                 </div>
               </button>
@@ -1584,10 +1677,15 @@
             <div class="gaps-select-grid">
               ${gaps.map(g => `
                 <button type="button" class="gap-select-btn ${state.selectedGapId === g.id ? 'selected' : ''}" data-gap="${g.id}">
-                  <div class="d-flex align-items-center">
+                  <div class="d-flex align-items-center w-100">
                     <span class="gap-letter-tag">${g.id}</span>
-                    <div style="font-size: 0.92rem; line-height: 1.2;">
-                      ${escapeHtml(g.description)}
+                    <div class="gap-desc-content">
+                      <div class="gap-title-line">Hueco ${g.id}</div>
+                      <div class="gap-neighbors-line">
+                        <span class="badge-neighbor">[${g.prevNumStr} ${escapeHtml(g.prevCard.word)}]</span>
+                        <span class="gap-arrow">↔</span>
+                        <span class="badge-neighbor">[${g.nextNumStr} ${escapeHtml(g.nextCard.word)}]</span>
+                      </div>
                     </div>
                   </div>
                 </button>
@@ -1963,22 +2061,34 @@
       const gaps = calculateCurrentGaps();
 
       container.innerHTML = `
-        <div class="d-flex flex-column align-items-center gap-2" style="max-width: 500px; margin: 0 auto;">
-          <div class="fw-bold">Elegí el hueco para la carta:</div>
-          <div class="d-flex flex-wrap gap-2 justify-content-center">
+        <div class="d-flex flex-column align-items-center gap-2" style="max-width: 600px; margin: 0 auto; width: 100%;">
+          <div class="fw-bold text-center text-warning fs-5 mb-1">
+            Elegí el hueco en el tablero o en la lista:
+          </div>
+          <div class="gaps-select-grid w-100 mb-2">
             ${gaps.map(g => `
-              <button type="button" class="btn ${state.selectedGapId === g.id ? 'btn-warning' : 'btn-outline-light'}" data-gap="${g.id}">
-                Hueco ${g.id}
+              <button type="button" class="gap-select-btn ${state.selectedGapId === g.id ? 'selected' : ''}" data-gap="${g.id}">
+                <div class="d-flex align-items-center w-100">
+                  <span class="gap-letter-tag">${g.id}</span>
+                  <div class="gap-desc-content">
+                    <div class="gap-title-line">Hueco ${g.id}</div>
+                    <div class="gap-neighbors-line">
+                      <span class="badge-neighbor">[${g.prevNumStr} ${escapeHtml(g.prevCard.word)}]</span>
+                      <span class="gap-arrow">↔</span>
+                      <span class="badge-neighbor">[${g.nextNumStr} ${escapeHtml(g.nextCard.word)}]</span>
+                    </div>
+                  </div>
+                </div>
               </button>
             `).join('')}
           </div>
-          <button type="button" class="btn btn-success mt-2 fw-bold" id="btnSingleConfirmGap" ${!state.selectedGapId ? 'disabled' : ''}>
-            🔒 Confirmar Hueco
+          <button type="button" class="btn btn-action-primary btn-action-gold py-2" id="btnSingleConfirmGap" ${!state.selectedGapId ? 'disabled' : ''}>
+            🔒 Confirmar Hueco Elegido
           </button>
         </div>
       `;
 
-      container.querySelectorAll('button[data-gap]').forEach(btn => {
+      container.querySelectorAll('.gap-select-btn').forEach(btn => {
         btn.addEventListener('click', () => {
           state.selectedGapId = btn.dataset.gap;
           renderTvBoard();

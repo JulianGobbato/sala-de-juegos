@@ -541,9 +541,9 @@ body {
   background: var(--bg-card);
   border: 2px solid var(--border-subtle);
   border-radius: var(--radius-md);
-  padding: 14px 16px;
+  padding: 12px 16px;
   color: #fff;
-  font-size: 1rem;
+  font-size: 0.95rem;
   font-weight: 700;
   text-align: left;
   display: flex;
@@ -551,6 +551,7 @@ body {
   justify-content: space-between;
   cursor: pointer;
   transition: var(--transition);
+  width: 100%;
 }
 
 .gap-select-btn:hover {
@@ -559,27 +560,90 @@ body {
 }
 
 .gap-select-btn.selected {
-  background: rgba(16, 185, 129, 0.25);
-  border-color: var(--accent-emerald);
-  box-shadow: 0 0 16px rgba(16, 185, 129, 0.4);
+  background: rgba(245, 158, 11, 0.2);
+  border-color: var(--accent-gold);
+  box-shadow: 0 0 16px rgba(245, 158, 11, 0.4);
 }
 
 .gap-letter-tag {
   background: rgba(255, 255, 255, 0.15);
   font-family: var(--font-display);
   font-size: 1.4rem;
-  width: 36px;
-  height: 36px;
+  width: 38px;
+  height: 38px;
   border-radius: 50%;
   display: inline-flex;
   align-items: center;
   justify-content: center;
   margin-right: 12px;
+  flex-shrink: 0;
+  transition: var(--transition);
 }
 
 .gap-select-btn.selected .gap-letter-tag {
-  background: var(--accent-emerald);
-  color: #022c22;
+  background: var(--accent-gold);
+  color: #000;
+  font-weight: 900;
+}
+
+.gap-desc-content {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  text-align: left;
+  flex: 1;
+}
+
+.gap-title-line {
+  font-family: var(--font-display);
+  font-size: 1.15rem;
+  letter-spacing: 0.5px;
+  color: #34d399;
+}
+
+.gap-select-btn.selected .gap-title-line {
+  color: #f59e0b;
+}
+
+.gap-neighbors-line {
+  font-size: 0.88rem;
+  color: #e2e8f0;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  flex-wrap: wrap;
+}
+
+.badge-neighbor {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 2px 8px;
+  border-radius: 6px;
+  font-weight: 600;
+  color: #cbd5e1;
+}
+
+.gap-arrow {
+  color: var(--accent-gold);
+  font-weight: 800;
+}
+
+/* Efectos visuales de los slots SVG en el tablero */
+.gap-slot-group {
+  cursor: pointer;
+  transition: transform 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.gap-slot-group:hover {
+  filter: drop-shadow(0 0 12px rgba(245, 158, 11, 0.8));
+}
+
+.gap-slot-group:hover rect {
+  stroke: #f59e0b;
+  fill: #04241c;
+}
+
+.gap-slot-group:hover text {
+  fill: #f59e0b;
 }
 
 /* Botones de acción */
