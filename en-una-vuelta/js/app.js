@@ -1492,7 +1492,12 @@
       const gaps = calculateCurrentGaps();
       const correctGapId = getCorrectGapForNumber(cardNum);
       const gapObj = gaps.find(g => g.id === correctGapId);
-      const neighborText = gapObj ? gapObj.description : '';
+      const prevCard = gapObj ? gapObj.prevCard : null;
+      const nextCard = gapObj ? gapObj.nextCard : null;
+      const prevNumStr = gapObj ? gapObj.prevNumStr : '';
+      const nextNumStr = gapObj ? gapObj.nextNumStr : '';
+      const prevCol = prevCard ? getCardColor(prevCard.number) : { bg: '#334155', text: '#fff' };
+      const nextCol = nextCard ? getCardColor(nextCard.number) : { bg: '#334155', text: '#fff' };
 
       container.innerHTML = `
         <div class="remote-phase-banner">
@@ -1509,16 +1514,30 @@
             ${cardNum}
           </div>
 
-          <div class="neighbor-guide-pill">
-            <strong>📍 Tu número ${cardNum} va:</strong><br>
-            ${escapeHtml(neighborText)}
+          <div class="neighbor-cards-row">
+            <div class="neighbor-card-block">
+              <span class="neighbor-num-badge" style="background: ${prevCol.bg}; color: ${prevCol.text};">
+                ${prevNumStr}
+              </span>
+              <span class="neighbor-word-text">${escapeHtml(prevCard ? prevCard.word : '')}</span>
+            </div>
+            <div class="neighbor-center-arrow">
+              <div class="neighbor-arrow-icon">↔️</div>
+              <div class="neighbor-arrow-label">TU HUECO (${gapObj ? gapObj.id : ''})</div>
+            </div>
+            <div class="neighbor-card-block">
+              <span class="neighbor-num-badge" style="background: ${nextCol.bg}; color: ${nextCol.text};">
+                ${nextNumStr}
+              </span>
+              <span class="neighbor-word-text">${escapeHtml(nextCard ? nextCard.word : '')}</span>
+            </div>
           </div>
 
           <p class="small text-muted mb-2">
             Ingresá 1 sola palabra que relacione a ambas vecinas de forma que tu equipo deduzca el hueco:
           </p>
 
-          <input type="text" id="remoteClueInput" class="form-control text-center py-2 fw-bold fs-5 mb-3" placeholder="Escribí tu pista acá" maxlength="25" autocomplete="off" autocapitalize="characters">
+          <input type="text" id="remoteClueInput" class="form-control clue-input-field mb-3" placeholder="Escribí tu pista acá" maxlength="25" autocomplete="off" autocapitalize="characters">
 
           ${state.timerRunning ? `
             <div class="d-flex justify-content-center gap-2 mb-3">
@@ -2012,28 +2031,58 @@
 
     if (state.phase === 1) {
       const cardNum = state.currentCard ? state.currentCard.number : 0;
+      const col = getCardColor(cardNum);
       const gaps = calculateCurrentGaps();
       const correctGapId = getCorrectGapForNumber(cardNum);
       const gapObj = gaps.find(g => g.id === correctGapId);
-      const neighborText = gapObj ? gapObj.description : '';
+      const prevCard = gapObj ? gapObj.prevCard : null;
+      const nextCard = gapObj ? gapObj.nextCard : null;
+      const prevNumStr = gapObj ? gapObj.prevNumStr : '';
+      const nextNumStr = gapObj ? gapObj.nextNumStr : '';
+      const prevCol = prevCard ? getCardColor(prevCard.number) : { bg: '#334155', text: '#fff' };
+      const nextCol = nextCard ? getCardColor(nextCard.number) : { bg: '#334155', text: '#fff' };
 
       container.innerHTML = `
-        <div class="d-flex flex-column align-items-center gap-2" style="max-width: 480px; margin: 0 auto;">
+        <div class="d-flex flex-column align-items-center gap-2" style="max-width: 520px; margin: 0 auto; width: 100%;">
           <div class="text-warning fw-bold fs-5">🎤 Turno del Informante</div>
           <button type="button" class="btn ${state.phoneSecretOpen ? 'btn-danger' : 'btn-warning'} btn-sm px-3" id="btnSingleToggleSecret">
             ${state.phoneSecretOpen ? '🙈 Tapar Número Secreto' : '👁️ Ver Número Secreto en Privado'}
           </button>
 
           ${state.phoneSecretOpen ? `
-            <div class="alert alert-dark border-secondary p-2 text-center w-100 mb-2">
-              <span class="fs-4 fw-bold text-warning">${cardNum}</span><br>
-              <small class="text-muted">${escapeHtml(neighborText)}</small>
+            <div class="secret-card-box w-100 mt-2 mb-2">
+              <span class="badge" style="background: ${col.bg}; color: ${col.text}; font-size: 0.95rem; font-weight: 800;">
+                ${col.name}
+              </span>
+              <br>
+              <div class="secret-number-badge" style="background: ${col.bg}; color: ${col.text};">
+                ${cardNum}
+              </div>
+
+              <div class="neighbor-cards-row">
+                <div class="neighbor-card-block">
+                  <span class="neighbor-num-badge" style="background: ${prevCol.bg}; color: ${prevCol.text};">
+                    ${prevNumStr}
+                  </span>
+                  <span class="neighbor-word-text">${escapeHtml(prevCard ? prevCard.word : '')}</span>
+                </div>
+                <div class="neighbor-center-arrow">
+                  <div class="neighbor-arrow-icon">↔️</div>
+                  <div class="neighbor-arrow-label">TU HUECO (${gapObj ? gapObj.id : ''})</div>
+                </div>
+                <div class="neighbor-card-block">
+                  <span class="neighbor-num-badge" style="background: ${nextCol.bg}; color: ${nextCol.text};">
+                    ${nextNumStr}
+                  </span>
+                  <span class="neighbor-word-text">${escapeHtml(nextCard ? nextCard.word : '')}</span>
+                </div>
+              </div>
             </div>
           ` : ''}
 
-          <div class="input-group">
-            <input type="text" id="singleClueInput" class="form-control" placeholder="Escribí tu palabra pista">
-            <button class="btn btn-primary fw-bold" id="btnSingleSubmitClue">🗣️ Dar Pista</button>
+          <div class="w-100 mt-2">
+            <input type="text" id="singleClueInput" class="form-control clue-input-field w-100 mb-2" placeholder="Escribí tu palabra pista" maxlength="25" autocomplete="off" autocapitalize="characters">
+            <button class="btn btn-primary fw-bold w-100 py-2 fs-5" id="btnSingleSubmitClue">🗣️ Dar Pista</button>
           </div>
         </div>
       `;
@@ -2052,6 +2101,12 @@
         bSub.addEventListener('click', () => {
           const val = inClue.value.trim();
           if (val) handleClueSubmission(val);
+        });
+        inClue.addEventListener('keyup', (e) => {
+          if (e.key === 'Enter') {
+            const val = inClue.value.trim();
+            if (val) handleClueSubmission(val);
+          }
         });
       }
       return;
