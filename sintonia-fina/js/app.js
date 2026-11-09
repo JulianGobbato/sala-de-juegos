@@ -1,6 +1,7 @@
 /**
  * Sintonía Fina - Juego de Telepatía y Extremos (Inspirado en Wavelength)
  * Soporta Arquitectura "TV + 1 Celular Control Remoto" vía WebRTC (PeerJS) y Modo Solo Dispositivo.
+ * Modo simplificado: 🔵 Equipo Azul vs 🔴 Equipo Rojo (sin nombres individuales).
  */
 
 (function(window, document) {
@@ -21,6 +22,14 @@
     z3: 12.15, // 3 pts: dentro de ±12.15° (±6.75 unidades)
     z2: 20.25  // 2 pts: dentro de ±20.25° (±11.25 unidades)
   };
+
+  const AVAILABLE_CATEGORIES = [
+    { id: 'cotidiano', name: 'Cotidiano', icon: '🏠' },
+    { id: 'argentina', name: 'Argentina', icon: '🧉' },
+    { id: 'cultura_pop', name: 'Cultura Pop', icon: '🎬' },
+    { id: 'general', name: 'General', icon: '🧠' },
+    { id: 'bizarro', name: 'Bizarro', icon: '🤪' }
+  ];
 
   // =========================================================================
   // SISTEMA DE AUDIO (Web Audio API nativo sintetizado)
@@ -101,7 +110,7 @@
     } catch (_) {}
   }
 
-  // 3. Suspenso de Cortina (Redoblante / Barrido ascendente ~1.2s)
+  // 3. Suspenso de Cortina (Barrido ascendente ~1.2s)
   function playDrumrollSound() {
     if (!soundEnabled) return;
     try {
@@ -269,31 +278,24 @@
   // MODELO DE ESTADO GLOBAL DEL JUEGO
   // =========================================================================
   let allSpectra = [];
-  let availableSpectra = [];
 
   let state = {
     role: null,            // 'menu' | 'tv' | 'remote' | 'single'
     mode: 'competitive',   // 'competitive' | 'cooperative'
-    targetScore: 10,       // 10, 15, 20
+    targetScore: 15,       // 10, 15, 20
     totalRounds: 7,        // para cooperativo
     currentRound: 1,
-    phase: 1,              // 1: Locutor, 2: Mover aguja, 3: Apuesta rival, 4: Revelar, 5: Fin
+    phase: 0,              // 0: Configuración, 1: Locutor, 2: Aguja, 3: Apuesta rival, 4: Revelar
     activeTeam: 'blue',    // 'blue' | 'red'
     scores: { blue: 0, red: 0 },
     coopScore: 0,
-    locutor: null,
-    locutorIndex: 0,
     spectrum: null,
-    targetValue: 50,       // 10 a 90 (0..100)
+    targetValue: 50,       // 14 a 86
     needleValue: 50,       // 0..100
     needleLocked: false,
     rivalGuess: null,      // 'left' | 'right' | null
     isCurtainOpen: false,
     selectedCategories: ['cotidiano', 'argentina', 'cultura_pop', 'general', 'bizarro'],
-    teams: {
-      blue: [],
-      red: []
-    },
     usedIds: [],
     lastRoundResult: null,
     isGameOver: false,
@@ -301,11 +303,45 @@
     phoneSecretOpen: false // Solo local en el celular
   };
 
+  let setupConfig = {
+    mode: 'competitive',
+    targetScore: 15,
+    totalRounds: 7,
+    selectedCategories: ['cotidiano', 'argentina', 'cultura_pop', 'general', 'bizarro']
+  };
+
   // PeerJS
   let peer = null;
   let activeConn = null;
   let roomCode = null;
   let throttleTimer = null;
+
+  // =========================================================================
+  // FUNCIONES AUXILIARES DE EQUIPO Y TURNO
+  // =========================================================================
+  function getActiveTeamKey() {
+    if (state.mode === 'cooperative') return 'blue';
+    return (state.currentRound % 2 === 1) ? 'blue' : 'red';
+  }
+
+  function getRivalTeamKey() {
+    if (state.mode === 'cooperative') return 'blue';
+    return (state.currentRound % 2 === 1) ? 'red' : 'blue';
+  }
+
+  function getActiveTeamName() {
+    if (state.mode === 'cooperative') return 'Equipo Cooperativo';
+    return getActiveTeamKey() === 'blue' ? 'Equipo Azul' : 'Equipo Rojo';
+  }
+
+  function getRivalTeamName() {
+    return getRivalTeamKey() === 'blue' ? 'Equipo Azul' : 'Equipo Rojo';
+  }
+
+  function getLocutorTitle() {
+    if (state.mode === 'cooperative') return '🎤 Locutor de la Ronda';
+    return getActiveTeamKey() === 'blue' ? '🔵 Locutor Azul' : '🔴 Locutor Rojo';
+  }
 
   // =========================================================================
   // INICIALIZACIÓN Y CARGA DE DATOS
@@ -320,43 +356,16 @@
   function loadSpectraData() {
     if (window.ESPECTROS_DATA && window.ESPECTROS_DATA.espectros) {
       allSpectra = window.ESPECTROS_DATA.espectros;
-      availableSpectra = [...allSpectra];
     } else {
       fetch('data/espectros.json')
         .then(res => res.json())
         .then(data => {
           if (data && data.espectros) {
             allSpectra = data.espectros;
-            availableSpectra = [...allSpectra];
           }
         })
         .catch(err => console.warn('Error al cargar espectros.json:', err));
     }
-  }
-
-  function getHubPlayersList() {
-    let list = [];
-    if (window.HubShared && typeof window.HubShared.getHubPlayers === 'function') {
-      list = window.HubShared.getHubPlayers(false);
-    }
-    if (!list || !list.length) {
-      try {
-        const raw = localStorage.getItem('hub_jugadores');
-        if (raw) list = JSON.parse(raw);
-      } catch (_) {}
-    }
-    if (!list || list.length < 2) {
-      // Fallback default 6 amigos
-      list = [
-        { id: 1, name: 'El Piti', emoji: '🧢' },
-        { id: 2, name: 'La Sole', emoji: '🧣' },
-        { id: 3, name: 'Nacho', emoji: '🕶️' },
-        { id: 4, name: 'Cami', emoji: '🎸' },
-        { id: 5, name: 'El Polaco', emoji: '🎩' },
-        { id: 6, name: 'Martu', emoji: '🎧' }
-      ];
-    }
-    return list;
   }
 
   function checkAutoConnectParams() {
@@ -482,7 +491,7 @@
         hideTvConnectModal();
 
         conn.on('open', () => {
-          // Enviar estado inicial sincronizado
+          // Enviar estado inicial sincronizado (Fase 0)
           broadcastStateToRemote();
         });
 
@@ -500,7 +509,6 @@
       peer.on('error', (err) => {
         console.warn('Error en PeerJS TV:', err.type, err);
         if (err.type === 'unavailable-id') {
-          // Intentar con otro código si casualmente colisiona
           roomCode = generateRoomCode();
           startTvRole();
         }
@@ -535,7 +543,6 @@
           correctLevel: QRCode.CorrectLevel.M
         });
       } else {
-        // Fallback imagen QR
         const img = document.createElement('img');
         img.src = `https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=${encodeURIComponent(url)}`;
         img.alt = 'Código QR de conexión';
@@ -548,12 +555,11 @@
     const modal = document.getElementById('tvConnectModal');
     if (modal) modal.classList.add('d-none');
     const ticker = document.getElementById('tvStatusTicker');
-    if (ticker) ticker.textContent = '🟢 Celular Control Remoto conectado. ¡Listos para jugar!';
+    if (ticker) ticker.textContent = '🟢 Celular Control Remoto conectado. ¡Configuren la partida desde el teléfono!';
   }
 
   function broadcastStateToRemote() {
     if (activeConn && activeConn.open) {
-      // El payload sincronizado NUNCA envía "phoneSecretOpen"
       const payload = { ...state, phoneSecretOpen: undefined };
       activeConn.send({ type: 'SYNC_STATE', payload });
     }
@@ -622,6 +628,11 @@
       if (data && data.type === 'SYNC_STATE') {
         const localSecret = state.phoneSecretOpen;
         state = { ...data.payload, role: 'remote', phoneSecretOpen: localSecret };
+        // Sincronizar también setupConfig si la TV envía configuración
+        if (state.mode) setupConfig.mode = state.mode;
+        if (state.targetScore) setupConfig.targetScore = state.targetScore;
+        if (state.totalRounds) setupConfig.totalRounds = state.totalRounds;
+        if (state.selectedCategories) setupConfig.selectedCategories = [...state.selectedCategories];
         renderRemoteUI();
       }
     });
@@ -650,6 +661,13 @@
       case 'START_GAME':
         applySetupConfig(msg.config);
         startNewRound(true);
+        break;
+
+      case 'GO_TO_SETUP':
+        state.phase = 0;
+        state.isGameOver = false;
+        broadcastStateToRemote();
+        renderTvBoard();
         break;
 
       case 'MOVE_NEEDLE':
@@ -723,7 +741,6 @@
     showView('viewTv');
     initDefaultGameState();
 
-    // Habilitar controles flotantes integrados en la pantalla
     const singleControls = document.getElementById('singleDeviceControls');
     if (singleControls) singleControls.classList.remove('d-none');
 
@@ -735,22 +752,16 @@
   // LÓGICA DE PARTIDA (ESTADO, RONDAS Y PUNTUACIÓN)
   // =========================================================================
   function initDefaultGameState() {
-    const players = getHubPlayersList();
-    const half = Math.ceil(players.length / 2);
-
-    state.teams.blue = players.slice(0, half);
-    state.teams.red = players.slice(half);
-
     state.scores = { blue: 0, red: 0 };
     state.coopScore = 0;
     state.currentRound = 1;
-    state.phase = 1;
+    state.phase = 0; // Inicia en Fase 0 (Configuración previa)
     state.activeTeam = 'blue';
-    state.locutorIndex = 0;
-    state.locutor = state.teams.blue[0] || players[0];
     state.usedIds = [];
     state.isGameOver = false;
     state.winner = null;
+    state.lastRoundResult = null;
+    state.phoneSecretOpen = false;
 
     drawNewSpectrum();
     resetDialForNewRound();
@@ -758,21 +769,22 @@
 
   function applySetupConfig(config) {
     if (!config) return;
-    state.mode = config.mode || 'competitive';
-    state.targetScore = config.targetScore || 10;
-    state.totalRounds = config.totalRounds || 7;
-    if (config.selectedCategories) {
+    state.mode = config.mode === 'cooperative' ? 'cooperative' : 'competitive';
+    state.targetScore = parseInt(config.targetScore, 10) || 15;
+    state.totalRounds = parseInt(config.totalRounds, 10) || 7;
+    if (Array.isArray(config.selectedCategories) && config.selectedCategories.length > 0) {
       state.selectedCategories = config.selectedCategories;
-    }
-    if (config.teams) {
-      state.teams = config.teams;
+    } else {
+      state.selectedCategories = ['cotidiano', 'argentina', 'cultura_pop', 'general', 'bizarro'];
     }
     state.scores = { blue: 0, red: 0 };
     state.coopScore = 0;
     state.currentRound = 1;
     state.activeTeam = 'blue';
-    state.locutorIndex = 0;
-    state.locutor = (state.teams.blue && state.teams.blue[0]) || getHubPlayersList()[0];
+    state.usedIds = [];
+    state.isGameOver = false;
+    state.winner = null;
+    state.lastRoundResult = null;
   }
 
   function drawNewSpectrum() {
@@ -787,7 +799,9 @@
 
     const chosen = available[Math.floor(Math.random() * available.length)];
     state.spectrum = chosen;
-    state.usedIds.push(chosen.id);
+    if (chosen && chosen.id) {
+      state.usedIds.push(chosen.id);
+    }
 
     // Objetivo al azar entre 14 y 86 para no quedar cortado en los bordes
     state.targetValue = Math.floor(Math.random() * 73) + 14;
@@ -798,33 +812,24 @@
     state.needleLocked = false;
     state.rivalGuess = null;
     state.isCurtainOpen = false;
-    state.phase = 1;
     state.phoneSecretOpen = false;
   }
 
   function startNewRound(isFirst = false) {
     if (!isFirst) {
       state.currentRound++;
-      rotateLocutorAndTeam();
-      drawNewSpectrum();
     }
+    // Turnos alternados ronda a ronda:
+    // Ronda impar = 🔵 Equipo Azul (Locutor Azul)
+    // Ronda par = 🔴 Equipo Rojo (Locutor Rojo)
+    state.activeTeam = getActiveTeamKey();
+    drawNewSpectrum();
     resetDialForNewRound();
+    state.phase = 1;
+
     broadcastStateToRemote();
     renderTvBoard();
     if (state.role === 'single') renderSingleControls();
-  }
-
-  function rotateLocutorAndTeam() {
-    if (state.mode === 'competitive') {
-      state.activeTeam = state.activeTeam === 'blue' ? 'red' : 'blue';
-      const activeList = state.teams[state.activeTeam];
-      state.locutorIndex = (state.locutorIndex + 1) % (activeList.length || 1);
-      state.locutor = activeList[state.locutorIndex] || activeList[0];
-    } else {
-      const allPlayers = [...state.teams.blue, ...state.teams.red];
-      state.locutorIndex = (state.locutorIndex + 1) % (allPlayers.length || 1);
-      state.locutor = allPlayers[state.locutorIndex] || allPlayers[0];
-    }
   }
 
   // =========================================================================
@@ -834,7 +839,7 @@
     state.phase = 4;
     state.isCurtainOpen = true;
 
-    // 1. Sonido de redoblante y animación cortina
+    // 1. Sonido de suspenso y animación de apertura
     playDrumrollSound();
     animateCurtainOpenTv();
 
@@ -848,7 +853,6 @@
   }
 
   function calculateRoundScores() {
-    // Distancia angular entre aguja y objetivo
     const distVal = Math.abs(state.needleValue - state.targetValue);
     const distDeg = distVal * 1.8;
 
@@ -871,7 +875,7 @@
 
     // Interferencia del rival (en modo competitivo)
     let rivalStole = false;
-    const rivalTeam = state.activeTeam === 'blue' ? 'red' : 'blue';
+    const rivalTeam = getRivalTeamKey();
 
     if (state.mode === 'competitive') {
       state.scores[state.activeTeam] += pts;
@@ -888,7 +892,6 @@
         }
       }
 
-      // Comprobar fin de partida
       checkCompetitiveGameOver();
     } else {
       // Modo cooperativo
@@ -923,6 +926,9 @@
   function advanceToNextRound() {
     if (state.isGameOver) {
       initDefaultGameState();
+      broadcastStateToRemote();
+      renderTvBoard();
+      if (state.role === 'single') renderSingleControls();
     } else {
       startNewRound(false);
     }
@@ -932,21 +938,71 @@
   // RENDERIZADO VISUAL DEL DIAL EN SVG (TV & SINGLE)
   // =========================================================================
   function renderTvBoard() {
-    // Marcador
     const scoreBlue = document.getElementById('tvScoreBlue');
     const scoreRed = document.getElementById('tvScoreRed');
     const scoreBoxComp = document.getElementById('tvScoreBoxComp');
     const scoreBoxCoop = document.getElementById('tvScoreBoxCoop');
     const coopScoreVal = document.getElementById('tvCoopScoreVal');
+    const cardBlue = document.getElementById('teamCardBlue');
+    const cardRed = document.getElementById('teamCardRed');
 
+    // FASE 0: CONFIGURACIÓN
+    if (state.phase === 0) {
+      if (scoreBoxComp) scoreBoxComp.classList.remove('d-none');
+      if (scoreBoxCoop) scoreBoxCoop.classList.add('d-none');
+      if (scoreBlue) scoreBlue.textContent = '0';
+      if (scoreRed) scoreRed.textContent = '0';
+      if (cardBlue) cardBlue.classList.remove('active-turn');
+      if (cardRed) cardRed.classList.remove('active-turn');
+
+      const roundText = document.getElementById('tvRoundIndicator');
+      if (roundText) roundText.textContent = 'Configuración';
+
+      const locutorName = document.getElementById('tvLocutorName');
+      if (locutorName) locutorName.textContent = '⚙️ Configurando partida...';
+
+      const phaseText = document.getElementById('tvPhaseStatus');
+      if (phaseText) phaseText.textContent = 'Fase 0: Configuración';
+
+      const txtLeft = document.getElementById('tvConceptLeft');
+      const txtRight = document.getElementById('tvConceptRight');
+      const tagCat = document.getElementById('tvCategoryTag');
+      if (txtLeft) txtLeft.textContent = '⬅️ Extremo A';
+      if (txtRight) txtRight.textContent = 'Extremo B ➡️';
+      if (tagCat) tagCat.textContent = 'Sintonía Fina';
+
+      const curtain = document.getElementById('tvDialCurtain');
+      const targetWedges = document.getElementById('target-wedges');
+      const needleGroup = document.getElementById('tvNeedleGroup');
+      const rivalBox = document.getElementById('tvRivalBetBadge');
+
+      if (curtain) {
+        curtain.style.display = 'block';
+        curtain.classList.remove('opened');
+      }
+      if (targetWedges) {
+        targetWedges.style.display = 'none';
+        targetWedges.style.opacity = '0';
+      }
+      if (needleGroup) needleGroup.style.display = 'none';
+      if (rivalBox) rivalBox.classList.add('d-none');
+
+      const ticker = document.getElementById('tvStatusTicker');
+      if (ticker) {
+        ticker.textContent = state.role === 'single'
+          ? '⚙️ Seleccioná las categorías y meta de puntos abajo para comenzar.'
+          : '⚙️ Esperando configuración desde el Celular Control Remoto...';
+      }
+      return;
+    }
+
+    // FASES DE JUEGO (1 A 4)
     if (state.mode === 'competitive') {
       if (scoreBoxComp) scoreBoxComp.classList.remove('d-none');
       if (scoreBoxCoop) scoreBoxCoop.classList.add('d-none');
       if (scoreBlue) scoreBlue.textContent = state.scores.blue;
       if (scoreRed) scoreRed.textContent = state.scores.red;
 
-      const cardBlue = document.getElementById('teamCardBlue');
-      const cardRed = document.getElementById('teamCardRed');
       if (cardBlue) cardBlue.classList.toggle('active-turn', state.activeTeam === 'blue');
       if (cardRed) cardRed.classList.toggle('active-turn', state.activeTeam === 'red');
     } else {
@@ -955,23 +1011,27 @@
       if (coopScoreVal) coopScoreVal.textContent = state.coopScore;
     }
 
-    // Info de ronda y locutor
+    // Info de ronda
     const roundText = document.getElementById('tvRoundIndicator');
     if (roundText) {
       roundText.textContent = state.mode === 'competitive'
-        ? `Ronda ${state.currentRound}`
+        ? `Ronda ${state.currentRound} (A ${state.targetScore} pts)`
         : `Ronda ${state.currentRound} / ${state.totalRounds}`;
     }
 
+    // Locutor de turno (Azul vs Rojo)
     const locutorName = document.getElementById('tvLocutorName');
-    if (locutorName && state.locutor) {
-      const teamLabel = state.mode === 'competitive'
-        ? (state.activeTeam === 'blue' ? '(Equipo Azul)' : '(Equipo Rojo)')
-        : '';
-      locutorName.textContent = `${state.locutor.emoji || '🎤'} ${state.locutor.name} ${teamLabel}`;
+    if (locutorName) {
+      if (state.mode === 'competitive') {
+        locutorName.textContent = state.activeTeam === 'blue'
+          ? '🔵 Equipo Azul (Locutor Azul)'
+          : '🔴 Equipo Rojo (Locutor Rojo)';
+      } else {
+        locutorName.textContent = '🤝 Equipo Cooperativo (Locutor de Turno)';
+      }
     }
 
-    // Sincronización del texto de Fase en el Header
+    // Texto de Fase
     const phaseText = document.getElementById('tvPhaseStatus');
     if (phaseText) {
       switch (state.phase) {
@@ -999,19 +1059,19 @@
     if (state.spectrum) {
       if (txtLeft) txtLeft.textContent = state.spectrum.izq;
       if (txtRight) txtRight.textContent = state.spectrum.der;
-      if (tagCat) tagCat.textContent = state.spectrum.categoria.replace('_', ' ');
+      if (tagCat) tagCat.textContent = (state.spectrum.categoria || '').replace('_', ' ');
     }
 
-    // Renderizar franja objetivo en el SVG (Centro exacto en 250, 240)
+    // Renderizar franja objetivo en el SVG
     renderSvgTargetSlice('target-wedges', state.targetValue);
 
-    // Visibilidad estricta
+    // Visibilidad de Dial, Cortina y Aguja
     const targetWedges = document.getElementById('target-wedges');
     const curtain = document.getElementById('tvDialCurtain');
     const needleGroup = document.getElementById('tvNeedleGroup');
 
     if (state.phase === 1) {
-      // En Fase 1 (Pensando pista) ocultar la aguja roja para no tapar el objetivo
+      // En Fase 1 ocultar la aguja roja en la TV
       if (needleGroup) needleGroup.style.display = 'none';
 
       if (state.role === 'single' && state.phoneSecretOpen) {
@@ -1019,9 +1079,7 @@
           targetWedges.style.display = 'block';
           targetWedges.style.opacity = '1';
         }
-        if (curtain) {
-          curtain.style.display = 'none';
-        }
+        if (curtain) curtain.style.display = 'none';
       } else {
         if (targetWedges) {
           targetWedges.style.display = 'none';
@@ -1054,7 +1112,7 @@
       }
     }
 
-    // Posicionar aguja usando coordenadas nativas de SVG en (250, 240)
+    // Posicionar aguja
     updateTvNeedleOnly();
 
     // Indicador apuesta rival
@@ -1074,11 +1132,15 @@
     const ticker = document.getElementById('tvStatusTicker');
     if (ticker) {
       if (state.phase === 1) {
-        ticker.textContent = '🤫 El Locutor está mirando el objetivo en secreto y pensando su pista...';
+        ticker.textContent = state.mode === 'competitive'
+          ? `🤫 El Locutor del ${getActiveTeamName()} está mirando el objetivo en secreto y pensando su pista...`
+          : '🤫 El Locutor está mirando el objetivo en secreto y pensando su pista...';
       } else if (state.phase === 2) {
-        ticker.textContent = '🗣️ ¡A debatir en la mesa! Muevan la aguja desde el celular.';
+        ticker.textContent = state.mode === 'competitive'
+          ? `🗣️ ¡A debatir el ${getActiveTeamName()}! Muevan la aguja desde el celular.`
+          : '🗣️ ¡A debatir en equipo! Muevan la aguja desde el celular.';
       } else if (state.phase === 3) {
-        ticker.textContent = '👀 Equipo rival: ¿La respuesta está a la Izquierda o Derecha de la aguja?';
+        ticker.textContent = `👀 ${getRivalTeamName()}: ¿La respuesta está a la Izquierda o Derecha de la aguja?`;
       } else if (state.phase === 4) {
         if (state.lastRoundResult) {
           ticker.textContent = `🎯 Puntos sumados: +${state.lastRoundResult.pts}${state.lastRoundResult.rivalStole ? ' | ⚡ ¡Rival robó +1 punto!' : ''}`;
@@ -1093,13 +1155,12 @@
     const needleGroup = document.getElementById('tvNeedleGroup');
     if (!needleGroup) return;
 
-    if (state.phase === 1) {
+    if (state.phase === 0 || state.phase === 1) {
       needleGroup.style.display = 'none';
     } else {
       needleGroup.style.display = 'block';
     }
 
-    // Mapear valor (0 a 100) a ángulo (-90° a +90°, donde 0° es vertical arriba) con pivote fijo en (250, 240)
     const angle = valorAAngulo(state.needleValue);
     needleGroup.setAttribute('transform', `rotate(${angle}, 250, 240)`);
   }
@@ -1149,7 +1210,6 @@
     ].join(' ');
   }
 
-  // 5 zonas de 4.5 unidades (8.1° cada una): [2, 3, 4, 3, 2] centradas en targetAngle
   const WEDGE_DEFS = [
     { from: -20.25, to: -12.15, pts: '2', fill: '#6366f1', textFill: '#ffffff' },
     { from: -12.15, to: -4.05,  pts: '3', fill: '#0ea5e9', textFill: '#ffffff' },
@@ -1183,7 +1243,6 @@
       pathEl.setAttribute('stroke-width', '1.5');
       container.appendChild(pathEl);
 
-      // Texto de puntos centrado en rMid y angleMid
       const midAngle = (a1 + a2) / 2;
       const pText = polarACartesiano(cx, cy, rMid, midAngle);
 
@@ -1210,7 +1269,6 @@
   }
 
   function renderRemoteUI() {
-    // Si la partida terminó
     if (state.isGameOver) {
       renderRemoteGameOver();
       return;
@@ -1219,14 +1277,27 @@
     const container = document.getElementById('remotePhaseContainer');
     if (!container) return;
 
+    // FASE 0: CONFIGURACIÓN PREVIA (SETUP)
+    if (state.phase === 0) {
+      renderRemoteSetup();
+      return;
+    }
+
     // FASE 1: LOCUTOR
     if (state.phase === 1) {
-      const locutorName = state.locutor ? state.locutor.name : 'Locutor';
+      const activeTeamName = getActiveTeamName();
+      const locutorTitle = getLocutorTitle();
+      const isBlue = getActiveTeamKey() === 'blue';
+      const teamColor = state.mode === 'competitive' ? (isBlue ? '#38bdf8' : '#f43f5e') : '#f59e0b';
 
       container.innerHTML = `
         <div class="remote-phase-banner">
-          <h2 class="remote-phase-title">🎤 FASE 1: TURNO DE ${escapeHtml(locutorName.toUpperCase())}</h2>
-          <p class="remote-phase-help">Pasale el celular al Locutor para que piense la pista.</p>
+          <h2 class="remote-phase-title" style="color: ${teamColor};">🎤 ${escapeHtml(locutorTitle.toUpperCase())}</h2>
+          <p class="remote-phase-help">
+            ${state.mode === 'competitive'
+              ? `Pasale el celular al jugador del <strong>${escapeHtml(activeTeamName)}</strong> que sea el Locutor de esta ronda para que piense la pista.`
+              : 'Pasale el celular al Locutor de esta ronda para que piense la pista.'}
+          </p>
         </div>
 
         <div class="locutor-secret-card">
@@ -1268,11 +1339,9 @@
                   </radialGradient>
                 </defs>
 
-                <!-- Fondo del Dial Semicircular -->
                 <path d="M 35,240 A 215,215 0 0,1 465,240 L 445,240 A 195,195 0 0,0 55,240 Z" fill="url(#phoneBezelGrad1)" stroke="#475569" stroke-width="2" />
                 <path d="M 45,240 A 205,205 0 0,1 455,240 L 335,240 A 85,85 0 0,0 165,240 Z" fill="#0a0e1a" stroke="#334155" stroke-width="1.5" />
 
-                <!-- Ticks decorativos -->
                 <g stroke="rgba(255,255,255,0.22)" stroke-width="1.5">
                   <line x1="250" y1="35" x2="250" y2="50" />
                   <line x1="105.1" y1="95.1" x2="115.7" y2="105.7" />
@@ -1281,23 +1350,19 @@
                   <line x1="455" y1="240" x2="440" y2="240" />
                 </g>
 
-                <!-- Sectores de puntos [2][3][4][3][2] en el celular -->
                 <g id="remote-target-wedges" style="display: ${state.phoneSecretOpen ? 'block' : 'none'}; opacity: ${state.phoneSecretOpen ? '1' : '0'};"></g>
 
-                <!-- Cortina cerrada en el celular -->
                 <g id="remoteDialCurtain" style="display: ${state.phoneSecretOpen ? 'none' : 'block'};">
                   <path d="M 45,240 A 205,205 0 0,1 455,240 L 335,240 A 85,85 0 0,0 165,240 Z" fill="url(#phoneCurtainGrad1)" stroke="#475569" stroke-width="2" />
                   <text x="250" y="165" text-anchor="middle" font-size="12" fill="#64748b" font-weight="bold" letter-spacing="2">OBJETIVO OCULTO</text>
                 </g>
 
-                <!-- Aguja oculta en Fase 1 para no tapar el objetivo -->
                 <g id="remoteNeedleGroup" style="display: none;">
                   <polygon points="246,240 254,240 252,50 250,38 248,50" fill="#f43f5e" />
                   <line x1="250" y1="225" x2="250" y2="45" stroke="#ffffff" stroke-width="1.5" />
                   <circle cx="250" cy="45" r="4.5" fill="#fde047" stroke="#b45309" stroke-width="1.5" />
                 </g>
 
-                <!-- Pivot central -->
                 <g id="remote-dial-pivot">
                   <circle cx="250" cy="240" r="28" fill="#1e293b" stroke="#64748b" stroke-width="3" />
                   <circle cx="250" cy="240" r="14" fill="#f43f5e" />
@@ -1321,12 +1386,11 @@
         renderSvgTargetSlice('remote-target-wedges', state.targetValue);
       }
 
-      // Eventos fase 1
       const btnSecret = document.getElementById('btnToggleSecret');
       if (btnSecret) {
         btnSecret.addEventListener('click', () => {
           state.phoneSecretOpen = !state.phoneSecretOpen;
-          renderRemoteUI(); // SOLO LOCAL, NO ENVÍA A LA TV
+          renderRemoteUI();
         });
       }
 
@@ -1349,14 +1413,17 @@
 
     // FASE 2: MOVER AGUJA
     if (state.phase === 2) {
+      const activeTeamName = getActiveTeamName();
+      const isBlue = getActiveTeamKey() === 'blue';
+      const teamColor = state.mode === 'competitive' ? (isBlue ? '#38bdf8' : '#f43f5e') : '#f59e0b';
+
       container.innerHTML = `
         <div class="remote-phase-banner">
-          <h2 class="remote-phase-title">🎛️ FASE 2: MOVER LA AGUJA</h2>
+          <h2 class="remote-phase-title" style="color: ${teamColor};">🎛️ FASE 2: DEBATE DEL ${escapeHtml(activeTeamName.toUpperCase())}</h2>
           <p class="remote-phase-help">Debatan mirando el televisor y ajusten la aguja en tiempo real.</p>
         </div>
 
         <div class="needle-controls-card">
-          <!-- Dial Semicircular interactivo en el celular -->
           <div class="phone-dial-wrap">
             <svg id="remoteDialSvg2" class="phone-dial-svg" viewBox="0 0 500 280">
               <defs>
@@ -1383,13 +1450,11 @@
                 <line x1="455" y1="240" x2="440" y2="240" />
               </g>
 
-              <!-- Cortina cerrada en Fase 2 -->
               <g id="remoteDialCurtain2">
                 <path d="M 45,240 A 205,205 0 0,1 455,240 L 335,240 A 85,85 0 0,0 165,240 Z" fill="url(#phoneCurtainGrad2)" stroke="#475569" stroke-width="2" />
                 <text x="250" y="165" text-anchor="middle" font-size="12" fill="#64748b" font-weight="bold" letter-spacing="2">OBJETIVO OCULTO</text>
               </g>
 
-              <!-- Aguja interactiva visible en Fase 2 -->
               <g id="remoteNeedleGroup" transform="rotate(${valorAAngulo(state.needleValue)}, 250, 240)">
                 <polygon points="246,240 254,240 252,50 250,38 248,50" fill="#f43f5e" />
                 <line x1="250" y1="225" x2="250" y2="45" stroke="#ffffff" stroke-width="1.5" />
@@ -1455,14 +1520,16 @@
       return;
     }
 
-    // FASE 3: APUESTA RIVAL
+    // FASE 3: APUESTA RIVAL (Interferencia)
     if (state.phase === 3) {
-      const rivalName = state.activeTeam === 'blue' ? 'Equipo Rojo' : 'Equipo Azul';
+      const rivalName = getRivalTeamName();
+      const isRed = getRivalTeamKey() === 'red';
+      const rivalColor = isRed ? '#f43f5e' : '#38bdf8';
 
       container.innerHTML = `
         <div class="remote-phase-banner">
-          <h2 class="remote-phase-title">⚡ FASE 3: INTERFERENCIA DEL ${escapeHtml(rivalName.toUpperCase())}</h2>
-          <p class="remote-phase-help">Pasale el celular al equipo rival para que apueste el lado.</p>
+          <h2 class="remote-phase-title" style="color: ${rivalColor};">⚡ FASE 3: INTERFERENCIA DEL ${escapeHtml(rivalName.toUpperCase())}</h2>
+          <p class="remote-phase-help">Pasale el celular al <strong>${escapeHtml(rivalName)}</strong> para que apueste el lado.</p>
         </div>
 
         <div class="needle-controls-card">
@@ -1481,7 +1548,7 @@
             </button>
           </div>
 
-          <p class="small text-muted">
+          <p class="small text-muted mt-3 mb-0">
             Si aciertan y el equipo activo no clavó los 4 puntos, ¡suman +1 punto de robo!
           </p>
         </div>
@@ -1522,7 +1589,7 @@
             <div class="alert alert-dark border-secondary p-3 mb-3">
               <div class="fw-bold text-warning fs-5">¡Cortina abierta en la TV!</div>
               <div class="text-light mt-1">
-                Puntos: <strong>${state.lastRoundResult ? state.lastRoundResult.pts : 0} pts</strong>
+                Puntos sumados: <strong>+${state.lastRoundResult ? state.lastRoundResult.pts : 0} pts</strong>
                 ${state.lastRoundResult && state.lastRoundResult.rivalStole ? '<br><span class="text-info">⚡ ¡Rival sumó +1 por interferencia!</span>' : ''}
               </div>
             </div>
@@ -1550,6 +1617,138 @@
     }
   }
 
+  // =========================================================================
+  // FASE 0: CONFIGURACIÓN PREVIA (SETUP DESDE CELULAR)
+  // =========================================================================
+  function renderRemoteSetup() {
+    const container = document.getElementById('remotePhaseContainer');
+    if (!container) return;
+
+    container.innerHTML = `
+      <div class="setup-box">
+        <h2 class="setup-title">⚙️ CONFIGURAR PARTIDA</h2>
+
+        <div class="mb-3">
+          <label class="setup-group-label">Modo de Juego:</label>
+          <div class="d-flex gap-2">
+            <button type="button" class="btn btn-outline-light flex-fill py-2 pill-option ${setupConfig.mode === 'competitive' ? 'active' : ''}" id="btnSetupModeComp">
+              ⚔️ Competitivo (Azul vs Rojo)
+            </button>
+            <button type="button" class="btn btn-outline-light flex-fill py-2 pill-option ${setupConfig.mode === 'cooperative' ? 'active' : ''}" id="btnSetupModeCoop">
+              🤝 Cooperativo
+            </button>
+          </div>
+        </div>
+
+        ${setupConfig.mode === 'competitive' ? `
+          <div class="mb-3">
+            <label class="setup-group-label">Meta de puntos para ganar:</label>
+            <div class="d-flex gap-2">
+              <button type="button" class="btn btn-outline-warning flex-fill btn-setup-score ${setupConfig.targetScore === 10 ? 'active' : ''}" data-score="10">10 pts</button>
+              <button type="button" class="btn btn-outline-warning flex-fill btn-setup-score ${setupConfig.targetScore === 15 ? 'active' : ''}" data-score="15">15 pts ⭐</button>
+              <button type="button" class="btn btn-outline-warning flex-fill btn-setup-score ${setupConfig.targetScore === 20 ? 'active' : ''}" data-score="20">20 pts</button>
+            </div>
+          </div>
+        ` : `
+          <div class="mb-3">
+            <label class="setup-group-label">Cantidad de rondas:</label>
+            <div class="d-flex gap-2">
+              <button type="button" class="btn btn-outline-warning flex-fill btn-setup-rounds ${setupConfig.totalRounds === 5 ? 'active' : ''}" data-rounds="5">5 rondas</button>
+              <button type="button" class="btn btn-outline-warning flex-fill btn-setup-rounds ${setupConfig.totalRounds === 7 ? 'active' : ''}" data-rounds="7">7 rondas ⭐</button>
+              <button type="button" class="btn btn-outline-warning flex-fill btn-setup-rounds ${setupConfig.totalRounds === 10 ? 'active' : ''}" data-rounds="10">10 rondas</button>
+            </div>
+          </div>
+        `}
+
+        <div class="mb-3">
+          <div class="d-flex justify-content-between align-items-center mb-2">
+            <label class="setup-group-label mb-0">Categorías de Espectros:</label>
+            <button type="button" class="btn btn-sm btn-outline-info" id="btnSelectAllCats" style="font-size: 0.8rem;">
+              ✨ Seleccionar Todas
+            </button>
+          </div>
+          <div class="setup-cats-grid">
+            ${AVAILABLE_CATEGORIES.map(cat => `
+              <div class="setup-cat-pill ${setupConfig.selectedCategories.includes(cat.id) ? 'active' : ''}" data-cat="${cat.id}">
+                <span>${cat.icon}</span>
+                <span>${cat.name}</span>
+              </div>
+            `).join('')}
+          </div>
+        </div>
+
+        <button type="button" class="btn-action-primary btn-action-gold mt-3" id="btnStartGameAction">
+          🚀 Iniciar Partida
+        </button>
+      </div>
+    `;
+
+    // Eventos Modo
+    const bComp = document.getElementById('btnSetupModeComp');
+    const bCoop = document.getElementById('btnSetupModeCoop');
+    if (bComp) {
+      bComp.addEventListener('click', () => {
+        setupConfig.mode = 'competitive';
+        renderRemoteSetup();
+      });
+    }
+    if (bCoop) {
+      bCoop.addEventListener('click', () => {
+        setupConfig.mode = 'cooperative';
+        renderRemoteSetup();
+      });
+    }
+
+    // Eventos Puntos
+    document.querySelectorAll('.btn-setup-score').forEach(btn => {
+      btn.addEventListener('click', () => {
+        setupConfig.targetScore = parseInt(btn.dataset.score, 10);
+        renderRemoteSetup();
+      });
+    });
+
+    // Eventos Rondas
+    document.querySelectorAll('.btn-setup-rounds').forEach(btn => {
+      btn.addEventListener('click', () => {
+        setupConfig.totalRounds = parseInt(btn.dataset.rounds, 10);
+        renderRemoteSetup();
+      });
+    });
+
+    // Evento Seleccionar Todas
+    const btnAll = document.getElementById('btnSelectAllCats');
+    if (btnAll) {
+      btnAll.addEventListener('click', () => {
+        setupConfig.selectedCategories = AVAILABLE_CATEGORIES.map(c => c.id);
+        renderRemoteSetup();
+      });
+    }
+
+    // Evento Toggle Categoría individual
+    document.querySelectorAll('.setup-cat-pill').forEach(pill => {
+      pill.addEventListener('click', () => {
+        const catId = pill.dataset.cat;
+        const idx = setupConfig.selectedCategories.indexOf(catId);
+        if (idx > -1) {
+          if (setupConfig.selectedCategories.length > 1) {
+            setupConfig.selectedCategories.splice(idx, 1);
+          }
+        } else {
+          setupConfig.selectedCategories.push(catId);
+        }
+        renderRemoteSetup();
+      });
+    });
+
+    // Botón Iniciar
+    const btnStart = document.getElementById('btnStartGameAction');
+    if (btnStart) {
+      btnStart.addEventListener('click', () => {
+        sendRemoteAction('START_GAME', { config: setupConfig });
+      });
+    }
+  }
+
   function updateRemoteNeedleOnly() {
     const needle = document.getElementById('remoteNeedleGroup');
     if (needle) {
@@ -1571,26 +1770,43 @@
     if (!container) return;
 
     let winnerTitle = '';
+    let subtitle = '';
     if (state.mode === 'competitive') {
       winnerTitle = state.winner === 'blue' ? '🏆 ¡GANÓ EL EQUIPO AZUL!' : '🏆 ¡GANÓ EL EQUIPO ROJO!';
+      subtitle = `Marcador final: Azul ${state.scores.blue} - ${state.scores.red} Rojo`;
     } else {
       winnerTitle = `🏆 ¡PUNTAJE FINAL: ${state.coopScore} PUNTOS!`;
+      subtitle = `Rondas completadas: ${state.totalRounds}`;
     }
 
     container.innerHTML = `
       <div class="needle-controls-card text-center">
-        <h2 class="text-warning">${escapeHtml(winnerTitle)}</h2>
-        <p class="text-muted">Partida finalizada. ¡Gran noche de sintonía telepática!</p>
-        <button type="button" class="btn-action-primary mt-3" id="btnRemoteRestart">
-          🔄 Jugar Nueva Partida
-        </button>
+        <h2 class="text-warning mb-2">${escapeHtml(winnerTitle)}</h2>
+        <p class="text-light fw-bold mb-1">${escapeHtml(subtitle)}</p>
+        <p class="text-muted small mb-4">¡Gran partida de sintonía fina!</p>
+        
+        <div class="d-flex flex-column gap-2">
+          <button type="button" class="btn-action-primary" id="btnRemoteRestart">
+            🔄 Jugar Misma Configuración
+          </button>
+          <button type="button" class="btn-action-secondary" id="btnRemoteNewSetup">
+            ⚙️ Cambiar Configuración
+          </button>
+        </div>
       </div>
     `;
 
     const btnRestart = document.getElementById('btnRemoteRestart');
     if (btnRestart) {
       btnRestart.addEventListener('click', () => {
-        sendRemoteAction('RESTART_GAME');
+        sendRemoteAction('START_GAME', { config: setupConfig });
+      });
+    }
+
+    const btnNewSetup = document.getElementById('btnRemoteNewSetup');
+    if (btnNewSetup) {
+      btnNewSetup.addEventListener('click', () => {
+        sendRemoteAction('GO_TO_SETUP');
       });
     }
   }
@@ -1602,10 +1818,136 @@
     const container = document.getElementById('singleControlsContent');
     if (!container) return;
 
+    // FASE 0: CONFIGURACIÓN
+    if (state.phase === 0) {
+      container.innerHTML = `
+        <div class="setup-box my-0 p-3" style="max-width: 520px;">
+          <h4 class="text-warning text-center fw-bold mb-3">⚙️ CONFIGURAR PARTIDA</h4>
+
+          <div class="mb-3">
+            <label class="setup-group-label">Modo:</label>
+            <div class="d-flex gap-2">
+              <button type="button" class="btn btn-sm btn-outline-light flex-fill pill-option ${setupConfig.mode === 'competitive' ? 'active' : ''}" id="btnSingleModeComp">
+                ⚔️ Competitivo
+              </button>
+              <button type="button" class="btn btn-sm btn-outline-light flex-fill pill-option ${setupConfig.mode === 'cooperative' ? 'active' : ''}" id="btnSingleModeCoop">
+                🤝 Cooperativo
+              </button>
+            </div>
+          </div>
+
+          ${setupConfig.mode === 'competitive' ? `
+            <div class="mb-3">
+              <label class="setup-group-label">Meta de puntos:</label>
+              <div class="d-flex gap-2">
+                <button type="button" class="btn btn-sm btn-outline-warning flex-fill btn-single-score ${setupConfig.targetScore === 10 ? 'active' : ''}" data-score="10">10 pts</button>
+                <button type="button" class="btn btn-sm btn-outline-warning flex-fill btn-single-score ${setupConfig.targetScore === 15 ? 'active' : ''}" data-score="15">15 pts ⭐</button>
+                <button type="button" class="btn btn-sm btn-outline-warning flex-fill btn-single-score ${setupConfig.targetScore === 20 ? 'active' : ''}" data-score="20">20 pts</button>
+              </div>
+            </div>
+          ` : `
+            <div class="mb-3">
+              <label class="setup-group-label">Rondas:</label>
+              <div class="d-flex gap-2">
+                <button type="button" class="btn btn-sm btn-outline-warning flex-fill btn-single-rounds ${setupConfig.totalRounds === 5 ? 'active' : ''}" data-rounds="5">5 rondas</button>
+                <button type="button" class="btn btn-sm btn-outline-warning flex-fill btn-single-rounds ${setupConfig.totalRounds === 7 ? 'active' : ''}" data-rounds="7">7 rondas ⭐</button>
+                <button type="button" class="btn btn-sm btn-outline-warning flex-fill btn-single-rounds ${setupConfig.totalRounds === 10 ? 'active' : ''}" data-rounds="10">10 rondas</button>
+              </div>
+            </div>
+          `}
+
+          <div class="mb-3">
+            <div class="d-flex justify-content-between align-items-center mb-2">
+              <label class="setup-group-label mb-0">Categorías:</label>
+              <button type="button" class="btn btn-sm btn-outline-info py-0 px-2" id="btnSingleSelectAllCats" style="font-size: 0.75rem;">
+                ✨ Todas
+              </button>
+            </div>
+            <div class="setup-cats-grid">
+              ${AVAILABLE_CATEGORIES.map(cat => `
+                <div class="setup-cat-pill ${setupConfig.selectedCategories.includes(cat.id) ? 'active' : ''}" data-cat="${cat.id}">
+                  <span>${cat.icon}</span>
+                  <span>${cat.name}</span>
+                </div>
+              `).join('')}
+            </div>
+          </div>
+
+          <button type="button" class="btn btn-warning w-100 py-2 fw-bold" id="btnSingleStartGame">
+            🚀 Iniciar Partida
+          </button>
+        </div>
+      `;
+
+      const bComp = document.getElementById('btnSingleModeComp');
+      const bCoop = document.getElementById('btnSingleModeCoop');
+      if (bComp) {
+        bComp.addEventListener('click', () => {
+          setupConfig.mode = 'competitive';
+          renderSingleControls();
+        });
+      }
+      if (bCoop) {
+        bCoop.addEventListener('click', () => {
+          setupConfig.mode = 'cooperative';
+          renderSingleControls();
+        });
+      }
+
+      document.querySelectorAll('.btn-single-score').forEach(btn => {
+        btn.addEventListener('click', () => {
+          setupConfig.targetScore = parseInt(btn.dataset.score, 10);
+          renderSingleControls();
+        });
+      });
+
+      document.querySelectorAll('.btn-single-rounds').forEach(btn => {
+        btn.addEventListener('click', () => {
+          setupConfig.totalRounds = parseInt(btn.dataset.rounds, 10);
+          renderSingleControls();
+        });
+      });
+
+      const btnAll = document.getElementById('btnSingleSelectAllCats');
+      if (btnAll) {
+        btnAll.addEventListener('click', () => {
+          setupConfig.selectedCategories = AVAILABLE_CATEGORIES.map(c => c.id);
+          renderSingleControls();
+        });
+      }
+
+      document.querySelectorAll('.setup-cat-pill').forEach(pill => {
+        pill.addEventListener('click', () => {
+          const catId = pill.dataset.cat;
+          const idx = setupConfig.selectedCategories.indexOf(catId);
+          if (idx > -1) {
+            if (setupConfig.selectedCategories.length > 1) {
+              setupConfig.selectedCategories.splice(idx, 1);
+            }
+          } else {
+            setupConfig.selectedCategories.push(catId);
+          }
+          renderSingleControls();
+        });
+      });
+
+      const bStart = document.getElementById('btnSingleStartGame');
+      if (bStart) {
+        bStart.addEventListener('click', () => {
+          applySetupConfig(setupConfig);
+          startNewRound(true);
+        });
+      }
+      return;
+    }
+
+    // FASE 1: LOCUTOR
     if (state.phase === 1) {
+      const locutorTitle = getLocutorTitle();
+
       container.innerHTML = `
         <div class="d-flex flex-column align-items-center gap-2">
-          <div class="text-warning fw-bold fs-5">🎤 Turno de ${escapeHtml(state.locutor ? state.locutor.name : 'Locutor')}</div>
+          <div class="text-warning fw-bold fs-5">${escapeHtml(locutorTitle)}</div>
           <p class="small text-muted text-center mb-1">
             Locutor: destapá el objetivo en el dial superior sin que tus compañeros espíen la pantalla.
           </p>
@@ -1638,6 +1980,7 @@
       return;
     }
 
+    // FASE 2: MOVER AGUJA
     if (state.phase === 2) {
       container.innerHTML = `
         <div class="d-flex flex-column align-items-center gap-2" style="max-width: 450px; margin: 0 auto; width: 100%;">
@@ -1671,10 +2014,13 @@
       return;
     }
 
+    // FASE 3: APUESTA RIVAL
     if (state.phase === 3) {
+      const rivalName = getRivalTeamName();
+
       container.innerHTML = `
         <div class="d-flex flex-column align-items-center gap-2">
-          <div class="fw-bold text-danger">⚡ Apuesta del equipo rival: ¿Dónde está el centro?</div>
+          <div class="fw-bold text-danger">⚡ Apuesta del ${escapeHtml(rivalName)}: ¿Dónde está el centro?</div>
           <div class="d-flex gap-3 mt-1">
             <button type="button" class="btn btn-outline-info" id="btnSingleRivalL">⬅️ A la IZQUIERDA</button>
             <button type="button" class="btn btn-outline-danger" id="btnSingleRivalR">A la DERECHA ➡️</button>
@@ -1705,6 +2051,7 @@
       return;
     }
 
+    // FASE 4: REVELAR
     if (state.phase === 4) {
       container.innerHTML = `
         <div class="d-flex flex-column align-items-center gap-2">

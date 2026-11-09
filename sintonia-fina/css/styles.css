@@ -878,44 +878,43 @@ body {
   box-shadow: 0 0 14px rgba(139, 92, 246, 0.4);
 }
 
-.teams-split-view {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 16px;
-  margin-bottom: 24px;
-}
-
-.team-column {
-  background: rgba(0, 0, 0, 0.3);
-  border-radius: var(--radius-md);
-  padding: 14px;
-  border-top: 3px solid;
-}
-
-.team-column.blue { border-color: var(--accent-blue); }
-.team-column.red { border-color: var(--accent-red); }
-
-.team-players-list {
+/* ==========================================================================
+   CONFIGURACIÓN PREVIA (FASE 0)
+   ========================================================================== */
+.setup-cats-grid {
   display: flex;
-  flex-direction: column;
-  gap: 6px;
-  min-height: 80px;
+  flex-wrap: wrap;
+  gap: 8px;
 }
 
-.player-team-chip {
+.setup-cat-pill {
   background: rgba(255, 255, 255, 0.08);
+  border: 1px solid var(--border-subtle);
   border-radius: var(--radius-pill);
-  padding: 6px 12px;
+  padding: 6px 14px;
   font-size: 0.88rem;
-  font-weight: 600;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+  font-weight: 700;
+  color: #cbd5e1;
   cursor: pointer;
+  transition: var(--transition);
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  user-select: none;
 }
 
-.player-team-chip:hover {
-  background: rgba(255, 255, 255, 0.18);
+.setup-cat-pill.active {
+  background: rgba(139, 92, 246, 0.25);
+  border-color: var(--accent-purple);
+  color: #fff;
+  box-shadow: 0 0 10px rgba(139, 92, 246, 0.35);
+}
+
+.btn-setup-score.active, .btn-setup-rounds.active {
+  background: var(--accent-gold);
+  border-color: var(--accent-gold);
+  color: #000;
+  font-weight: 800;
 }
 
 /* ==========================================================================

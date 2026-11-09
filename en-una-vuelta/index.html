@@ -173,41 +173,14 @@
         </p>
       </div>
 
-      <!-- Mesa sincronizada -->
-      <div class="mt-4 pt-3 border-top border-secondary border-opacity-25">
-        <div class="small text-muted mb-2 text-uppercase fw-bold">Jugadores en la mesa del Hub:</div>
-        <div id="hubPlayersPreview" class="d-flex flex-wrap gap-2 justify-content-center">
-          <!-- Creados dinámicamente -->
-        </div>
-      </div>
     </div>
 
-    <div>
+    <div class="mt-4">
       <a href="../index.html" class="btn-back-hub" style="background: var(--accent-emerald); border-color: transparent; padding: 12px 30px; font-size: 1.05rem;">
         <span>🏠</span>
         <span>Volver a la Sala de Juegos</span>
       </a>
     </div>
   </main>
-
-  <script src="../js/hub-shared.js"></script>
-  <script>
-    document.addEventListener('DOMContentLoaded', () => {
-      const container = document.getElementById('hubPlayersPreview');
-      if (container && window.HubShared) {
-        const players = window.HubShared.getHubPlayers(false);
-        if (players.length) {
-          container.innerHTML = players.map(p => `
-            <span class="player-chip">
-              <span>${p.emoji || '👤'}</span>
-              <span><strong>#${p.id}</strong> ${p.name}</span>
-            </span>
-          `).join('');
-        } else {
-          container.innerHTML = '<span class="text-muted small">No hay jugadores cargados en la mesa todavía.</span>';
-        }
-      }
-    });
-  </script>
 </body>
 </html>

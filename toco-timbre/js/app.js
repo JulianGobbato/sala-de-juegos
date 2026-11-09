@@ -482,27 +482,6 @@
 
   function loadSavedPlayers() {
     try {
-      // 1. Priorizar jugadores de la mesa compartida (hub_jugadores) si existen
-      let hubPlayers = null;
-      if (typeof window !== 'undefined' && window.HubShared && typeof window.HubShared.getHubPlayers === 'function') {
-        hubPlayers = window.HubShared.getHubPlayers(false);
-      }
-      if (!hubPlayers || !hubPlayers.length) {
-        const hubRaw = localStorage.getItem('hub_jugadores');
-        if (hubRaw) {
-          hubPlayers = JSON.parse(hubRaw);
-        }
-      }
-      if (Array.isArray(hubPlayers) && hubPlayers.length >= 2) {
-        state.digital.config.players = hubPlayers.slice(0, 10).map((p, idx) => ({
-          id: idx,
-          name: typeof p === 'string' ? p : (p.name || `Pasajero ${idx + 1}`),
-          emoji: (typeof p === 'object' && p.emoji) ? p.emoji : AVATARS[idx % AVATARS.length]
-        }));
-        return;
-      }
-
-      // 2. Si no hay jugadores del Hub, leer del storage local de la app
       const raw = localStorage.getItem(PLAYERS_STORAGE_KEY);
       if (raw) {
         const parsed = JSON.parse(raw);
@@ -518,18 +497,6 @@
   function savePlayers() {
     try {
       localStorage.setItem(PLAYERS_STORAGE_KEY, JSON.stringify(state.digital.config.players));
-
-      // Sincronizar simultáneamente con el Hub Compartido (hub_jugadores)
-      const hubData = state.digital.config.players.map((p, idx) => ({
-        id: idx + 1,
-        name: p.name,
-        emoji: p.emoji || AVATARS[idx % AVATARS.length]
-      }));
-      if (typeof window !== 'undefined' && window.HubShared && typeof window.HubShared.saveHubPlayers === 'function') {
-        window.HubShared.saveHubPlayers(hubData);
-      } else {
-        localStorage.setItem('hub_jugadores', JSON.stringify(hubData));
-      }
     } catch (e) {
       console.warn('Error al guardar jugadores en LocalStorage:', e);
     }
@@ -1093,37 +1060,11 @@
     state.mode = 'digital';
     await loadMetadataAndQuestions();
 
-    // Sincronizar automáticamente con "hub_jugadores" si existen en la mesa
-    syncPlayersFromHub();
+    loadSavedPlayers();
 
     renderPlayersSetupList();
     refreshDigitalFiltersUI();
     showView('viewDigitalSetup');
-  }
-
-  function syncPlayersFromHub() {
-    try {
-      let hubPlayers = null;
-      if (typeof window !== 'undefined' && window.HubShared && typeof window.HubShared.getHubPlayers === 'function') {
-        hubPlayers = window.HubShared.getHubPlayers(false);
-      }
-      if (!hubPlayers || !hubPlayers.length) {
-        const hubRaw = localStorage.getItem('hub_jugadores');
-        if (hubRaw) {
-          hubPlayers = JSON.parse(hubRaw);
-        }
-      }
-      if (Array.isArray(hubPlayers) && hubPlayers.length >= 2) {
-        state.digital.config.players = hubPlayers.slice(0, 10).map((p, idx) => ({
-          id: idx,
-          name: typeof p === 'string' ? p : (p.name || `Pasajero ${idx + 1}`),
-          emoji: (typeof p === 'object' && p.emoji) ? p.emoji : AVATARS[idx % AVATARS.length]
-        }));
-        savePlayers();
-      }
-    } catch (e) {
-      console.warn('Error al sincronizar con hub_jugadores:', e);
-    }
   }
 
   function refreshDigitalFiltersUI() {
