@@ -210,10 +210,10 @@
     "id": "arg_024",
     "categoria": "argentina",
     "dificultad": "facil",
-    "pregunta": "¿Cuántas copas América de fútbol de mayores ha ganado la Selección Argentina masculina (hasta 2024)?",
+    "pregunta": "¿Cuántas Copas América de fútbol masculino ganó la Selección Argentina tras consagrarse bicampeona en Estados Unidos 2024?",
     "respuesta": 16,
     "unidad": "copas América",
-    "nota": "Es el máximo ganador histórico de la competición tras consagrarse campeón en 2024."
+    "nota": "Es el máximo ganador histórico del certamen continental tras superar los 15 títulos de Uruguay."
   },
   {
     "id": "arg_025",
@@ -354,10 +354,10 @@
     "id": "arg_040",
     "categoria": "argentina",
     "dificultad": "medio",
-    "pregunta": "¿Cuántos años cumplió el peronismo desde la movilización fundacional del 17 de octubre de 1945 hasta el año 2020?",
-    "respuesta": 75,
-    "unidad": "años",
-    "nota": "El Día de la Lealtad peronista celebró su 75 aniversario en octubre de 2020."
+    "pregunta": "¿En qué año ocurrió la histórica movilización popular a Plaza de Mayo conocida como el 'Día de la Lealtad' peronista?",
+    "respuesta": 1945,
+    "unidad": "año",
+    "nota": "El 17 de octubre de 1945 cientos de miles de obreros exigieron la liberación del coronel Juan Domingo Perón."
   },
   {
     "id": "arg_041",
@@ -480,7 +480,7 @@
     "id": "arg_054",
     "categoria": "argentina",
     "dificultad": "dificil",
-    "pregunta": "¿Cuántos kilómetros de largo tiene el Túnel Subfluvial 'Raúl Uranga - Carlos Sylvestre Begnis' bajo el río Paraná?",
+    "pregunta": "¿Cuántos metros de largo tiene el Túnel Subfluvial 'Raúl Uranga - Carlos Sylvestre Begnis' bajo el río Paraná?",
     "respuesta": 2397,
     "unidad": "metros",
     "nota": "Inaugurado en 1969, une las ciudades de Santa Fe y Paraná a través de casi 2,4 km de túnel."
@@ -588,10 +588,10 @@
     "id": "arg_066",
     "categoria": "argentina",
     "dificultad": "dificil",
-    "pregunta": "¿Cuántos kilómetros de largo tiene el Puente Rosario-Victoria que conecta Santa Fe con Entre Ríos?",
+    "pregunta": "¿Cuántos metros de largo tiene la estructura vial principal del Puente Rosario-Victoria sobre el cauce del río Paraná?",
     "respuesta": 4098,
     "unidad": "metros",
-    "nota": "El puente principal atirantado y sus viaductos de acceso totalizan casi 4,1 km sobre el río."
+    "nota": "El puente principal atirantado y sus viaductos de acceso inmediato totalizan casi 4,1 km sobre el río."
   },
   {
     "id": "arg_067",
@@ -885,10 +885,10 @@
     "id": "arg_099",
     "categoria": "argentina",
     "dificultad": "extremo",
-    "pregunta": "¿Cuántas páginas y artículos integraban el proyecto original de Bases y Puntos de Partida de Juan Bautista Alberdi en 1852?",
+    "pregunta": "¿Cuántos capítulos contenía la primera edición de 'Bases y puntos de partida para la organización política de la República Argentina' de Juan Bautista Alberdi en 1852?",
     "respuesta": 38,
     "unidad": "capítulos",
-    "nota": "Escrito en Valparaíso en pocas semanas tras la batalla de Caseros, sirvió de modelo a la Constitución de 1853."
+    "nota": "Escrito en Valparaíso tras la batalla de Caseros, sirvió de modelo inmediato a la Constitución de 1853."
   },
   {
     "id": "arg_100",

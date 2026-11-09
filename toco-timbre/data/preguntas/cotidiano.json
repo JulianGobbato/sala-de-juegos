@@ -786,10 +786,10 @@
     "id": "cot_088",
     "categoria": "cotidiano",
     "dificultad": "extremo",
-    "pregunta": "¿Cuántos gramos de cafeína pura puede contener una taza de 240 ml de café filtrado por goteo fuerte?",
-    "respuesta": 0,
-    "unidad": "gramos enteros",
-    "nota": "Tiene unos 95 a 150 miligramos (0,1 gramos), por lo que en gramos enteros la respuesta es 0."
+    "pregunta": "¿Cuántos miligramos de cafeína contiene aproximadamente una taza estándar de 240 ml de café filtrado?",
+    "respuesta": 100,
+    "unidad": "miligramos",
+    "nota": "Oscila entre los 80 y 130 mg según el tipo de tueste y grano, con una media habitual de 100 mg."
   },
   {
     "id": "cot_089",

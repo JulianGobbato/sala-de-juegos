@@ -190,9 +190,16 @@
         </div>
 
         <!-- Botón para restablecer preguntas vistas -->
-        <div class="text-center mb-3">
+        <div class="text-center mb-2">
           <button type="button" class="btn-reset-seen" id="btnResetSeenTarjetero" style="display: none;">
             🔄 Restablecer preguntas vistas (<span id="tarjeteroSeenCount">0</span> ya vistas)
+          </button>
+        </div>
+
+        <!-- Enlace a preguntas reportadas -->
+        <div class="text-center mb-3" id="tarjeteroReportedContainer" style="display: none;">
+          <button type="button" class="btn btn-link text-warning text-decoration-none btn-sm" id="btnOpenReportedTarjetero" style="font-size: 0.8rem;">
+            🚩 Ver/Exportar preguntas reportadas (<span id="tarjeteroReportedCount">0</span>)
           </button>
         </div>
 
@@ -237,6 +244,11 @@
             <div class="answer-number" id="tarjeteroAnswerValue">1936</div>
             <div class="answer-unit-label" id="tarjeteroAnswerUnitLabel">año</div>
             <div class="answer-note" id="tarjeteroNote">Dato curioso aquí...</div>
+            <div class="mt-3 pt-2 border-top border-secondary text-center">
+              <button type="button" class="btn btn-sm btn-outline-danger" id="btnReportTarjetero" style="font-size: 0.8rem;">
+                🚩 Dato dudoso (Descartar y cambiar)
+              </button>
+            </div>
           </div>
         </div>
 
@@ -356,9 +368,16 @@
         </div>
 
         <!-- Botón para restablecer preguntas vistas -->
-        <div class="text-center mb-3">
+        <div class="text-center mb-2">
           <button type="button" class="btn-reset-seen" id="btnResetSeenDigital" style="display: none;">
             🔄 Restablecer preguntas vistas (<span id="digitalSeenCount">0</span> ya vistas)
+          </button>
+        </div>
+
+        <!-- Enlace a preguntas reportadas -->
+        <div class="text-center mb-3" id="digitalReportedContainer" style="display: none;">
+          <button type="button" class="btn btn-link text-warning text-decoration-none btn-sm" id="btnOpenReportedDigital" style="font-size: 0.8rem;">
+            🚩 Ver/Exportar preguntas reportadas (<span id="digitalReportedCount">0</span>)
           </button>
         </div>
 
@@ -561,6 +580,11 @@
           <div class="answer-note" id="resultQuestionNote">
             Dato curioso histórico...
           </div>
+          <div class="mt-3 pt-2 border-top border-secondary text-center">
+            <button type="button" class="btn btn-sm btn-outline-danger" id="btnReportDigital" style="font-size: 0.8rem;">
+              🚩 Dato dudoso (Descartar y cambiar)
+            </button>
+          </div>
         </div>
 
         <!-- Puntos otorgados en la ronda -->
@@ -724,6 +748,34 @@
           <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Seguir jugando</button>
           <button type="button" class="btn btn-danger" id="btnConfirmReset">Sí, abandonar partida</button>
         </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ====================================================================
+       MODAL DE PREGUNTAS REPORTADAS
+       ==================================================================== -->
+  <div id="modalReportedQuestions" class="modal-overlay d-none">
+    <div class="modal-content-box" style="max-width: 600px; max-height: 85vh; display: flex; flex-direction: column;">
+      <div class="d-flex justify-content-between align-items-center mb-3">
+        <h4 style="font-family: var(--font-display); font-size: 1.4rem; color: var(--bondi-yellow); margin: 0;">
+          🚩 Preguntas Reportadas (<span id="modalReportedTotal">0</span>)
+        </h4>
+        <button type="button" class="btn btn-sm btn-outline-light" id="btnCloseModalReported">&times;</button>
+      </div>
+      <p style="font-size: 0.82rem; color: #94a3b8; margin-bottom: 12px;">
+        Estas preguntas fueron reportadas durante el juego y están excluidas de futuros mazos. Podés copiar los datos para revisarlas o limpiar la lista.
+      </p>
+      <div id="reportedListContainer" style="overflow-y: auto; flex: 1; margin-bottom: 12px;" class="d-flex flex-column gap-2">
+        <!-- Items renderizados -->
+      </div>
+      <div class="d-flex gap-2 justify-content-between pt-2 border-top border-secondary">
+        <button type="button" class="btn btn-sm btn-outline-danger" id="btnClearReported">
+          🗑️ Limpiar reporte
+        </button>
+        <button type="button" class="btn btn-sm btn-bondi-gold" id="btnExportReported">
+          📋 Copiar al Portapapeles
+        </button>
       </div>
     </div>
   </div>

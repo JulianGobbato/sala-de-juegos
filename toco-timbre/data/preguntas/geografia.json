@@ -84,10 +84,10 @@
     "id": "geo_010",
     "categoria": "geografia",
     "dificultad": "facil",
-    "pregunta": "¿Cuántos países integran actualmente la Unión Europea (tras la salida del Reino Unido por el Brexit)?",
+    "pregunta": "¿Cuántos países integran la Unión Europea tras la salida del Reino Unido por el Brexit en 2020?",
     "respuesta": 27,
     "unidad": "países",
-    "nota": "Reino Unido formalizó su salida el 31 de enero de 2020 reduciendo los miembros a 27."
+    "nota": "El Reino Unido formalizó su salida el 31 de enero de 2020 reduciendo los miembros a 27."
   },
   {
     "id": "geo_011",
@@ -327,10 +327,10 @@
     "id": "geo_037",
     "categoria": "geografia",
     "dificultad": "medio",
-    "pregunta": "¿Cuántos kilómetros cuadrados mide la Ciudad del Vaticano, el estado soberano más pequeño del mundo?",
-    "respuesta": 0,
-    "unidad": "km² enteros",
-    "nota": "Tiene apenas 0,49 km² (unas 44 hectáreas), por lo que en kilómetros cuadrados enteros su respuesta es 0."
+    "pregunta": "¿Cuántas hectáreas de superficie abarca aproximadamente la Ciudad del Vaticano, el estado soberano más pequeño del mundo?",
+    "respuesta": 44,
+    "unidad": "hectáreas",
+    "nota": "Abarca exactamente 44 hectáreas (0,44 km²) dentro del tejido urbano de Roma."
   },
   {
     "id": "geo_038",
@@ -741,10 +741,10 @@
     "id": "geo_083",
     "categoria": "geografia",
     "dificultad": "extremo",
-    "pregunta": "¿Cuántos kilómetros cuadrados de superficie tiene el mar de Aral en la actualidad comparado con los 68.000 km² que tenía en 1960?",
-    "respuesta": 6800,
+    "pregunta": "¿Cuántos kilómetros cuadrados de superficie tenía aproximadamente el Mar de Aral en 1960 antes de su devastador desecamiento?",
+    "respuesta": 68000,
     "unidad": "km²",
-    "nota": "Ha perdido más del 90% de su superficie original debido al desvío soviético de los ríos Amu Daria y Sir Daria."
+    "nota": "Era el cuarto lago más grande del planeta con 68.000 km² antes de que los ríos que lo alimentaban fueran desviados."
   },
   {
     "id": "geo_084",

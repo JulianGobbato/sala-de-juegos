@@ -183,7 +183,7 @@
     "id": "dep_021",
     "categoria": "deportes",
     "dificultad": "facil",
-    "pregunta": "¿Cuántos rounds como máximo dura actualmente una pelea de campeonato mundial de boxeo masculino?",
+    "pregunta": "¿Cuántos asaltos (rounds) como máximo dura una pelea reglamentaria de campeonato mundial de boxeo masculino profesional?",
     "respuesta": 12,
     "unidad": "rounds",
     "nota": "Se redujo de 15 a 12 asaltos de 3 minutos en la década de 1980 por seguridad médica."
@@ -273,7 +273,7 @@
     "id": "dep_031",
     "categoria": "deportes",
     "dificultad": "medio",
-    "pregunta": "¿Cuántos títulos de la UEFA Champions League / Copa de Europa ostenta el Real Madrid (hasta 2024)?",
+    "pregunta": "¿Cuántos títulos de la UEFA Champions League / Copa de Europa alcanzó el Real Madrid tras su consagración en Wembley en 2024?",
     "respuesta": 15,
     "unidad": "títulos",
     "nota": "Es el club más laureado de Europa por amplia diferencia tras ganar la 15ª en Wembley."
@@ -291,7 +291,7 @@
     "id": "dep_033",
     "categoria": "deportes",
     "dificultad": "medio",
-    "pregunta": "¿Cuántos metros de largo mide reglamentariamente una cancha de tenis para partidos individuales?",
+    "pregunta": "¿Cuántos centímetros de largo mide reglamentariamente una pista de tenis de extremo a extremo para partidos individuales?",
     "respuesta": 2377,
     "unidad": "centímetros",
     "nota": "Mide exactamente 78 pies (23,77 metros) de largo por 8,23 metros de ancho."
@@ -363,7 +363,7 @@
     "id": "dep_041",
     "categoria": "deportes",
     "dificultad": "medio",
-    "pregunta": "¿Cuántos títulos de Grand Slam en individuales masculinos ostenta Novak Djokovic (hasta 2024)?",
+    "pregunta": "¿Cuántos títulos de Grand Slam en individuales masculinos conquistó Novak Djokovic tras ganar el US Open 2023?",
     "respuesta": 24,
     "unidad": "títulos",
     "nota": "El tenista masculino con mayor cantidad de títulos 'majors' en la historia."
@@ -390,7 +390,7 @@
     "id": "dep_044",
     "categoria": "deportes",
     "dificultad": "medio",
-    "pregunta": "¿A cuántos metros de altura se coloca la red en el centro de una cancha de tenis?",
+    "pregunta": "¿Cuántos centímetros de altura tiene la red en el centro de una cancha de tenis reglamentaria?",
     "respuesta": 91,
     "unidad": "centímetros",
     "nota": "Mide 3 pies (91,4 cm) en el centro y 1,07 metros en los postes laterales."
@@ -516,10 +516,10 @@
     "id": "dep_058",
     "categoria": "deportes",
     "dificultad": "dificil",
-    "pregunta": "¿Cuántos triunfos oficiales en carreras de Fórmula 1 acumuló Lewis Hamilton al convertirse en el primero en superar el centenar?",
-    "respuesta": 103,
-    "unidad": "victorias",
-    "nota": "Alcanzó su triunfo 100 en el Gran Premio de Rusia 2021."
+    "pregunta": "¿En qué año Lewis Hamilton se convirtió en el primer piloto de la historia de la Fórmula 1 en alcanzar 100 victorias en Grandes Premios?",
+    "respuesta": 2021,
+    "unidad": "año",
+    "nota": "Alcanzó su histórico triunfo número 100 en el Gran Premio de Rusia en septiembre de 2021."
   },
   {
     "id": "dep_059",
@@ -570,7 +570,7 @@
     "id": "dep_064",
     "categoria": "deportes",
     "dificultad": "dificil",
-    "pregunta": "¿A cuántos metros del aro se encuentra la línea de triple en las canchas de básquetbol FIBA?",
+    "pregunta": "¿Cuántos centímetros de distancia separan el aro de la línea de triple en las canchas de básquetbol FIBA?",
     "respuesta": 675,
     "unidad": "centímetros",
     "nota": "Fijada a 6,75 metros (en la NBA la distancia en la cabecera es de 7,24 metros)."
@@ -624,10 +624,10 @@
     "id": "dep_070",
     "categoria": "deportes",
     "dificultad": "dificil",
-    "pregunta": "¿Cuántos metros de altura tiene la red de vóley masculino en competiciones oficiales?",
+    "pregunta": "¿Cuántos centímetros de altura tiene la red de vóley masculino en competiciones oficiales?",
     "respuesta": 243,
     "unidad": "centímetros",
-    "nota": "2,43 metros para varones y 2,24 metros para mujeres."
+    "nota": "Exactamente 2,43 metros para varones y 2,24 metros para mujeres."
   },
   {
     "id": "dep_071",
@@ -732,7 +732,7 @@
     "id": "dep_082",
     "categoria": "deportes",
     "dificultad": "extremo",
-    "pregunta": "¿Cuántos metros mide la altura oficial del travesaño de un arco de fútbol reglamentario según las Reglas del Juego de la IFAB?",
+    "pregunta": "¿Cuántos centímetros de altura mide el travesaño de un arco de fútbol reglamentario según las Reglas del Juego de la IFAB?",
     "respuesta": 244,
     "unidad": "centímetros",
     "nota": "Exactamente 8 pies de altura (2,44 metros) por 8 yardas de ancho (7,32 metros)."

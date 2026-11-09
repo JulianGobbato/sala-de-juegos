@@ -301,10 +301,10 @@
     "id": "arg_024",
     "categoria": "argentina",
     "dificultad": "facil",
-    "pregunta": "¿Cuántas copas América de fútbol de mayores ha ganado la Selección Argentina masculina (hasta 2024)?",
+    "pregunta": "¿Cuántas Copas América de fútbol masculino ganó la Selección Argentina tras consagrarse bicampeona en Estados Unidos 2024?",
     "respuesta": 16,
     "unidad": "copas América",
-    "nota": "Es el máximo ganador histórico de la competición tras consagrarse campeón en 2024."
+    "nota": "Es el máximo ganador histórico del certamen continental tras superar los 15 títulos de Uruguay."
   },
   {
     "id": "arg_025",
@@ -445,10 +445,10 @@
     "id": "arg_040",
     "categoria": "argentina",
     "dificultad": "medio",
-    "pregunta": "¿Cuántos años cumplió el peronismo desde la movilización fundacional del 17 de octubre de 1945 hasta el año 2020?",
-    "respuesta": 75,
-    "unidad": "años",
-    "nota": "El Día de la Lealtad peronista celebró su 75 aniversario en octubre de 2020."
+    "pregunta": "¿En qué año ocurrió la histórica movilización popular a Plaza de Mayo conocida como el 'Día de la Lealtad' peronista?",
+    "respuesta": 1945,
+    "unidad": "año",
+    "nota": "El 17 de octubre de 1945 cientos de miles de obreros exigieron la liberación del coronel Juan Domingo Perón."
   },
   {
     "id": "arg_041",
@@ -571,7 +571,7 @@
     "id": "arg_054",
     "categoria": "argentina",
     "dificultad": "dificil",
-    "pregunta": "¿Cuántos kilómetros de largo tiene el Túnel Subfluvial 'Raúl Uranga - Carlos Sylvestre Begnis' bajo el río Paraná?",
+    "pregunta": "¿Cuántos metros de largo tiene el Túnel Subfluvial 'Raúl Uranga - Carlos Sylvestre Begnis' bajo el río Paraná?",
     "respuesta": 2397,
     "unidad": "metros",
     "nota": "Inaugurado en 1969, une las ciudades de Santa Fe y Paraná a través de casi 2,4 km de túnel."
@@ -679,10 +679,10 @@
     "id": "arg_066",
     "categoria": "argentina",
     "dificultad": "dificil",
-    "pregunta": "¿Cuántos kilómetros de largo tiene el Puente Rosario-Victoria que conecta Santa Fe con Entre Ríos?",
+    "pregunta": "¿Cuántos metros de largo tiene la estructura vial principal del Puente Rosario-Victoria sobre el cauce del río Paraná?",
     "respuesta": 4098,
     "unidad": "metros",
-    "nota": "El puente principal atirantado y sus viaductos de acceso totalizan casi 4,1 km sobre el río."
+    "nota": "El puente principal atirantado y sus viaductos de acceso inmediato totalizan casi 4,1 km sobre el río."
   },
   {
     "id": "arg_067",
@@ -976,10 +976,10 @@
     "id": "arg_099",
     "categoria": "argentina",
     "dificultad": "extremo",
-    "pregunta": "¿Cuántas páginas y artículos integraban el proyecto original de Bases y Puntos de Partida de Juan Bautista Alberdi en 1852?",
+    "pregunta": "¿Cuántos capítulos contenía la primera edición de 'Bases y puntos de partida para la organización política de la República Argentina' de Juan Bautista Alberdi en 1852?",
     "respuesta": 38,
     "unidad": "capítulos",
-    "nota": "Escrito en Valparaíso en pocas semanas tras la batalla de Caseros, sirvió de modelo a la Constitución de 1853."
+    "nota": "Escrito en Valparaíso tras la batalla de Caseros, sirvió de modelo inmediato a la Constitución de 1853."
   },
   {
     "id": "arg_100",
@@ -1174,7 +1174,7 @@
     "id": "dep_021",
     "categoria": "deportes",
     "dificultad": "facil",
-    "pregunta": "¿Cuántos rounds como máximo dura actualmente una pelea de campeonato mundial de boxeo masculino?",
+    "pregunta": "¿Cuántos asaltos (rounds) como máximo dura una pelea reglamentaria de campeonato mundial de boxeo masculino profesional?",
     "respuesta": 12,
     "unidad": "rounds",
     "nota": "Se redujo de 15 a 12 asaltos de 3 minutos en la década de 1980 por seguridad médica."
@@ -1264,7 +1264,7 @@
     "id": "dep_031",
     "categoria": "deportes",
     "dificultad": "medio",
-    "pregunta": "¿Cuántos títulos de la UEFA Champions League / Copa de Europa ostenta el Real Madrid (hasta 2024)?",
+    "pregunta": "¿Cuántos títulos de la UEFA Champions League / Copa de Europa alcanzó el Real Madrid tras su consagración en Wembley en 2024?",
     "respuesta": 15,
     "unidad": "títulos",
     "nota": "Es el club más laureado de Europa por amplia diferencia tras ganar la 15ª en Wembley."
@@ -1282,7 +1282,7 @@
     "id": "dep_033",
     "categoria": "deportes",
     "dificultad": "medio",
-    "pregunta": "¿Cuántos metros de largo mide reglamentariamente una cancha de tenis para partidos individuales?",
+    "pregunta": "¿Cuántos centímetros de largo mide reglamentariamente una pista de tenis de extremo a extremo para partidos individuales?",
     "respuesta": 2377,
     "unidad": "centímetros",
     "nota": "Mide exactamente 78 pies (23,77 metros) de largo por 8,23 metros de ancho."
@@ -1354,7 +1354,7 @@
     "id": "dep_041",
     "categoria": "deportes",
     "dificultad": "medio",
-    "pregunta": "¿Cuántos títulos de Grand Slam en individuales masculinos ostenta Novak Djokovic (hasta 2024)?",
+    "pregunta": "¿Cuántos títulos de Grand Slam en individuales masculinos conquistó Novak Djokovic tras ganar el US Open 2023?",
     "respuesta": 24,
     "unidad": "títulos",
     "nota": "El tenista masculino con mayor cantidad de títulos 'majors' en la historia."
@@ -1381,7 +1381,7 @@
     "id": "dep_044",
     "categoria": "deportes",
     "dificultad": "medio",
-    "pregunta": "¿A cuántos metros de altura se coloca la red en el centro de una cancha de tenis?",
+    "pregunta": "¿Cuántos centímetros de altura tiene la red en el centro de una cancha de tenis reglamentaria?",
     "respuesta": 91,
     "unidad": "centímetros",
     "nota": "Mide 3 pies (91,4 cm) en el centro y 1,07 metros en los postes laterales."
@@ -1507,10 +1507,10 @@
     "id": "dep_058",
     "categoria": "deportes",
     "dificultad": "dificil",
-    "pregunta": "¿Cuántos triunfos oficiales en carreras de Fórmula 1 acumuló Lewis Hamilton al convertirse en el primero en superar el centenar?",
-    "respuesta": 103,
-    "unidad": "victorias",
-    "nota": "Alcanzó su triunfo 100 en el Gran Premio de Rusia 2021."
+    "pregunta": "¿En qué año Lewis Hamilton se convirtió en el primer piloto de la historia de la Fórmula 1 en alcanzar 100 victorias en Grandes Premios?",
+    "respuesta": 2021,
+    "unidad": "año",
+    "nota": "Alcanzó su histórico triunfo número 100 en el Gran Premio de Rusia en septiembre de 2021."
   },
   {
     "id": "dep_059",
@@ -1561,7 +1561,7 @@
     "id": "dep_064",
     "categoria": "deportes",
     "dificultad": "dificil",
-    "pregunta": "¿A cuántos metros del aro se encuentra la línea de triple en las canchas de básquetbol FIBA?",
+    "pregunta": "¿Cuántos centímetros de distancia separan el aro de la línea de triple en las canchas de básquetbol FIBA?",
     "respuesta": 675,
     "unidad": "centímetros",
     "nota": "Fijada a 6,75 metros (en la NBA la distancia en la cabecera es de 7,24 metros)."
@@ -1615,10 +1615,10 @@
     "id": "dep_070",
     "categoria": "deportes",
     "dificultad": "dificil",
-    "pregunta": "¿Cuántos metros de altura tiene la red de vóley masculino en competiciones oficiales?",
+    "pregunta": "¿Cuántos centímetros de altura tiene la red de vóley masculino en competiciones oficiales?",
     "respuesta": 243,
     "unidad": "centímetros",
-    "nota": "2,43 metros para varones y 2,24 metros para mujeres."
+    "nota": "Exactamente 2,43 metros para varones y 2,24 metros para mujeres."
   },
   {
     "id": "dep_071",
@@ -1723,7 +1723,7 @@
     "id": "dep_082",
     "categoria": "deportes",
     "dificultad": "extremo",
-    "pregunta": "¿Cuántos metros mide la altura oficial del travesaño de un arco de fútbol reglamentario según las Reglas del Juego de la IFAB?",
+    "pregunta": "¿Cuántos centímetros de altura mide el travesaño de un arco de fútbol reglamentario según las Reglas del Juego de la IFAB?",
     "respuesta": 244,
     "unidad": "centímetros",
     "nota": "Exactamente 8 pies de altura (2,44 metros) por 8 yardas de ancho (7,32 metros)."
@@ -2245,7 +2245,7 @@
     "id": "cine_040",
     "categoria": "cine_tv",
     "dificultad": "medio",
-    "pregunta": "¿Cuántas películas integran la saga cinematográfica de James Bond producida por Eon Productions (hasta No Time to Die)?",
+    "pregunta": "¿Cuántas películas oficiales de James Bond produjo Eon Productions desde 'Dr. No' (1962) hasta 'No Time to Die' (2021)?",
     "respuesta": 25,
     "unidad": "películas",
     "nota": "Desde Dr. No (1962) con Sean Connery hasta No Time to Die (2021) con Daniel Craig."
@@ -2263,10 +2263,10 @@
     "id": "cine_042",
     "categoria": "cine_tv",
     "dificultad": "medio",
-    "pregunta": "¿Cuántas temporadas al aire tuvo la serie de ciencia ficción retro 'Stranger Things' de los hermanos Duffer (hasta su temporada 4)?",
-    "respuesta": 4,
-    "unidad": "temporadas",
-    "nota": "Estrenada en 2016 y convertida en uno de los buques insignia del streaming global."
+    "pregunta": "¿En qué año se estrenó la primera temporada de la aclamada serie de ciencia ficción 'Stranger Things' en Netflix?",
+    "respuesta": 2016,
+    "unidad": "año",
+    "nota": "Creada por los hermanos Matt y Ross Duffer y ambientada en los años 80 en el pueblo de Hawkins."
   },
   {
     "id": "cine_043",
@@ -2380,10 +2380,10 @@
     "id": "cine_055",
     "categoria": "cine_tv",
     "dificultad": "dificil",
-    "pregunta": "¿Cuántos episodios independientes componen la serie antológica británica 'Black Mirror' hasta su sexta temporada?",
+    "pregunta": "¿Cuántos episodios componen las primeras seis temporadas de la serie antológica británica 'Black Mirror' de Charlie Brooker?",
     "respuesta": 27,
     "unidad": "episodios",
-    "nota": "Creada por Charlie Brooker para explorar el lado oscuro de la dependencia tecnológica (sin contar la película interactiva)."
+    "nota": "Emitidos entre 2011 y 2023 explorando los dilemas éticos y tecnológicos (sin contar la película interactiva Bandersnatch)."
   },
   {
     "id": "cine_056",
@@ -2434,7 +2434,7 @@
     "id": "cine_061",
     "categoria": "cine_tv",
     "dificultad": "dificil",
-    "pregunta": "¿Cuántas estatuillas del premio Óscar al Mejor Director ganó el cineasta John Ford, récord histórico vigente?",
+    "pregunta": "¿Cuántas estatuillas del premio Óscar al Mejor Director ganó el cineasta John Ford a lo largo de su carrera?",
     "respuesta": 4,
     "unidad": "premios Óscar",
     "nota": "Por El delator (1935), Las viñas de la ira (1940), ¡Qué verde era mi valle! (1941) y El hombre quieto (1952)."
@@ -2776,7 +2776,7 @@
     "id": "cine_099",
     "categoria": "cine_tv",
     "dificultad": "extremo",
-    "pregunta": "¿Cuántos metros de altura alcanzaba la réplica a escala real del barco Titanic construida en Rosarito (México) para el rodaje de James Cameron?",
+    "pregunta": "¿Cuántos metros de largo alcanzaba la réplica a escala real del barco Titanic construida en Rosarito (México) para el rodaje de James Cameron?",
     "respuesta": 236,
     "unidad": "metros",
     "nota": "Construyeron un 90% del tamaño del barco real montado en un tanque hidráulico de 64 millones de litros."
@@ -3154,10 +3154,10 @@
     "id": "mus_041",
     "categoria": "musica",
     "dificultad": "medio",
-    "pregunta": "¿Cuántos minutos y segundos dura la versión original de 'Bohemian Rhapsody' (5 minutos y 55 segundos = 355 segundos)?",
+    "pregunta": "¿Cuántos segundos dura la grabación original del clásico 'Bohemian Rhapsody' de Queen en el álbum 'A Night at the Opera'?",
     "respuesta": 355,
     "unidad": "segundos",
-    "nota": "Casi 6 minutos de duración desafiando las imposiciones radiales de la época."
+    "nota": "Dura exactamente 5 minutos y 55 segundos (355 segundos), desafiando las imposiciones radiales de la época."
   },
   {
     "id": "mus_042",
@@ -3289,7 +3289,7 @@
     "id": "mus_056",
     "categoria": "musica",
     "dificultad": "dificil",
-    "pregunta": "¿Cuántos instrumentos de cuerda (violines, violas y violonchelos) construidos por Antonio Stradivari sobreviven aproximadamente hoy?",
+    "pregunta": "¿Cuántos instrumentos de cuerda (violines, violas y violonchelos) construidos por Antonio Stradivari se calcula que han sobrevivido hasta hoy?",
     "respuesta": 650,
     "unidad": "instrumentos",
     "nota": "Construyó más de 1.100 instrumentos en Cremona, de los cuales sobreviven unos 650 ejemplares de valor incalculable."
@@ -3607,7 +3607,7 @@
     "pregunta": "¿En qué año el físico e inventor ruso Lev Theremin inventó el 'theremín', el primer instrumento musical electrónico que se toca sin contacto físico?",
     "respuesta": 1920,
     "unidad": "año",
-    "nota": "Patentado en Estados Unidos en 1928, opera controlando la frecuencia y volumen con el movimiento de las manos cerca de dos antenas."
+    "nota": "Desarrollado en 1920 en la Unión Soviética y patentado en EE.UU. en 1928, opera controlando frecuencia y volumen por inducción."
   },
   {
     "id": "mus_092",
@@ -3667,7 +3667,7 @@
     "id": "mus_098",
     "categoria": "musica",
     "dificultad": "extremo",
-    "pregunta": "¿Cuántos millones de dólares recaudó la gira 'The Eras Tour' de Taylor Swift, convirtiéndose en la primera gira en superar los mil millones de dólares?",
+    "pregunta": "¿Cuántos millones de dólares recaudó la gira 'The Eras Tour' de Taylor Swift en 2023 según el informe de Pollstar, superando por primera vez los mil millones?",
     "respuesta": 1039,
     "unidad": "millones de dólares",
     "nota": "Estimada por Pollstar en más de 1.039 millones de dólares en sus primeros 60 conciertos de 2023."
@@ -3775,10 +3775,10 @@
     "id": "geo_010",
     "categoria": "geografia",
     "dificultad": "facil",
-    "pregunta": "¿Cuántos países integran actualmente la Unión Europea (tras la salida del Reino Unido por el Brexit)?",
+    "pregunta": "¿Cuántos países integran la Unión Europea tras la salida del Reino Unido por el Brexit en 2020?",
     "respuesta": 27,
     "unidad": "países",
-    "nota": "Reino Unido formalizó su salida el 31 de enero de 2020 reduciendo los miembros a 27."
+    "nota": "El Reino Unido formalizó su salida el 31 de enero de 2020 reduciendo los miembros a 27."
   },
   {
     "id": "geo_011",
@@ -4018,10 +4018,10 @@
     "id": "geo_037",
     "categoria": "geografia",
     "dificultad": "medio",
-    "pregunta": "¿Cuántos kilómetros cuadrados mide la Ciudad del Vaticano, el estado soberano más pequeño del mundo?",
-    "respuesta": 0,
-    "unidad": "km² enteros",
-    "nota": "Tiene apenas 0,49 km² (unas 44 hectáreas), por lo que en kilómetros cuadrados enteros su respuesta es 0."
+    "pregunta": "¿Cuántas hectáreas de superficie abarca aproximadamente la Ciudad del Vaticano, el estado soberano más pequeño del mundo?",
+    "respuesta": 44,
+    "unidad": "hectáreas",
+    "nota": "Abarca exactamente 44 hectáreas (0,44 km²) dentro del tejido urbano de Roma."
   },
   {
     "id": "geo_038",
@@ -4432,10 +4432,10 @@
     "id": "geo_083",
     "categoria": "geografia",
     "dificultad": "extremo",
-    "pregunta": "¿Cuántos kilómetros cuadrados de superficie tiene el mar de Aral en la actualidad comparado con los 68.000 km² que tenía en 1960?",
-    "respuesta": 6800,
+    "pregunta": "¿Cuántos kilómetros cuadrados de superficie tenía aproximadamente el Mar de Aral en 1960 antes de su devastador desecamiento?",
+    "respuesta": 68000,
     "unidad": "km²",
-    "nota": "Ha perdido más del 90% de su superficie original debido al desvío soviético de los ríos Amu Daria y Sir Daria."
+    "nota": "Era el cuarto lago más grande del planeta con 68.000 km² antes de que los ríos que lo alimentaban fueran desviados."
   },
   {
     "id": "geo_084",
@@ -5539,7 +5539,7 @@
     "id": "cie_006",
     "categoria": "ciencia",
     "dificultad": "facil",
-    "pregunta": "¿Cuántos elementos químicos componen la tabla periódica oficial de la IUPAC en la actualidad?",
+    "pregunta": "¿Cuántos elementos químicos componen la tabla periódica oficial de la IUPAC tras completarse el séptimo período?",
     "respuesta": 118,
     "unidad": "elementos",
     "nota": "Desde el Hidrógeno (número atómico 1) hasta el Oganesón (número atómico 118)."
@@ -6016,10 +6016,10 @@
     "id": "cie_059",
     "categoria": "ciencia",
     "dificultad": "dificil",
-    "pregunta": "¿Cuántas lunas o satélites naturales confirmados oficialmente tiene el planeta Júpiter (hasta 2024)?",
-    "respuesta": 95,
-    "unidad": "lunas",
-    "nota": "Encabezadas por las cuatro lunas galileanas mayores: Ío, Europa, Ganímedes y Calisto."
+    "pregunta": "¿En qué año la sonda espacial New Horizons de la NASA sobrevoló por primera vez en la historia el planeta enano Plutón?",
+    "respuesta": 2015,
+    "unidad": "año",
+    "nota": "El 14 de julio de 2015 tras nueve años de viaje interplanetario enviando fotografías inéditas en alta resolución."
   },
   {
     "id": "cie_060",
@@ -6322,10 +6322,10 @@
     "id": "cie_093",
     "categoria": "ciencia",
     "dificultad": "extremo",
-    "pregunta": "¿A cuántos metros por segundo al cuadrado se redondea comúnmente la aceleración de la gravedad estándar en la superficie terrestre (9,8 m/s²)?",
-    "respuesta": 10,
-    "unidad": "m/s² enteros",
-    "nota": "El valor internacional convencional exacto es de 9,80665 m/s²."
+    "pregunta": "¿A cuántos grados bajo cero en la escala Celsius se sitúa el Cero Absoluto (-273,15 °C) redondeado al entero más cercano?",
+    "respuesta": 273,
+    "unidad": "grados bajo cero (-°C)",
+    "nota": "Equivale a 0 Kelvin (-273,15 °C), el límite termodinámico donde cesa toda agitación térmica de las partículas."
   },
   {
     "id": "cie_094",
@@ -6781,10 +6781,10 @@
     "id": "pop_044",
     "categoria": "cultura_pop",
     "dificultad": "medio",
-    "pregunta": "¿Cuántos millones de copias vendió el juego 'Mario Kart 8 Deluxe' en Nintendo Switch (superando los 60 millones)?",
-    "respuesta": 60,
-    "unidad": "millones de copias",
-    "nota": "Es por amplio margen el videojuego más vendido en la historia de la consola Nintendo Switch."
+    "pregunta": "¿En qué año se lanzó originalmente al mercado la consola híbrida Nintendo Switch?",
+    "respuesta": 2017,
+    "unidad": "año",
+    "nota": "Lanzada a nivel mundial el 3 de marzo de 2017 junto con 'The Legend of Zelda: Breath of the Wild'."
   },
   {
     "id": "pop_045",
@@ -6988,10 +6988,10 @@
     "id": "pop_067",
     "categoria": "cultura_pop",
     "dificultad": "dificil",
-    "pregunta": "¿Cuántos millones de transistores integraba el histórico microprocesador Intel 4004 de 1971 (en miles = 2)?",
-    "respuesta": 2,
-    "unidad": "mil transistores",
-    "nota": "Contaba con exactamente 2.300 transistores impresos en un único chip de silicio."
+    "pregunta": "¿Cuántos transistores integraba el histórico microprocesador Intel 4004 de 1971, el primero comercial del mundo en un solo chip?",
+    "respuesta": 2300,
+    "unidad": "transistores",
+    "nota": "Contaba con exactamente 2.300 transistores impresos en un único chip de silicio con tecnología PMOS."
   },
   {
     "id": "pop_068",
@@ -8077,10 +8077,10 @@
     "id": "cot_088",
     "categoria": "cotidiano",
     "dificultad": "extremo",
-    "pregunta": "¿Cuántos gramos de cafeína pura puede contener una taza de 240 ml de café filtrado por goteo fuerte?",
-    "respuesta": 0,
-    "unidad": "gramos enteros",
-    "nota": "Tiene unos 95 a 150 miligramos (0,1 gramos), por lo que en gramos enteros la respuesta es 0."
+    "pregunta": "¿Cuántos miligramos de cafeína contiene aproximadamente una taza estándar de 240 ml de café filtrado?",
+    "respuesta": 100,
+    "unidad": "miligramos",
+    "nota": "Oscila entre los 80 y 130 mg según el tipo de tueste y grano, con una media habitual de 100 mg."
   },
   {
     "id": "cot_089",
@@ -8230,10 +8230,10 @@
     "id": "biz_005",
     "categoria": "bizarro",
     "dificultad": "facil",
-    "pregunta": "¿Cuántos corazones tiene en su cuerpo un pulpo común?",
-    "respuesta": 3,
-    "unidad": "corazones",
-    "nota": "Tienen dos corazones branquiales que bombean sangre a las branquias y un corazón sistémico central que la bombea al resto del cuerpo."
+    "pregunta": "¿Cuántas veces fue alcanzado por rayos y sobrevivió el guardaparques estadounidense Roy Sullivan, récord Guinness absoluto?",
+    "respuesta": 7,
+    "unidad": "veces",
+    "nota": "Roy Sullivan fue impactado por rayos en siete ocasiones distintas entre 1942 y 1977 en Virginia, sobreviviendo a todas."
   },
   {
     "id": "biz_006",
@@ -8617,10 +8617,10 @@
     "id": "biz_048",
     "categoria": "bizarro",
     "dificultad": "medio",
-    "pregunta": "¿Cuántos años cumplió en 2024 la construcción ininterrumpida de la basílica de la Sagrada Familia en Barcelona (iniciada en 1882)?",
-    "respuesta": 142,
-    "unidad": "años",
-    "nota": "Diseñada por Antoni Gaudí, su finalización oficial está prevista hacia el centenario de su muerte en 2026."
+    "pregunta": "¿En qué año se colocó la primera piedra de la Basílica de la Sagrada Familia de Barcelona, aún en construcción?",
+    "respuesta": 1882,
+    "unidad": "año",
+    "nota": "Iniciada el 19 de marzo de 1882; Antoni Gaudí asumió la dirección del proyecto al año siguiente."
   },
   {
     "id": "biz_049",

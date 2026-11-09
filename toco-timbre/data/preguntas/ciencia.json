@@ -48,7 +48,7 @@
     "id": "cie_006",
     "categoria": "ciencia",
     "dificultad": "facil",
-    "pregunta": "¿Cuántos elementos químicos componen la tabla periódica oficial de la IUPAC en la actualidad?",
+    "pregunta": "¿Cuántos elementos químicos componen la tabla periódica oficial de la IUPAC tras completarse el séptimo período?",
     "respuesta": 118,
     "unidad": "elementos",
     "nota": "Desde el Hidrógeno (número atómico 1) hasta el Oganesón (número atómico 118)."
@@ -525,10 +525,10 @@
     "id": "cie_059",
     "categoria": "ciencia",
     "dificultad": "dificil",
-    "pregunta": "¿Cuántas lunas o satélites naturales confirmados oficialmente tiene el planeta Júpiter (hasta 2024)?",
-    "respuesta": 95,
-    "unidad": "lunas",
-    "nota": "Encabezadas por las cuatro lunas galileanas mayores: Ío, Europa, Ganímedes y Calisto."
+    "pregunta": "¿En qué año la sonda espacial New Horizons de la NASA sobrevoló por primera vez en la historia el planeta enano Plutón?",
+    "respuesta": 2015,
+    "unidad": "año",
+    "nota": "El 14 de julio de 2015 tras nueve años de viaje interplanetario enviando fotografías inéditas en alta resolución."
   },
   {
     "id": "cie_060",
@@ -831,10 +831,10 @@
     "id": "cie_093",
     "categoria": "ciencia",
     "dificultad": "extremo",
-    "pregunta": "¿A cuántos metros por segundo al cuadrado se redondea comúnmente la aceleración de la gravedad estándar en la superficie terrestre (9,8 m/s²)?",
-    "respuesta": 10,
-    "unidad": "m/s² enteros",
-    "nota": "El valor internacional convencional exacto es de 9,80665 m/s²."
+    "pregunta": "¿A cuántos grados bajo cero en la escala Celsius se sitúa el Cero Absoluto (-273,15 °C) redondeado al entero más cercano?",
+    "respuesta": 273,
+    "unidad": "grados bajo cero (-°C)",
+    "nota": "Equivale a 0 Kelvin (-273,15 °C), el límite termodinámico donde cesa toda agitación térmica de las partículas."
   },
   {
     "id": "cie_094",

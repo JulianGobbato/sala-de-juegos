@@ -39,10 +39,10 @@
     "id": "biz_005",
     "categoria": "bizarro",
     "dificultad": "facil",
-    "pregunta": "¿Cuántos corazones tiene en su cuerpo un pulpo común?",
-    "respuesta": 3,
-    "unidad": "corazones",
-    "nota": "Tienen dos corazones branquiales que bombean sangre a las branquias y un corazón sistémico central que la bombea al resto del cuerpo."
+    "pregunta": "¿Cuántas veces fue alcanzado por rayos y sobrevivió el guardaparques estadounidense Roy Sullivan, récord Guinness absoluto?",
+    "respuesta": 7,
+    "unidad": "veces",
+    "nota": "Roy Sullivan fue impactado por rayos en siete ocasiones distintas entre 1942 y 1977 en Virginia, sobreviviendo a todas."
   },
   {
     "id": "biz_006",
@@ -426,10 +426,10 @@
     "id": "biz_048",
     "categoria": "bizarro",
     "dificultad": "medio",
-    "pregunta": "¿Cuántos años cumplió en 2024 la construcción ininterrumpida de la basílica de la Sagrada Familia en Barcelona (iniciada en 1882)?",
-    "respuesta": 142,
-    "unidad": "años",
-    "nota": "Diseñada por Antoni Gaudí, su finalización oficial está prevista hacia el centenario de su muerte en 2026."
+    "pregunta": "¿En qué año se colocó la primera piedra de la Basílica de la Sagrada Familia de Barcelona, aún en construcción?",
+    "respuesta": 1882,
+    "unidad": "año",
+    "nota": "Iniciada el 19 de marzo de 1882; Antoni Gaudí asumió la dirección del proyecto al año siguiente."
   },
   {
     "id": "biz_049",

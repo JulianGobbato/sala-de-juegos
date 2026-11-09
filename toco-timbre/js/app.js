@@ -502,12 +502,66 @@
     }
   }
 
-  // Devuelve TODAS las preguntas que coinciden con las categorías y dificultades seleccionadas
+  // =========================================================================
+  // GESTIÓN DE PREGUNTAS REPORTADAS / DESCARTADAS
+  // =========================================================================
+  const REPORTED_STORAGE_KEY = 'toco_timbre_reportadas';
+
+  function escapeHtml(str) {
+    if (!str) return '';
+    return String(str)
+      .replace(/&/g, '&amp;')
+      .replace(/</g, '&lt;')
+      .replace(/>/g, '&gt;')
+      .replace(/"/g, '&quot;')
+      .replace(/'/g, '&#039;');
+  }
+
+  function getReportedQuestions() {
+    try {
+      const raw = localStorage.getItem(REPORTED_STORAGE_KEY);
+      return raw ? JSON.parse(raw) : [];
+    } catch (e) {
+      console.warn('Error al leer preguntas reportadas:', e);
+      return [];
+    }
+  }
+
+  function getReportedQuestionIds() {
+    return new Set(getReportedQuestions().map(q => q.id));
+  }
+
+  function saveReportedQuestion(question) {
+    if (!question || !question.id) return;
+    const list = getReportedQuestions();
+    if (!list.some(q => q.id === question.id)) {
+      list.push({
+        id: question.id,
+        categoria: question.categoria,
+        dificultad: question.dificultad || question.nivel,
+        pregunta: question.pregunta,
+        respuesta: question.respuesta,
+        unidad: question.unidad,
+        nota: question.nota,
+        fecha: new Date().toISOString()
+      });
+      try {
+        localStorage.setItem(REPORTED_STORAGE_KEY, JSON.stringify(list));
+      } catch (e) {
+        console.warn('Error al guardar pregunta reportada:', e);
+      }
+    }
+    updateReportedUIIndicators();
+  }
+
+  // Devuelve TODAS las preguntas que coinciden con las categorías y dificultades seleccionadas (excluyendo reportadas)
   function getFilteredMatchingQuestions() {
     const normCats = activeFilters.categorias.map(normalizarClave);
     const normDiffs = activeFilters.dificultades.map(normalizarClave);
+    const reportedIds = getReportedQuestionIds();
 
     return allQuestions.filter(p => {
+      if (reportedIds.has(p.id)) return false;
       const pCat = normalizarClave(p.categoria);
       const pDiff = normalizarClave(p.dificultad || p.nivel);
       return normCats.includes(pCat) && normDiffs.includes(pDiff);
@@ -525,6 +579,7 @@
     const normDiffs = activeFilters.dificultades.map(normalizarClave);
     const totalMatching = getFilteredMatchingQuestions().length;
     const perComb = activeFilters.cardsPerCombination || 0;
+    const reportedIds = getReportedQuestionIds();
 
     if (totalMatching === 0) {
       return { totalMatching: 0, playableCount: 0 };
@@ -540,6 +595,7 @@
     for (const cat of normCats) {
       for (const diff of normDiffs) {
         const countInComb = allQuestions.filter(p => {
+          if (reportedIds.has(p.id)) return false;
           return normalizarClave(p.categoria) === cat && normalizarClave(p.dificultad || p.nivel) === diff;
         }).length;
         playableCount += Math.min(countInComb, perComb);
@@ -554,6 +610,7 @@
     const normCats = activeFilters.categorias.map(normalizarClave);
     const normDiffs = activeFilters.dificultades.map(normalizarClave);
     const perComb = activeFilters.cardsPerCombination || 0;
+    const reportedIds = getReportedQuestionIds();
 
     // Si es 0 ("Todas las disponibles"), devuelve todas las coincidentes
     if (perComb <= 0) {
@@ -564,6 +621,7 @@
     for (const cat of normCats) {
       for (const diff of normDiffs) {
         const matchingInComb = allQuestions.filter(p => {
+          if (reportedIds.has(p.id)) return false;
           return normalizarClave(p.categoria) === cat && normalizarClave(p.dificultad || p.nivel) === diff;
         });
 
@@ -921,6 +979,179 @@
         btnStartEl.style.cursor = 'pointer';
       }
     }
+
+    updateReportedUIIndicators();
+  }
+
+  function updateReportedUIIndicators() {
+    const list = getReportedQuestions();
+    const count = list.length;
+
+    const tCont = document.getElementById('tarjeteroReportedContainer');
+    const tCount = document.getElementById('tarjeteroReportedCount');
+    if (tCont && tCount) {
+      tCount.textContent = count;
+      tCont.style.display = count > 0 ? 'block' : 'none';
+    }
+
+    const dCont = document.getElementById('digitalReportedContainer');
+    const dCount = document.getElementById('digitalReportedCount');
+    if (dCont && dCount) {
+      dCount.textContent = count;
+      dCont.style.display = count > 0 ? 'block' : 'none';
+    }
+  }
+
+  function openReportedModal() {
+    const list = getReportedQuestions();
+    const modal = document.getElementById('modalReportedQuestions');
+    const totalEl = document.getElementById('modalReportedTotal');
+    const listContainer = document.getElementById('reportedListContainer');
+    if (!modal || !totalEl || !listContainer) return;
+
+    totalEl.textContent = list.length;
+    listContainer.innerHTML = '';
+
+    if (list.length === 0) {
+      listContainer.innerHTML = `
+        <div class="text-center py-4" style="color: #94a3b8;">
+          No hay preguntas reportadas actualmente.
+        </div>
+      `;
+    } else {
+      list.forEach((item, idx) => {
+        const div = document.createElement('div');
+        div.className = 'reported-item';
+        div.innerHTML = `
+          <div class="d-flex justify-content-between align-items-center mb-1">
+            <span class="badge bg-secondary" style="font-size: 0.75rem;">#${idx + 1} (${item.id})</span>
+            <span class="badge bg-dark border border-secondary" style="font-size: 0.72rem;">${escapeHtml(item.categoria)} / ${escapeHtml(item.dificultad)}</span>
+          </div>
+          <div style="font-weight: 700; color: #fff; margin-bottom: 4px;">${escapeHtml(item.pregunta)}</div>
+          <div style="font-size: 0.85rem; color: var(--bondi-yellow);">
+            R: <strong>${item.respuesta}</strong> (${escapeHtml(item.unidad)})
+          </div>
+          ${item.nota ? `<div style="font-size: 0.78rem; color: #94a3b8; margin-top: 3px;">${escapeHtml(item.nota)}</div>` : ''}
+        `;
+        listContainer.appendChild(div);
+      });
+    }
+
+    modal.classList.remove('d-none');
+  }
+
+  function closeReportedModal() {
+    const modal = document.getElementById('modalReportedQuestions');
+    if (modal) modal.classList.add('d-none');
+  }
+
+  function clearReportedQuestions() {
+    const list = getReportedQuestions();
+    if (list.length === 0) return;
+    if (!confirm('¿Deseás borrar todas las preguntas reportadas? Volverán a estar habilitadas en futuros juegos.')) {
+      return;
+    }
+    try {
+      localStorage.removeItem(REPORTED_STORAGE_KEY);
+    } catch (e) {
+      console.warn(e);
+    }
+    updateReportedUIIndicators();
+    updateDeckCounterUI('tarjeteroDeckStatusText', 'tarjeteroDeckCounterNumber', 'btnStartTarjetero', 'tarjetero');
+    updateDeckCounterUI('digitalDeckStatusText', 'digitalDeckCounterNumber', 'btnStartGame', 'digital');
+    openReportedModal();
+  }
+
+  function exportReportedQuestions() {
+    const list = getReportedQuestions();
+    if (list.length === 0) {
+      alert('No hay preguntas reportadas para exportar.');
+      return;
+    }
+    const jsonStr = JSON.stringify(list, null, 2);
+    if (navigator.clipboard && navigator.clipboard.writeText) {
+      navigator.clipboard.writeText(jsonStr).then(() => {
+        alert(`📋 Se copiaron ${list.length} preguntas reportadas en formato JSON al portapapeles.`);
+      }).catch(() => {
+        prompt('Copiá el JSON de preguntas reportadas:', jsonStr);
+      });
+    } else {
+      prompt('Copiá el JSON de preguntas reportadas:', jsonStr);
+    }
+  }
+
+  function handleReportTarjetero() {
+    const q = state.tarjetero.currentQuestion;
+    if (!q) return;
+
+    if (!confirm(`¿Reportar esta pregunta como dato dudoso?\n\n"${q.pregunta}"\n\nSe guardará en preguntas reportadas, se descartará de futuros mazos y se cambiará por otra inmediatamente.`)) {
+      return;
+    }
+
+    saveReportedQuestion(q);
+
+    // Si hay mazo de sesión, remover la pregunta reportada
+    if (Array.isArray(state.tarjetero.sessionDeck)) {
+      state.tarjetero.sessionDeck = state.tarjetero.sessionDeck.filter(item => item.id !== q.id);
+    }
+
+    const nextQ = getRandomUnusedFilteredQuestion(state.tarjetero.usedIds, state.tarjetero.sessionDeck);
+    if (nextQ) {
+      state.tarjetero.currentQuestion = nextQ;
+      state.tarjetero.usedIds.push(nextQ.id);
+      state.tarjetero.isRevealed = false;
+      renderTarjeteroCard();
+      saveState();
+      showToast('Pregunta descartada y reportada', '🚩');
+    } else {
+      alert('🚩 Pregunta reportada. No quedan más preguntas disponibles en este mazo.');
+    }
+  }
+
+  function handleReportDigital() {
+    const d = state.digital;
+    const q = d.currentQuestion;
+    if (!q) return;
+
+    if (!confirm(`¿Reportar esta pregunta como dato dudoso?\n\n"${q.pregunta}"\n\nSe anularán los puntos de esta ronda, se descartará de futuros juegos y el Chofer recibirá una nueva pregunta de reemplazo.`)) {
+      return;
+    }
+
+    saveReportedQuestion(q);
+
+    // Revertir puntos de la ronda si ya fueron calculados
+    if (d.roundResult && d.roundResult.scoreChanges) {
+      d.config.players.forEach((_, idx) => {
+        d.scores[idx] = (d.scores[idx] || 0) - (d.roundResult.scoreChanges[idx] || 0);
+      });
+    }
+
+    // Si hay mazo de sesión, remover la pregunta reportada
+    if (Array.isArray(d.sessionDeck)) {
+      d.sessionDeck = d.sessionDeck.filter(item => item.id !== q.id);
+    }
+
+    const nextQ = getRandomUnusedFilteredQuestion(d.usedQuestionIds, d.sessionDeck);
+    if (!nextQ) {
+      alert('🚩 Pregunta reportada, pero no quedan más preguntas disponibles en este mazo.');
+      return;
+    }
+
+    d.currentQuestion = nextQ;
+    d.usedQuestionIds.push(nextQ.id);
+    d.roundResult = null;
+
+    // Reiniciar estado de la ronda para la nueva pregunta
+    d.currentStep = 0;
+    d.choferAnswers = {};
+    d.playerChoices = {};
+    d.firstRungIndex = null;
+    d.isRoundOver = false;
+
+    showView('viewDigitalGame');
+    renderDigitalGameScreen();
+    saveState();
+    showToast('Ronda anulada y nueva pregunta cargada', '🚩');
   }
 
   // =========================================================================
@@ -2099,6 +2330,20 @@
       state.mode = 'menu';
       showView('viewMenu');
       checkSavedGameBanner();
+    });
+
+    // Preguntas Reportadas / Descartar Dato Dudoso
+    document.getElementById('btnReportTarjetero')?.addEventListener('click', handleReportTarjetero);
+    document.getElementById('btnReportDigital')?.addEventListener('click', handleReportDigital);
+    document.getElementById('btnOpenReportedTarjetero')?.addEventListener('click', openReportedModal);
+    document.getElementById('btnOpenReportedDigital')?.addEventListener('click', openReportedModal);
+    document.getElementById('btnCloseModalReported')?.addEventListener('click', closeReportedModal);
+    document.getElementById('btnClearReported')?.addEventListener('click', clearReportedQuestions);
+    document.getElementById('btnExportReported')?.addEventListener('click', exportReportedQuestions);
+    document.getElementById('modalReportedQuestions')?.addEventListener('click', (e) => {
+      if (e.target.id === 'modalReportedQuestions') {
+        closeReportedModal();
+      }
     });
   }
 

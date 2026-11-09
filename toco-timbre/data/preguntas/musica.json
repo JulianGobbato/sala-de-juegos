@@ -363,10 +363,10 @@
     "id": "mus_041",
     "categoria": "musica",
     "dificultad": "medio",
-    "pregunta": "¿Cuántos minutos y segundos dura la versión original de 'Bohemian Rhapsody' (5 minutos y 55 segundos = 355 segundos)?",
+    "pregunta": "¿Cuántos segundos dura la grabación original del clásico 'Bohemian Rhapsody' de Queen en el álbum 'A Night at the Opera'?",
     "respuesta": 355,
     "unidad": "segundos",
-    "nota": "Casi 6 minutos de duración desafiando las imposiciones radiales de la época."
+    "nota": "Dura exactamente 5 minutos y 55 segundos (355 segundos), desafiando las imposiciones radiales de la época."
   },
   {
     "id": "mus_042",
@@ -498,7 +498,7 @@
     "id": "mus_056",
     "categoria": "musica",
     "dificultad": "dificil",
-    "pregunta": "¿Cuántos instrumentos de cuerda (violines, violas y violonchelos) construidos por Antonio Stradivari sobreviven aproximadamente hoy?",
+    "pregunta": "¿Cuántos instrumentos de cuerda (violines, violas y violonchelos) construidos por Antonio Stradivari se calcula que han sobrevivido hasta hoy?",
     "respuesta": 650,
     "unidad": "instrumentos",
     "nota": "Construyó más de 1.100 instrumentos en Cremona, de los cuales sobreviven unos 650 ejemplares de valor incalculable."
@@ -816,7 +816,7 @@
     "pregunta": "¿En qué año el físico e inventor ruso Lev Theremin inventó el 'theremín', el primer instrumento musical electrónico que se toca sin contacto físico?",
     "respuesta": 1920,
     "unidad": "año",
-    "nota": "Patentado en Estados Unidos en 1928, opera controlando la frecuencia y volumen con el movimiento de las manos cerca de dos antenas."
+    "nota": "Desarrollado en 1920 en la Unión Soviética y patentado en EE.UU. en 1928, opera controlando frecuencia y volumen por inducción."
   },
   {
     "id": "mus_092",
@@ -876,7 +876,7 @@
     "id": "mus_098",
     "categoria": "musica",
     "dificultad": "extremo",
-    "pregunta": "¿Cuántos millones de dólares recaudó la gira 'The Eras Tour' de Taylor Swift, convirtiéndose en la primera gira en superar los mil millones de dólares?",
+    "pregunta": "¿Cuántos millones de dólares recaudó la gira 'The Eras Tour' de Taylor Swift en 2023 según el informe de Pollstar, superando por primera vez los mil millones?",
     "respuesta": 1039,
     "unidad": "millones de dólares",
     "nota": "Estimada por Pollstar en más de 1.039 millones de dólares en sus primeros 60 conciertos de 2023."

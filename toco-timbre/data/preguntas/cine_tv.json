@@ -354,7 +354,7 @@
     "id": "cine_040",
     "categoria": "cine_tv",
     "dificultad": "medio",
-    "pregunta": "¿Cuántas películas integran la saga cinematográfica de James Bond producida por Eon Productions (hasta No Time to Die)?",
+    "pregunta": "¿Cuántas películas oficiales de James Bond produjo Eon Productions desde 'Dr. No' (1962) hasta 'No Time to Die' (2021)?",
     "respuesta": 25,
     "unidad": "películas",
     "nota": "Desde Dr. No (1962) con Sean Connery hasta No Time to Die (2021) con Daniel Craig."
@@ -372,10 +372,10 @@
     "id": "cine_042",
     "categoria": "cine_tv",
     "dificultad": "medio",
-    "pregunta": "¿Cuántas temporadas al aire tuvo la serie de ciencia ficción retro 'Stranger Things' de los hermanos Duffer (hasta su temporada 4)?",
-    "respuesta": 4,
-    "unidad": "temporadas",
-    "nota": "Estrenada en 2016 y convertida en uno de los buques insignia del streaming global."
+    "pregunta": "¿En qué año se estrenó la primera temporada de la aclamada serie de ciencia ficción 'Stranger Things' en Netflix?",
+    "respuesta": 2016,
+    "unidad": "año",
+    "nota": "Creada por los hermanos Matt y Ross Duffer y ambientada en los años 80 en el pueblo de Hawkins."
   },
   {
     "id": "cine_043",
@@ -489,10 +489,10 @@
     "id": "cine_055",
     "categoria": "cine_tv",
     "dificultad": "dificil",
-    "pregunta": "¿Cuántos episodios independientes componen la serie antológica británica 'Black Mirror' hasta su sexta temporada?",
+    "pregunta": "¿Cuántos episodios componen las primeras seis temporadas de la serie antológica británica 'Black Mirror' de Charlie Brooker?",
     "respuesta": 27,
     "unidad": "episodios",
-    "nota": "Creada por Charlie Brooker para explorar el lado oscuro de la dependencia tecnológica (sin contar la película interactiva)."
+    "nota": "Emitidos entre 2011 y 2023 explorando los dilemas éticos y tecnológicos (sin contar la película interactiva Bandersnatch)."
   },
   {
     "id": "cine_056",
@@ -543,7 +543,7 @@
     "id": "cine_061",
     "categoria": "cine_tv",
     "dificultad": "dificil",
-    "pregunta": "¿Cuántas estatuillas del premio Óscar al Mejor Director ganó el cineasta John Ford, récord histórico vigente?",
+    "pregunta": "¿Cuántas estatuillas del premio Óscar al Mejor Director ganó el cineasta John Ford a lo largo de su carrera?",
     "respuesta": 4,
     "unidad": "premios Óscar",
     "nota": "Por El delator (1935), Las viñas de la ira (1940), ¡Qué verde era mi valle! (1941) y El hombre quieto (1952)."
@@ -885,7 +885,7 @@
     "id": "cine_099",
     "categoria": "cine_tv",
     "dificultad": "extremo",
-    "pregunta": "¿Cuántos metros de altura alcanzaba la réplica a escala real del barco Titanic construida en Rosarito (México) para el rodaje de James Cameron?",
+    "pregunta": "¿Cuántos metros de largo alcanzaba la réplica a escala real del barco Titanic construida en Rosarito (México) para el rodaje de James Cameron?",
     "respuesta": 236,
     "unidad": "metros",
     "nota": "Construyeron un 90% del tamaño del barco real montado en un tanque hidráulico de 64 millones de litros."

@@ -390,10 +390,10 @@
     "id": "pop_044",
     "categoria": "cultura_pop",
     "dificultad": "medio",
-    "pregunta": "¿Cuántos millones de copias vendió el juego 'Mario Kart 8 Deluxe' en Nintendo Switch (superando los 60 millones)?",
-    "respuesta": 60,
-    "unidad": "millones de copias",
-    "nota": "Es por amplio margen el videojuego más vendido en la historia de la consola Nintendo Switch."
+    "pregunta": "¿En qué año se lanzó originalmente al mercado la consola híbrida Nintendo Switch?",
+    "respuesta": 2017,
+    "unidad": "año",
+    "nota": "Lanzada a nivel mundial el 3 de marzo de 2017 junto con 'The Legend of Zelda: Breath of the Wild'."
   },
   {
     "id": "pop_045",
@@ -597,10 +597,10 @@
     "id": "pop_067",
     "categoria": "cultura_pop",
     "dificultad": "dificil",
-    "pregunta": "¿Cuántos millones de transistores integraba el histórico microprocesador Intel 4004 de 1971 (en miles = 2)?",
-    "respuesta": 2,
-    "unidad": "mil transistores",
-    "nota": "Contaba con exactamente 2.300 transistores impresos en un único chip de silicio."
+    "pregunta": "¿Cuántos transistores integraba el histórico microprocesador Intel 4004 de 1971, el primero comercial del mundo en un solo chip?",
+    "respuesta": 2300,
+    "unidad": "transistores",
+    "nota": "Contaba con exactamente 2.300 transistores impresos en un único chip de silicio con tecnología PMOS."
   },
   {
     "id": "pop_068",
