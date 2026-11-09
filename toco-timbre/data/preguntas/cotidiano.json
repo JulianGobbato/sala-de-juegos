@@ -1,0 +1,902 @@
+[
+  {
+    "id": "cot_001",
+    "categoria": "cotidiano",
+    "dificultad": "facil",
+    "pregunta": "¿Cuántos huevos componen una docena tradicional en cualquier verdulería o supermercado?",
+    "respuesta": 12,
+    "unidad": "huevos",
+    "nota": "La docena es la unidad clásica de comercialización de huevos desde la antigüedad."
+  },
+  {
+    "id": "cot_002",
+    "categoria": "cotidiano",
+    "dificultad": "facil",
+    "pregunta": "¿Cuántas horas tiene exactamente un día solar completo en la Tierra?",
+    "respuesta": 24,
+    "unidad": "horas",
+    "nota": "1.440 minutos u 86.400 segundos divididos en dos períodos de 12 horas."
+  },
+  {
+    "id": "cot_003",
+    "categoria": "cotidiano",
+    "dificultad": "facil",
+    "pregunta": "¿Cuántos días tiene un año bisiesto como 2024?",
+    "respuesta": 366,
+    "unidad": "días",
+    "nota": "Se agrega el 29 de febrero cada cuatro años para compensar el desfase del calendario solar."
+  },
+  {
+    "id": "cot_004",
+    "categoria": "cotidiano",
+    "dificultad": "facil",
+    "pregunta": "¿Cuántos minutos de hervor en agua se recomiendan habitualmente para lograr un huevo duro con yema firme?",
+    "respuesta": 10,
+    "unidad": "minutos",
+    "nota": "Entre 9 y 11 minutos; menos tiempo deja la yema blanda (mollet) y más tiempo oscurece el contorno."
+  },
+  {
+    "id": "cot_005",
+    "categoria": "cotidiano",
+    "dificultad": "facil",
+    "pregunta": "¿Cuántos mililitros contiene habitualmente una lata clásica estándar de gaseosa o cerveza?",
+    "respuesta": 354,
+    "unidad": "mililitros",
+    "nota": "Equivale exactamente a 12 onzas líquidas estadounidenses (354 o 355 ml)."
+  },
+  {
+    "id": "cot_006",
+    "categoria": "cotidiano",
+    "dificultad": "facil",
+    "pregunta": "¿A cuántos grados Celsius se precalienta habitualmente un horno doméstico para una cocción 'media' estándar?",
+    "respuesta": 180,
+    "unidad": "°C",
+    "nota": "Los clásicos 180 °C (350 °F) ideales para bizcochuelos, tartas y empanadas."
+  },
+  {
+    "id": "cot_007",
+    "categoria": "cotidiano",
+    "dificultad": "facil",
+    "pregunta": "¿Cuántas porciones triangulares tradicionales se cortan de una pizza grande de molde de 8 porciones?",
+    "respuesta": 8,
+    "unidad": "porciones",
+    "nota": "El clásico estándar de cualquier pizzería de barrio porteña o mundial."
+  },
+  {
+    "id": "cot_008",
+    "categoria": "cotidiano",
+    "dificultad": "facil",
+    "pregunta": "¿Cuántos gramos de azúcar tiene aproximadamente una cucharada sopera colmada tradicional?",
+    "respuesta": 15,
+    "unidad": "gramos",
+    "nota": "Una cucharada sopera al ras pesa unos 12-15 gramos y una de té unos 5 gramos."
+  },
+  {
+    "id": "cot_009",
+    "categoria": "cotidiano",
+    "dificultad": "facil",
+    "pregunta": "¿Cuántos centímetros cúbicos (cc) de capacidad tiene una botella de vino estándar?",
+    "respuesta": 750,
+    "unidad": "centímetros cúbicos (ml)",
+    "nota": "Fijada internacionalmente en 75 centilitros (0,75 litros)."
+  },
+  {
+    "id": "cot_010",
+    "categoria": "cotidiano",
+    "dificultad": "facil",
+    "pregunta": "¿Cuántas calorías (kcal) diarias promedio se recomiendan como valor de referencia nutricional para un adulto sano?",
+    "respuesta": 2000,
+    "unidad": "calorías (kcal)",
+    "nota": "Base utilizada internacionalmente en la tabla nutricional de los envases de alimentos."
+  },
+  {
+    "id": "cot_011",
+    "categoria": "cotidiano",
+    "dificultad": "facil",
+    "pregunta": "¿Cuántos días tiene el mes de abril en el calendario gregoriano?",
+    "respuesta": 30,
+    "unidad": "días",
+    "nota": "Treinta días trae noviembre, con abril, junio y septiembre."
+  },
+  {
+    "id": "cot_012",
+    "categoria": "cotidiano",
+    "dificultad": "facil",
+    "pregunta": "¿Cuántos vasos de agua de 250 ml equivalen al consumo diario recomendado de 2 litros?",
+    "respuesta": 8,
+    "unidad": "vasos",
+    "nota": "La clásica regla saludable de '8 vasos de agua al día'."
+  },
+  {
+    "id": "cot_013",
+    "categoria": "cotidiano",
+    "dificultad": "facil",
+    "pregunta": "¿A cuántos grados de graduación alcohólica suele embotellarse el tradicional Fernet con cola?",
+    "respuesta": 39,
+    "unidad": "grados de alcohol (% vol)",
+    "nota": "El Fernet Branca puro se comercializa habitualmente con 39° o 40° de graduación alcohólica."
+  },
+  {
+    "id": "cot_014",
+    "categoria": "cotidiano",
+    "dificultad": "facil",
+    "pregunta": "¿Cuántos dientes de leche (dentición temporal infantil) tiene un niño antes de mudarlos?",
+    "respuesta": 20,
+    "unidad": "dientes de leche",
+    "nota": "10 en la arcada superior y 10 en la inferior: 8 incisivos, 4 caninos y 8 molares temporales."
+  },
+  {
+    "id": "cot_015",
+    "categoria": "cotidiano",
+    "dificultad": "facil",
+    "pregunta": "¿Cuántos segundos tiene un minuto?",
+    "respuesta": 60,
+    "unidad": "segundos",
+    "nota": "Herencia del sistema sexagesimal inventado por los antiguos sumerios y babilonios."
+  },
+  {
+    "id": "cot_016",
+    "categoria": "cotidiano",
+    "dificultad": "facil",
+    "pregunta": "¿Cuántas empanadas componen una docena comprada en una casa de comidas?",
+    "respuesta": 12,
+    "unidad": "empanadas",
+    "nota": "La clásica docena de carne cortada a cuchillo, jamón y queso o humita."
+  },
+  {
+    "id": "cot_017",
+    "categoria": "cotidiano",
+    "dificultad": "facil",
+    "pregunta": "¿Cuántos gramos tiene un kilogramo de pan o de carne?",
+    "respuesta": 1000,
+    "unidad": "gramos",
+    "nota": "Prefijo griego kilo que significa exactamente mil unidades."
+  },
+  {
+    "id": "cot_018",
+    "categoria": "cotidiano",
+    "dificultad": "facil",
+    "pregunta": "¿Cuántas semanas completas tiene un año calendario regular de 365 días?",
+    "respuesta": 52,
+    "unidad": "semanas",
+    "nota": "52 semanas completas y un día sobrante (dos días en años bisiestos)."
+  },
+  {
+    "id": "cot_019",
+    "categoria": "cotidiano",
+    "dificultad": "facil",
+    "pregunta": "¿A qué temperatura en grados Celsius se suele servir el agua para un buen mate sin quemar la yerba?",
+    "respuesta": 75,
+    "unidad": "°C",
+    "nota": "Lo ideal es entre 75 °C y 80 °C; si hierve a 100 °C pierde oxígeno y 'lava' el mate."
+  },
+  {
+    "id": "cot_020",
+    "categoria": "cotidiano",
+    "dificultad": "facil",
+    "pregunta": "¿Cuántas caras o lados tiene un dado tradicional de mesa de seis caras?",
+    "respuesta": 6,
+    "unidad": "caras",
+    "nota": "Numeradas del 1 al 6, donde las caras opuestas siempre suman 7 puntos."
+  },
+  {
+    "id": "cot_021",
+    "categoria": "cotidiano",
+    "dificultad": "facil",
+    "pregunta": "¿Cuántos panes de hamburguesa componen un Big Mac tradicional de McDonald's?",
+    "respuesta": 3,
+    "unidad": "panes",
+    "nota": "Pan superior con sésamo, pan intermedio divisorio y base inferior."
+  },
+  {
+    "id": "cot_022",
+    "categoria": "cotidiano",
+    "dificultad": "facil",
+    "pregunta": "¿Cuántos minutos de reposo se recomiendan habitualmente para una infusión de té negro antes de retirar el saquito?",
+    "respuesta": 3,
+    "unidad": "minutos",
+    "nota": "Entre 3 y 5 minutos para extraer los aromas sin que libere un exceso de taninos amargos."
+  },
+  {
+    "id": "cot_023",
+    "categoria": "cotidiano",
+    "dificultad": "facil",
+    "pregunta": "¿Cuántos gramos de fideos secos se calculan habitualmente como porción individual promedio por persona?",
+    "respuesta": 100,
+    "unidad": "gramos",
+    "nota": "100 gramos de pasta seca rinden cerca de 200 a 220 gramos cocidos al hidratarse."
+  },
+  {
+    "id": "cot_024",
+    "categoria": "cotidiano",
+    "dificultad": "facil",
+    "pregunta": "¿Cuántos centímetros mide una regla escolar clásica transparente de plástico?",
+    "respuesta": 30,
+    "unidad": "centímetros",
+    "nota": "La medida estándar universal de útiles escolares de cartuchera."
+  },
+  {
+    "id": "cot_025",
+    "categoria": "cotidiano",
+    "dificultad": "facil",
+    "pregunta": "¿Cuántos grados Celsius de temperatura corporal promedio indican fiebre en un termómetro clínico (a partir de)?",
+    "respuesta": 38,
+    "unidad": "°C",
+    "nota": "La temperatura corporal normal oscila entre 36,5 °C y 37,2 °C; a partir de 38 °C se considera fiebre clínica."
+  },
+  {
+    "id": "cot_026",
+    "categoria": "cotidiano",
+    "dificultad": "medio",
+    "pregunta": "¿Qué porcentaje de agua compone aproximadamente a una sandía fresca?",
+    "respuesta": 92,
+    "unidad": "por ciento (%)",
+    "nota": "Es una de las frutas más hidratantes de la naturaleza con apenas 8% de sólidos y azúcares."
+  },
+  {
+    "id": "cot_027",
+    "categoria": "cotidiano",
+    "dificultad": "medio",
+    "pregunta": "¿Cuántos kilos de carne vacuna por habitante al año consume en promedio un argentino (según registros de IPCVA)?",
+    "respuesta": 50,
+    "unidad": "kilos al año",
+    "nota": "Argentina disputa históricamente con Uruguay el primer puesto mundial de consumo per cápita de carne vacuna."
+  },
+  {
+    "id": "cot_028",
+    "categoria": "cotidiano",
+    "dificultad": "medio",
+    "pregunta": "¿Cuántos granos de café tostado se necesitan aproximadamente para preparar una taza de café espresso?",
+    "respuesta": 50,
+    "unidad": "granos de café",
+    "nota": "Aproximadamente entre 45 y 55 granos de café equivalen a los 7-8 gramos necesarios para un espresso."
+  },
+  {
+    "id": "cot_029",
+    "categoria": "cotidiano",
+    "dificultad": "medio",
+    "pregunta": "¿A cuántos grados Celsius se realiza la pasteurización rápida HTST de la leche durante 15 segundos?",
+    "respuesta": 72,
+    "unidad": "°C",
+    "nota": "Se calienta a 72 °C durante 15 segundos y se enfría inmediatamente a 4 °C para eliminar patógenos sin alterar el sabor."
+  },
+  {
+    "id": "cot_030",
+    "categoria": "cotidiano",
+    "dificultad": "medio",
+    "pregunta": "¿Cuántos kilos de yerba mate consume anualmente en promedio un ciudadano argentino según el INYM?",
+    "respuesta": 6,
+    "unidad": "kilos al año",
+    "nota": "Presente en más del 90% de los hogares argentinos con unos 6,4 kg per cápita."
+  },
+  {
+    "id": "cot_031",
+    "categoria": "cotidiano",
+    "dificultad": "medio",
+    "pregunta": "¿En qué año se patentó en Estados Unidos la primera heladera o refrigerador doméstico eléctrico moderno?",
+    "respuesta": 1913,
+    "unidad": "año",
+    "nota": "Inventado por Fred W. Wolf bajo la marca 'Domelre' (Domestic Electric Refrigerator)."
+  },
+  {
+    "id": "cot_032",
+    "categoria": "cotidiano",
+    "dificultad": "medio",
+    "pregunta": "¿Cuántos gramos de café molido se utilizan según el estándar del Instituto Nazionale Espresso Italiano para un espresso simple?",
+    "respuesta": 7,
+    "unidad": "gramos",
+    "nota": "Exactamente 7 gramos (± 0,5 g) extraídos a 9 bares de presión durante 25 segundos para 25 ml de café."
+  },
+  {
+    "id": "cot_033",
+    "categoria": "cotidiano",
+    "dificultad": "medio",
+    "pregunta": "¿En qué año Percy Spencer descubrió accidentalmente el horno microondas al derretirse una barra de chocolate en su bolsillo?",
+    "respuesta": 1945,
+    "unidad": "año",
+    "nota": "Trabajaba con radares de magnetrón en la empresa Raytheon; el primer aparato comercial se lanzó en 1947."
+  },
+  {
+    "id": "cot_034",
+    "categoria": "cotidiano",
+    "dificultad": "medio",
+    "pregunta": "¿Cuántos meses mínimos de añejamiento en cueva exige la denominación de origen para un queso Parmigiano Reggiano?",
+    "respuesta": 12,
+    "unidad": "meses",
+    "nota": "Un año entero como mínimo estricto, alcanzando los 24 o 36 meses en sus versiones más apreciadas."
+  },
+  {
+    "id": "cot_035",
+    "categoria": "cotidiano",
+    "dificultad": "medio",
+    "pregunta": "¿A cuántos grados bajo cero debe estar regulado un freezer congelador doméstico de cuatro estrellas?",
+    "respuesta": 18,
+    "unidad": "grados bajo cero (-°C)",
+    "nota": "El estándar internacional de conservación de alimentos congelados es de -18 °C (0 °F)."
+  },
+  {
+    "id": "cot_036",
+    "categoria": "cotidiano",
+    "dificultad": "medio",
+    "pregunta": "¿En qué año el farmacéutico John Stith Pemberton inventó la fórmula original de Coca-Cola en Atlanta?",
+    "respuesta": 1886,
+    "unidad": "año",
+    "nota": "El 8 de mayo de 1886 en la farmacia Jacobs, vendida inicialmente como tónico cerebral reconstituyente."
+  },
+  {
+    "id": "cot_037",
+    "categoria": "cotidiano",
+    "dificultad": "medio",
+    "pregunta": "¿Cuántos gramos pesa reglamentariamente una barra de manteca clásica en los paquetes de supermercado en Argentina?",
+    "respuesta": 200,
+    "unidad": "gramos",
+    "nota": "El tradicional pan de manteca de 200 gramos (también se comercializan versiones de 100 y 500 g)."
+  },
+  {
+    "id": "cot_038",
+    "categoria": "cotidiano",
+    "dificultad": "medio",
+    "pregunta": "¿A qué temperatura en grados Celsius se sirve tradicionalmente una cerveza lager rubia para apreciar su frescura?",
+    "respuesta": 4,
+    "unidad": "°C",
+    "nota": "Entre 3 °C y 5 °C; si está por debajo de cero adormece las papilas gustativas."
+  },
+  {
+    "id": "cot_039",
+    "categoria": "cotidiano",
+    "dificultad": "medio",
+    "pregunta": "¿En qué año se inventó el abrelatas de rueda dentada, décadas después de la invención de las latas de conserva?",
+    "respuesta": 1925,
+    "unidad": "año",
+    "nota": "Patentado por la Star Can Opener Company; antes las latas se abrían con cincel y martillo."
+  },
+  {
+    "id": "cot_040",
+    "categoria": "cotidiano",
+    "dificultad": "medio",
+    "pregunta": "¿Qué porcentaje mínimo de grasa láctea debe contener la crema de leche para ser considerada 'crema doble' para batir chantilly?",
+    "respuesta": 35,
+    "unidad": "por ciento (%)",
+    "nota": "Por debajo del 35% de tenor graso las burbujas de aire no logran atrapar la emulsión para montar."
+  },
+  {
+    "id": "cot_041",
+    "categoria": "cotidiano",
+    "dificultad": "medio",
+    "pregunta": "¿Cuántos litros de leche de vaca se requieren aproximadamente para elaborar un solo kilogramo de queso de pasta dura?",
+    "respuesta": 10,
+    "unidad": "litros de leche",
+    "nota": "Al desuerar y prensar se concentran las proteínas y grasas a razón de 10 a 12 litros por kilo."
+  },
+  {
+    "id": "cot_042",
+    "categoria": "cotidiano",
+    "dificultad": "medio",
+    "pregunta": "¿En qué año se fundó la primera cadena de restaurantes de hamburguesas McDonald's con el sistema 'Speedee' por los hermanos Dick y Mac?",
+    "respuesta": 1948,
+    "unidad": "año",
+    "nota": "En San Bernardino (California), rediseñando la cocina con el concepto de comida rápida industrial."
+  },
+  {
+    "id": "cot_043",
+    "categoria": "cotidiano",
+    "dificultad": "medio",
+    "pregunta": "¿Cuántos centímetros mide de diámetro el plato de una pizza tradicional de 8 porciones en pizzería?",
+    "respuesta": 35,
+    "unidad": "centímetros",
+    "nota": "Suele medir entre 33 y 36 centímetros de diámetro en moldes de chapa pizzeros."
+  },
+  {
+    "id": "cot_044",
+    "categoria": "cotidiano",
+    "dificultad": "medio",
+    "pregunta": "¿A cuántos grados Celsius se produce el fenómeno culinario de la 'Reacción de Maillard' (dorado y caramelización de carnes y panes)?",
+    "respuesta": 140,
+    "unidad": "°C",
+    "nota": "Se intensifica rápidamente entre los 140 °C y 165 °C creando los aromas y costras características."
+  },
+  {
+    "id": "cot_045",
+    "categoria": "cotidiano",
+    "dificultad": "medio",
+    "pregunta": "¿En qué año el farmacéutico Caleb Bradham inventó la bebida 'Brad's Drink', rebautizada luego como Pepsi-Cola?",
+    "respuesta": 1893,
+    "unidad": "año",
+    "nota": "En New Bern, Carolina del Norte; en 1898 adoptó el nombre Pepsi por la enzima digestiva pepsina."
+  },
+  {
+    "id": "cot_046",
+    "categoria": "cotidiano",
+    "dificultad": "medio",
+    "pregunta": "¿Cuántas calorías aporta un gramo de grasa pura en la alimentación humana?",
+    "respuesta": 9,
+    "unidad": "kcal por gramo",
+    "nota": "Más del doble que las proteínas o los carbohidratos, que aportan 4 kcal por gramo."
+  },
+  {
+    "id": "cot_047",
+    "categoria": "cotidiano",
+    "dificultad": "medio",
+    "pregunta": "¿Cuántos días puede durar un huevo fresco en la heladera conservando su calidad óptima desde la postura?",
+    "respuesta": 28,
+    "unidad": "días",
+    "nota": "El plazo de consumo preferente reglamentario en la industria avícola es de 28 días."
+  },
+  {
+    "id": "cot_048",
+    "categoria": "cotidiano",
+    "dificultad": "medio",
+    "pregunta": "¿En qué año se patentó la clásica cafetera italiana moka de aluminio por Alfonso Bialetti?",
+    "respuesta": 1933,
+    "unidad": "año",
+    "nota": "Con su icónico diseño octogonal 'Moka Express' inspirada en las lavadoras de vapor de la época."
+  },
+  {
+    "id": "cot_049",
+    "categoria": "cotidiano",
+    "dificultad": "medio",
+    "pregunta": "¿Qué porcentaje mínimo de carne vacuna o porcina picada debe tener una milanesa clásica para no ser rebozador puro?",
+    "respuesta": 50,
+    "unidad": "por ciento (%)",
+    "nota": "El código alimentario establece que los productos rebozados deben contener al menos un 50% de base cárnica."
+  },
+  {
+    "id": "cot_050",
+    "categoria": "cotidiano",
+    "dificultad": "medio",
+    "pregunta": "¿Cuántos granos de pimienta negra caben aproximadamente en una cucharadita colmada?",
+    "respuesta": 50,
+    "unidad": "granos de pimienta",
+    "nota": "Aproximadamente 50 a 60 bayas secas de Piper nigrum pesan cerca de 3 gramos."
+  },
+  {
+    "id": "cot_051",
+    "categoria": "cotidiano",
+    "dificultad": "dificil",
+    "pregunta": "¿A cuántos grados Scoville (SHU) de picante máximo llega el temible pimiento chile 'Carolina Reaper'?",
+    "respuesta": 2200000,
+    "unidad": "unidades Scoville",
+    "nota": "Puede alcanzar hasta 2,2 millones de unidades Scoville, unas 400 veces más picante que un jalapeño."
+  },
+  {
+    "id": "cot_052",
+    "categoria": "cotidiano",
+    "dificultad": "dificil",
+    "pregunta": "¿Cuántos mililitros de vino equivale la capacidad de una botella de tamaño 'Magnum'?",
+    "respuesta": 1500,
+    "unidad": "mililitros",
+    "nota": "1,5 litros, exactamente el doble del volumen de una botella de vino estándar de 750 ml."
+  },
+  {
+    "id": "cot_053",
+    "categoria": "cotidiano",
+    "dificultad": "dificil",
+    "pregunta": "¿En qué año el químico francés Louis Pasteur descubrió que calentar el vino y la cerveza evitaba su agriado, creando la pasteurización?",
+    "respuesta": 1864,
+    "unidad": "año",
+    "nota": "A petición de los productores vinícolas franceses para evitar las enfermedades del vino."
+  },
+  {
+    "id": "cot_054",
+    "categoria": "cotidiano",
+    "dificultad": "dificil",
+    "pregunta": "¿Cuántos granos individuales de arroz blanco de grano largo contiene aproximadamente un paquete de un kilo?",
+    "respuesta": 50000,
+    "unidad": "granos de arroz",
+    "nota": "A razón de unos 50 granos por gramo, un kilo contiene cerca de 50.000 granos."
+  },
+  {
+    "id": "cot_055",
+    "categoria": "cotidiano",
+    "dificultad": "dificil",
+    "pregunta": "¿A qué temperatura en grados Celsius se templa el chocolate negro de cobertura para lograr brillo y quiebre perfecto (el 'crunch')?",
+    "respuesta": 31,
+    "unidad": "°C",
+    "nota": "Se funde a 45 °C, se desciende a 27 °C y se remonta a 31-32 °C para estabilizar los cristales de manteca beta-V."
+  },
+  {
+    "id": "cot_056",
+    "categoria": "cotidiano",
+    "dificultad": "dificil",
+    "pregunta": "¿Cuántos días de curación en bodega necesita un jamón ibérico de bellota de máxima categoría (pata negra)?",
+    "respuesta": 1095,
+    "unidad": "días",
+    "nota": "Unos 36 meses (3 años o más de 1.000 días) de secado y maduración lenta en bodegas naturales."
+  },
+  {
+    "id": "cot_057",
+    "categoria": "cotidiano",
+    "dificultad": "dificil",
+    "pregunta": "¿En qué año se inventó la bolsa de té de papel de seda por el comerciante neoyorquino Thomas Sullivan?",
+    "respuesta": 1908,
+    "unidad": "año",
+    "nota": "Enviaba muestras de té en saquitos de seda y sus clientes las sumergían enteras en agua hirviendo por error y comodidad."
+  },
+  {
+    "id": "cot_058",
+    "categoria": "cotidiano",
+    "dificultad": "dificil",
+    "pregunta": "¿Cuántos gramos de azúcar por litro contiene aproximadamente una gaseosa cola tradicional común?",
+    "respuesta": 106,
+    "unidad": "gramos por litro",
+    "nota": "Equivale a unas 10 cucharaditas de azúcar por cada latita de 354 ml."
+  },
+  {
+    "id": "cot_059",
+    "categoria": "cotidiano",
+    "dificultad": "dificil",
+    "pregunta": "¿A qué presión en bares bombea el agua una máquina de café espresso profesional de cafetería?",
+    "respuesta": 9,
+    "unidad": "bares de presión",
+    "nota": "9 atmósferas de presión impulsadas por una bomba rotativa para emulsionar los aceites del café en la crema."
+  },
+  {
+    "id": "cot_060",
+    "categoria": "cotidiano",
+    "dificultad": "dificil",
+    "pregunta": "¿En qué año se fundó la pastelería Ladurée en París, popularizadora del macaron francés moderno?",
+    "respuesta": 1862,
+    "unidad": "año",
+    "nota": "Por Louis Ernest Ladurée en el 16 de la Rue Royale de París."
+  },
+  {
+    "id": "cot_061",
+    "categoria": "cotidiano",
+    "dificultad": "dificil",
+    "pregunta": "¿Cuántos días hábiles puede conservarse una masa madre activa en la heladera sin alimentar antes de debilitarse?",
+    "respuesta": 7,
+    "unidad": "días",
+    "nota": "A temperaturas de 4 °C las levaduras salvajes reducen su metabolismo y sobreviven con un refresco semanal."
+  },
+  {
+    "id": "cot_062",
+    "categoria": "cotidiano",
+    "dificultad": "dificil",
+    "pregunta": "¿Cuál es la graduación alcohólica estándar del vodka ruso tradicional estipulada por Dmitri Mendeléyev?",
+    "respuesta": 40,
+    "unidad": "grados (% vol)",
+    "nota": "La proporción óptima de 40% de etanol en volumen y 60% de agua para una mezcla molecular homogénea."
+  },
+  {
+    "id": "cot_063",
+    "categoria": "cotidiano",
+    "dificultad": "dificil",
+    "pregunta": "¿Cuántas calorías aproximadas tiene una porción de papas fritas medianas de cadena de comida rápida?",
+    "respuesta": 340,
+    "unidad": "calorías (kcal)",
+    "nota": "Aporta cerca de 340 kcal con unos 16 gramos de grasa absorbida durante la fritura en aceite caliente."
+  },
+  {
+    "id": "cot_064",
+    "categoria": "cotidiano",
+    "dificultad": "dificil",
+    "pregunta": "¿En qué año el farmacéutico estadounidense John Stith Pemberton vendió su negocio de Coca-Cola al empresario Asa Griggs Candler?",
+    "respuesta": 1888,
+    "unidad": "año",
+    "nota": "Candler adquirió los derechos por 2.300 dólares y fundó The Coca-Cola Company en 1892."
+  },
+  {
+    "id": "cot_065",
+    "categoria": "cotidiano",
+    "dificultad": "dificil",
+    "pregunta": "¿Cuántos gramos de sal por kilo de harina se recomiendan habitualmente en panadería clásica para masa de pan?",
+    "respuesta": 20,
+    "unidad": "gramos de sal",
+    "nota": "El clásico 2% de sal respecto al peso total de la harina para regular la fermentación y aportar sabor."
+  },
+  {
+    "id": "cot_066",
+    "categoria": "cotidiano",
+    "dificultad": "dificil",
+    "pregunta": "¿A cuántos grados Celsius se hornea una auténtica pizza napolitana en horno de leña durante solo 60 a 90 segundos?",
+    "respuesta": 480,
+    "unidad": "°C",
+    "nota": "La 'Associazione Verace Pizza Napoletana' exige entre 430 °C y 485 °C en la cúpula del horno."
+  },
+  {
+    "id": "cot_067",
+    "categoria": "cotidiano",
+    "dificultad": "dificil",
+    "pregunta": "¿En qué año la empresa Ferrero lanzó al mercado la crema de cacao y avellanas 'Nutella' en Italia?",
+    "respuesta": 1964,
+    "unidad": "año",
+    "nota": "El 20 de abril de 1964 creada por Michele Ferrero a partir de la receta tradicional del gianduiotto piamontés."
+  },
+  {
+    "id": "cot_068",
+    "categoria": "cotidiano",
+    "dificultad": "dificil",
+    "pregunta": "¿Cuántos mililitros de bebida contiene una botella de vino gigante de tamaño 'Jeroboam'?",
+    "respuesta": 3000,
+    "unidad": "mililitros",
+    "nota": "3 litros completos de vino, equivalente a 4 botellas estándar de 750 ml."
+  },
+  {
+    "id": "cot_069",
+    "categoria": "cotidiano",
+    "dificultad": "dificil",
+    "pregunta": "¿Cuántos días tarda en fermentar la col blanca con sal para convertirse en auténtico chucrut tradicional?",
+    "respuesta": 21,
+    "unidad": "días",
+    "nota": "Unas tres a cuatro semanas a temperatura ambiente de 18-20 °C por acción de bacterias ácido lácticas."
+  },
+  {
+    "id": "cot_070",
+    "categoria": "cotidiano",
+    "dificultad": "dificil",
+    "pregunta": "¿En qué año se patentó el café instantáneo soluble por el químico japonés-estadounidense Satori Kato?",
+    "respuesta": 1901,
+    "unidad": "año",
+    "nota": "Presentado en la Exposición Panamericana de Buffalo antes del lanzamiento comercial de Nescafé en 1938."
+  },
+  {
+    "id": "cot_071",
+    "categoria": "cotidiano",
+    "dificultad": "dificil",
+    "pregunta": "¿Cuántos centímetros mide la longitud de un palillo escarbadientes de madera tradicional?",
+    "respuesta": 6,
+    "unidad": "centímetros",
+    "nota": "Mide habitualmente 6,5 cm con puntas biseladas torneadas en madera de abedul."
+  },
+  {
+    "id": "cot_072",
+    "categoria": "cotidiano",
+    "dificultad": "dificil",
+    "pregunta": "¿A cuántos grados Celsius hierve el aceite de girasol para freír antes de alcanzar su punto de humo?",
+    "respuesta": 230,
+    "unidad": "°C",
+    "nota": "Su punto de humo se ubica entre los 225 °C y 232 °C; freír por encima de esa temperatura degrada los lípidos."
+  },
+  {
+    "id": "cot_073",
+    "categoria": "cotidiano",
+    "dificultad": "dificil",
+    "pregunta": "¿En qué año se fundó la primera fábrica de cerveza Quilmes en Argentina por Otto Bemberg?",
+    "respuesta": 1890,
+    "unidad": "año",
+    "nota": "El 31 de octubre de 1890 tiró su primer chopp en la localidad bonaerense de Quilmes."
+  },
+  {
+    "id": "cot_074",
+    "categoria": "cotidiano",
+    "dificultad": "dificil",
+    "pregunta": "¿Cuántos kilos de uva se necesitan en promedio para producir una sola botella de 750 ml de vino?",
+    "respuesta": 1,
+    "unidad": "kilo de uvas",
+    "nota": "Entre 1,1 y 1,3 kilos de racimos de uva seleccionada rinden el mosto para una botella de vino."
+  },
+  {
+    "id": "cot_075",
+    "categoria": "cotidiano",
+    "dificultad": "dificil",
+    "pregunta": "¿Cuántos días puede durar la miel pura de abejas almacenada en un frasco hermético sin vencer jamás?",
+    "respuesta": 3000,
+    "unidad": "días (más de)",
+    "nota": "La miel es uno de los únicos alimentos que nunca caduca gracias a su bajísima humedad (17%) y acidez natural."
+  },
+  {
+    "id": "cot_076",
+    "categoria": "cotidiano",
+    "dificultad": "extremo",
+    "pregunta": "¿Cuántas burbujas de gas carbónico contiene en promedio una copa clásica de champaña o espumoso recién servida?",
+    "respuesta": 1000000,
+    "unidad": "burbujas",
+    "nota": "Cálculo físico realizado por el científico Gérard Liger-Belair de la Universidad de Reims (Francia)."
+  },
+  {
+    "id": "cot_077",
+    "categoria": "cotidiano",
+    "dificultad": "extremo",
+    "pregunta": "¿Cuántos gramos de sal por litro de agua se utilizan en la salmuera para curar aceitunas verdes al estilo tradicional?",
+    "respuesta": 100,
+    "unidad": "gramos por litro",
+    "nota": "Una solución salina al 10% (100 gramos por litro) para desalojar la oleuropeína amarga del fruto."
+  },
+  {
+    "id": "cot_078",
+    "categoria": "cotidiano",
+    "dificultad": "extremo",
+    "pregunta": "¿En qué año se inauguró el primer supermercado con sistema de autoservicio 'Piggly Wiggly' por Clarence Saunders en Memphis?",
+    "respuesta": 1916,
+    "unidad": "año",
+    "nota": "El 6 de septiembre de 1916; antes los clientes debían pedir cada artículo al dependiente detrás del mostrador."
+  },
+  {
+    "id": "cot_079",
+    "categoria": "cotidiano",
+    "dificultad": "extremo",
+    "pregunta": "¿Cuántos días exactos tarda una semilla de trigo en germinar bajo condiciones ideales de humedad y temperatura de 20 °C?",
+    "respuesta": 7,
+    "unidad": "días",
+    "nota": "Emerge el coleóptilo a la semana de la siembra en suelos templados."
+  },
+  {
+    "id": "cot_080",
+    "categoria": "cotidiano",
+    "dificultad": "extremo",
+    "pregunta": "¿A cuántos grados Brix de concentración de azúcares se debe cosechar la uva tinta para elaborar un vino de 14° de alcohol?",
+    "respuesta": 24,
+    "unidad": "grados Brix",
+    "nota": "24° Brix equivalen a unos 240 gramos de azúcar por litro de mosto antes de la fermentación."
+  },
+  {
+    "id": "cot_081",
+    "categoria": "cotidiano",
+    "dificultad": "extremo",
+    "pregunta": "¿En qué año la empresa suiza Nestlé lanzó al mercado el primer chocolate blanco comercial 'Galak' (o Milkybar)?",
+    "respuesta": 1936,
+    "unidad": "año",
+    "nota": "Elaborado a partir de manteca de cacao, leche condensada y azúcar para aprovechar los excedentes de manteca."
+  },
+  {
+    "id": "cot_082",
+    "categoria": "cotidiano",
+    "dificultad": "extremo",
+    "pregunta": "¿Cuántas flores de azafrán (Crocus sativus) se deben cosechar a mano para obtener un solo kilogramo de azafrán seco?",
+    "respuesta": 150000,
+    "unidad": "flores",
+    "nota": "Cada flor tiene solo 3 estigmas rojos, lo que convierte al azafrán en la especia más cara del planeta por peso."
+  },
+  {
+    "id": "cot_083",
+    "categoria": "cotidiano",
+    "dificultad": "extremo",
+    "pregunta": "¿A cuántos bares de presión se embotella habitualmente el champán o vino espumoso método tradicional (champenoise)?",
+    "respuesta": 6,
+    "unidad": "bares de presión",
+    "nota": "Unas 6 atmósferas de presión interna generadas por la segunda fermentación en botella, el triple que un neumático de auto."
+  },
+  {
+    "id": "cot_084",
+    "categoria": "cotidiano",
+    "dificultad": "extremo",
+    "pregunta": "¿En qué año se patentó la primera tostadora eléctrica de pan comercial de expulsión automática pop-up por Charles Strite?",
+    "respuesta": 1919,
+    "unidad": "año",
+    "nota": "Patentada el 18 de octubre de 1919 con temporizador variable bajo la marca Toastmaster."
+  },
+  {
+    "id": "cot_085",
+    "categoria": "cotidiano",
+    "dificultad": "extremo",
+    "pregunta": "¿Cuántos litros de agua potable se consumen en promedio al tirar de la cadena de un inodoro de válvula tradicional antigua?",
+    "respuesta": 12,
+    "unidad": "litros por descarga",
+    "nota": "Los sistemas antiguos gastaban entre 12 y 15 litros, frente a los inodoros modernos de doble descarga de 3 a 6 litros."
+  },
+  {
+    "id": "cot_086",
+    "categoria": "cotidiano",
+    "dificultad": "extremo",
+    "pregunta": "¿A cuántos grados Celsius se desnaturaliza la ovoalbúmina (proteína principal de la clara de huevo) cuajando en sólido?",
+    "respuesta": 65,
+    "unidad": "°C",
+    "nota": "Comienza a coagular a los 62 °C y se solidifica firmemente a los 65 °C, mientras que la yema lo hace a 68 °C."
+  },
+  {
+    "id": "cot_087",
+    "categoria": "cotidiano",
+    "dificultad": "extremo",
+    "pregunta": "¿En qué año se inventó el papel higiénico moderno en rollos perforados por Seth Wheeler en Nueva York?",
+    "respuesta": 1891,
+    "unidad": "año",
+    "nota": "La patente original demostraba explícitamente que el extremo del rollo debe colgar 'hacia adelante'."
+  },
+  {
+    "id": "cot_088",
+    "categoria": "cotidiano",
+    "dificultad": "extremo",
+    "pregunta": "¿Cuántos gramos de cafeína pura puede contener una taza de 240 ml de café filtrado por goteo fuerte?",
+    "respuesta": 0,
+    "unidad": "gramos enteros",
+    "nota": "Tiene unos 95 a 150 miligramos (0,1 gramos), por lo que en gramos enteros la respuesta es 0."
+  },
+  {
+    "id": "cot_089",
+    "categoria": "cotidiano",
+    "dificultad": "extremo",
+    "pregunta": "¿A cuántos grados Celsius hierve el alcohol etílico (etanol) puro a nivel del mar?",
+    "respuesta": 78,
+    "unidad": "°C",
+    "nota": "Hierve a 78,37 °C, principio fundamental del alambique para destilar licores y bebidas espirituosas."
+  },
+  {
+    "id": "cot_090",
+    "categoria": "cotidiano",
+    "dificultad": "extremo",
+    "pregunta": "¿En qué año se inventó el clip sujetapapeles de alambre doblado de doble óvalo ('Gem clip') en Gran Bretaña?",
+    "respuesta": 1899,
+    "unidad": "año",
+    "nota": "Comercializado por la Gem Manufacturing Company sin necesidad de perforar las hojas de papel."
+  },
+  {
+    "id": "cot_091",
+    "categoria": "cotidiano",
+    "dificultad": "extremo",
+    "pregunta": "¿Cuántos días de curación mínima exige el consorcio del Jamón de Parma (Prosciutto di Parma) italiano?",
+    "respuesta": 400,
+    "unidad": "días",
+    "nota": "Un mínimo estricto de 400 días (cerca de 14 meses) desde el inicio de la salazón inicial."
+  },
+  {
+    "id": "cot_092",
+    "categoria": "cotidiano",
+    "dificultad": "extremo",
+    "pregunta": "¿A cuántos kilogramos por metro cúbico asciende la densidad de la miel de abejas pura a 20 °C?",
+    "respuesta": 1420,
+    "unidad": "kg/m³",
+    "nota": "Aproximadamente un 42% más pesada que el agua (1.420 kg/m³ frente a 1.000 kg/m³ del agua)."
+  },
+  {
+    "id": "cot_093",
+    "categoria": "cotidiano",
+    "dificultad": "extremo",
+    "pregunta": "¿En qué año se comercializó el primer cepillo de dientes con cerdas de nailon sintético por DuPont ('Miracle Tuft')?",
+    "respuesta": 1938,
+    "unidad": "año",
+    "nota": "El 24 de febrero de 1938, reemplazando a las antihigiénicas cerdas naturales de pelo de jabalí."
+  },
+  {
+    "id": "cot_094",
+    "categoria": "cotidiano",
+    "dificultad": "extremo",
+    "pregunta": "¿Cuántas calorías aporta un gramo de alcohol etílico metabolizado en el organismo humano?",
+    "respuesta": 7,
+    "unidad": "kcal por gramo",
+    "nota": "Las llamadas 'calorías vacías' que aportan energía sin nutrientes esenciales."
+  },
+  {
+    "id": "cot_095",
+    "categoria": "cotidiano",
+    "dificultad": "extremo",
+    "pregunta": "¿A cuántos grados Celsius se pasteuriza la cerveza envasada dentro de la botella en túneles de agua caliente?",
+    "respuesta": 60,
+    "unidad": "°C",
+    "nota": "Se mantiene a 60 °C durante unos 10 a 20 minutos para inactivar levaduras residuales."
+  },
+  {
+    "id": "cot_096",
+    "categoria": "cotidiano",
+    "dificultad": "extremo",
+    "pregunta": "¿En qué año el farmacéutico estadounidense John Matthews patentó la máquina para carbonatar agua de sifón comercial?",
+    "respuesta": 1832,
+    "unidad": "año",
+    "nota": "Permitió la producción masiva de soda con gas carbónico en botellas presurizadas con pico."
+  },
+  {
+    "id": "cot_097",
+    "categoria": "cotidiano",
+    "dificultad": "extremo",
+    "pregunta": "¿Cuántos granos de mostaza enteros caben en una cucharadita de té de 5 mililitros?",
+    "respuesta": 1000,
+    "unidad": "granos de mostaza",
+    "nota": "Aproximadamente mil granos microscópicos de mostaza negra (Brassica nigra)."
+  },
+  {
+    "id": "cot_098",
+    "categoria": "cotidiano",
+    "dificultad": "extremo",
+    "pregunta": "¿A qué porcentaje de humedad relativa del aire debe conservarse un puro habano en un humidor de cedro?",
+    "respuesta": 70,
+    "unidad": "por ciento (%)",
+    "nota": "La clásica regla del '70/70': 70% de humedad relativa a 70 °Fahrenheit (unos 21 °C)."
+  },
+  {
+    "id": "cot_099",
+    "categoria": "cotidiano",
+    "dificultad": "extremo",
+    "pregunta": "¿En qué año se fundó la fábrica de galletitas Bagley en Buenos Aires por Melville Sewell Bagley?",
+    "respuesta": 1864,
+    "unidad": "año",
+    "nota": "Inició sus operaciones en la calle Defensa produciendo primero la famosa Hesperidina y luego galletitas 'Lola'."
+  },
+  {
+    "id": "cot_100",
+    "categoria": "cotidiano",
+    "dificultad": "extremo",
+    "pregunta": "¿Cuántos centímetros mide de ancho la cinta adhesiva de embalaje de rollo marrón o transparente clásica?",
+    "respuesta": 5,
+    "unidad": "centímetros",
+    "nota": "El ancho estándar universal de 48 mm (casi 5 cm) para sellado seguro de cajas de cartón."
+  }
+]

@@ -1,0 +1,602 @@
+/* ==========================================================================
+   HUB DE JUEGOS DE MESA - NOCHE DE JUEGOS / LIVING TV STYLES
+   ========================================================================== */
+
+:root {
+  --hub-bg: #090d16;
+  --hub-bg-card: rgba(18, 25, 41, 0.78);
+  --hub-bg-card-hover: rgba(28, 38, 62, 0.88);
+  --hub-card-border: rgba(99, 102, 241, 0.22);
+  --hub-card-border-active: rgba(245, 158, 11, 0.5);
+
+  --hub-text-main: #f8fafc;
+  --hub-text-muted: #94a3b8;
+  --hub-text-highlight: #38bdf8;
+
+  --hub-primary: #6366f1;
+  --hub-primary-glow: rgba(99, 102, 241, 0.35);
+  --hub-accent-gold: #f59e0b;
+  --hub-accent-gold-glow: rgba(245, 158, 11, 0.3);
+  --hub-accent-green: #10b981;
+  --hub-accent-green-glow: rgba(16, 185, 129, 0.3);
+
+  --font-family: 'Outfit', system-ui, -apple-system, sans-serif;
+  --font-display: 'Bebas Neue', cursive, sans-serif;
+
+  --radius-lg: 20px;
+  --radius-md: 14px;
+  --radius-sm: 8px;
+  --radius-pill: 9999px;
+  
+  --transition-smooth: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: var(--font-family);
+  background-color: var(--hub-bg);
+  background-image: 
+    radial-gradient(at 10% 10%, rgba(99, 102, 241, 0.18) 0px, transparent 50%),
+    radial-gradient(at 90% 15%, rgba(245, 158, 11, 0.14) 0px, transparent 50%),
+    radial-gradient(at 50% 90%, rgba(16, 185, 129, 0.12) 0px, transparent 60%);
+  background-attachment: fixed;
+  color: var(--hub-text-main);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* ==========================================================================
+   HEADER / LIVING TV BAR
+   ========================================================================== */
+.hub-header {
+  background: rgba(11, 15, 25, 0.85);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  padding: 14px 0;
+}
+
+.hub-brand {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  text-decoration: none;
+  color: inherit;
+}
+
+.hub-brand-icon {
+  font-size: 2.2rem;
+  line-height: 1;
+  filter: drop-shadow(0 0 10px rgba(99, 102, 241, 0.6));
+  animation: floatIcon 3s ease-in-out infinite alternate;
+}
+
+@keyframes floatIcon {
+  from { transform: translateY(0); }
+  to { transform: translateY(-3px); }
+}
+
+.hub-title {
+  font-family: var(--font-display);
+  font-size: clamp(1.8rem, 4vw, 2.4rem);
+  letter-spacing: 1.5px;
+  margin: 0;
+  line-height: 1;
+  background: linear-gradient(135deg, #ffffff 40%, #cbd5e1 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.hub-subtitle {
+  font-size: 0.85rem;
+  color: var(--hub-text-muted);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: 600;
+  margin: 0;
+}
+
+/* Botón Pantalla Completa */
+.btn-tv-fullscreen {
+  background: rgba(255, 255, 255, 0.08);
+  color: #fff;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  border-radius: var(--radius-pill);
+  padding: 10px 18px;
+  font-size: 0.95rem;
+  font-weight: 700;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+  transition: var(--transition-smooth);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+.btn-tv-fullscreen:hover {
+  background: rgba(99, 102, 241, 0.25);
+  border-color: var(--hub-primary);
+  box-shadow: 0 0 18px var(--hub-primary-glow);
+  transform: translateY(-1px);
+  color: #fff;
+}
+
+.btn-tv-fullscreen:active {
+  transform: scale(0.97);
+}
+
+/* ==========================================================================
+   PANEL SUPERIOR: LA MESA (JUGADORES)
+   ========================================================================== */
+.table-panel {
+  background: var(--hub-bg-card);
+  border: 1px solid var(--hub-card-border);
+  border-radius: var(--radius-lg);
+  padding: 24px;
+  box-shadow: 0 16px 36px rgba(0, 0, 0, 0.4), inset 0 1px 0 rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  margin-top: 24px;
+  margin-bottom: 36px;
+  position: relative;
+  overflow: hidden;
+}
+
+.table-panel::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: linear-gradient(90deg, var(--hub-primary), var(--hub-accent-gold), var(--hub-accent-green));
+}
+
+.table-panel-header {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  margin-bottom: 20px;
+}
+
+.table-title-wrap {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.table-title {
+  font-family: var(--font-display);
+  font-size: 1.8rem;
+  letter-spacing: 1px;
+  margin: 0;
+  color: #ffffff;
+}
+
+.table-badge-count {
+  background: rgba(99, 102, 241, 0.25);
+  color: #c7d2fe;
+  border: 1px solid rgba(99, 102, 241, 0.4);
+  padding: 4px 12px;
+  border-radius: var(--radius-pill);
+  font-size: 0.82rem;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+}
+
+.table-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.btn-table-action {
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  color: #e2e8f0;
+  border-radius: var(--radius-pill);
+  padding: 7px 14px;
+  font-size: 0.88rem;
+  font-weight: 700;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  transition: var(--transition-smooth);
+}
+
+.btn-table-action:hover {
+  background: rgba(255, 255, 255, 0.18);
+  color: #fff;
+  border-color: rgba(255, 255, 255, 0.3);
+  transform: translateY(-1px);
+}
+
+.btn-table-action.btn-shuffle {
+  background: rgba(245, 158, 11, 0.18);
+  border-color: rgba(245, 158, 11, 0.4);
+  color: #fde68a;
+}
+
+.btn-table-action.btn-shuffle:hover {
+  background: rgba(245, 158, 11, 0.3);
+  box-shadow: 0 0 16px var(--hub-accent-gold-glow);
+  color: #fff;
+}
+
+/* Formulario de agregar participante */
+.add-player-bar {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+  max-width: 600px;
+}
+
+.input-player-name {
+  background: rgba(15, 23, 42, 0.85);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: var(--radius-pill);
+  padding: 10px 20px;
+  font-size: 1rem;
+  color: #fff;
+  flex: 1;
+  outline: none;
+  transition: var(--transition-smooth);
+}
+
+.input-player-name:focus {
+  border-color: var(--hub-primary);
+  box-shadow: 0 0 12px var(--hub-primary-glow);
+}
+
+.btn-add-player {
+  background: var(--hub-primary);
+  color: #fff;
+  border: none;
+  border-radius: var(--radius-pill);
+  padding: 10px 22px;
+  font-size: 0.95rem;
+  font-weight: 700;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  white-space: nowrap;
+  transition: var(--transition-smooth);
+}
+
+.btn-add-player:hover {
+  background: #4f46e5;
+  box-shadow: 0 0 18px var(--hub-primary-glow);
+  transform: translateY(-1px);
+}
+
+/* Contenedor de fichas/chips de jugadores */
+.players-chips-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  min-height: 48px;
+  align-items: center;
+}
+
+.player-chip {
+  background: rgba(30, 41, 59, 0.8);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: var(--radius-pill);
+  padding: 6px 14px 6px 8px;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: #f8fafc;
+  font-size: 0.95rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+  transition: var(--transition-smooth);
+  animation: chipPop 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+@keyframes chipPop {
+  0% { transform: scale(0.8); opacity: 0; }
+  100% { transform: scale(1); opacity: 1; }
+}
+
+.player-chip:hover {
+  background: rgba(45, 60, 87, 0.9);
+  border-color: rgba(99, 102, 241, 0.4);
+  transform: translateY(-2px);
+}
+
+.player-chip-order {
+  background: rgba(99, 102, 241, 0.35);
+  color: #e0e7ff;
+  font-weight: 800;
+  font-size: 0.78rem;
+  padding: 2px 7px;
+  border-radius: var(--radius-pill);
+}
+
+.player-chip-emoji {
+  font-size: 1.2rem;
+  line-height: 1;
+}
+
+.player-chip-name {
+  font-weight: 700;
+  letter-spacing: 0.2px;
+}
+
+.player-chip-remove {
+  background: rgba(239, 68, 68, 0.15);
+  color: #fca5a5;
+  border: none;
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.8rem;
+  font-weight: 800;
+  cursor: pointer;
+  margin-left: 4px;
+  transition: var(--transition-smooth);
+}
+
+.player-chip-remove:hover {
+  background: #ef4444;
+  color: #fff;
+  transform: scale(1.15);
+}
+
+.players-empty-msg {
+  color: var(--hub-text-muted);
+  font-size: 0.95rem;
+  font-style: italic;
+  padding: 8px 0;
+}
+
+/* ==========================================================================
+   CARTELERA DE JUEGOS (GRILLA)
+   ========================================================================== */
+.section-header {
+  margin-bottom: 24px;
+}
+
+.section-title {
+  font-family: var(--font-display);
+  font-size: 2.2rem;
+  letter-spacing: 1.5px;
+  margin: 0 0 6px 0;
+  color: #fff;
+}
+
+.section-subtitle {
+  color: var(--hub-text-muted);
+  font-size: 1rem;
+  margin: 0;
+}
+
+.games-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 28px;
+  margin-bottom: 60px;
+}
+
+/* Tarjeta de Juego */
+.game-card {
+  background: var(--hub-bg-card);
+  border: 1px solid var(--hub-card-border);
+  border-radius: var(--radius-lg);
+  padding: 28px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  overflow: hidden;
+  transition: var(--transition-smooth);
+  box-shadow: 0 16px 32px rgba(0, 0, 0, 0.4);
+}
+
+.game-card:hover {
+  transform: translateY(-6px);
+  background: var(--hub-bg-card-hover);
+  border-color: rgba(99, 102, 241, 0.45);
+  box-shadow: 0 24px 48px rgba(0, 0, 0, 0.6), 0 0 25px rgba(99, 102, 241, 0.15);
+}
+
+/* Tarjeta Activa (Toco Timbre) */
+.game-card.card-active {
+  border-color: rgba(245, 158, 11, 0.4);
+  background: radial-gradient(circle at 90% 10%, rgba(245, 158, 11, 0.08) 0%, rgba(18, 25, 41, 0.85) 60%);
+}
+
+.game-card.card-active:hover {
+  border-color: var(--hub-accent-gold);
+  box-shadow: 0 24px 48px rgba(0, 0, 0, 0.6), 0 0 30px var(--hub-accent-gold-glow);
+}
+
+.game-card-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 16px;
+}
+
+.game-icon-badge {
+  width: 64px;
+  height: 64px;
+  border-radius: var(--radius-md);
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2.2rem;
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.3);
+}
+
+.status-badge {
+  font-size: 0.76rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  padding: 5px 12px;
+  border-radius: var(--radius-pill);
+}
+
+.status-badge.available {
+  background: rgba(16, 185, 129, 0.2);
+  color: #34d399;
+  border: 1px solid rgba(16, 185, 129, 0.4);
+  box-shadow: 0 0 10px rgba(16, 185, 129, 0.2);
+}
+
+.status-badge.coming-soon {
+  background: rgba(148, 163, 184, 0.15);
+  color: #cbd5e1;
+  border: 1px solid rgba(148, 163, 184, 0.3);
+}
+
+.game-title {
+  font-family: var(--font-display);
+  font-size: 2.2rem;
+  letter-spacing: 1px;
+  line-height: 1.1;
+  margin: 0 0 8px 0;
+  color: #ffffff;
+}
+
+.game-meta-badge {
+  display: inline-block;
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  color: #e2e8f0;
+  border-radius: var(--radius-pill);
+  padding: 4px 12px;
+  font-size: 0.84rem;
+  font-weight: 600;
+  margin-bottom: 16px;
+}
+
+.game-desc {
+  color: var(--hub-text-muted);
+  font-size: 0.98rem;
+  line-height: 1.55;
+  margin-bottom: 24px;
+  flex: 1;
+}
+
+.game-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-bottom: 24px;
+}
+
+.game-tag {
+  background: rgba(15, 23, 42, 0.6);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: var(--radius-sm);
+  padding: 3px 8px;
+  font-size: 0.78rem;
+  color: #94a3b8;
+  font-weight: 600;
+}
+
+/* Botones principales de acción en tarjeta */
+.btn-game-action {
+  width: 100%;
+  padding: 14px 24px;
+  border-radius: var(--radius-pill);
+  font-size: 1.1rem;
+  font-weight: 800;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  cursor: pointer;
+  transition: var(--transition-smooth);
+  letter-spacing: 0.5px;
+}
+
+.btn-game-action.btn-play-primary {
+  background: linear-gradient(135deg, #f59e0b, #d97706);
+  color: #000;
+  border: none;
+  box-shadow: 0 6px 20px rgba(245, 158, 11, 0.4);
+}
+
+.btn-game-action.btn-play-primary:hover {
+  background: linear-gradient(135deg, #fbbf24, #f59e0b);
+  box-shadow: 0 8px 28px rgba(245, 158, 11, 0.6);
+  color: #000;
+  transform: translateY(-2px);
+}
+
+.btn-game-action.btn-play-secondary {
+  background: rgba(255, 255, 255, 0.08);
+  color: #cbd5e1;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.btn-game-action.btn-play-secondary:hover {
+  background: rgba(255, 255, 255, 0.16);
+  color: #fff;
+  border-color: rgba(255, 255, 255, 0.4);
+  transform: translateY(-2px);
+}
+
+/* ==========================================================================
+   FOOTER
+   ========================================================================== */
+.hub-footer {
+  margin-top: auto;
+  padding: 24px 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  color: var(--hub-text-muted);
+  font-size: 0.88rem;
+}
+
+/* ==========================================================================
+   ADAPTACIONES PARA TV Y DISPOSITIVOS GRANDES
+   ========================================================================== */
+@media (min-width: 1400px) {
+  body {
+    font-size: 18px;
+  }
+  .hub-title {
+    font-size: 3rem;
+  }
+  .table-title {
+    font-size: 2.2rem;
+  }
+  .game-title {
+    font-size: 2.6rem;
+  }
+  .btn-game-action {
+    padding: 16px 28px;
+    font-size: 1.25rem;
+  }
+  .player-chip {
+    font-size: 1.1rem;
+    padding: 8px 18px 8px 12px;
+  }
+}
+
+/* Pantalla completa activa */
+:fullscreen body, :-webkit-full-screen body {
+  background-size: cover;
+}

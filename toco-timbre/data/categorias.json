@@ -1,0 +1,20 @@
+{
+  "dificultades": [
+    { "id": "facil", "nombre": "Fácil", "icono": "🟢", "color": "#22c55e" },
+    { "id": "medio", "nombre": "Medio", "icono": "🟡", "color": "#eab308" },
+    { "id": "dificil", "nombre": "Difícil", "icono": "🟠", "color": "#f97316" },
+    { "id": "extremo", "nombre": "Extremo", "icono": "🔴", "color": "#ef4444" }
+  ],
+  "categorias": [
+    { "id": "argentina", "nombre": "Cultura Argentina", "icono": "🇦🇷", "archivo": "data/preguntas/argentina.json" },
+    { "id": "deportes", "nombre": "Deportes y Mundiales", "icono": "⚽", "archivo": "data/preguntas/deportes.json" },
+    { "id": "cine_tv", "nombre": "Cine, Series y TV", "icono": "🎬", "archivo": "data/preguntas/cine_tv.json" },
+    { "id": "musica", "nombre": "Música y Recitales", "icono": "🎵", "archivo": "data/preguntas/musica.json" },
+    { "id": "geografia", "nombre": "Geografía y Mundo", "icono": "🌍", "archivo": "data/preguntas/geografia.json" },
+    { "id": "historia", "nombre": "Historia Universal", "icono": "🏛️", "archivo": "data/preguntas/historia.json" },
+    { "id": "ciencia", "nombre": "Ciencia y Naturaleza", "icono": "🔬", "archivo": "data/preguntas/ciencia.json" },
+    { "id": "cultura_pop", "nombre": "Cultura Pop, Gaming y Tech", "icono": "🎮", "archivo": "data/preguntas/cultura_pop.json" },
+    { "id": "cotidiano", "nombre": "Comida y Vida Cotidiana", "icono": "🍔", "archivo": "data/preguntas/cotidiano.json" },
+    { "id": "bizarro", "nombre": "Récords Bizarros y Curiosidades", "icono": "🤯", "archivo": "data/preguntas/bizarro.json" }
+  ]
+}

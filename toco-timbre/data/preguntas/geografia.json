@@ -1,0 +1,902 @@
+[
+  {
+    "id": "geo_001",
+    "categoria": "geografia",
+    "dificultad": "facil",
+    "pregunta": "¿A cuántos metros sobre el nivel del mar se eleva la cima del Monte Everest en la cordillera del Himalaya?",
+    "respuesta": 8848,
+    "unidad": "metros",
+    "nota": "La montaña más alta de la Tierra sobre el nivel del mar, en la frontera entre Nepal y China."
+  },
+  {
+    "id": "geo_002",
+    "categoria": "geografia",
+    "dificultad": "facil",
+    "pregunta": "¿Cuántos océanos componen tradicionalmente la hidrosfera del planeta Tierra?",
+    "respuesta": 5,
+    "unidad": "océanos",
+    "nota": "Pacífico, Atlántico, Índico, Glacial Ártico y Glacial Antártico."
+  },
+  {
+    "id": "geo_003",
+    "categoria": "geografia",
+    "dificultad": "facil",
+    "pregunta": "¿Cuántos países miembros de pleno derecho integran la Organización de las Naciones Unidas (ONU)?",
+    "respuesta": 193,
+    "unidad": "países",
+    "nota": "Con Sudán del Sur como el estado miembro número 193 admitido en julio de 2011."
+  },
+  {
+    "id": "geo_004",
+    "categoria": "geografia",
+    "dificultad": "facil",
+    "pregunta": "¿Cuántos husos horarios teóricos de una hora dividen la circunferencia del globo terráqueo?",
+    "respuesta": 24,
+    "unidad": "husos horarios",
+    "nota": "A razón de 15 grados de longitud por cada huso horario de 60 minutos."
+  },
+  {
+    "id": "geo_005",
+    "categoria": "geografia",
+    "dificultad": "facil",
+    "pregunta": "¿Cuántos estados conforman los Estados Unidos de América?",
+    "respuesta": 50,
+    "unidad": "estados",
+    "nota": "Con Alaska y Hawái incorporados en 1959 como los estados 49° y 50°."
+  },
+  {
+    "id": "geo_006",
+    "categoria": "geografia",
+    "dificultad": "facil",
+    "pregunta": "¿Cuántos países soberanos componen el continente de América del Sur?",
+    "respuesta": 12,
+    "unidad": "países",
+    "nota": "Argentina, Bolivia, Brasil, Chile, Colombia, Ecuador, Guyana, Paraguay, Perú, Surinam, Uruguay y Venezuela."
+  },
+  {
+    "id": "geo_007",
+    "categoria": "geografia",
+    "dificultad": "facil",
+    "pregunta": "¿A cuántos metros de profundidad se sumerge la Fosa de las Marianas, el punto más hondo de los océanos?",
+    "respuesta": 10994,
+    "unidad": "metros",
+    "nota": "En el Abismo de Challenger en el Océano Pacífico occidental, a casi 11 km de profundidad."
+  },
+  {
+    "id": "geo_008",
+    "categoria": "geografia",
+    "dificultad": "facil",
+    "pregunta": "¿Cuántos kilómetros de longitud tiene aproximadamente el Río Nilo, uno de los dos ríos más largos del mundo?",
+    "respuesta": 6650,
+    "unidad": "kilómetros",
+    "nota": "Atraviesa 11 países de África nororiental hasta desembocar en el Mar Mediterráneo."
+  },
+  {
+    "id": "geo_009",
+    "categoria": "geografia",
+    "dificultad": "facil",
+    "pregunta": "¿Cuántos kilómetros de longitud tiene aproximadamente el colosal Río Amazonas en Sudamérica?",
+    "respuesta": 6992,
+    "unidad": "kilómetros",
+    "nota": "El río más caudaloso y largo del planeta, vertiendo más agua al océano que los siete siguientes combinados."
+  },
+  {
+    "id": "geo_010",
+    "categoria": "geografia",
+    "dificultad": "facil",
+    "pregunta": "¿Cuántos países integran actualmente la Unión Europea (tras la salida del Reino Unido por el Brexit)?",
+    "respuesta": 27,
+    "unidad": "países",
+    "nota": "Reino Unido formalizó su salida el 31 de enero de 2020 reduciendo los miembros a 27."
+  },
+  {
+    "id": "geo_011",
+    "categoria": "geografia",
+    "dificultad": "facil",
+    "pregunta": "¿A cuántos metros de caída libre ininterrumpida se precipita el Salto Ángel en Venezuela, la cascada más alta del mundo?",
+    "respuesta": 979,
+    "unidad": "metros",
+    "nota": "Cae desde la meseta del Auyantepuy en el Parque Nacional Canaima con 807 metros de caída continua."
+  },
+  {
+    "id": "geo_012",
+    "categoria": "geografia",
+    "dificultad": "facil",
+    "pregunta": "¿Cuántos países independientes componen el continente africano?",
+    "respuesta": 54,
+    "unidad": "países",
+    "nota": "Es el continente con mayor cantidad de estados soberanos reconocidos por la ONU."
+  },
+  {
+    "id": "geo_013",
+    "categoria": "geografia",
+    "dificultad": "facil",
+    "pregunta": "¿A cuántos grados de latitud se ubica la línea imaginaria del Ecuador terrestre?",
+    "respuesta": 0,
+    "unidad": "grados",
+    "nota": "Divide a la Tierra en el hemisferio norte y el hemisferio sur."
+  },
+  {
+    "id": "geo_014",
+    "categoria": "geografia",
+    "dificultad": "facil",
+    "pregunta": "¿A cuántos metros sobre el nivel del mar se encuentra el K2, la segunda montaña más alta y peligrosa del planeta?",
+    "respuesta": 8611,
+    "unidad": "metros",
+    "nota": "Ubicada en la cordillera del Karakórum en la frontera entre Pakistán y China."
+  },
+  {
+    "id": "geo_015",
+    "categoria": "geografia",
+    "dificultad": "facil",
+    "pregunta": "¿Cuántos continentes se reconocen comúnmente en el modelo geográfico tradicional escolar hispanohablante de 6 continentes?",
+    "respuesta": 6,
+    "unidad": "continentes",
+    "nota": "América, Europa, Asia, África, Oceanía y la Antártida."
+  },
+  {
+    "id": "geo_016",
+    "categoria": "geografia",
+    "dificultad": "facil",
+    "pregunta": "¿A cuántos kilómetros por hora rota la superficie terrestre sobre el ecuador aproximadamente?",
+    "respuesta": 1670,
+    "unidad": "km/h",
+    "nota": "La circunferencia ecuatorial de 40.075 km dividida por las 24 horas del día da unos 1.670 km/h."
+  },
+  {
+    "id": "geo_017",
+    "categoria": "geografia",
+    "dificultad": "facil",
+    "pregunta": "¿Cuántos kilómetros de largo tiene aproximadamente la Gran Barrera de Coral en el noreste de Australia?",
+    "respuesta": 2300,
+    "unidad": "kilómetros",
+    "nota": "El mayor arrecife coralino del mundo, visible incluso desde el espacio exterior."
+  },
+  {
+    "id": "geo_018",
+    "categoria": "geografia",
+    "dificultad": "facil",
+    "pregunta": "¿Cuántas estrellas rojas tiene la bandera nacional de China comunista?",
+    "respuesta": 0,
+    "unidad": "estrellas",
+    "nota": "Tiene 5 estrellas, pero son de color amarillo dorado sobre fondo rojo (trampa clásica)."
+  },
+  {
+    "id": "geo_019",
+    "categoria": "geografia",
+    "dificultad": "facil",
+    "pregunta": "¿Cuántas estrellas amarillas tiene la bandera oficial de la Unión Europea?",
+    "respuesta": 12,
+    "unidad": "estrellas",
+    "nota": "Forman un círculo dorado que representa la perfección, la unidad y la solidaridad europea."
+  },
+  {
+    "id": "geo_020",
+    "categoria": "geografia",
+    "dificultad": "facil",
+    "pregunta": "¿A cuántos metros sobre el nivel del mar se ubica la ciudad de La Paz (Bolivia), sede de gobierno más alta del mundo?",
+    "respuesta": 3640,
+    "unidad": "metros",
+    "nota": "El aeropuerto internacional de El Alto, adyacente a La Paz, se ubica a más de 4.060 metros."
+  },
+  {
+    "id": "geo_021",
+    "categoria": "geografia",
+    "dificultad": "facil",
+    "pregunta": "¿Cuántos países independientes integran la península ibérica?",
+    "respuesta": 3,
+    "unidad": "países",
+    "nota": "España, Portugal y el principado de Andorra (además del territorio británico de ultramar de Gibraltar)."
+  },
+  {
+    "id": "geo_022",
+    "categoria": "geografia",
+    "dificultad": "facil",
+    "pregunta": "¿Cuántos kilómetros mide aproximadamente la circunferencia ecuatorial de la Tierra?",
+    "respuesta": 40075,
+    "unidad": "kilómetros",
+    "nota": "La Tierra no es una esfera perfecta sino un esferoide oblato achatado en los polos."
+  },
+  {
+    "id": "geo_023",
+    "categoria": "geografia",
+    "dificultad": "facil",
+    "pregunta": "¿Cuántos estados conforman la República Federativa del Brasil (sin contar el Distrito Federal de Brasilia)?",
+    "respuesta": 26,
+    "unidad": "estados",
+    "nota": "Son 26 estados federados más el Distrito Federal de Brasilia, sumando 27 unidades."
+  },
+  {
+    "id": "geo_024",
+    "categoria": "geografia",
+    "dificultad": "facil",
+    "pregunta": "¿A cuántos metros bajo el nivel del mar se encuentra la superficie del Mar Muerto en Medio Oriente?",
+    "respuesta": 430,
+    "unidad": "metros",
+    "nota": "La masa de agua más baja de la superficie de la Tierra, con salinidad extrema del 34%."
+  },
+  {
+    "id": "geo_025",
+    "categoria": "geografia",
+    "dificultad": "facil",
+    "pregunta": "¿Cuántas islas principales componen el archipiélago de Japón (Honshu, Hokkaido, Kyushu y Shikoku)?",
+    "respuesta": 4,
+    "unidad": "islas principales",
+    "nota": "Aunque Japón cuenta con más de 14.000 islas en total, estas 4 concentran casi toda su población."
+  },
+  {
+    "id": "geo_026",
+    "categoria": "geografia",
+    "dificultad": "medio",
+    "pregunta": "¿Cuántos países tienen frontera terrestre con la República Popular China, empatando el récord mundial con Rusia?",
+    "respuesta": 14,
+    "unidad": "países",
+    "nota": "Limita con 14 naciones soberanas a lo largo de más de 22.000 km de fronteras terrestres."
+  },
+  {
+    "id": "geo_027",
+    "categoria": "geografia",
+    "dificultad": "medio",
+    "pregunta": "¿Cuántos kilómetros de longitud tiene el Canal de Panamá que conecta el Atlántico con el Pacífico?",
+    "respuesta": 82,
+    "unidad": "kilómetros",
+    "nota": "Inaugurado en 1914, utiliza un sistema de esclusas que eleva los barcos al lago Gatún a 26 metros de altura."
+  },
+  {
+    "id": "geo_028",
+    "categoria": "geografia",
+    "dificultad": "medio",
+    "pregunta": "¿Cuántos kilómetros de largo tiene el Canal de Suez en Egipto que une el Mar Mediterráneo con el Mar Rojo?",
+    "respuesta": 193,
+    "unidad": "kilómetros",
+    "nota": "Inaugurado en 1869, no tiene esclusas ya que ambos mares se encuentran al mismo nivel."
+  },
+  {
+    "id": "geo_029",
+    "categoria": "geografia",
+    "dificultad": "medio",
+    "pregunta": "¿A cuántos metros de altitud sobre el nivel del mar se ubica el Lago Titicaca, el lago navegable más alto del mundo?",
+    "respuesta": 3812,
+    "unidad": "metros",
+    "nota": "Compartido entre Perú y Bolivia en la meseta del Collao."
+  },
+  {
+    "id": "geo_030",
+    "categoria": "geografia",
+    "dificultad": "medio",
+    "pregunta": "¿Cuántos kilómetros de longitud tiene el histórico ferrocarril Transiberiano entre Moscú y Vladivostok?",
+    "respuesta": 9289,
+    "unidad": "kilómetros",
+    "nota": "La línea ferroviaria continua más larga del mundo, atravesando 8 husos horarios y dos continentes."
+  },
+  {
+    "id": "geo_031",
+    "categoria": "geografia",
+    "dificultad": "medio",
+    "pregunta": "¿Cuántos kilómetros cuadrados de superficie tiene aproximadamente Groenlandia, la isla más grande del mundo?",
+    "respuesta": 2166086,
+    "unidad": "km²",
+    "nota": "Territorio autónomo del Reino de Dinamarca cubierto en más del 80% por un inmenso manto de hielo."
+  },
+  {
+    "id": "geo_032",
+    "categoria": "geografia",
+    "dificultad": "medio",
+    "pregunta": "¿Cuántos kilómetros de longitud tiene aproximadamente la frontera entre Estados Unidos y Canadá, la más larga del mundo?",
+    "respuesta": 8891,
+    "unidad": "kilómetros",
+    "nota": "Incluye 6.416 km de frontera continental continua y 2.475 km con Alaska."
+  },
+  {
+    "id": "geo_033",
+    "categoria": "geografia",
+    "dificultad": "medio",
+    "pregunta": "¿A cuántos metros de profundidad máxima desciende el Lago Baikal en Siberia, el lago de agua dulce más profundo del planeta?",
+    "respuesta": 1642,
+    "unidad": "metros",
+    "nota": "Contiene cerca del 20% del agua dulce líquida no congelada de toda la superficie de la Tierra."
+  },
+  {
+    "id": "geo_034",
+    "categoria": "geografia",
+    "dificultad": "medio",
+    "pregunta": "¿Cuántos países del mundo están completamente rodeados por territorio de un único país (enclaves soberanos)?",
+    "respuesta": 3,
+    "unidad": "países",
+    "nota": "La Ciudad del Vaticano y San Marino (dentro de Italia), y Lesoto (dentro de Sudáfrica)."
+  },
+  {
+    "id": "geo_035",
+    "categoria": "geografia",
+    "dificultad": "medio",
+    "pregunta": "¿Cuántos kilómetros cuadrados abarca el desierto de arena caliente del Sahara en el norte de África?",
+    "respuesta": 9200000,
+    "unidad": "km²",
+    "nota": "Tiene una superficie similar a la de todo el territorio continental de los Estados Unidos o China."
+  },
+  {
+    "id": "geo_036",
+    "categoria": "geografia",
+    "dificultad": "medio",
+    "pregunta": "¿Cuántos kilómetros de largo tiene aproximadamente la Gran Muralla China en todas sus ramificaciones históricas?",
+    "respuesta": 21196,
+    "unidad": "kilómetros",
+    "nota": "La medición arqueológica oficial de la Administración Estatal de Patrimonio Cultural determinó esa longitud combinada."
+  },
+  {
+    "id": "geo_037",
+    "categoria": "geografia",
+    "dificultad": "medio",
+    "pregunta": "¿Cuántos kilómetros cuadrados mide la Ciudad del Vaticano, el estado soberano más pequeño del mundo?",
+    "respuesta": 0,
+    "unidad": "km² enteros",
+    "nota": "Tiene apenas 0,49 km² (unas 44 hectáreas), por lo que en kilómetros cuadrados enteros su respuesta es 0."
+  },
+  {
+    "id": "geo_038",
+    "categoria": "geografia",
+    "dificultad": "medio",
+    "pregunta": "¿A cuántos metros sobre el nivel del mar se eleva el volcán Monte Kilimanjaro en Tanzania, techo de África?",
+    "respuesta": 5895,
+    "unidad": "metros",
+    "nota": "Estratovolcán aislado con nieves eternas en su cumbre de Kibo a pesar de estar cerca del ecuador."
+  },
+  {
+    "id": "geo_039",
+    "categoria": "geografia",
+    "dificultad": "medio",
+    "pregunta": "¿Cuántos países integran el Reino Unido de Gran Bretaña e Irlanda del Norte?",
+    "respuesta": 4,
+    "unidad": "países",
+    "nota": "Inglaterra, Escocia, Gales e Irlanda del Norte."
+  },
+  {
+    "id": "geo_040",
+    "categoria": "geografia",
+    "dificultad": "medio",
+    "pregunta": "¿Cuántos kilómetros de largo mide el estrecho de Gibraltar en su punto más angosto entre Europa y África?",
+    "respuesta": 14,
+    "unidad": "kilómetros",
+    "nota": "Separa España de Marruecos por apenas 14,4 kilómetros de aguas marítimas estratégicas."
+  },
+  {
+    "id": "geo_041",
+    "categoria": "geografia",
+    "dificultad": "medio",
+    "pregunta": "¿Cuántas islas con nombre componen el archipiélago de la República de Indonesia aproximadamente?",
+    "respuesta": 17508,
+    "unidad": "islas",
+    "nota": "El estado insular más grande del mundo; unas 6.000 de ellas están habitadas por humanos."
+  },
+  {
+    "id": "geo_042",
+    "categoria": "geografia",
+    "dificultad": "medio",
+    "pregunta": "¿A cuántos metros sobre el nivel del mar se encuentra la cima del volcán Mauna Kea en Hawái (desde el nivel del mar)?",
+    "respuesta": 4207,
+    "unidad": "metros",
+    "nota": "Pero medida desde su base en el lecho marino oceánico supera los 10.200 metros de altura total."
+  },
+  {
+    "id": "geo_043",
+    "categoria": "geografia",
+    "dificultad": "medio",
+    "pregunta": "¿Cuántos husos horarios oficiales atraviesan el territorio de la Federación Rusa?",
+    "respuesta": 11,
+    "unidad": "husos horarios",
+    "nota": "Desde Kaliningrado en Europa del Este hasta la península de Kamchatka en el Lejano Oriente."
+  },
+  {
+    "id": "geo_044",
+    "categoria": "geografia",
+    "dificultad": "medio",
+    "pregunta": "¿Cuántos kilómetros de longitud tiene aproximadamente la cordillera de los Andes, la cadena montañosa más larga del planeta?",
+    "respuesta": 7240,
+    "unidad": "kilómetros",
+    "nota": "Atraviesa 7 países sudamericanos: Venezuela, Colombia, Ecuador, Perú, Bolivia, Chile y Argentina."
+  },
+  {
+    "id": "geo_045",
+    "categoria": "geografia",
+    "dificultad": "medio",
+    "pregunta": "¿A cuántos metros de altitud se sitúa la meseta del Tíbet, conocida popularmente como 'El Techo del Mundo'?",
+    "respuesta": 4500,
+    "unidad": "metros",
+    "nota": "Tiene una altitud media superior a los 4.500 metros sobre el nivel del mar y 2,5 millones de km²."
+  },
+  {
+    "id": "geo_046",
+    "categoria": "geografia",
+    "dificultad": "medio",
+    "pregunta": "¿Cuántos cantones componen la Confederación Suiza?",
+    "respuesta": 26,
+    "unidad": "cantones",
+    "nota": "20 cantones y 6 semicantones con amplia autonomía política y lingüística."
+  },
+  {
+    "id": "geo_047",
+    "categoria": "geografia",
+    "dificultad": "medio",
+    "pregunta": "¿Cuántos kilómetros de largo tiene el Río Danubio, el segundo río más largo de Europa tras el Volga?",
+    "respuesta": 2850,
+    "unidad": "kilómetros",
+    "nota": "Nace en la Selva Negra alemana y cruza o bordea 10 países y 4 capitales hasta el Mar Negro."
+  },
+  {
+    "id": "geo_048",
+    "categoria": "geografia",
+    "dificultad": "medio",
+    "pregunta": "¿Cuántas provincias integran la República de Chile (repartidas en sus 16 regiones)?",
+    "respuesta": 56,
+    "unidad": "provincias",
+    "nota": "Las 16 regiones se dividen en 56 provincias y 346 comunas."
+  },
+  {
+    "id": "geo_049",
+    "categoria": "geografia",
+    "dificultad": "medio",
+    "pregunta": "¿Cuántos kilómetros de largo tiene el estrecho de Bering que separa la península de Chukotka (Rusia) de Alaska (EE.UU.)?",
+    "respuesta": 82,
+    "unidad": "kilómetros",
+    "nota": "En su centro se hallan las islas Diomedes, separadas por solo 3,8 km y 21 horas de huso horario."
+  },
+  {
+    "id": "geo_050",
+    "categoria": "geografia",
+    "dificultad": "medio",
+    "pregunta": "¿A cuántos metros sobre el nivel del mar se alza el Mont Blanc en los Alpes, techo de Europa occidental?",
+    "respuesta": 4809,
+    "unidad": "metros",
+    "nota": "En la frontera entre Francia e Italia, cubierto por una cúpula de hielo y nieve perpetua."
+  },
+  {
+    "id": "geo_051",
+    "categoria": "geografia",
+    "dificultad": "dificil",
+    "pregunta": "¿Cuántos países del mundo no tienen salida al mar (estados sin litoral marítimo)?",
+    "respuesta": 44,
+    "unidad": "países",
+    "nota": "16 en África, 14 en Europa, 12 en Asia y 2 en América (Bolivia y Paraguay)."
+  },
+  {
+    "id": "geo_052",
+    "categoria": "geografia",
+    "dificultad": "dificil",
+    "pregunta": "¿Cuántos países del mundo están 'doblemente aislados del mar' (rodeados únicamente por otros países sin litoral)?",
+    "respuesta": 2,
+    "unidad": "países",
+    "nota": "Únicamente dos en todo el planeta: Liechtenstein en Europa y Uzbekistán en Asia Central."
+  },
+  {
+    "id": "geo_053",
+    "categoria": "geografia",
+    "dificultad": "dificil",
+    "pregunta": "¿Cuántos kilómetros cuadrados de superficie tiene el Mar Caspio, el lago cerrado más grande del planeta?",
+    "respuesta": 371000,
+    "unidad": "km²",
+    "nota": "Rodeado por Rusia, Kazajistán, Turkmenistán, Irán y Azerbaiyán con agua ligeramente salobre."
+  },
+  {
+    "id": "geo_054",
+    "categoria": "geografia",
+    "dificultad": "dificil",
+    "pregunta": "¿A cuántos metros bajo cero se registró la temperatura más baja medida naturalmente en la superficie de la Tierra (en la base rusa Vostok de la Antártida)?",
+    "respuesta": 89,
+    "unidad": "grados bajo cero (-°C)",
+    "nota": "El 21 de julio de 1983 los termómetros marcaron exactamente -89,2 °C."
+  },
+  {
+    "id": "geo_055",
+    "categoria": "geografia",
+    "dificultad": "dificil",
+    "pregunta": "¿Cuántas islas e islotes componen el archipiélago de la República de Filipinas en el sudeste asiático?",
+    "respuesta": 7641,
+    "unidad": "islas",
+    "nota": "Tras un relevamiento cartográfico satelital de alta resolución en 2016 se contabilizaron 7.641."
+  },
+  {
+    "id": "geo_056",
+    "categoria": "geografia",
+    "dificultad": "dificil",
+    "pregunta": "¿Cuántos kilómetros de largo tiene el túnel ferroviario de San Gotardo en Suiza, el más largo y profundo del mundo?",
+    "respuesta": 57,
+    "unidad": "kilómetros",
+    "nota": "Inaugurado en 2016, mide 57,1 km y atraviesa el corazón del macizo de los Alpes a 2.300 metros de profundidad."
+  },
+  {
+    "id": "geo_057",
+    "categoria": "geografia",
+    "dificultad": "dificil",
+    "pregunta": "¿Cuántos kilómetros de longitud tiene la frontera terrestre entre Argentina y Chile, la tercera más larga del mundo?",
+    "respuesta": 5308,
+    "unidad": "kilómetros",
+    "nota": "Se extiende a lo largo de la cordillera de los Andes desde el trifinio con Bolivia hasta el Canal Beagle."
+  },
+  {
+    "id": "geo_058",
+    "categoria": "geografia",
+    "dificultad": "dificil",
+    "pregunta": "¿A cuántos metros sobre el nivel del mar se alza el volcán Ojos del Salado, el volcán activo más alto de la Tierra?",
+    "respuesta": 6893,
+    "unidad": "metros",
+    "nota": "Ubicado en la frontera entre Argentina (Catamarca) y Chile (Atacama)."
+  },
+  {
+    "id": "geo_059",
+    "categoria": "geografia",
+    "dificultad": "dificil",
+    "pregunta": "¿Cuántos kilómetros de longitud tiene el río Volga en Rusia, el río más largo y caudaloso de Europa?",
+    "respuesta": 3530,
+    "unidad": "kilómetros",
+    "nota": "Desemboca en el Mar Caspio formando un inmenso delta con más de 500 brazos."
+  },
+  {
+    "id": "geo_060",
+    "categoria": "geografia",
+    "dificultad": "dificil",
+    "pregunta": "¿Cuántos atolones de coral componen la República de Maldivas en el Océano Índico?",
+    "respuesta": 26,
+    "unidad": "atolones",
+    "nota": "Comprenden 1.192 islas de coral, el país con la altitud media más baja del mundo (1,5 metros)."
+  },
+  {
+    "id": "geo_061",
+    "categoria": "geografia",
+    "dificultad": "dificil",
+    "pregunta": "¿Cuántos kilómetros cuadrados de superficie tiene el Lago Superior en América del Norte, el mayor lago de agua dulce por área?",
+    "respuesta": 82100,
+    "unidad": "km²",
+    "nota": "En la frontera entre Estados Unidos y Canadá, mayor que la superficie de Panamá o la República Checa."
+  },
+  {
+    "id": "geo_062",
+    "categoria": "geografia",
+    "dificultad": "dificil",
+    "pregunta": "¿A cuántos metros sobre el nivel del mar se encuentra la capital soberana más alta del mundo, La Paz (Bolivia)?",
+    "respuesta": 3640,
+    "unidad": "metros",
+    "nota": "Si se considera a Quito (Ecuador) como capital constitucional única, esta se sitúa a 2.850 metros."
+  },
+  {
+    "id": "geo_063",
+    "categoria": "geografia",
+    "dificultad": "dificil",
+    "pregunta": "¿Cuántos kilómetros mide el Túnel del Canal de la Mancha (Eurotúnel) que une Francia con el Reino Unido bajo el mar?",
+    "respuesta": 50,
+    "unidad": "kilómetros",
+    "nota": "50,5 km de longitud, de los cuales 37,9 km discurren bajo el lecho marino del canal."
+  },
+  {
+    "id": "geo_064",
+    "categoria": "geografia",
+    "dificultad": "dificil",
+    "pregunta": "¿A cuántos grados bajo cero desciende la temperatura media invernal en Oimiakón (Siberia), el pueblo habitado más frío del mundo?",
+    "respuesta": 50,
+    "unidad": "grados bajo cero (-°C)",
+    "nota": "En enero la media ronda los -50 °C; el récord histórico registrado fue de -67,7 °C en 1933."
+  },
+  {
+    "id": "geo_065",
+    "categoria": "geografia",
+    "dificultad": "dificil",
+    "pregunta": "¿Cuántos kilómetros de largo tiene el Gran Cañón del Colorado en el estado de Arizona?",
+    "respuesta": 446,
+    "unidad": "kilómetros",
+    "nota": "Tallado por el río Colorado a lo largo de millones de años, con profundidades de hasta 1.800 metros."
+  },
+  {
+    "id": "geo_066",
+    "categoria": "geografia",
+    "dificultad": "dificil",
+    "pregunta": "¿Cuántos países soberanos integran la Mancomunidad de Naciones (Commonwealth) británica?",
+    "respuesta": 56,
+    "unidad": "países",
+    "nota": "La mayoría son antiguas colonias del Imperio Británico en África, Asia, América y Oceanía."
+  },
+  {
+    "id": "geo_067",
+    "categoria": "geografia",
+    "dificultad": "dificil",
+    "pregunta": "¿A cuántos metros sobre el nivel del mar se eleva el Monte Elbrús en el Cáucaso ruso, el pico más alto de Europa geográfica?",
+    "respuesta": 5642,
+    "unidad": "metros",
+    "nota": "Estratovolcán inactivo con dos cumbres gemelas cubiertas de glaciares permanentes."
+  },
+  {
+    "id": "geo_068",
+    "categoria": "geografia",
+    "dificultad": "dificil",
+    "pregunta": "¿Cuántos kilómetros de costa tiene el litoral marítimo de Canadá, el país con la mayor longitud costera del planeta?",
+    "respuesta": 202080,
+    "unidad": "kilómetros",
+    "nota": "Rodeado por los océanos Atlántico, Pacífico y Ártico con decenas de miles de islas septentrionales."
+  },
+  {
+    "id": "geo_069",
+    "categoria": "geografia",
+    "dificultad": "dificil",
+    "pregunta": "¿Cuántos kilómetros de largo tiene la Fosa de las Marianas en forma de medialuna en el fondo del Pacífico?",
+    "respuesta": 2550,
+    "unidad": "kilómetros",
+    "nota": "Mide unos 2.550 km de longitud con un ancho promedio de apenas 69 kilómetros."
+  },
+  {
+    "id": "geo_070",
+    "categoria": "geografia",
+    "dificultad": "dificil",
+    "pregunta": "¿A cuántos metros sobre el nivel del mar se encuentra el paso fronterizo de montaña de Khunjerab entre Pakistán y China, el paso pavimentado más alto?",
+    "respuesta": 4693,
+    "unidad": "metros",
+    "nota": "Parte de la famosa autopista del Karakórum que une Islamabad con la región china de Sinkiang."
+  },
+  {
+    "id": "geo_071",
+    "categoria": "geografia",
+    "dificultad": "dificil",
+    "pregunta": "¿Cuántos kilómetros de longitud tiene el río Misisipi-Misuri combinado en América del Norte?",
+    "respuesta": 6275,
+    "unidad": "kilómetros",
+    "nota": "El cuarto sistema fluvial más extenso del mundo drenando más de 30 estados norteamericanos."
+  },
+  {
+    "id": "geo_072",
+    "categoria": "geografia",
+    "dificultad": "dificil",
+    "pregunta": "¿Cuántas provincias y territorios integran la Confederación de Canadá?",
+    "respuesta": 13,
+    "unidad": "divisiones",
+    "nota": "10 provincias (como Ontario y Quebec) y 3 territorios norteños (Yukón, Territorios del Noroeste y Nunavut)."
+  },
+  {
+    "id": "geo_073",
+    "categoria": "geografia",
+    "dificultad": "dificil",
+    "pregunta": "¿A cuántos metros de altitud se sitúa la estación de esquí Chacaltaya en Bolivia, otrora la más alta del mundo antes de derretirse su glaciar?",
+    "respuesta": 5421,
+    "unidad": "metros",
+    "nota": "El calentamiento global provocó la desaparición completa de su glaciar en el año 2009."
+  },
+  {
+    "id": "geo_074",
+    "categoria": "geografia",
+    "dificultad": "dificil",
+    "pregunta": "¿Cuántos kilómetros cuadrados mide el desierto de Atacama en el norte de Chile, el lugar no polar más árido de la Tierra?",
+    "respuesta": 105000,
+    "unidad": "km²",
+    "nota": "Hay estaciones meteorológicas en Atacama donde jamás ha caído una sola gota de lluvia registrada."
+  },
+  {
+    "id": "geo_075",
+    "categoria": "geografia",
+    "dificultad": "dificil",
+    "pregunta": "¿Cuántas islas e islotes componen el archipiélago de las Islas Galápagos de Ecuador?",
+    "respuesta": 13,
+    "unidad": "islas grandes",
+    "nota": "Cuenta con 13 islas mayores a 10 km², 6 islas menores y más de 100 islotes y rocas volcánicas."
+  },
+  {
+    "id": "geo_076",
+    "categoria": "geografia",
+    "dificultad": "extremo",
+    "pregunta": "¿Cuántos metros de altitud tiene la montaña Annapurna I en Nepal, una de las más mortíferas para los alpinistas?",
+    "respuesta": 8091,
+    "unidad": "metros",
+    "nota": "Fue el primer ochomil escalado por el ser humano en 1950 por Maurice Herzog y Louis Lachenal."
+  },
+  {
+    "id": "geo_077",
+    "categoria": "geografia",
+    "dificultad": "extremo",
+    "pregunta": "¿A cuántos kilómetros del punto de tierra firme más cercano se encuentra el 'Punto Nemo' en el Océano Pacífico sur, el polo oceánico de inaccesibilidad?",
+    "respuesta": 2688,
+    "unidad": "kilómetros",
+    "nota": "Los seres humanos más cercanos a menudo son los astronautas de la Estación Espacial Internacional (a 400 km de altura)."
+  },
+  {
+    "id": "geo_078",
+    "categoria": "geografia",
+    "dificultad": "extremo",
+    "pregunta": "¿Cuántos kilómetros cuadrados tiene la isla de Madagascar en el Océano Índico, la cuarta isla más grande del planeta?",
+    "respuesta": 587041,
+    "unidad": "km²",
+    "nota": "Aislada del continente africano desde hace 88 millones de años con una biodiversidad endémica única."
+  },
+  {
+    "id": "geo_079",
+    "categoria": "geografia",
+    "dificultad": "extremo",
+    "pregunta": "¿Cuántos kilómetros de frontera terrestre tiene el Principado de Mónaco con Francia?",
+    "respuesta": 5,
+    "unidad": "kilómetros",
+    "nota": "Exactamente 5,47 km de frontera terrestre con Francia y 3,83 km de línea de costa sobre el Mediterráneo."
+  },
+  {
+    "id": "geo_080",
+    "categoria": "geografia",
+    "dificultad": "extremo",
+    "pregunta": "¿A cuántos metros sobre el nivel del mar se ubica La Rinconada en los Andes peruanos, el asentamiento humano permanente más alto del mundo?",
+    "respuesta": 5100,
+    "unidad": "metros",
+    "nota": "Ciudad minera de oro habitada por más de 30.000 personas en condiciones extremas de hipoxia permanente."
+  },
+  {
+    "id": "geo_081",
+    "categoria": "geografia",
+    "dificultad": "extremo",
+    "pregunta": "¿Cuántas millas náuticas comprende la Zona Económica Exclusiva (ZEE) marina que otorga la Convención de la ONU sobre el Derecho del Mar?",
+    "respuesta": 200,
+    "unidad": "millas náuticas",
+    "nota": "Equivale a 370,4 kilómetros de derechos exclusivos sobre los recursos vivos y minerales del lecho marino."
+  },
+  {
+    "id": "geo_082",
+    "categoria": "geografia",
+    "dificultad": "extremo",
+    "pregunta": "¿Cuántos metros de altura tiene la cascada Tugela Falls en los montes Drakensberg de Sudáfrica, segunda más alta del mundo?",
+    "respuesta": 948,
+    "unidad": "metros",
+    "nota": "Consta de cinco saltos escalonados consecutivos en el Parque Nacional Royal Natal."
+  },
+  {
+    "id": "geo_083",
+    "categoria": "geografia",
+    "dificultad": "extremo",
+    "pregunta": "¿Cuántos kilómetros cuadrados de superficie tiene el mar de Aral en la actualidad comparado con los 68.000 km² que tenía en 1960?",
+    "respuesta": 6800,
+    "unidad": "km²",
+    "nota": "Ha perdido más del 90% de su superficie original debido al desvío soviético de los ríos Amu Daria y Sir Daria."
+  },
+  {
+    "id": "geo_084",
+    "categoria": "geografia",
+    "dificultad": "extremo",
+    "pregunta": "¿A cuántos metros bajo el lecho del Mar del Norte desciende la mina de carbón submarina Boulby en Inglaterra?",
+    "respuesta": 1400,
+    "unidad": "metros",
+    "nota": "Túneles subterráneos que se extienden varios kilómetros mar adentro bajo el lecho marino."
+  },
+  {
+    "id": "geo_085",
+    "categoria": "geografia",
+    "dificultad": "extremo",
+    "pregunta": "¿Cuántos kilómetros de frontera terrestre tiene España con el enclave británico de Gibraltar en la Verja?",
+    "respuesta": 1,
+    "unidad": "kilómetro",
+    "nota": "Mide apenas 1,2 kilómetros a lo largo del istmo que une el Peñón con La Línea de la Concepción."
+  },
+  {
+    "id": "geo_086",
+    "categoria": "geografia",
+    "dificultad": "extremo",
+    "pregunta": "¿A cuántos grados y minutos de latitud sur se sitúa el Cabo de Hornos en el extremo meridional de América?",
+    "respuesta": 55,
+    "unidad": "grados de latitud sur",
+    "nota": "Ubicado exactamente a 55° 58′ de latitud sur, en el archipiélago de las islas Hermite chilenas."
+  },
+  {
+    "id": "geo_087",
+    "categoria": "geografia",
+    "dificultad": "extremo",
+    "pregunta": "¿Cuántos kilómetros cuadrados de superficie tiene la República de Nauru en Micronesia, la república insular más chica del mundo?",
+    "respuesta": 21,
+    "unidad": "km²",
+    "nota": "Una sola isla ovalada de fosfato en el Pacífico central con apenas 10.000 habitantes."
+  },
+  {
+    "id": "geo_088",
+    "categoria": "geografia",
+    "dificultad": "extremo",
+    "pregunta": "¿A cuántos metros sobre el nivel del mar se encuentra el volcán Chimborazo en Ecuador, el punto más cercano de la Tierra al Sol?",
+    "respuesta": 6263,
+    "unidad": "metros",
+    "nota": "Debido al abultamiento ecuatorial terrestre, su cima es el punto más alejado del centro del planeta (6.384,4 km)."
+  },
+  {
+    "id": "geo_089",
+    "categoria": "geografia",
+    "dificultad": "extremo",
+    "pregunta": "¿Cuántos kilómetros de largo tiene el río Yangtsé (Chang Jiang) en China, el río más largo enteramente dentro de un solo país?",
+    "respuesta": 6300,
+    "unidad": "kilómetros",
+    "nota": "Alberga la monumental represa de las Tres Gargantas, la mayor central hidroeléctrica del mundo."
+  },
+  {
+    "id": "geo_090",
+    "categoria": "geografia",
+    "dificultad": "extremo",
+    "pregunta": "¿Cuántos lagos naturales tiene Finlandia, conocida mundialmente como 'La Tierra de los Mil Lagos'?",
+    "respuesta": 187888,
+    "unidad": "lagos",
+    "nota": "El censo geodésico oficial contabiliza 187.888 lagos de superficie mayor a 500 metros cuadrados."
+  },
+  {
+    "id": "geo_091",
+    "categoria": "geografia",
+    "dificultad": "extremo",
+    "pregunta": "¿A cuántos metros bajo el nivel del mar se encuentra el fondo de la cueva Veryovkina en Abjasia (Georgia), la sima más profunda conocida?",
+    "respuesta": 2212,
+    "unidad": "metros",
+    "nota": "Explorada por espeleólogos rusos que descendieron más de 2,2 km verticales en el macizo de Arabika."
+  },
+  {
+    "id": "geo_092",
+    "categoria": "geografia",
+    "dificultad": "extremo",
+    "pregunta": "¿Cuántos kilómetros de costa tiene el perímetro de la isla de Australia (sin incluir Tasmania ni islas menores)?",
+    "respuesta": 25760,
+    "unidad": "kilómetros",
+    "nota": "Si se suman todas las islas e islotes exteriores supera los 35.800 kilómetros costeros."
+  },
+  {
+    "id": "geo_093",
+    "categoria": "geografia",
+    "dificultad": "extremo",
+    "pregunta": "¿A cuántos grados centígrados llegó el récord mundial de calor del aire medido a la sombra en Furnace Creek en el Valle de la Muerte (California)?",
+    "respuesta": 56,
+    "unidad": "°C",
+    "nota": "El 10 de julio de 1913 el termómetro alcanzó 56,7 °C (134 °F), récord oficial ratificado por la OMM."
+  },
+  {
+    "id": "geo_094",
+    "categoria": "geografia",
+    "dificultad": "extremo",
+    "pregunta": "¿Cuántas islas componen el archipiélago ártico noruego de Svalbard?",
+    "respuesta": 30,
+    "unidad": "islas",
+    "nota": "Con Spitsbergen como la mayor, sede de la Bóveda Global de Semillas subterránea."
+  },
+  {
+    "id": "geo_095",
+    "categoria": "geografia",
+    "dificultad": "extremo",
+    "pregunta": "¿A cuántos metros de espesor máximo llega la capa de hielo continental sobre la Antártida?",
+    "respuesta": 4776,
+    "unidad": "metros",
+    "nota": "Cerca de 4,8 kilómetros de espesor de hielo en la Tierra de Wilkes en la cuenca subglacial Astrolabe."
+  },
+  {
+    "id": "geo_096",
+    "categoria": "geografia",
+    "dificultad": "extremo",
+    "pregunta": "¿Cuántos metros de longitud tiene el Puente Danyang-Kunshan en China, el puente más largo del mundo?",
+    "respuesta": 164800,
+    "unidad": "metros",
+    "nota": "Tiene casi 165 kilómetros de longitud como viaducto ferroviario de alta velocidad entre Pekín y Shanghái."
+  },
+  {
+    "id": "geo_097",
+    "categoria": "geografia",
+    "dificultad": "extremo",
+    "pregunta": "¿A cuántos metros sobre el nivel del mar se eleva el Monte Vinson, la cumbre más alta del continente antártico?",
+    "respuesta": 4892,
+    "unidad": "metros",
+    "nota": "Ubicado en la cordillera Sentinel de las montañas Ellsworth, a 1.200 km del Polo Sur geográfico."
+  },
+  {
+    "id": "geo_098",
+    "categoria": "geografia",
+    "dificultad": "extremo",
+    "pregunta": "¿Cuántos kilómetros cuadrados tiene el Gran Lago de los Esclavos en el norte de Canadá, el lago más profundo de Norteamérica?",
+    "respuesta": 27200,
+    "unidad": "km²",
+    "nota": "Alcanza los 614 metros de profundidad y permanece congelado ocho meses al año."
+  },
+  {
+    "id": "geo_099",
+    "categoria": "geografia",
+    "dificultad": "extremo",
+    "pregunta": "¿Cuántos milímetros de precipitación anual promedio caen en Mawsynram (India), el lugar más lluvioso del planeta?",
+    "respuesta": 11871,
+    "unidad": "milímetros",
+    "nota": "Casi 12 metros de agua de lluvia al año debido al impacto de los vientos monzónicos contra las colinas Khasi."
+  },
+  {
+    "id": "geo_100",
+    "categoria": "geografia",
+    "dificultad": "extremo",
+    "pregunta": "¿Cuántos kilómetros de frontera terrestre tiene la República Democrática del Congo en el corazón de África, rodeada por 9 países?",
+    "respuesta": 10730,
+    "unidad": "kilómetros",
+    "nota": "Uno de los países con mayor cantidad de kilómetros limítrofes compartidos del continente africano."
+  }
+]

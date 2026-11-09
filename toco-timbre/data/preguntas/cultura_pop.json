@@ -1,0 +1,902 @@
+[
+  {
+    "id": "pop_001",
+    "categoria": "cultura_pop",
+    "dificultad": "facil",
+    "pregunta": "¿En qué año Steve Jobs presentó el primer modelo de iPhone revolucionando los teléfonos inteligentes?",
+    "respuesta": 2007,
+    "unidad": "año",
+    "nota": "El 9 de enero de 2007 en la convención Macworld de San Francisco; se puso a la venta en junio de ese año."
+  },
+  {
+    "id": "pop_002",
+    "categoria": "cultura_pop",
+    "dificultad": "facil",
+    "pregunta": "¿Cuántos Pokémon componían la primera generación original de los videojuegos Rojo y Azul?",
+    "respuesta": 151,
+    "unidad": "pokémon",
+    "nota": "Desde Bulbasaur (#001) hasta Mew (#151) en la región de Kanto."
+  },
+  {
+    "id": "pop_003",
+    "categoria": "cultura_pop",
+    "dificultad": "facil",
+    "pregunta": "¿En qué año se lanzó la primera consola PlayStation de Sony en Japón?",
+    "respuesta": 1994,
+    "unidad": "año",
+    "nota": "El 3 de diciembre de 1994, tras frustrarse su colaboración de lector de CD con Nintendo."
+  },
+  {
+    "id": "pop_004",
+    "categoria": "cultura_pop",
+    "dificultad": "facil",
+    "pregunta": "¿Cuántas formas geométricas distintas de 'tetrominós' (piezas) caen en el videojuego clásico 'Tetris'?",
+    "respuesta": 7,
+    "unidad": "piezas",
+    "nota": "Las 7 piezas compuestas por 4 bloques: I, J, L, O, S, T y Z."
+  },
+  {
+    "id": "pop_005",
+    "categoria": "cultura_pop",
+    "dificultad": "facil",
+    "pregunta": "¿En qué año se fundó la red social Facebook por Mark Zuckerberg y sus compañeros en Harvard?",
+    "respuesta": 2004,
+    "unidad": "año",
+    "nota": "El 4 de febrero de 2004 originalmente bajo el nombre 'TheFacebook'."
+  },
+  {
+    "id": "pop_006",
+    "categoria": "cultura_pop",
+    "dificultad": "facil",
+    "pregunta": "¿En qué año debutó en las máquinas arcade japonesas el videojuego 'Pac-Man' de Namco?",
+    "respuesta": 1980,
+    "unidad": "año",
+    "nota": "El 22 de mayo de 1980 diseñado por Toru Iwatani, inicialmente llamado Puck-Man."
+  },
+  {
+    "id": "pop_007",
+    "categoria": "cultura_pop",
+    "dificultad": "facil",
+    "pregunta": "¿Cuántos fantasmas persiguen a Pac-Man por el laberinto en el juego arcade original?",
+    "respuesta": 4,
+    "unidad": "fantasmas",
+    "nota": "Blinky (rojo), Pinky (rosa), Inky (cian) y Clyde (naranja), cada uno con un algoritmo de persecución distinto."
+  },
+  {
+    "id": "pop_008",
+    "categoria": "cultura_pop",
+    "dificultad": "facil",
+    "pregunta": "¿En qué año se subió el primer video de la historia a YouTube ('Me at the zoo' por Jawed Karim)?",
+    "respuesta": 2005,
+    "unidad": "año",
+    "nota": "El 23 de abril de 2005 grabado en el zoológico de San Diego con 19 segundos de duración."
+  },
+  {
+    "id": "pop_009",
+    "categoria": "cultura_pop",
+    "dificultad": "facil",
+    "pregunta": "¿En qué año se lanzó la versión completa oficial 1.0 del fenómeno mundial 'Minecraft' de Mojang?",
+    "respuesta": 2011,
+    "unidad": "año",
+    "nota": "El 18 de noviembre de 2011 durante la primera convención MineCon en Las Vegas."
+  },
+  {
+    "id": "pop_010",
+    "categoria": "cultura_pop",
+    "dificultad": "facil",
+    "pregunta": "¿Cuántos botones principales de acción frontal identificados con símbolos geométricos tiene el joystick de PlayStation?",
+    "respuesta": 4,
+    "unidad": "botones",
+    "nota": "Triángulo (verde), Círculo (rojo), Cruz (azul) y Cuadrado (rosa), diseñados por Teiyu Goto."
+  },
+  {
+    "id": "pop_011",
+    "categoria": "cultura_pop",
+    "dificultad": "facil",
+    "pregunta": "¿En qué año se lanzó al mercado la legendaria consola portátil Game Boy de Nintendo en Japón?",
+    "respuesta": 1989,
+    "unidad": "año",
+    "nota": "El 21 de abril de 1989 diseñada por Gunpei Yokoi con su pantalla monocromática de matriz de puntos."
+  },
+  {
+    "id": "pop_012",
+    "categoria": "cultura_pop",
+    "dificultad": "facil",
+    "pregunta": "¿En qué año se fundó la empresa Apple Computer en el garaje de los padres de Steve Jobs?",
+    "respuesta": 1976,
+    "unidad": "año",
+    "nota": "El 1 de abril de 1976 por Steve Jobs, Steve Wozniak y Ronald Wayne."
+  },
+  {
+    "id": "pop_013",
+    "categoria": "cultura_pop",
+    "dificultad": "facil",
+    "pregunta": "¿Cuántos bits de procesamiento gráfico tenía la arquitectura de la consola Super Nintendo (SNES)?",
+    "respuesta": 16,
+    "unidad": "bits",
+    "nota": "Estandarte de la 'Guerra de los 16 bits' frente a la Sega Genesis / Mega Drive."
+  },
+  {
+    "id": "pop_014",
+    "categoria": "cultura_pop",
+    "dificultad": "facil",
+    "pregunta": "¿En qué año se fundó el buscador Google por los estudiantes de Stanford Larry Page y Sergey Brin?",
+    "respuesta": 1998,
+    "unidad": "año",
+    "nota": "El 4 de septiembre de 1998 en el garaje de Susan Wojcicki en Menlo Park."
+  },
+  {
+    "id": "pop_015",
+    "categoria": "cultura_pop",
+    "dificultad": "facil",
+    "pregunta": "¿En qué año se lanzó el monumental videojuego 'Grand Theft Auto V' (GTA V) de Rockstar Games?",
+    "respuesta": 2013,
+    "unidad": "año",
+    "nota": "El 17 de septiembre de 2013, recaudando más de 1.000 millones de dólares en solo 3 días."
+  },
+  {
+    "id": "pop_016",
+    "categoria": "cultura_pop",
+    "dificultad": "facil",
+    "pregunta": "¿Cuántas estrellas de poder secretas hay que recolectar en total en el castillo de 'Super Mario 64'?",
+    "respuesta": 120,
+    "unidad": "estrellas",
+    "nota": "Al conseguir las 120 estrellas se desbloquea el cañón del patio exterior para visitar a Yoshi en el techo."
+  },
+  {
+    "id": "pop_017",
+    "categoria": "cultura_pop",
+    "dificultad": "facil",
+    "pregunta": "¿En qué año se lanzó la plataforma de mensajería instantánea WhatsApp?",
+    "respuesta": 2009,
+    "unidad": "año",
+    "nota": "Creada por Jan Koum y Brian Acton, dos exempleados de Yahoo!, y adquirida luego por Facebook en 2014."
+  },
+  {
+    "id": "pop_018",
+    "categoria": "cultura_pop",
+    "dificultad": "facil",
+    "pregunta": "¿Cuántos caracteres como máximo permitía publicar Twitter originalmente en cada tuit hasta 2017?",
+    "respuesta": 140,
+    "unidad": "caracteres",
+    "nota": "Inspirado en el límite técnico de 160 caracteres de los mensajes de texto SMS telefónicos."
+  },
+  {
+    "id": "pop_019",
+    "categoria": "cultura_pop",
+    "dificultad": "facil",
+    "pregunta": "¿En qué año se lanzó la consola Nintendo 64 con su innovador joystick de palanca analógica?",
+    "respuesta": 1996,
+    "unidad": "año",
+    "nota": "El 23 de junio de 1996 en Japón con Super Mario 64 y Pilotwings 64."
+  },
+  {
+    "id": "pop_020",
+    "categoria": "cultura_pop",
+    "dificultad": "facil",
+    "pregunta": "¿En qué año se lanzó la enciclopedia libre y colaborativa Wikipedia en internet?",
+    "respuesta": 2001,
+    "unidad": "año",
+    "nota": "El 15 de enero de 2001 fundada por Jimmy Wales y Larry Sanger."
+  },
+  {
+    "id": "pop_021",
+    "categoria": "cultura_pop",
+    "dificultad": "facil",
+    "pregunta": "¿Cuántos jugadores humanos integran el lobby de combate clásico en el modo Battle Royale de 'Fortnite'?",
+    "respuesta": 100,
+    "unidad": "jugadores",
+    "nota": "100 participantes se lanzan desde el autobús de batalla (Battle Bus) hasta que solo queda uno en pie."
+  },
+  {
+    "id": "pop_022",
+    "categoria": "cultura_pop",
+    "dificultad": "facil",
+    "pregunta": "¿En qué año se fundó la empresa Microsoft por Bill Gates y Paul Allen en Albuquerque?",
+    "respuesta": 1975,
+    "unidad": "año",
+    "nota": "El 4 de abril de 1975 para desarrollar y vender intérpretes del lenguaje BASIC para el Altair 8800."
+  },
+  {
+    "id": "pop_023",
+    "categoria": "cultura_pop",
+    "dificultad": "facil",
+    "pregunta": "¿En qué año se lanzó el fenómeno móvil 'Pokémon GO' inundando las calles de cazadores de criaturas en realidad aumentada?",
+    "respuesta": 2016,
+    "unidad": "año",
+    "nota": "En julio de 2016 desarrollado por Niantic en colaboración con Nintendo y The Pokémon Company."
+  },
+  {
+    "id": "pop_024",
+    "categoria": "cultura_pop",
+    "dificultad": "facil",
+    "pregunta": "¿Cuántas vidas iniciales tiene Mario al comenzar una partida en el clásico 'Super Mario Bros.' de NES?",
+    "respuesta": 3,
+    "unidad": "vidas",
+    "nota": "Comienza con 3 vidas y suma una vida extra (1UP) al juntar 100 monedas doradas o agarrar un hongo verde."
+  },
+  {
+    "id": "pop_025",
+    "categoria": "cultura_pop",
+    "dificultad": "facil",
+    "pregunta": "¿En qué año se lanzó el sistema operativo 'Windows 95' con su famoso botón Inicio y menú desplegable?",
+    "respuesta": 1995,
+    "unidad": "año",
+    "nota": "El 24 de agosto de 1995 con música de inicio compuesta por Brian Eno y campaña con 'Start Me Up' de The Rolling Stones."
+  },
+  {
+    "id": "pop_026",
+    "categoria": "cultura_pop",
+    "dificultad": "medio",
+    "pregunta": "¿Cuántos millones de consolas PlayStation 2 vendió Sony a nivel mundial, la consola más vendida de la historia?",
+    "respuesta": 155,
+    "unidad": "millones de consolas",
+    "nota": "Lanzada en el año 2000, superó los 155 millones de unidades vendidas a lo largo de 13 años de vida comercial."
+  },
+  {
+    "id": "pop_027",
+    "categoria": "cultura_pop",
+    "dificultad": "medio",
+    "pregunta": "¿En qué año se lanzó 'The Legend of Zelda: Ocarina of Time' para Nintendo 64, considerado uno de los mejores juegos de la historia?",
+    "respuesta": 1998,
+    "unidad": "año",
+    "nota": "En noviembre de 1998, pionero absoluto del sistema de enfoque z-targeting en mundos 3D."
+  },
+  {
+    "id": "pop_028",
+    "categoria": "cultura_pop",
+    "dificultad": "medio",
+    "pregunta": "¿Cuántos millones de canciones cabían según el lema publicitario de Steve Jobs en el primer iPod de 5 GB en 2001?",
+    "respuesta": 1000,
+    "unidad": "canciones",
+    "nota": "'1.000 canciones en tu bolsillo', el slogan que revolucionó la industria de la música digital."
+  },
+  {
+    "id": "pop_029",
+    "categoria": "cultura_pop",
+    "dificultad": "medio",
+    "pregunta": "¿En qué año Blizzard Entertainment lanzó el colosal MMORPG 'World of Warcraft' (WoW)?",
+    "respuesta": 2004,
+    "unidad": "año",
+    "nota": "El 23 de noviembre de 2004 en el 10° aniversario del universo Warcraft."
+  },
+  {
+    "id": "pop_030",
+    "categoria": "cultura_pop",
+    "dificultad": "medio",
+    "pregunta": "¿Cuántos personajes seleccionables componían el plantel inicial del videojuego arcade de peleas 'Street Fighter II' (1991)?",
+    "respuesta": 8,
+    "unidad": "luchadores",
+    "nota": "Ryu, Ken, Chun-Li, Guile, Blanka, E. Honda, Zangief y Dhalsim (más los 4 jefes no seleccionables)."
+  },
+  {
+    "id": "pop_031",
+    "categoria": "cultura_pop",
+    "dificultad": "medio",
+    "pregunta": "¿En qué año se lanzó la plataforma de distribución de juegos digitales 'Steam' de Valve?",
+    "respuesta": 2003,
+    "unidad": "año",
+    "nota": "El 12 de septiembre de 2003 originalmente para facilitar los parches automáticos de Counter-Strike."
+  },
+  {
+    "id": "pop_032",
+    "categoria": "cultura_pop",
+    "dificultad": "medio",
+    "pregunta": "¿Cuántas esferas del dragón de estrellas doradas existen en el manga y anime 'Dragon Ball'?",
+    "respuesta": 7,
+    "unidad": "esferas",
+    "nota": "Del 1 al 7 estrellas; al reunirlas e invocar al dragón Shenlong se puede pedir un deseo."
+  },
+  {
+    "id": "pop_033",
+    "categoria": "cultura_pop",
+    "dificultad": "medio",
+    "pregunta": "¿En qué año se fundó la red social de fotos y videos Instagram por Kevin Systrom y Mike Krieger?",
+    "respuesta": 2010,
+    "unidad": "año",
+    "nota": "El 6 de octubre de 2010 inicialmente exclusiva para dispositivos iOS con filtros cuadrados retro."
+  },
+  {
+    "id": "pop_034",
+    "categoria": "cultura_pop",
+    "dificultad": "medio",
+    "pregunta": "¿Cuántos niveles de laberinto tiene en total el videojuego 'Donkey Kong' de 1981 protagonizado por Jumpman (Mario)?",
+    "respuesta": 4,
+    "unidad": "etapas",
+    "nota": "Vigas (25m), Cintas transportadoras (50m), Ascensores (75m) y Remaches (100m)."
+  },
+  {
+    "id": "pop_035",
+    "categoria": "cultura_pop",
+    "dificultad": "medio",
+    "pregunta": "¿En qué año se lanzó la primera consola Xbox de Microsoft con el juego estrella 'Halo: Combat Evolved'?",
+    "respuesta": 2001,
+    "unidad": "año",
+    "nota": "El 15 de noviembre de 2001 en Norteamérica equipada con disco duro interno de serie."
+  },
+  {
+    "id": "pop_036",
+    "categoria": "cultura_pop",
+    "dificultad": "medio",
+    "pregunta": "¿Cuántos bits tenía el chip procesador de la primera consola portátil Atari Lynx de 1989?",
+    "respuesta": 16,
+    "unidad": "bits",
+    "nota": "Primera consola portátil con pantalla LCD a color retroiluminada de 16 bits gráficos."
+  },
+  {
+    "id": "pop_037",
+    "categoria": "cultura_pop",
+    "dificultad": "medio",
+    "pregunta": "¿En qué año se lanzó la plataforma de música en streaming Spotify en Suecia y Europa?",
+    "respuesta": 2008,
+    "unidad": "año",
+    "nota": "El 7 de octubre de 2008 fundada por Daniel Ek y Martin Lorentzon en Estocolmo."
+  },
+  {
+    "id": "pop_038",
+    "categoria": "cultura_pop",
+    "dificultad": "medio",
+    "pregunta": "¿Cuántos mundos de 4 niveles cada uno (totalizando 32 niveles) componen el clásico 'Super Mario Bros.' de NES?",
+    "respuesta": 8,
+    "unidad": "mundos",
+    "nota": "8 mundos temáticos que concluyen enfrentando a Bowser en su castillo de lava."
+  },
+  {
+    "id": "pop_039",
+    "categoria": "cultura_pop",
+    "dificultad": "medio",
+    "pregunta": "¿En qué año se publicó el whitepaper fundacional de Bitcoin firmado por el seudónimo Satoshi Nakamoto?",
+    "respuesta": 2008,
+    "unidad": "año",
+    "nota": "El 31 de octubre de 2008 en una lista de correo de criptografía titulado 'A Peer-to-Peer Electronic Cash System'."
+  },
+  {
+    "id": "pop_040",
+    "categoria": "cultura_pop",
+    "dificultad": "medio",
+    "pregunta": "¿Cuántos colosos gigantescos debe derrotar el protagonista Wander en el aclamado juego 'Shadow of the Colossus' (PS2)?",
+    "respuesta": 16,
+    "unidad": "colosos",
+    "nota": "16 gigantes míticos repartidos por las Tierras Prohibidas para revivir a Mono."
+  },
+  {
+    "id": "pop_041",
+    "categoria": "cultura_pop",
+    "dificultad": "medio",
+    "pregunta": "¿En qué año se fundó la red social de videos cortos TikTok (lanzada internacionalmente tras fusionarse con Musical.ly)?",
+    "respuesta": 2016,
+    "unidad": "año",
+    "nota": "Creada por ByteDance bajo el nombre Douyin en China en septiembre de 2016 y lanzada globalmente en 2017."
+  },
+  {
+    "id": "pop_042",
+    "categoria": "cultura_pop",
+    "dificultad": "medio",
+    "pregunta": "¿Cuántas vidas extras otorga el legendario 'Código Konami' (Arriba, Arriba, Abajo, Abajo...) en el juego 'Contra' de NES?",
+    "respuesta": 30,
+    "unidad": "vidas",
+    "nota": "Pasaba de 3 a 30 vidas iniciales, convirtiéndose en el truco más célebre de los videojuegos."
+  },
+  {
+    "id": "pop_043",
+    "categoria": "cultura_pop",
+    "dificultad": "medio",
+    "pregunta": "¿En qué año se lanzó el videojuego de rol postapocalíptico 'Fallout 3' de Bethesda?",
+    "respuesta": 2008,
+    "unidad": "año",
+    "nota": "En octubre de 2008 transportando la franquicia al 3D con el sistema de disparo VATS."
+  },
+  {
+    "id": "pop_044",
+    "categoria": "cultura_pop",
+    "dificultad": "medio",
+    "pregunta": "¿Cuántos millones de copias vendió el juego 'Mario Kart 8 Deluxe' en Nintendo Switch (superando los 60 millones)?",
+    "respuesta": 60,
+    "unidad": "millones de copias",
+    "nota": "Es por amplio margen el videojuego más vendido en la historia de la consola Nintendo Switch."
+  },
+  {
+    "id": "pop_045",
+    "categoria": "cultura_pop",
+    "dificultad": "medio",
+    "pregunta": "¿En qué año se lanzó el primer modelo de la tableta iPad de Apple por Steve Jobs?",
+    "respuesta": 2010,
+    "unidad": "año",
+    "nota": "Presentado el 27 de enero de 2010 con pantalla multitáctil de 9,7 pulgadas."
+  },
+  {
+    "id": "pop_046",
+    "categoria": "cultura_pop",
+    "dificultad": "medio",
+    "pregunta": "¿Cuántos bits de procesamiento de audio y video tenía la mítica consola Neo-Geo AES de SNK?",
+    "respuesta": 24,
+    "unidad": "bits publicitados",
+    "nota": "Comercializada bajo el lema 'Advanced Entertainment System 24-bit' con procesador Motorola 68000 a 12 MHz y Z80."
+  },
+  {
+    "id": "pop_047",
+    "categoria": "cultura_pop",
+    "dificultad": "medio",
+    "pregunta": "¿En qué año se lanzó la plataforma de streaming en vivo Twitch (originalmente Justin.tv)?",
+    "respuesta": 2011,
+    "unidad": "año",
+    "nota": "En junio de 2011, adquirida en 2014 por Amazon por casi 1.000 millones de dólares."
+  },
+  {
+    "id": "pop_048",
+    "categoria": "cultura_pop",
+    "dificultad": "medio",
+    "pregunta": "¿Cuántos personajes iniciales seleccionables tenía el primer 'Super Smash Bros.' de Nintendo 64 (1999)?",
+    "respuesta": 8,
+    "unidad": "luchadores",
+    "nota": "Mario, Donkey Kong, Link, Samus, Yoshi, Kirby, Fox y Pikachu (más 4 desbloqueables)."
+  },
+  {
+    "id": "pop_049",
+    "categoria": "cultura_pop",
+    "dificultad": "medio",
+    "pregunta": "¿En qué año se lanzó la consola Nintendo Wii con su revolucionario control por movimiento Wiimote?",
+    "respuesta": 2006,
+    "unidad": "año",
+    "nota": "En noviembre de 2006 con Wii Sports, superando los 100 millones de unidades vendidas."
+  },
+  {
+    "id": "pop_050",
+    "categoria": "cultura_pop",
+    "dificultad": "medio",
+    "pregunta": "¿Cuántos bloques de altura componen la 'Capa de la Roca Madre' (Bedrock) en el fondo del mundo tradicional de Minecraft?",
+    "respuesta": 5,
+    "unidad": "bloques",
+    "nota": "Los 5 bloques inferiores del mundo en las versiones clásicas son indestructibles en modo supervivencia."
+  },
+  {
+    "id": "pop_051",
+    "categoria": "cultura_pop",
+    "dificultad": "dificil",
+    "pregunta": "¿Cuál es la puntuación perfecta máxima matemática alcanzable en la máquina arcade original de 'Pac-Man'?",
+    "respuesta": 3333360,
+    "unidad": "puntos",
+    "nota": "Lograda por primera vez por Billy Mitchell en 1999 tras superar 256 pantallas comiendo cada fruta y fantasma."
+  },
+  {
+    "id": "pop_052",
+    "categoria": "cultura_pop",
+    "dificultad": "dificil",
+    "pregunta": "¿En qué año el matemático ruso Alekséi Pázhitnov programó la primera versión de 'Tetris' en una computadora Electronika 60?",
+    "respuesta": 1984,
+    "unidad": "año",
+    "nota": "El 6 de junio de 1984 en la Academia de Ciencias de la Unión Soviética en Moscú."
+  },
+  {
+    "id": "pop_053",
+    "categoria": "cultura_pop",
+    "dificultad": "dificil",
+    "pregunta": "¿Cuántos kilobytes (KB) de memoria RAM básica de serie tenía la computadora doméstica Commodore 64 lanzada en 1982?",
+    "respuesta": 64,
+    "unidad": "kilobytes",
+    "nota": "De ahí su nombre C64; se convirtió en el modelo individual de computadora más vendido de la historia."
+  },
+  {
+    "id": "pop_054",
+    "categoria": "cultura_pop",
+    "dificultad": "dificil",
+    "pregunta": "¿En qué año se envió el primer mensaje de correo electrónico (email) de la historia a través de ARPANET por Ray Tomlinson?",
+    "respuesta": 1971,
+    "unidad": "año",
+    "nota": "Tomlinson introdujo el símbolo '@' (arroba) para separar el nombre del usuario de la máquina."
+  },
+  {
+    "id": "pop_055",
+    "categoria": "cultura_pop",
+    "dificultad": "dificil",
+    "pregunta": "¿Cuántos puntos de daño base hace un disparo directo con un 'Riel de Cañón' (Railgun) en el juego 'Quake III Arena'?",
+    "respuesta": 100,
+    "unidad": "puntos de daño",
+    "nota": "El arma de francotirador por excelencia de los torneos clásicos de arena shooters."
+  },
+  {
+    "id": "pop_056",
+    "categoria": "cultura_pop",
+    "dificultad": "dificil",
+    "pregunta": "¿En qué año se lanzó la primera versión comercial del sistema operativo móvil Android por Google (versión 1.0 en el HTC Dream)?",
+    "respuesta": 2008,
+    "unidad": "año",
+    "nota": "En septiembre de 2008 iniciando la era de los nombres de postres ordenados alfabéticamente."
+  },
+  {
+    "id": "pop_057",
+    "categoria": "cultura_pop",
+    "dificultad": "dificil",
+    "pregunta": "¿Cuántos millones de copias físicas y digitales vendió el legendario juego 'Wii Sports' incluido con la consola Wii?",
+    "respuesta": 82,
+    "unidad": "millones de copias",
+    "nota": "Uno de los títulos individuales más vendidos de todos los tiempos gracias a venir en pack con la consola."
+  },
+  {
+    "id": "pop_058",
+    "categoria": "cultura_pop",
+    "dificultad": "dificil",
+    "pregunta": "¿En qué año Tim Berners-Lee presentó formalmente la propuesta técnica de la World Wide Web (WWW) en el CERN?",
+    "respuesta": 1989,
+    "unidad": "año",
+    "nota": "En marzo de 1989 bajo el título 'Information Management: A Proposal'."
+  },
+  {
+    "id": "pop_059",
+    "categoria": "cultura_pop",
+    "dificultad": "dificil",
+    "pregunta": "¿Cuántos millones de dólares pagó Facebook por la adquisición de la aplicación Instagram en 2012?",
+    "respuesta": 1000,
+    "unidad": "millones de dólares",
+    "nota": "Aproximadamente mil millones de dólares en efectivo y acciones cuando Instagram tenía solo 13 empleados."
+  },
+  {
+    "id": "pop_060",
+    "categoria": "cultura_pop",
+    "dificultad": "dificil",
+    "pregunta": "¿En qué año la supercomputadora Deep Blue de IBM derrotó por primera vez al campeón mundial de ajedrez Garry Kasparov en un match?",
+    "respuesta": 1997,
+    "unidad": "año",
+    "nota": "En mayo de 1997 en Nueva York por 3½ a 2½ puntos, hito fundacional de la inteligencia artificial."
+  },
+  {
+    "id": "pop_061",
+    "categoria": "cultura_pop",
+    "dificultad": "dificil",
+    "pregunta": "¿Cuántos millones de dólares pagó Microsoft por la adquisición del estudio Mojang y la franquicia 'Minecraft' en 2014?",
+    "respuesta": 2500,
+    "unidad": "millones de dólares",
+    "nota": "2.500 millones de dólares en septiembre de 2014 tras un célebre tuit de su creador Markus 'Notch' Persson."
+  },
+  {
+    "id": "pop_062",
+    "categoria": "cultura_pop",
+    "dificultad": "dificil",
+    "pregunta": "¿En qué año se lanzó el mítico videojuego de disparos en primera persona 'DOOM' de id Software?",
+    "respuesta": 1993,
+    "unidad": "año",
+    "nota": "El 10 de diciembre de 1993 desarrollado por John Carmack y John Romero distribuido como shareware."
+  },
+  {
+    "id": "pop_063",
+    "categoria": "cultura_pop",
+    "dificultad": "dificil",
+    "pregunta": "¿Cuántos pines de conexión dorados tenía el cartucho de juegos de la consola Nintendo Entertainment System (NES) americana?",
+    "respuesta": 72,
+    "unidad": "pines",
+    "nota": "Su diseño propenso a polvo y desgaste originó el mito popular de soplar los cartuchos."
+  },
+  {
+    "id": "pop_064",
+    "categoria": "cultura_pop",
+    "dificultad": "dificil",
+    "pregunta": "¿En qué año se fundó la compañía japonesa Nintendo originalmente como fabricante de cartas artesanales Hanafuda?",
+    "respuesta": 1889,
+    "unidad": "año",
+    "nota": "El 23 de septiembre de 1889 por Fusajiro Yamauchi en Kioto."
+  },
+  {
+    "id": "pop_065",
+    "categoria": "cultura_pop",
+    "dificultad": "dificil",
+    "pregunta": "¿Cuántos millones de dólares pagó Elon Musk por la compra de la red social Twitter (actual X) en octubre de 2022?",
+    "respuesta": 44000,
+    "unidad": "millones de dólares",
+    "nota": "44.000 millones de dólares (44 billion) a razón de 54,20 dólares por acción."
+  },
+  {
+    "id": "pop_066",
+    "categoria": "cultura_pop",
+    "dificultad": "dificil",
+    "pregunta": "¿En qué año se lanzó la computadora Macintosh original de Apple con el mítico anuncio televisivo dirigido por Ridley Scott?",
+    "respuesta": 1984,
+    "unidad": "año",
+    "nota": "El 24 de enero de 1984 con interfaz gráfica de usuario y ratón incluidos de serie."
+  },
+  {
+    "id": "pop_067",
+    "categoria": "cultura_pop",
+    "dificultad": "dificil",
+    "pregunta": "¿Cuántos millones de transistores integraba el histórico microprocesador Intel 4004 de 1971 (en miles = 2)?",
+    "respuesta": 2,
+    "unidad": "mil transistores",
+    "nota": "Contaba con exactamente 2.300 transistores impresos en un único chip de silicio."
+  },
+  {
+    "id": "pop_068",
+    "categoria": "cultura_pop",
+    "dificultad": "dificil",
+    "pregunta": "¿En qué año se lanzó el navegador web 'Netscape Navigator', pionero de la explosión comercial de la red?",
+    "respuesta": 1994,
+    "unidad": "año",
+    "nota": "El 13 de octubre de 1994 desarrollado por Marc Andreessen y Jim Clark."
+  },
+  {
+    "id": "pop_069",
+    "categoria": "cultura_pop",
+    "dificultad": "dificil",
+    "pregunta": "¿Cuántos kilobytes (KB) pesaba el cartucho original de 'Super Mario Bros.' de NES de 1985?",
+    "respuesta": 32,
+    "unidad": "kilobytes",
+    "nota": "Solo 32 KB de código de programa y 8 KB de gráficos, una obra maestra de compresión de Shigeru Miyamoto."
+  },
+  {
+    "id": "pop_070",
+    "categoria": "cultura_pop",
+    "dificultad": "dificil",
+    "pregunta": "¿En qué año Linus Torvalds publicó el mensaje en Usenet anunciando la creación de su núcleo libre 'Linux'?",
+    "respuesta": 1991,
+    "unidad": "año",
+    "nota": "El 25 de agosto de 1991 como 'un hobby que no será grande ni profesional como GNU'."
+  },
+  {
+    "id": "pop_071",
+    "categoria": "cultura_pop",
+    "dificultad": "dificil",
+    "pregunta": "¿Cuántos millones de píxeles tiene un panel de resolución 4K estándar de Ultra Alta Definición (3840 x 2160)?",
+    "respuesta": 8,
+    "unidad": "millones de píxeles",
+    "nota": "Aproximadamente 8,29 millones de píxeles individuales (cuatro veces más que el Full HD de 1080p)."
+  },
+  {
+    "id": "pop_072",
+    "categoria": "cultura_pop",
+    "dificultad": "dificil",
+    "pregunta": "¿En qué año se lanzó el primer videojuego arcade comercial de la historia, 'Computer Space' de Nolan Bushnell?",
+    "respuesta": 1971,
+    "unidad": "año",
+    "nota": "En noviembre de 1971 previo a la fundación de Atari y el lanzamiento de Pong en 1972."
+  },
+  {
+    "id": "pop_073",
+    "categoria": "cultura_pop",
+    "dificultad": "dificil",
+    "pregunta": "¿Cuántos botones de control tiene el pad original de la consola Nintendo Entertainment System (NES)?",
+    "respuesta": 4,
+    "unidad": "botones frontales",
+    "nota": "Botones A y B, más Select y Start (además de la cruceta direccional D-Pad)."
+  },
+  {
+    "id": "pop_074",
+    "categoria": "cultura_pop",
+    "dificultad": "dificil",
+    "pregunta": "¿En qué año la empresa Sony lanzó el reproductor portátil de casetes de audio Walkman (modelo TPS-L2)?",
+    "respuesta": 1979,
+    "unidad": "año",
+    "nota": "El 1 de julio de 1979 cambiando los hábitos de consumo de música personal en las calles."
+  },
+  {
+    "id": "pop_075",
+    "categoria": "cultura_pop",
+    "dificultad": "dificil",
+    "pregunta": "¿Cuántos megabytes (MB) de capacidad tenía un disquete flexible estándar de 3½ pulgadas de alta densidad (HD)?",
+    "respuesta": 1,
+    "unidad": "megabytes enteros",
+    "nota": "Tenía exactamente 1,44 MB de capacidad formateada."
+  },
+  {
+    "id": "pop_076",
+    "categoria": "cultura_pop",
+    "dificultad": "extremo",
+    "pregunta": "¿A cuántos kilohercios (kHz) de frecuencia de reloj operaba el mítico procesador MOS 6502 en la consola NES americana?",
+    "respuesta": 1790,
+    "unidad": "kHz",
+    "nota": "Exactamente 1,79 MHz (1.789,77 kHz) en la versión NTSC de la consola de Nintendo."
+  },
+  {
+    "id": "pop_077",
+    "categoria": "cultura_pop",
+    "dificultad": "extremo",
+    "pregunta": "¿En qué año se fundó el estudio id Software por John Carmack, John Romero, Tom Hall y Adrian Carmack?",
+    "respuesta": 1991,
+    "unidad": "año",
+    "nota": "El 1 de febrero de 1991 en Mesquite, Texas, creadores de Wolfenstein 3D, DOOM y Quake."
+  },
+  {
+    "id": "pop_078",
+    "categoria": "cultura_pop",
+    "dificultad": "extremo",
+    "pregunta": "¿Cuántos bytes de memoria RAM de video (VRAM) dedicada incluía el hardware original de la consola Atari 2600 (VCS)?",
+    "respuesta": 128,
+    "unidad": "bytes",
+    "nota": "Apenas 128 bytes en el chip RIOT (6532); los programadores debían generar cada línea de escaneo al vuelo ('racing the beam')."
+  },
+  {
+    "id": "pop_079",
+    "categoria": "cultura_pop",
+    "dificultad": "extremo",
+    "pregunta": "¿En qué año se registró el primer nombre de dominio de internet '.com' de la historia (symbolics.com)?",
+    "respuesta": 1985,
+    "unidad": "año",
+    "nota": "El 15 de marzo de 1985 por la compañía informática Symbolics Inc. de Massachusetts."
+  },
+  {
+    "id": "pop_080",
+    "categoria": "cultura_pop",
+    "dificultad": "extremo",
+    "pregunta": "¿Cuántos cartuchos de juego del fallido 'E.T. the Extra-Terrestrial' desenterró un equipo arqueológico en el basural de Alamogordo en 2014?",
+    "respuesta": 1300,
+    "unidad": "cartuchos",
+    "nota": "Se excavaron unos 1.300 cartuchos confirmando la mítica leyenda urbana del entierro masivo de Atari en 1983."
+  },
+  {
+    "id": "pop_081",
+    "categoria": "cultura_pop",
+    "dificultad": "extremo",
+    "pregunta": "¿En qué año se creó el primer videojuego con 'Easter Egg' (huevo de pascua) firmado por Warren Robinett en 'Adventure' para Atari 2600?",
+    "respuesta": 1979,
+    "unidad": "año",
+    "nota": "Escondió una habitación secreta que mostraba 'Created by Warren Robinett' porque Atari no acreditaba a los programadores."
+  },
+  {
+    "id": "pop_082",
+    "categoria": "cultura_pop",
+    "dificultad": "extremo",
+    "pregunta": "¿Cuántos kilobytes (KB) de almacenamiento ocupaba la memoria ROM del cartucho original de 'The Legend of Zelda' en NES?",
+    "respuesta": 128,
+    "unidad": "kilobytes",
+    "nota": "128 KB de datos más una batería interna de litio de respaldo para guardar tres partidas."
+  },
+  {
+    "id": "pop_083",
+    "categoria": "cultura_pop",
+    "dificultad": "extremo",
+    "pregunta": "¿En qué año se lanzó la primera tarjeta gráfica bajo la marca 'GeForce' por NVIDIA (GeForce 256)?",
+    "respuesta": 1999,
+    "unidad": "año",
+    "nota": "En agosto de 1999 acuñando formalmente el término GPU (Unidad de Procesamiento Gráfico)."
+  },
+  {
+    "id": "pop_084",
+    "categoria": "cultura_pop",
+    "dificultad": "extremo",
+    "pregunta": "¿Cuántos puntos sumaba la mítica fruta cereza (Cherry) en el juego arcade 'Pac-Man'?",
+    "respuesta": 100,
+    "unidad": "puntos",
+    "nota": "Aparece en el primer nivel; las frutas van incrementando su valor hasta la llave de 5.000 puntos."
+  },
+  {
+    "id": "pop_085",
+    "categoria": "cultura_pop",
+    "dificultad": "extremo",
+    "pregunta": "¿En qué año se fundó el estudio de videojuegos BioWare en Edmonton (Canadá) por médicos de profesión?",
+    "respuesta": 1995,
+    "unidad": "año",
+    "nota": "Por Ray Muzyka y Greg Zeschuk, creadores de Baldur's Gate, Star Wars: KOTOR y Mass Effect."
+  },
+  {
+    "id": "pop_086",
+    "categoria": "cultura_pop",
+    "dificultad": "extremo",
+    "pregunta": "¿Cuántos píxeles de resolución vertical tenía la pantalla del primer teléfono móvil con pantalla táctil capacitiva moderna (LG Prada)?",
+    "respuesta": 400,
+    "unidad": "píxeles",
+    "nota": "Pantalla de 240 x 400 píxeles anunciada a finales de 2006 previo a la presentación del iPhone."
+  },
+  {
+    "id": "pop_087",
+    "categoria": "cultura_pop",
+    "dificultad": "extremo",
+    "pregunta": "¿En qué año la empresa Commodore lanzó al mercado la revolucionaria computadora multimedia Amiga 1000?",
+    "respuesta": 1985,
+    "unidad": "año",
+    "nota": "El 23 de julio de 1985 con la célebre demostración de pintura digital por Andy Warhol y Debbie Harry."
+  },
+  {
+    "id": "pop_088",
+    "categoria": "cultura_pop",
+    "dificultad": "extremo",
+    "pregunta": "¿Cuántos transistores incluía el microprocesador Zilog Z80 introducido en 1976 y utilizado en Game Boy y arcades?",
+    "respuesta": 8500,
+    "unidad": "transistores",
+    "nota": "Diseñado por Federico Faggin y Masatoshi Shima tras independizarse de Intel."
+  },
+  {
+    "id": "pop_089",
+    "categoria": "cultura_pop",
+    "dificultad": "extremo",
+    "pregunta": "¿En qué año se fundó el sitio web de subastas en línea eBay por Pierre Omidyar bajo el nombre AuctionWeb?",
+    "respuesta": 1995,
+    "unidad": "año",
+    "nota": "En septiembre de 1995; el primer artículo vendido fue un puntero láser roto por 14 dólares."
+  },
+  {
+    "id": "pop_090",
+    "categoria": "cultura_pop",
+    "dificultad": "extremo",
+    "pregunta": "¿Cuántas líneas de código ensamblador tenía aproximadamente el juego original de 'Elite' (1984) de David Braben e Ian Bell en BBC Micro?",
+    "respuesta": 15000,
+    "unidad": "líneas",
+    "nota": "Capaz de generar proceduralmente 8 galaxias enteras con 256 sistemas planetarios en solo 22 KB de memoria."
+  },
+  {
+    "id": "pop_091",
+    "categoria": "cultura_pop",
+    "dificultad": "extremo",
+    "pregunta": "¿En qué año se fundó la mítica casa de efectos visuales Industrial Light & Magic (ILM) por George Lucas?",
+    "respuesta": 1975,
+    "unidad": "año",
+    "nota": "En mayo de 1975 en un almacén de Van Nuys (California) para crear los efectos de Star Wars."
+  },
+  {
+    "id": "pop_092",
+    "categoria": "cultura_pop",
+    "dificultad": "extremo",
+    "pregunta": "¿Cuántos polígonos por segundo podía renderizar teóricamente el chip gráfico de la primera consola PlayStation de Sony?",
+    "respuesta": 360000,
+    "unidad": "polígonos por segundo",
+    "nota": "Hasta 360.000 polígonos con sombreado plano y textura mapeada, abriendo la era tridimensional masiva."
+  },
+  {
+    "id": "pop_093",
+    "categoria": "cultura_pop",
+    "dificultad": "extremo",
+    "pregunta": "¿En qué año se lanzó el primer servicio comercial de mensajes cortos SMS entre teléfonos móviles en la red de Vodafone en el Reino Unido?",
+    "respuesta": 1992,
+    "unidad": "año",
+    "nota": "El 3 de diciembre de 1992 con el texto 'Merry Christmas' enviado desde una computadora a un celular Orbitel 901."
+  },
+  {
+    "id": "pop_094",
+    "categoria": "cultura_pop",
+    "dificultad": "extremo",
+    "pregunta": "¿Cuántos segundos duraba el contador de autodestrucción en el mítico final de 'Super Metroid' (SNES) tras vencer a Mother Brain?",
+    "respuesta": 180,
+    "unidad": "segundos",
+    "nota": "Exactamente 3 minutos (180 segundos) para escapar del planeta Zebes hacia la nave de Samus Aran."
+  },
+  {
+    "id": "pop_095",
+    "categoria": "cultura_pop",
+    "dificultad": "extremo",
+    "pregunta": "¿En qué año se creó el lenguaje de programación C por Dennis Ritchie en los Laboratorios Bell de AT&T?",
+    "respuesta": 1972,
+    "unidad": "año",
+    "nota": "Para reescribir el sistema operativo Unix, transformándose en la piedra angular del software moderno."
+  },
+  {
+    "id": "pop_096",
+    "categoria": "cultura_pop",
+    "dificultad": "extremo",
+    "pregunta": "¿Cuántos millones de colores podía mostrar simultáneamente en pantalla la consola Neo-Geo AES (de una paleta de 65.536)?",
+    "respuesta": 4096,
+    "unidad": "colores",
+    "nota": "Capaz de desplegar hasta 4.096 colores y 380 sprites en pantalla sin ralentizaciones perceptibles."
+  },
+  {
+    "id": "pop_097",
+    "categoria": "cultura_pop",
+    "dificultad": "extremo",
+    "pregunta": "¿En qué año se lanzó la primera red celular comercial de telefonía móvil automatizada de primera generación (1G) en Tokio por NTT?",
+    "respuesta": 1979,
+    "unidad": "año",
+    "nota": "En diciembre de 1979 cubriendo inicialmente a los 23 distritos de Tokio con teléfonos para automóviles."
+  },
+  {
+    "id": "pop_098",
+    "categoria": "cultura_pop",
+    "dificultad": "extremo",
+    "pregunta": "¿Cuántos chips de memoria ROM integraba el cartucho de 'Chrono Trigger' (SNES) totalizando 32 megabits (4 MB)?",
+    "respuesta": 1,
+    "unidad": "máscara ROM",
+    "nota": "Uno de los cartuchos de 16 bits más grandes y caros de fabricar para Square en 1995."
+  },
+  {
+    "id": "pop_099",
+    "categoria": "cultura_pop",
+    "dificultad": "extremo",
+    "pregunta": "¿En qué año se lanzó el legendario protocolo de intercambio de archivos P2P BitTorrent creado por Bram Cohen?",
+    "respuesta": 2001,
+    "unidad": "año",
+    "nota": "El 2 de julio de 2001, descentralizando la descarga de grandes volúmenes de datos en internet."
+  },
+  {
+    "id": "pop_100",
+    "categoria": "cultura_pop",
+    "dificultad": "extremo",
+    "pregunta": "¿Cuántos bytes libres de memoria quedaban disponibles en la computadora Sinclair ZX81 lanzada en el Reino Unido en 1981 con 1 KB de RAM?",
+    "respuesta": 1024,
+    "unidad": "bytes",
+    "nota": "Exactamente 1.024 bytes en los que los entusiastas debían comprimir el sistema operativo BASIC y sus programas."
+  }
+]

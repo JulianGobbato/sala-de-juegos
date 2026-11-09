@@ -1,0 +1,362 @@
+[
+  {
+    "id": 1,
+    "categoria": "argentina",
+    "pregunta": "¿En qué año se inauguró el Obelisco de la Ciudad de Buenos Aires?",
+    "respuesta": 1936,
+    "unidad": "año",
+    "nota": "Se construyó en solo 31 días por el arquitecto Alberto Prebisch para recordar el 4° centenario de la primera fundación de la ciudad.",
+    "dificultad": "facil"
+  },
+  {
+    "id": 2,
+    "categoria": "Naturaleza y Animales",
+    "pregunta": "¿A cuántos kilómetros por hora puede correr un puma en velocidad punta?",
+    "respuesta": 80,
+    "unidad": "km/h",
+    "nota": "El puma concolor es capaz de alcanzar ráfagas de 80 km/h en persecuciones cortas.",
+    "dificultad": "medio"
+  },
+  {
+    "id": 3,
+    "categoria": "argentina",
+    "pregunta": "¿En qué año se declaró la Independencia de las Provincias Unidas en el Congreso de Tucumán?",
+    "respuesta": 1816,
+    "unidad": "año",
+    "nota": "Fue el martes 9 de julio de 1816 en la histórica casa de doña Francisca Bazán de Laguna.",
+    "dificultad": "dificil"
+  },
+  {
+    "id": 4,
+    "categoria": "Deportes y Automovilismo",
+    "pregunta": "¿Cuántas curvas tiene el histórico circuito de Monza en la Fórmula 1?",
+    "respuesta": 11,
+    "unidad": "curvas",
+    "nota": "Conocido como 'El Templo de la Velocidad', apenas tiene 11 curvas en sus 5.793 metros de extensión.",
+    "dificultad": "extremo"
+  },
+  {
+    "id": 5,
+    "categoria": "Cuerpo Humano y Ciencia",
+    "pregunta": "¿Cuántos dientes tiene la dentadura definitiva completa de una persona adulta?",
+    "respuesta": 32,
+    "unidad": "dientes",
+    "nota": "Incluye 8 incisivos, 4 caninos, 8 premolares y 12 molares (contando las 4 muelas de juicio).",
+    "dificultad": "facil"
+  },
+  {
+    "id": 6,
+    "categoria": "Fútbol y Deportes",
+    "pregunta": "¿Cuántos goles oficiales convirtió Lionel Messi en la Copa del Mundo Qatar 2022?",
+    "respuesta": 7,
+    "unidad": "goles",
+    "nota": "Marcó en fase de grupos, octavos, cuartos, semifinal y dos en la final inolvidable contra Francia.",
+    "dificultad": "medio"
+  },
+  {
+    "id": 7,
+    "categoria": "Cuerpo Humano y Ciencia",
+    "pregunta": "¿Cuántos huesos tiene el esqueleto de un ser humano adulto?",
+    "respuesta": 206,
+    "unidad": "huesos",
+    "nota": "Al nacer tenemos alrededor de 270 huesos, pero varios se van soldando durante el crecimiento.",
+    "dificultad": "dificil"
+  },
+  {
+    "id": 8,
+    "categoria": "Espacio y Ciencia",
+    "pregunta": "¿En qué año pisó el ser humano la Luna por primera vez con el Apolo 11?",
+    "respuesta": 1969,
+    "unidad": "año",
+    "nota": "Neil Armstrong y Buzz Aldrin alunizaron el 20 de julio de 1969 en el Mar de la Tranquilidad.",
+    "dificultad": "extremo"
+  },
+  {
+    "id": 9,
+    "categoria": "Naturaleza y Animales",
+    "pregunta": "¿Cuántos corazones tiene un pulpo?",
+    "respuesta": 3,
+    "unidad": "corazones",
+    "nota": "Dos corazones bombean sangre hacia las branquias y el tercero la distribuye al resto de los órganos.",
+    "dificultad": "facil"
+  },
+  {
+    "id": 10,
+    "categoria": "Geografía y Récords",
+    "pregunta": "¿A cuántos metros sobre el nivel del mar se encuentra la cima del Cerro Aconcagua?",
+    "respuesta": 6961,
+    "unidad": "metros",
+    "nota": "Ubicado en Mendoza, es la montaña más alta del continente americano y de los hemisferios sur y occidental.",
+    "dificultad": "medio"
+  },
+  {
+    "id": 11,
+    "categoria": "Tecnología",
+    "pregunta": "¿En qué año Steve Jobs presentó el primer iPhone al mundo?",
+    "respuesta": 2007,
+    "unidad": "año",
+    "nota": "Fue anunciado en enero de 2007 y revolucionó la industria de los teléfonos inteligentes para siempre.",
+    "dificultad": "dificil"
+  },
+  {
+    "id": 12,
+    "categoria": "Deportes",
+    "pregunta": "¿Cuántos minutos de juego reglamentario dura un partido oficial de básquetbol en la NBA?",
+    "respuesta": 48,
+    "unidad": "minutos",
+    "nota": "Son cuatro cuartos de 12 minutos cada uno (en FIBA y Liga Nacional son cuatro de 10, totalizando 40).",
+    "dificultad": "extremo"
+  },
+  {
+    "id": 13,
+    "categoria": "Música y Arte",
+    "pregunta": "¿Cuántas teclas tiene en total un piano acústico estándar tradicional?",
+    "respuesta": 88,
+    "unidad": "teclas",
+    "nota": "Cuenta con 52 teclas blancas para notas naturales y 36 negras para alteraciones (sostenidos y bemoles).",
+    "dificultad": "facil"
+  },
+  {
+    "id": 14,
+    "categoria": "Cine y Entretenimiento",
+    "pregunta": "¿En qué año se estrenó Toy Story, el primer largometraje animado 100% por computadora?",
+    "respuesta": 1995,
+    "unidad": "año",
+    "nota": "Dirigida por John Lasseter y producida por Pixar junto a Walt Disney Pictures.",
+    "dificultad": "medio"
+  },
+  {
+    "id": 15,
+    "categoria": "Física y Química",
+    "pregunta": "¿A cuántos grados Celsius hierve el agua pura al nivel del mar y presión atmosférica normal?",
+    "respuesta": 100,
+    "unidad": "°C",
+    "nota": "A mayor altura sobre el nivel del mar la presión baja y el agua hierve a menor temperatura (en La Paz hierve a ~88°C).",
+    "dificultad": "dificil"
+  },
+  {
+    "id": 16,
+    "categoria": "Deportes",
+    "pregunta": "¿Cuántos jugadores por equipo juegan simultáneamente en la cancha en Rugby Union tradicional?",
+    "respuesta": 15,
+    "unidad": "jugadores",
+    "nota": "Son 8 forwards (delanteros) y 7 backs (defensores y medios).",
+    "dificultad": "extremo"
+  },
+  {
+    "id": 17,
+    "categoria": "Historia Mundial",
+    "pregunta": "¿En qué año ocurrió la caída del Muro de Berlín?",
+    "respuesta": 1989,
+    "unidad": "año",
+    "nota": "El muro cayó pacíficamente la noche del 9 de noviembre de 1989 tras 28 años de división.",
+    "dificultad": "facil"
+  },
+  {
+    "id": 18,
+    "categoria": "Música y Arte",
+    "pregunta": "¿Cuántas cuerdas tiene un contrabajo de orquesta estándar?",
+    "respuesta": 4,
+    "unidad": "cuerdas",
+    "nota": "Están afinadas en cuartas: Mi, La, Re y Sol (aunque existen versiones especiales de 5 cuerdas).",
+    "dificultad": "medio"
+  },
+  {
+    "id": 19,
+    "categoria": "Astronomía",
+    "pregunta": "¿Cuántos días terrestres tarda aproximadamente la Luna en dar una vuelta completa alrededor de la Tierra?",
+    "respuesta": 27,
+    "unidad": "días",
+    "nota": "El período orbital sideral de la Luna respecto a las estrellas es de aproximadamente 27,3 días.",
+    "dificultad": "dificil"
+  },
+  {
+    "id": 20,
+    "categoria": "Cine y Argentina",
+    "pregunta": "¿En qué año se estrenó la película argentina de culto 'Esperando la carroza'?",
+    "respuesta": 1985,
+    "unidad": "año",
+    "nota": "Estrenada el 6 de mayo de 1985 con la mítica dirección de Alejandro Doria y las frases célebres de Mamá Cora.",
+    "dificultad": "extremo"
+  },
+  {
+    "id": 21,
+    "categoria": "Geografía y Argentina",
+    "pregunta": "¿Cuántos países limitan territorialmente con la República Argentina?",
+    "respuesta": 5,
+    "unidad": "países",
+    "nota": "Limita con Chile, Bolivia, Paraguay, Brasil y Uruguay.",
+    "dificultad": "facil"
+  },
+  {
+    "id": 22,
+    "categoria": "Arquitectura y Récords",
+    "pregunta": "¿Cuántos años demandó la construcción de la Torre Eiffel para la Exposición Universal de París?",
+    "respuesta": 2,
+    "unidad": "años",
+    "nota": "Se construyó en tiempo récord de 2 años, 2 meses y 5 días (entre 1887 y 1889).",
+    "dificultad": "medio"
+  },
+  {
+    "id": 23,
+    "categoria": "Juegos y Deportes",
+    "pregunta": "¿Cuántas casillas tiene un tablero reglamentario de ajedrez?",
+    "respuesta": 64,
+    "unidad": "casillas",
+    "nota": "Cuadrícula de 8 filas por 8 columnas, con 32 casillas claras y 32 oscuras.",
+    "dificultad": "dificil"
+  },
+  {
+    "id": 24,
+    "categoria": "Fútbol y Argentina",
+    "pregunta": "¿En qué año Diego Armando Maradona levantó la Copa del Mundo en el Estadio Azteca de México?",
+    "respuesta": 1986,
+    "unidad": "año",
+    "nota": "El 29 de junio de 1986 Argentina venció 3-2 a Alemania Federal en una final infartante.",
+    "dificultad": "extremo"
+  },
+  {
+    "id": 25,
+    "categoria": "Naturaleza y Animales",
+    "pregunta": "¿Cuántas extremidades en total tiene un calamar común (brazos más tentáculos)?",
+    "respuesta": 10,
+    "unidad": "extremidades",
+    "nota": "Tiene 8 brazos cortos y 2 tentáculos prensiles más largos para cazar a sus presas.",
+    "dificultad": "facil"
+  },
+  {
+    "id": 26,
+    "categoria": "Deportes y Récords",
+    "pregunta": "¿Cuántos metros de longitud mide una piscina olímpica oficial reglamentaria?",
+    "respuesta": 50,
+    "unidad": "metros",
+    "nota": "Las medidas olímpicas son 50 metros de largo por 25 metros de ancho y al menos 2 metros de profundidad.",
+    "dificultad": "medio"
+  },
+  {
+    "id": 27,
+    "categoria": "Transporte y Argentina",
+    "pregunta": "¿En qué año se inauguró la Línea A del Subte de Buenos Aires, el primer subterráneo de Iberoamérica?",
+    "respuesta": 1913,
+    "unidad": "año",
+    "nota": "Inaugurado el 1 de diciembre de 1913 entre Plaza de Mayo y Plaza Miserere.",
+    "dificultad": "dificil"
+  },
+  {
+    "id": 28,
+    "categoria": "Deportes y Tenis",
+    "pregunta": "¿Cuántos gramos pesa aproximadamente una pelota reglamentaria de tenis profesional?",
+    "respuesta": 58,
+    "unidad": "gramos",
+    "nota": "La Federación Internacional de Tenis (ITF) exige un peso de entre 56,0 y 59,4 gramos.",
+    "dificultad": "extremo"
+  },
+  {
+    "id": 29,
+    "categoria": "Geografía y Banderas",
+    "pregunta": "¿Cuántas estrellas blancas tiene la bandera oficial de los Estados Unidos de América?",
+    "respuesta": 50,
+    "unidad": "estrellas",
+    "nota": "Cada estrella representa a uno de los 50 estados que integran el país.",
+    "dificultad": "facil"
+  },
+  {
+    "id": 30,
+    "categoria": "Geografía y Argentina",
+    "pregunta": "¿Cuántas provincias integran la República Argentina (sin contar la Ciudad Autónoma de Buenos Aires)?",
+    "respuesta": 23,
+    "unidad": "provincias",
+    "nota": "Son 23 provincias y 1 Ciudad Autónoma con régimen especial de gobierno.",
+    "dificultad": "medio"
+  },
+  {
+    "id": 31,
+    "categoria": "Historia y Récords",
+    "pregunta": "¿En qué año ocurrió el trágico naufragio del transatlántico RMS Titanic?",
+    "respuesta": 1912,
+    "unidad": "año",
+    "nota": "Se hundió en la madrugada del 15 de abril de 1912 tras impactar contra un iceberg en el Atlántico Norte.",
+    "dificultad": "dificil"
+  },
+  {
+    "id": 32,
+    "categoria": "Arquitectura y Récords",
+    "pregunta": "¿Cuántos pisos en total tiene el emblemático edificio Empire State de Nueva York?",
+    "respuesta": 102,
+    "unidad": "pisos",
+    "nota": "Inaugurado en 1931, fue el rascacielos más alto del planeta durante casi 40 años.",
+    "dificultad": "extremo"
+  },
+  {
+    "id": 33,
+    "categoria": "Química y Ciencia",
+    "pregunta": "¿Cuántos elementos químicos componen la tabla periódica oficial de la IUPAC actualmente?",
+    "respuesta": 118,
+    "unidad": "elementos",
+    "nota": "Desde el Hidrógeno (número atómico 1) hasta el Oganesón (número atómico 118).",
+    "dificultad": "facil"
+  },
+  {
+    "id": 34,
+    "categoria": "Deportes y Fútbol",
+    "pregunta": "¿Cuántos minutos reglamentarios dura un solo tiempo en un partido oficial de fútbol profesional?",
+    "respuesta": 45,
+    "unidad": "minutos",
+    "nota": "Dos tiempos de 45 minutos totalizan los 90 reglamentarios, más el tiempo de descuento adicionado.",
+    "dificultad": "medio"
+  },
+  {
+    "id": 35,
+    "categoria": "Juegos y Tradición",
+    "pregunta": "¿Cuántas cartas tiene un mazo completo de la Baraja Española tradicional (incluyendo ochos y nueves)?",
+    "respuesta": 48,
+    "unidad": "cartas",
+    "nota": "Tiene 48 cartas (4 palos del 1 al 12). En el truco argentino tradicional se juega con 40 descartando los 8 y 9.",
+    "dificultad": "dificil"
+  },
+  {
+    "id": 36,
+    "categoria": "Física y Espacio",
+    "pregunta": "¿A cuántos miles de kilómetros por segundo viaja aproximadamente la luz en el vacío?",
+    "respuesta": 300,
+    "unidad": "mil km/s",
+    "nota": "La velocidad exacta es de 299.792,458 kilómetros por segundo.",
+    "dificultad": "extremo"
+  },
+  {
+    "id": 37,
+    "categoria": "Tecnología y Música",
+    "pregunta": "¿En qué año se lanzó oficialmente la plataforma de streaming Spotify en Suecia y Europa?",
+    "respuesta": 2008,
+    "unidad": "año",
+    "nota": "Fue lanzada el 7 de octubre de 2008 por Daniel Ek y Martin Lorentzon.",
+    "dificultad": "facil"
+  },
+  {
+    "id": 38,
+    "categoria": "Mitos y Curiosidades",
+    "pregunta": "¿Cuántas vidas le atribuye la creencia popular a los gatos en los países hispanohablantes?",
+    "respuesta": 7,
+    "unidad": "vidas",
+    "nota": "En la tradición en español se les atribuyen 7 vidas, mientras que en la cultura anglosajona se dice que tienen 9.",
+    "dificultad": "medio"
+  },
+  {
+    "id": 39,
+    "categoria": "Lengua y Cultura",
+    "pregunta": "¿Cuántas letras integran el abecedario oficial del idioma español según la RAE desde 2010?",
+    "respuesta": 27,
+    "unidad": "letras",
+    "nota": "En 2010 la Real Academia Española definió 27 letras formales, reclasificando la 'ch' y la 'll' como dígrafos.",
+    "dificultad": "dificil"
+  },
+  {
+    "id": 40,
+    "categoria": "Transporte y Argentina",
+    "pregunta": "¿En qué año circuló en Buenos Aires el primer 'colectivo' de la historia (invento argentino)?",
+    "respuesta": 1928,
+    "unidad": "año",
+    "nota": "El 24 de septiembre de 1928 un grupo de taxistas inauguró en Plaza Primera Junta el primer servicio colectivo de pasajeros.",
+    "dificultad": "extremo"
+  }
+]

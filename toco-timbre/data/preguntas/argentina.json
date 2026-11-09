@@ -1,0 +1,902 @@
+[
+  {
+    "id": "arg_001",
+    "categoria": "argentina",
+    "dificultad": "facil",
+    "pregunta": "¿En qué año ganó la Selección Argentina su tercera Copa del Mundo de fútbol en Qatar?",
+    "respuesta": 2022,
+    "unidad": "año",
+    "nota": "El 18 de diciembre de 2022, tras empatar 3-3 con Francia y vencer en los penales."
+  },
+  {
+    "id": "arg_002",
+    "categoria": "argentina",
+    "dificultad": "facil",
+    "pregunta": "¿En qué año se declaró la Independencia de las Provincias Unidas en el Congreso de Tucumán?",
+    "respuesta": 1816,
+    "unidad": "año",
+    "nota": "El 9 de julio de 1816 en la histórica casa de doña Francisca Bazán de Laguna."
+  },
+  {
+    "id": "arg_003",
+    "categoria": "argentina",
+    "dificultad": "facil",
+    "pregunta": "¿En qué año ocurrió la Revolución de Mayo y se formó el Primer Gobierno Patrio?",
+    "respuesta": 1810,
+    "unidad": "año",
+    "nota": "El 25 de mayo de 1810 se destituyó al virrey Baltasar Hidalgo de Cisneros."
+  },
+  {
+    "id": "arg_004",
+    "categoria": "argentina",
+    "dificultad": "facil",
+    "pregunta": "¿Cuántas provincias integran la República Argentina (sin contar la Ciudad Autónoma de Buenos Aires)?",
+    "respuesta": 23,
+    "unidad": "provincias",
+    "nota": "Son 23 provincias más la Ciudad Autónoma de Buenos Aires (CABA)."
+  },
+  {
+    "id": "arg_005",
+    "categoria": "argentina",
+    "dificultad": "facil",
+    "pregunta": "¿En qué año ganó Argentina su segunda Copa Mundial de fútbol de la mano de Diego Maradona?",
+    "respuesta": 1986,
+    "unidad": "año",
+    "nota": "En el Mundial de México 1986, venciendo 3-2 a Alemania Federal en la final."
+  },
+  {
+    "id": "arg_006",
+    "categoria": "argentina",
+    "dificultad": "facil",
+    "pregunta": "¿En qué año se inauguró el emblemático Obelisco de la Ciudad de Buenos Aires?",
+    "respuesta": 1936,
+    "unidad": "año",
+    "nota": "Se construyó en solo 31 días por el 4° centenario de la primera fundación porteña."
+  },
+  {
+    "id": "arg_007",
+    "categoria": "argentina",
+    "dificultad": "facil",
+    "pregunta": "¿Cuántos países limitan territorialmente con la República Argentina?",
+    "respuesta": 5,
+    "unidad": "países",
+    "nota": "Limita con Chile, Bolivia, Paraguay, Brasil y Uruguay."
+  },
+  {
+    "id": "arg_008",
+    "categoria": "argentina",
+    "dificultad": "facil",
+    "pregunta": "¿En qué año ganó Argentina su primer Mundial de fútbol masculino como país anfitrión?",
+    "respuesta": 1978,
+    "unidad": "año",
+    "nota": "El equipo dirigido por César Luis Menotti venció 3-1 a Holanda en el Monumental."
+  },
+  {
+    "id": "arg_009",
+    "categoria": "argentina",
+    "dificultad": "facil",
+    "pregunta": "¿Cuántos rayos dorados tiene el Sol de Mayo que flamea en la bandera nacional argentina?",
+    "respuesta": 32,
+    "unidad": "rayos",
+    "nota": "Cuenta con 16 rayos rectos y 16 rayos ondulados intercalados."
+  },
+  {
+    "id": "arg_010",
+    "categoria": "argentina",
+    "dificultad": "facil",
+    "pregunta": "¿En qué año se recuperó la democracia en Argentina con la asunción presidencial de Raúl Alfonsín?",
+    "respuesta": 1983,
+    "unidad": "año",
+    "nota": "Asumió el 10 de diciembre de 1983, poniendo fin a la dictadura cívico-militar."
+  },
+  {
+    "id": "arg_011",
+    "categoria": "argentina",
+    "dificultad": "facil",
+    "pregunta": "¿En qué año se sancionó la Constitución de la Nación Argentina original en la ciudad de Santa Fe?",
+    "respuesta": 1853,
+    "unidad": "año",
+    "nota": "El 1 de mayo de 1853 por el Congreso General Constituyente."
+  },
+  {
+    "id": "arg_012",
+    "categoria": "argentina",
+    "dificultad": "facil",
+    "pregunta": "¿Cuántas copas del mundo de fútbol masculino ostenta la Selección Argentina en total?",
+    "respuesta": 3,
+    "unidad": "copas",
+    "nota": "Los tres títulos mundiales fueron en 1978, 1986 y 2022."
+  },
+  {
+    "id": "arg_013",
+    "categoria": "argentina",
+    "dificultad": "facil",
+    "pregunta": "¿En qué año se estrenó la mítica película argentina 'Esperando la carroza'?",
+    "respuesta": 1985,
+    "unidad": "año",
+    "nota": "Dirigida por Alejandro Doria, un clásico absoluto del grotesco criollo."
+  },
+  {
+    "id": "arg_014",
+    "categoria": "argentina",
+    "dificultad": "facil",
+    "pregunta": "¿Cuántas cartas se reparten a cada jugador al comenzar una mano tradicional de Truco argentino?",
+    "respuesta": 3,
+    "unidad": "cartas",
+    "nota": "Cada participante recibe 3 cartas de la baraja española para jugar tres rondas."
+  },
+  {
+    "id": "arg_015",
+    "categoria": "argentina",
+    "dificultad": "facil",
+    "pregunta": "¿En qué año comenzó la Guerra de Malvinas tras el desembarco en Puerto Argentino?",
+    "respuesta": 1982,
+    "unidad": "año",
+    "nota": "El 2 de abril de 1982 tropas argentinas desembarcaron en las Islas Malvinas."
+  },
+  {
+    "id": "arg_016",
+    "categoria": "argentina",
+    "dificultad": "facil",
+    "pregunta": "¿Cuántos puntos son necesarios habitualmente para ganar un partido tradicional completo de Truco?",
+    "respuesta": 30,
+    "unidad": "puntos",
+    "nota": "Se juega a 30 puntos (15 malas y 15 buenas), aunque a veces se pacta a 18 o 24."
+  },
+  {
+    "id": "arg_017",
+    "categoria": "argentina",
+    "dificultad": "facil",
+    "pregunta": "¿En qué año nació el astro rosarino Lionel Andrés Messi?",
+    "respuesta": 1987,
+    "unidad": "año",
+    "nota": "Nació el 24 de junio de 1987 en la ciudad de Rosario, provincia de Santa Fe."
+  },
+  {
+    "id": "arg_018",
+    "categoria": "argentina",
+    "dificultad": "facil",
+    "pregunta": "¿Cuántos premios Óscar a la Mejor Película Internacional ganó la cinematografía argentina?",
+    "respuesta": 2,
+    "unidad": "premios Óscar",
+    "nota": "Por 'La historia oficial' (1985) y 'El secreto de sus ojos' (2009)."
+  },
+  {
+    "id": "arg_019",
+    "categoria": "argentina",
+    "dificultad": "facil",
+    "pregunta": "¿En qué año falleció Carlos Gardel en el trágico accidente aéreo de Medellín?",
+    "respuesta": 1935,
+    "unidad": "año",
+    "nota": "El 24 de junio de 1935 en el aeropuerto Las Playas de Medellín, Colombia."
+  },
+  {
+    "id": "arg_020",
+    "categoria": "argentina",
+    "dificultad": "facil",
+    "pregunta": "¿Cuántos Premios Nobel en total ha recibido la República Argentina a lo largo de su historia?",
+    "respuesta": 5,
+    "unidad": "premios Nobel",
+    "nota": "Dos de la Paz (Saavedra Lamas y Pérez Esquivel) y tres de Ciencias (Houssay, Leloir y Milstein)."
+  },
+  {
+    "id": "arg_021",
+    "categoria": "argentina",
+    "dificultad": "facil",
+    "pregunta": "¿En qué año se estrenó 'El secreto de sus ojos', ganadora del Óscar dirigida por Juan José Campanella?",
+    "respuesta": 2009,
+    "unidad": "año",
+    "nota": "Estrenada en cines en agosto de 2009, protagonizada por Ricardo Darín y Soledad Villamil."
+  },
+  {
+    "id": "arg_022",
+    "categoria": "argentina",
+    "dificultad": "facil",
+    "pregunta": "¿Cuántas líneas activas de subterráneo con letras tiene la red de la Ciudad de Buenos Aires?",
+    "respuesta": 6,
+    "unidad": "líneas",
+    "nota": "Las líneas comerciales activas son la A, B, C, D, E y H (además del Premetro)."
+  },
+  {
+    "id": "arg_023",
+    "categoria": "argentina",
+    "dificultad": "facil",
+    "pregunta": "¿En qué año se promulgó la ley de Matrimonio Igualitario en Argentina, pionera en Latinoamérica?",
+    "respuesta": 2010,
+    "unidad": "año",
+    "nota": "Fue aprobada por el Senado en la madrugada del 15 de julio de 2010 (Ley 26.618)."
+  },
+  {
+    "id": "arg_024",
+    "categoria": "argentina",
+    "dificultad": "facil",
+    "pregunta": "¿Cuántas copas América de fútbol de mayores ha ganado la Selección Argentina masculina (hasta 2024)?",
+    "respuesta": 16,
+    "unidad": "copas América",
+    "nota": "Es el máximo ganador histórico de la competición tras consagrarse campeón en 2024."
+  },
+  {
+    "id": "arg_025",
+    "categoria": "argentina",
+    "dificultad": "facil",
+    "pregunta": "¿En qué año Diego Maradona convirtió 'El Gol del Siglo' y 'La Mano de Dios' frente a Inglaterra?",
+    "respuesta": 1986,
+    "unidad": "año",
+    "nota": "El memorable 22 de junio de 1986 en el Estadio Azteca por cuartos de final."
+  },
+  {
+    "id": "arg_026",
+    "categoria": "argentina",
+    "dificultad": "medio",
+    "pregunta": "¿En qué año circuló en Buenos Aires el primer 'colectivo' de la historia (invento porteño)?",
+    "respuesta": 1928,
+    "unidad": "año",
+    "nota": "El 24 de septiembre de 1928 desde Plaza Primera Junta hasta Lacarra y Rivadavia."
+  },
+  {
+    "id": "arg_027",
+    "categoria": "argentina",
+    "dificultad": "medio",
+    "pregunta": "¿A cuántos metros de altura sobre el nivel del mar se eleva el Cerro Aconcagua en Mendoza?",
+    "respuesta": 6961,
+    "unidad": "metros",
+    "nota": "La montaña más alta del continente americano y de todo el hemisferio occidental."
+  },
+  {
+    "id": "arg_028",
+    "categoria": "argentina",
+    "dificultad": "medio",
+    "pregunta": "¿En qué año se inauguró la Línea A del Subte porteño, la primera de Iberoamérica?",
+    "respuesta": 1913,
+    "unidad": "año",
+    "nota": "El 1 de diciembre de 1913 uniendo Plaza de Mayo con Plaza Miserere (Once)."
+  },
+  {
+    "id": "arg_029",
+    "categoria": "argentina",
+    "dificultad": "medio",
+    "pregunta": "¿Cuántos metros de altura total tiene el Obelisco porteño desde su base hasta la cúspide?",
+    "respuesta": 67,
+    "unidad": "metros",
+    "nota": "Mide exactamente 67,5 metros con una cúspide de cuatro puntas y pararrayos."
+  },
+  {
+    "id": "arg_030",
+    "categoria": "argentina",
+    "dificultad": "medio",
+    "pregunta": "¿En qué año se fundó formalmente la Universidad de Buenos Aires (UBA)?",
+    "respuesta": 1821,
+    "unidad": "año",
+    "nota": "Inaugurada el 12 de agosto de 1821 en la Iglesia de San Ignacio por Martín Rodríguez y Rivadavia."
+  },
+  {
+    "id": "arg_031",
+    "categoria": "argentina",
+    "dificultad": "medio",
+    "pregunta": "¿Cuántos escalones interiores tiene el Obelisco de Buenos Aires para subir hasta el mirador superior?",
+    "respuesta": 206,
+    "unidad": "escalones",
+    "nota": "Tiene una escalera recta marinera de hierro con descansos intermedios."
+  },
+  {
+    "id": "arg_032",
+    "categoria": "argentina",
+    "dificultad": "medio",
+    "pregunta": "¿En qué año se sancionó la Ley Sáenz Peña de voto secreto, universal y obligatorio para varones?",
+    "respuesta": 1912,
+    "unidad": "año",
+    "nota": "La ley número 8.871 permitió la llegada democrática del radicalismo en 1916."
+  },
+  {
+    "id": "arg_033",
+    "categoria": "argentina",
+    "dificultad": "medio",
+    "pregunta": "¿Cuántas comunas políticas y administrativas dividen a la Ciudad Autónoma de Buenos Aires?",
+    "respuesta": 15,
+    "unidad": "comunas",
+    "nota": "Las 15 comunas agrupan a los 48 barrios oficiales porteños."
+  },
+  {
+    "id": "arg_034",
+    "categoria": "argentina",
+    "dificultad": "medio",
+    "pregunta": "¿En qué año nació el músico y compositor de rock argentino Charly García?",
+    "respuesta": 1951,
+    "unidad": "año",
+    "nota": "Nació el 23 de octubre de 1951 como Carlos Alberto García Moreno en Caballito."
+  },
+  {
+    "id": "arg_035",
+    "categoria": "argentina",
+    "dificultad": "medio",
+    "pregunta": "¿Cuántos barrios oficiales componen la Ciudad Autónoma de Buenos Aires?",
+    "respuesta": 48,
+    "unidad": "barrios",
+    "nota": "Desde Agronomía y Almagro hasta Villa Urquiza y Villa Lugano."
+  },
+  {
+    "id": "arg_036",
+    "categoria": "argentina",
+    "dificultad": "medio",
+    "pregunta": "¿En qué año se fundó la histórica tira cómica Mafalda de Quino con su primera publicación en Primera Plana?",
+    "respuesta": 1964,
+    "unidad": "año",
+    "nota": "Publicada el 29 de septiembre de 1964 en la revista semanal Primera Plana."
+  },
+  {
+    "id": "arg_037",
+    "categoria": "argentina",
+    "dificultad": "medio",
+    "pregunta": "¿En qué año se inauguró el actual edificio del Teatro Colón en la Ciudad de Buenos Aires?",
+    "respuesta": 1908,
+    "unidad": "año",
+    "nota": "Abrió sus puertas el 25 de mayo de 1908 con la ópera Aída de Giuseppe Verdi."
+  },
+  {
+    "id": "arg_038",
+    "categoria": "argentina",
+    "dificultad": "medio",
+    "pregunta": "¿Cuántos saltos de agua integran aproximadamente las Cataratas del Iguazú del lado argentino y brasileño?",
+    "respuesta": 275,
+    "unidad": "saltos",
+    "nota": "Cerca del 80% de los saltos se encuentran ubicados dentro del territorio argentino."
+  },
+  {
+    "id": "arg_039",
+    "categoria": "argentina",
+    "dificultad": "medio",
+    "pregunta": "¿En qué año se promulgó la Ley del Voto Femenino (Ley 13.010) impulsada por Eva Perón?",
+    "respuesta": 1947,
+    "unidad": "año",
+    "nota": "El 23 de septiembre de 1947 se consagró la igualdad de derechos políticos entre mujeres y varones."
+  },
+  {
+    "id": "arg_040",
+    "categoria": "argentina",
+    "dificultad": "medio",
+    "pregunta": "¿Cuántos años cumplió el peronismo desde la movilización fundacional del 17 de octubre de 1945 hasta el año 2020?",
+    "respuesta": 75,
+    "unidad": "años",
+    "nota": "El Día de la Lealtad peronista celebró su 75 aniversario en octubre de 2020."
+  },
+  {
+    "id": "arg_041",
+    "categoria": "argentina",
+    "dificultad": "medio",
+    "pregunta": "¿En qué año se fundó el Club Atlético Boca Juniors en el barrio de La Boca?",
+    "respuesta": 1905,
+    "unidad": "año",
+    "nota": "El 3 de abril de 1905 por un grupo de jóvenes hijos de inmigrantes italianos."
+  },
+  {
+    "id": "arg_042",
+    "categoria": "argentina",
+    "dificultad": "medio",
+    "pregunta": "¿En qué año se fundó el Club Atlético River Plate en la Dársena Sur porteña?",
+    "respuesta": 1901,
+    "unidad": "año",
+    "nota": "El 25 de mayo de 1901 tras la fusión de los clubes Santa Rosa y La Rosales."
+  },
+  {
+    "id": "arg_043",
+    "categoria": "argentina",
+    "dificultad": "medio",
+    "pregunta": "¿Cuántos metros de largo mide aproximadamente la emblemática Avenida 9 de Julio de punta a punta?",
+    "respuesta": 4000,
+    "unidad": "metros",
+    "nota": "Tiene unos 4 kilómetros de extensión uniendo Constitución con el enlace Retiro-Autopista Illia."
+  },
+  {
+    "id": "arg_044",
+    "categoria": "argentina",
+    "dificultad": "medio",
+    "pregunta": "¿En qué año se inauguró el Monumento Histórico Nacional a la Bandera en Rosario?",
+    "respuesta": 1957,
+    "unidad": "año",
+    "nota": "El 20 de junio de 1957 en el sitio exacto donde Manuel Belgrano la izó por primera vez."
+  },
+  {
+    "id": "arg_045",
+    "categoria": "argentina",
+    "dificultad": "medio",
+    "pregunta": "¿Cuántos años tenía José de San Martín cuando falleció en su exilio en Boulogne-sur-Mer?",
+    "respuesta": 72,
+    "unidad": "años",
+    "nota": "Nació el 25 de febrero de 1778 y falleció el 17 de agosto de 1850."
+  },
+  {
+    "id": "arg_046",
+    "categoria": "argentina",
+    "dificultad": "medio",
+    "pregunta": "¿En qué año se publicó la primera edición del poema gauchesco 'El Gaucho Martín Fierro' de José Hernández?",
+    "respuesta": 1872,
+    "unidad": "año",
+    "nota": "La segunda parte, 'La vuelta de Martín Fierro', fue editada en 1879."
+  },
+  {
+    "id": "arg_047",
+    "categoria": "argentina",
+    "dificultad": "medio",
+    "pregunta": "¿Cuántos kilómetros de longitud tiene aproximadamente la famosa Ruta Nacional 40 a lo largo de los Andes?",
+    "respuesta": 5194,
+    "unidad": "kilómetros",
+    "nota": "Atraviesa 11 provincias desde Cabo Vírgenes en Santa Cruz hasta La Quiaca en Jujuy."
+  },
+  {
+    "id": "arg_048",
+    "categoria": "argentina",
+    "dificultad": "medio",
+    "pregunta": "¿En qué año asumió la presidencia Juan Domingo Perón por primera vez?",
+    "respuesta": 1946,
+    "unidad": "año",
+    "nota": "El 4 de junio de 1946 tras imponerse en las elecciones de febrero a la Unión Democrática."
+  },
+  {
+    "id": "arg_049",
+    "categoria": "argentina",
+    "dificultad": "medio",
+    "pregunta": "¿Cuántos metros de ancho promedio tiene la Avenida 9 de Julio en la Ciudad de Buenos Aires?",
+    "respuesta": 140,
+    "unidad": "metros",
+    "nota": "Durante décadas fue publicitada a nivel internacional como la avenida más ancha del mundo."
+  },
+  {
+    "id": "arg_050",
+    "categoria": "argentina",
+    "dificultad": "medio",
+    "pregunta": "¿En qué año se estrenó el tema 'De música ligera' de Soda Stereo en el álbum Canción Animal?",
+    "respuesta": 1990,
+    "unidad": "año",
+    "nota": "El álbum Canción Animal fue lanzado el 7 de agosto de 1990."
+  },
+  {
+    "id": "arg_051",
+    "categoria": "argentina",
+    "dificultad": "dificil",
+    "pregunta": "¿En qué año se realizó la primera transmisión radial de la historia argentina por 'Los Locos de la Azotea'?",
+    "respuesta": 1920,
+    "unidad": "año",
+    "nota": "El 27 de agosto de 1920 desde la terraza del Teatro Coliseo transmitiendo la ópera Parsifal."
+  },
+  {
+    "id": "arg_052",
+    "categoria": "argentina",
+    "dificultad": "dificil",
+    "pregunta": "¿Cuántos metros de altura tiene la torre principal del Monumento a la Bandera en Rosario?",
+    "respuesta": 70,
+    "unidad": "metros",
+    "nota": "La torre tiene una altura de 70 metros con una cripta conmemorativa y mirador."
+  },
+  {
+    "id": "arg_053",
+    "categoria": "argentina",
+    "dificultad": "dificil",
+    "pregunta": "¿En qué año se fundó la ciudad de La Plata como nueva capital planificada de la provincia de Buenos Aires?",
+    "respuesta": 1882,
+    "unidad": "año",
+    "nota": "El 19 de noviembre de 1882 por el gobernador Dardo Rocha con un trazado de diagonales perfecto."
+  },
+  {
+    "id": "arg_054",
+    "categoria": "argentina",
+    "dificultad": "dificil",
+    "pregunta": "¿Cuántos kilómetros de largo tiene el Túnel Subfluvial 'Raúl Uranga - Carlos Sylvestre Begnis' bajo el río Paraná?",
+    "respuesta": 2397,
+    "unidad": "metros",
+    "nota": "Inaugurado en 1969, une las ciudades de Santa Fe y Paraná a través de casi 2,4 km de túnel."
+  },
+  {
+    "id": "arg_055",
+    "categoria": "argentina",
+    "dificultad": "dificil",
+    "pregunta": "¿En qué año se sancionó la Ley 1.420 de educación común, gratuita, laica y obligatoria en Argentina?",
+    "respuesta": 1884,
+    "unidad": "año",
+    "nota": "Promulgada el 8 de julio de 1884 durante la primera presidencia de Julio Argentino Roca."
+  },
+  {
+    "id": "arg_056",
+    "categoria": "argentina",
+    "dificultad": "dificil",
+    "pregunta": "¿Cuántos metros sobre el nivel del mar alcanza el Glaciar Perito Moreno en su frente de ruptura sobre el Lago Argentino?",
+    "respuesta": 60,
+    "unidad": "metros",
+    "nota": "La pared de hielo que emerge sobre el nivel del agua ronda entre los 60 y 70 metros de altura."
+  },
+  {
+    "id": "arg_057",
+    "categoria": "argentina",
+    "dificultad": "dificil",
+    "pregunta": "¿En qué año se inauguró el mítico Estadio Monumental de River Plate en el barrio de Núñez?",
+    "respuesta": 1938,
+    "unidad": "año",
+    "nota": "El 26 de mayo de 1938 con un partido amistoso ante Peñarol de Montevideo."
+  },
+  {
+    "id": "arg_058",
+    "categoria": "argentina",
+    "dificultad": "dificil",
+    "pregunta": "¿En qué año se inauguró oficialmente el estadio La Bombonera de Boca Juniors?",
+    "respuesta": 1940,
+    "unidad": "año",
+    "nota": "El 25 de mayo de 1940 con un triunfo 2-0 frente a San Lorenzo de Almagro."
+  },
+  {
+    "id": "arg_059",
+    "categoria": "argentina",
+    "dificultad": "dificil",
+    "pregunta": "¿Cuántos artículos integraban la Constitución Nacional Argentina original sancionada en 1853?",
+    "respuesta": 107,
+    "unidad": "artículos",
+    "nota": "Contaba originalmente con 107 artículos antes de las reformas sucesivas de 1860, 1898 y 1994."
+  },
+  {
+    "id": "arg_060",
+    "categoria": "argentina",
+    "dificultad": "dificil",
+    "pregunta": "¿En qué año Bernardo Houssay se convirtió en el primer científico latinoamericano en ganar el Premio Nobel de Fisiología o Medicina?",
+    "respuesta": 1947,
+    "unidad": "año",
+    "nota": "Por su descubrimiento del papel de las hormonas de la hipófisis en el metabolismo del azúcar."
+  },
+  {
+    "id": "arg_061",
+    "categoria": "argentina",
+    "dificultad": "dificil",
+    "pregunta": "¿Cuántos diputados componen la Cámara de Diputados de la Nación Argentina?",
+    "respuesta": 257,
+    "unidad": "diputados",
+    "nota": "Representan al pueblo de las 23 provincias y de la Ciudad de Buenos Aires según población."
+  },
+  {
+    "id": "arg_062",
+    "categoria": "argentina",
+    "dificultad": "dificil",
+    "pregunta": "¿Cuántos senadores integran la Cámara de Senadores de la Nación Argentina?",
+    "respuesta": 72,
+    "unidad": "senadores",
+    "nota": "Exactamente 3 senadores por cada uno de los 24 distritos electorales del país."
+  },
+  {
+    "id": "arg_063",
+    "categoria": "argentina",
+    "dificultad": "dificil",
+    "pregunta": "¿En qué año se fundó la primera escuela naval y militar bajo la dirección del marino Guillermo Brown en Argentina?",
+    "respuesta": 1872,
+    "unidad": "año",
+    "nota": "Sarmiento creó formalmente la Escuela Naval Militar el 5 de octubre de 1872."
+  },
+  {
+    "id": "arg_064",
+    "categoria": "argentina",
+    "dificultad": "dificil",
+    "pregunta": "¿Cuántos días duró la huelga obrera de los Talleres Vasena conocida trágicamente como la 'Semana Trágica' en 1919?",
+    "respuesta": 8,
+    "unidad": "días",
+    "nota": "Ocurrió entre el 7 y el 14 de enero de 1919 con una feroz represión policial y paramilitar."
+  },
+  {
+    "id": "arg_065",
+    "categoria": "argentina",
+    "dificultad": "dificil",
+    "pregunta": "¿En qué año se creó el billete del Peso Ley 18.188 que reemplazó al Peso Moneda Nacional?",
+    "respuesta": 1970,
+    "unidad": "año",
+    "nota": "Entró en vigencia el 1 de enero de 1970 suprimiendo dos ceros a la moneda."
+  },
+  {
+    "id": "arg_066",
+    "categoria": "argentina",
+    "dificultad": "dificil",
+    "pregunta": "¿Cuántos kilómetros de largo tiene el Puente Rosario-Victoria que conecta Santa Fe con Entre Ríos?",
+    "respuesta": 4098,
+    "unidad": "metros",
+    "nota": "El puente principal atirantado y sus viaductos de acceso totalizan casi 4,1 km sobre el río."
+  },
+  {
+    "id": "arg_067",
+    "categoria": "argentina",
+    "dificultad": "dificil",
+    "pregunta": "¿En qué año se lanzó el satélite argentino de observación de la Tierra SAOCOM 1A al espacio?",
+    "respuesta": 2018,
+    "unidad": "año",
+    "nota": "Lanzado el 7 de octubre de 2018 por la empresa SpaceX desde la base Vandenberg."
+  },
+  {
+    "id": "arg_068",
+    "categoria": "argentina",
+    "dificultad": "dificil",
+    "pregunta": "¿Cuántos municipios y partidos componen la Provincia de Buenos Aires?",
+    "respuesta": 135,
+    "unidad": "partidos",
+    "nota": "La provincia se divide en 135 partidos autárquicos con intendencias municipales."
+  },
+  {
+    "id": "arg_069",
+    "categoria": "argentina",
+    "dificultad": "dificil",
+    "pregunta": "¿En qué año se inauguró el Puente de la Mujer de Santiago Calatrava en Puerto Madero?",
+    "respuesta": 2001,
+    "unidad": "año",
+    "nota": "Fue inaugurado el 20 de diciembre de 2001 en pleno estallido de la crisis económica."
+  },
+  {
+    "id": "arg_070",
+    "categoria": "argentina",
+    "dificultad": "dificil",
+    "pregunta": "¿Cuántas estaciones activas tiene la histórica Línea A de subte entre Plaza de Mayo y San Pedrito?",
+    "respuesta": 18,
+    "unidad": "estaciones",
+    "nota": "Tras las extensiones a Puán, Carabobo, San José de Flores y San Pedrito cuenta con 18 paradas."
+  },
+  {
+    "id": "arg_071",
+    "categoria": "argentina",
+    "dificultad": "dificil",
+    "pregunta": "¿En qué año se declaró Parque Nacional al territorio de Nahuel Huapi, el más antiguo de Argentina?",
+    "respuesta": 1934,
+    "unidad": "año",
+    "nota": "A partir de las tierras donadas por Francisco Pascasio Moreno en 1903."
+  },
+  {
+    "id": "arg_072",
+    "categoria": "argentina",
+    "dificultad": "dificil",
+    "pregunta": "¿Cuántos pisos en total tiene el emblemático Edificio Kavanagh frente a Plaza San Martín?",
+    "respuesta": 31,
+    "unidad": "pisos",
+    "nota": "Inaugurado en 1936, llegó a ser la estructura de hormigón armado más alta de Sudamérica."
+  },
+  {
+    "id": "arg_073",
+    "categoria": "argentina",
+    "dificultad": "dificil",
+    "pregunta": "¿En qué año se creó formalmente la tarjeta prepaga SUBE para el transporte público?",
+    "respuesta": 2009,
+    "unidad": "año",
+    "nota": "Creada por decreto en febrero de 2009 para modernizar y subsidiar el transporte en el AMBA."
+  },
+  {
+    "id": "arg_074",
+    "categoria": "argentina",
+    "dificultad": "dificil",
+    "pregunta": "¿Cuántos metros mide la Pirámide de Mayo en el centro histórico de la Plaza de Mayo porteña?",
+    "respuesta": 19,
+    "unidad": "metros",
+    "nota": "La altura actual con la estatua de la Libertad en la cúspide alcanza los 18,76 metros."
+  },
+  {
+    "id": "arg_075",
+    "categoria": "argentina",
+    "dificultad": "dificil",
+    "pregunta": "¿En qué año se inauguró el primer tramo de la autopista Panamericana (Acceso Norte) en Buenos Aires?",
+    "respuesta": 1948,
+    "unidad": "año",
+    "nota": "Iniciada durante el primer plan quinquenal para conectar la Capital con el norte bonaerense."
+  },
+  {
+    "id": "arg_076",
+    "categoria": "argentina",
+    "dificultad": "extremo",
+    "pregunta": "¿Cuántos días exactos demoró la construcción récord del Obelisco porteño en 1936?",
+    "respuesta": 31,
+    "unidad": "días",
+    "nota": "La empresa constructora GEOPE comenzó el 20 de marzo y terminó la obra el 20 de abril de 1936."
+  },
+  {
+    "id": "arg_077",
+    "categoria": "argentina",
+    "dificultad": "extremo",
+    "pregunta": "¿En qué año se sancionó la Ley 20.744 de Contrato de Trabajo redactada por Norberto Centeno?",
+    "respuesta": 1974,
+    "unidad": "año",
+    "nota": "Promulgada en septiembre de 1974, piedra angular de la legislación laboral argentina."
+  },
+  {
+    "id": "arg_078",
+    "categoria": "argentina",
+    "dificultad": "extremo",
+    "pregunta": "¿Cuántos diputados firmaron el Acta de la Independencia en Tucumán el 9 de julio de 1816?",
+    "respuesta": 29,
+    "unidad": "diputados",
+    "nota": "Fueron 29 representantes de diversas provincias, presididos por Francisco Narciso de Laprida."
+  },
+  {
+    "id": "arg_079",
+    "categoria": "argentina",
+    "dificultad": "extremo",
+    "pregunta": "¿A cuántos metros bajo el nivel del mar se encuentra la Laguna del Carbón en Santa Cruz, el punto más bajo de América?",
+    "respuesta": 105,
+    "unidad": "metros",
+    "nota": "Ubicada en la Gran Bajo de San Julián a -105 metros bajo el nivel oceánico."
+  },
+  {
+    "id": "arg_080",
+    "categoria": "argentina",
+    "dificultad": "extremo",
+    "pregunta": "¿En qué año se fundó la ciudad de Santiago del Estero, considerada la 'Madre de Ciudades' argentina?",
+    "respuesta": 1553,
+    "unidad": "año",
+    "nota": "Fundada el 25 de julio de 1553 por el conquistador español Francisco de Aguirre."
+  },
+  {
+    "id": "arg_081",
+    "categoria": "argentina",
+    "dificultad": "extremo",
+    "pregunta": "¿Cuántos días gobernó Héctor José Cámpora en 1973 antes de presentar su renuncia?",
+    "respuesta": 49,
+    "unidad": "días",
+    "nota": "Asumió el 25 de mayo de 1973 y renunció el 13 de julio de 1973 para posibilitar elecciones con Perón."
+  },
+  {
+    "id": "arg_082",
+    "categoria": "argentina",
+    "dificultad": "extremo",
+    "pregunta": "¿En qué año se creó la Fábrica Militar de Aviones (FMA) en la provincia de Córdoba?",
+    "respuesta": 1927,
+    "unidad": "año",
+    "nota": "El 10 de octubre de 1927 durante la presidencia de Marcelo Torcuato de Alvear."
+  },
+  {
+    "id": "arg_083",
+    "categoria": "argentina",
+    "dificultad": "extremo",
+    "pregunta": "¿Cuántos metros de longitud tiene la Pista de aterrizaje más larga de Argentina en la Base Aérea Río Gallegos?",
+    "respuesta": 3550,
+    "unidad": "metros",
+    "nota": "La pista 07/25 de Río Gallegos es una de las pistas de concreto más largas de Sudamérica."
+  },
+  {
+    "id": "arg_084",
+    "categoria": "argentina",
+    "dificultad": "extremo",
+    "pregunta": "¿En qué año se creó la emblemática Gendarmería Nacional Argentina?",
+    "respuesta": 1938,
+    "unidad": "año",
+    "nota": "El 28 de julio de 1938 bajo la Ley 12.367 durante la presidencia de Roberto M. Ortiz."
+  },
+  {
+    "id": "arg_085",
+    "categoria": "argentina",
+    "dificultad": "extremo",
+    "pregunta": "¿Cuántas butacas y localidades para espectadores tiene en total la sala principal del Teatro Colón?",
+    "respuesta": 2478,
+    "unidad": "butacas",
+    "nota": "Su capacidad total llega a casi 3.000 personas si se incluyen los lugares de pie."
+  },
+  {
+    "id": "arg_086",
+    "categoria": "argentina",
+    "dificultad": "extremo",
+    "pregunta": "¿En qué año se fundó el Club Atlético Rosario Central, originalmente con el nombre Central Argentine Railway Athletic Club?",
+    "respuesta": 1889,
+    "unidad": "año",
+    "nota": "El 24 de diciembre de 1889 por obreros británicos del ferrocarril en los talleres de Rosario."
+  },
+  {
+    "id": "arg_087",
+    "categoria": "argentina",
+    "dificultad": "extremo",
+    "pregunta": "¿Cuántos kilómetros recorre el mítico 'Tren a las Nubes' en la provincia de Salta hasta el Viaducto La Polvorilla?",
+    "respuesta": 217,
+    "unidad": "kilómetros",
+    "nota": "El ramal C-14 asciende hasta más de 4.200 metros sobre el nivel del mar."
+  },
+  {
+    "id": "arg_088",
+    "categoria": "argentina",
+    "dificultad": "extremo",
+    "pregunta": "¿En qué año entró en operaciones el reactor de la Central Nuclear Atucha I, primera central atómica de Latinoamérica?",
+    "respuesta": 1974,
+    "unidad": "año",
+    "nota": "Comenzó su operación comercial en junio de 1974 en Lima, provincia de Buenos Aires."
+  },
+  {
+    "id": "arg_089",
+    "categoria": "argentina",
+    "dificultad": "extremo",
+    "pregunta": "¿Cuántos metros de altura tiene la torre del Palacio Barolo inspirada en la Divina Comedia en la Avenida de Mayo?",
+    "respuesta": 100,
+    "unidad": "metros",
+    "nota": "Diseñado por Mario Palanti con 100 metros de altura en alusión a los 100 cantos del poema de Dante."
+  },
+  {
+    "id": "arg_090",
+    "categoria": "argentina",
+    "dificultad": "extremo",
+    "pregunta": "¿En qué año fue asesinado el general Justo José de Urquiza en su residencia del Palacio San José en Entre Ríos?",
+    "respuesta": 1870,
+    "unidad": "año",
+    "nota": "El 11 de abril de 1870 por partidarios leales a Ricardo López Jordán."
+  },
+  {
+    "id": "arg_091",
+    "categoria": "argentina",
+    "dificultad": "extremo",
+    "pregunta": "¿Cuántos kilómetros de costa sobre el Mar Argentino y Océano Atlántico tiene el litoral marítimo continental argentino?",
+    "respuesta": 4725,
+    "unidad": "kilómetros",
+    "nota": "Desde la desembocadura del Río de la Plata en Punta Rasa hasta el extremo sur fueguino."
+  },
+  {
+    "id": "arg_092",
+    "categoria": "argentina",
+    "dificultad": "extremo",
+    "pregunta": "¿En qué año se fundó la Base Esperanza del Ejército Argentino en la península Antártica?",
+    "respuesta": 1952,
+    "unidad": "año",
+    "nota": "El 17 de diciembre de 1952; en 1978 nació allí Emilio Palma, la primera persona nacida en la Antártida."
+  },
+  {
+    "id": "arg_093",
+    "categoria": "argentina",
+    "dificultad": "extremo",
+    "pregunta": "¿Cuántas líneas de colectivos urbanos circulan aproximadamente dentro del Área Metropolitana de Buenos Aires (AMBA)?",
+    "respuesta": 340,
+    "unidad": "líneas",
+    "nota": "Comprende líneas nacionales (1 a 199), provinciales (200 a 499) y municipales (500 en adelante)."
+  },
+  {
+    "id": "arg_094",
+    "categoria": "argentina",
+    "dificultad": "extremo",
+    "pregunta": "¿En qué año se sancionó la Ley 24.018 que estableció el régimen de jubilaciones de privilegio para expresidentes y ministros?",
+    "respuesta": 1991,
+    "unidad": "año",
+    "nota": "Promulgada en noviembre de 1991 durante la presidencia de Carlos Saúl Menem."
+  },
+  {
+    "id": "arg_095",
+    "categoria": "argentina",
+    "dificultad": "extremo",
+    "pregunta": "¿Cuántos metros de largo tiene el Viaducto La Polvorilla, la obra maestra de ingeniería del Tren a las Nubes?",
+    "respuesta": 224,
+    "unidad": "metros",
+    "nota": "Pesa 1.600 toneladas de acero y cruza un cañadón a 63 metros sobre el suelo sin barandas."
+  },
+  {
+    "id": "arg_096",
+    "categoria": "argentina",
+    "dificultad": "extremo",
+    "pregunta": "¿En qué año se inauguró el primer tramo de gasoducto que trajo gas natural desde Comodoro Rivadavia a Buenos Aires?",
+    "respuesta": 1949,
+    "unidad": "año",
+    "nota": "El gasoducto ideado por el ingeniero Julio Canessa fue inaugurado el 29 de diciembre de 1949."
+  },
+  {
+    "id": "arg_097",
+    "categoria": "argentina",
+    "dificultad": "extremo",
+    "pregunta": "¿Cuántas hectáreas abarca el Parque Tres de Febrero (Bosques de Palermo) en la Ciudad de Buenos Aires?",
+    "respuesta": 370,
+    "unidad": "hectáreas",
+    "nota": "Diseñado en gran parte por el paisajista francés Carlos Thays sobre los antiguos terrenos de Juan Manuel de Rosas."
+  },
+  {
+    "id": "arg_098",
+    "categoria": "argentina",
+    "dificultad": "extremo",
+    "pregunta": "¿En qué año comenzó a funcionar la histórica Confitería del Molino frente al Congreso de la Nación?",
+    "respuesta": 1916,
+    "unidad": "año",
+    "nota": "Inaugurada el 9 de julio de 1916 por el repostero Cayetano Brenna conmemorando el centenario de la Independencia."
+  },
+  {
+    "id": "arg_099",
+    "categoria": "argentina",
+    "dificultad": "extremo",
+    "pregunta": "¿Cuántas páginas y artículos integraban el proyecto original de Bases y Puntos de Partida de Juan Bautista Alberdi en 1852?",
+    "respuesta": 38,
+    "unidad": "capítulos",
+    "nota": "Escrito en Valparaíso en pocas semanas tras la batalla de Caseros, sirvió de modelo a la Constitución de 1853."
+  },
+  {
+    "id": "arg_100",
+    "categoria": "argentina",
+    "dificultad": "extremo",
+    "pregunta": "¿En qué año se fundó el Club Ferro Carril Oeste por un centenar de empleados del Ferrocarril del Oeste en Caballito?",
+    "respuesta": 1904,
+    "unidad": "año",
+    "nota": "El 28 de julio de 1904 en el corazón geográfico de la Ciudad de Buenos Aires."
+  }
+]

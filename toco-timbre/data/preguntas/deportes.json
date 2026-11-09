@@ -1,0 +1,902 @@
+[
+  {
+    "id": "dep_001",
+    "categoria": "deportes",
+    "dificultad": "facil",
+    "pregunta": "¿Cuántos minutos reglamentarios dura un partido de fútbol tradicional (sin contar el alargue ni descuentos)?",
+    "respuesta": 90,
+    "unidad": "minutos",
+    "nota": "Se divide en dos tiempos iguales de 45 minutos reglamentarios cada uno."
+  },
+  {
+    "id": "dep_002",
+    "categoria": "deportes",
+    "dificultad": "facil",
+    "pregunta": "¿Cuántos jugadores por equipo están en el campo de juego al inicio de un partido de fútbol reglamentario?",
+    "respuesta": 11,
+    "unidad": "jugadores",
+    "nota": "10 jugadores de campo y un arquero por bando."
+  },
+  {
+    "id": "dep_003",
+    "categoria": "deportes",
+    "dificultad": "facil",
+    "pregunta": "¿En qué año se disputó la primera Copa del Mundo de fútbol de la FIFA en Uruguay?",
+    "respuesta": 1930,
+    "unidad": "año",
+    "nota": "Uruguay se coronó primer campeón mundial al vencer 4-2 a Argentina en Montevideo."
+  },
+  {
+    "id": "dep_004",
+    "categoria": "deportes",
+    "dificultad": "facil",
+    "pregunta": "¿Cuántas Copas del Mundo de fútbol masculino ha ganado la selección de Brasil?",
+    "respuesta": 5,
+    "unidad": "copas",
+    "nota": "El 'Pentacampeón' las ganó en 1958, 1962, 1970, 1994 y 2002."
+  },
+  {
+    "id": "dep_005",
+    "categoria": "deportes",
+    "dificultad": "facil",
+    "pregunta": "¿Cuántos minutos dura cada uno de los 4 cuartos en un partido de la NBA?",
+    "respuesta": 12,
+    "unidad": "minutos",
+    "nota": "Totalizan 48 minutos de juego neto (en FIBA son 10 minutos por cuarto)."
+  },
+  {
+    "id": "dep_006",
+    "categoria": "deportes",
+    "dificultad": "facil",
+    "pregunta": "¿Cuántos jugadores por equipo juegan simultáneamente en la cancha en básquetbol?",
+    "respuesta": 5,
+    "unidad": "jugadores",
+    "nota": "Base, escolta, alero, ala-pívot y pívot."
+  },
+  {
+    "id": "dep_007",
+    "categoria": "deportes",
+    "dificultad": "facil",
+    "pregunta": "¿A cuántos metros de distancia de la línea de gol se encuentra el punto de penal en fútbol?",
+    "respuesta": 11,
+    "unidad": "metros",
+    "nota": "Exactamente a 12 yardas (10,97 metros, redondeado a 11 metros reglamentarios)."
+  },
+  {
+    "id": "dep_008",
+    "categoria": "deportes",
+    "dificultad": "facil",
+    "pregunta": "¿Cuántos anillos olímpicos entrelazados componen el símbolo oficial de los Juegos Olímpicos?",
+    "respuesta": 5,
+    "unidad": "anillos",
+    "nota": "Representan la unión de los 5 continentes habitados: azul, amarillo, negro, verde y rojo."
+  },
+  {
+    "id": "dep_009",
+    "categoria": "deportes",
+    "dificultad": "facil",
+    "pregunta": "¿Cuántos títulos de Grand Slam en individuales masculinos ganó el tenista español Rafael Nadal?",
+    "respuesta": 22,
+    "unidad": "títulos",
+    "nota": "Incluye la histórica marca de 14 consagraciones en Roland Garros."
+  },
+  {
+    "id": "dep_010",
+    "categoria": "deportes",
+    "dificultad": "facil",
+    "pregunta": "¿Cuántos títulos mundiales de Fórmula 1 obtuvo el piloto alemán Michael Schumacher?",
+    "respuesta": 7,
+    "unidad": "títulos",
+    "nota": "Dos con Benetton (1994, 1995) y cinco consecutivos con Ferrari (2000 a 2004)."
+  },
+  {
+    "id": "dep_011",
+    "categoria": "deportes",
+    "dificultad": "facil",
+    "pregunta": "¿Cuántos títulos de Fórmula 1 ganó el piloto británico Lewis Hamilton hasta igualar el récord histórico?",
+    "respuesta": 7,
+    "unidad": "títulos",
+    "nota": "Uno con McLaren (2008) y seis con Mercedes-Benz."
+  },
+  {
+    "id": "dep_012",
+    "categoria": "deportes",
+    "dificultad": "facil",
+    "pregunta": "¿Cuántos jugadores por bando están en cancha en un equipo de voleibol tradicional?",
+    "respuesta": 6,
+    "unidad": "jugadores",
+    "nota": "Rotan en el sentido de las agujas del reloj cada vez que recuperan el saque."
+  },
+  {
+    "id": "dep_013",
+    "categoria": "deportes",
+    "dificultad": "facil",
+    "pregunta": "¿Cuántos metros de longitud mide una piscina olímpica reglamentaria?",
+    "respuesta": 50,
+    "unidad": "metros",
+    "nota": "Cuenta con 50 metros de largo por 25 metros de ancho reglamentarios."
+  },
+  {
+    "id": "dep_014",
+    "categoria": "deportes",
+    "dificultad": "facil",
+    "pregunta": "¿Cuántos hoyos componen una vuelta convencional completa en un campo de golf reglamentario?",
+    "respuesta": 18,
+    "unidad": "hoyos",
+    "nota": "Estándar fijado en el mítico club St Andrews de Escocia en 1764."
+  },
+  {
+    "id": "dep_015",
+    "categoria": "deportes",
+    "dificultad": "facil",
+    "pregunta": "¿Cuántos puntos vale un tiro libre encestado en básquetbol?",
+    "respuesta": 1,
+    "unidad": "punto",
+    "nota": "Otorgado tras una falta personal o técnica y lanzado desde la línea de 4,60 metros."
+  },
+  {
+    "id": "dep_016",
+    "categoria": "deportes",
+    "dificultad": "facil",
+    "pregunta": "¿Cuántos jugadores integran un equipo de rugby en la modalidad tradicional (Rugby Union)?",
+    "respuesta": 15,
+    "unidad": "jugadores",
+    "nota": "8 delanteros (forwards) en el scrum y 7 defensores/atacantes (backs)."
+  },
+  {
+    "id": "dep_017",
+    "categoria": "deportes",
+    "dificultad": "facil",
+    "pregunta": "¿En qué año se celebraron los primeros Juegos Olímpicos de la era moderna en Atenas?",
+    "respuesta": 1896,
+    "unidad": "año",
+    "nota": "Impulsados por el barón Pierre de Coubertin en abril de 1896."
+  },
+  {
+    "id": "dep_018",
+    "categoria": "deportes",
+    "dificultad": "facil",
+    "pregunta": "¿Cuántos Balones de Oro otorgados por France Football ha ganado Lionel Messi a lo largo de su carrera?",
+    "respuesta": 8,
+    "unidad": "balones de oro",
+    "nota": "El máximo galardonado histórico en 2009, 2010, 2011, 2012, 2015, 2019, 2021 y 2023."
+  },
+  {
+    "id": "dep_019",
+    "categoria": "deportes",
+    "dificultad": "facil",
+    "pregunta": "¿Cuántos títulos de Grand Slam en individuales masculinos conquistó Roger Federer?",
+    "respuesta": 20,
+    "unidad": "títulos",
+    "nota": "El suizo ganó 8 Wimbledon, 6 Australian Open, 5 US Open y 1 Roland Garros."
+  },
+  {
+    "id": "dep_020",
+    "categoria": "deportes",
+    "dificultad": "facil",
+    "pregunta": "¿Cuántos títulos mundiales de Fórmula 1 ganó el legendario piloto argentino Juan Manuel Fangio?",
+    "respuesta": 5,
+    "unidad": "títulos",
+    "nota": "En 1951, 1954, 1955, 1956 y 1957 con cuatro marcas distintas."
+  },
+  {
+    "id": "dep_021",
+    "categoria": "deportes",
+    "dificultad": "facil",
+    "pregunta": "¿Cuántos rounds como máximo dura actualmente una pelea de campeonato mundial de boxeo masculino?",
+    "respuesta": 12,
+    "unidad": "rounds",
+    "nota": "Se redujo de 15 a 12 asaltos de 3 minutos en la década de 1980 por seguridad médica."
+  },
+  {
+    "id": "dep_022",
+    "categoria": "deportes",
+    "dificultad": "facil",
+    "pregunta": "¿Cuántos goles oficiales convirtió Lionel Messi durante el Mundial de Qatar 2022?",
+    "respuesta": 7,
+    "unidad": "goles",
+    "nota": "Marcó en todas las fases eliminatorias y dos goles en la gran final ante Francia."
+  },
+  {
+    "id": "dep_023",
+    "categoria": "deportes",
+    "dificultad": "facil",
+    "pregunta": "¿Cuántos jugadores por equipo están en el agua simultáneamente en un partido de waterpolo?",
+    "respuesta": 7,
+    "unidad": "jugadores",
+    "nota": "6 jugadores de campo y un arquero."
+  },
+  {
+    "id": "dep_024",
+    "categoria": "deportes",
+    "dificultad": "facil",
+    "pregunta": "¿Cuántos puntos otorga un try apoyado en el ingoal en rugby moderno?",
+    "respuesta": 5,
+    "unidad": "puntos",
+    "nota": "Otorga 5 puntos y el derecho a patear la conversión para sumar 2 puntos extra."
+  },
+  {
+    "id": "dep_025",
+    "categoria": "deportes",
+    "dificultad": "facil",
+    "pregunta": "¿En qué año se celebró el Mundial de fútbol de Sudáfrica ganado por España con el gol de Iniesta?",
+    "respuesta": 2010,
+    "unidad": "año",
+    "nota": "El primer Mundial disputado en el continente africano."
+  },
+  {
+    "id": "dep_026",
+    "categoria": "deportes",
+    "dificultad": "medio",
+    "pregunta": "¿Cuántos kilómetros y metros exactos comprende la distancia oficial de una carrera de Maratón?",
+    "respuesta": 42195,
+    "unidad": "metros",
+    "nota": "Equivale a 42,195 km, distancia fijada en los Juegos Olímpicos de Londres 1908."
+  },
+  {
+    "id": "dep_027",
+    "categoria": "deportes",
+    "dificultad": "medio",
+    "pregunta": "¿A cuántos centímetros del suelo se encuentra el aro de básquetbol reglamentario en FIBA y NBA?",
+    "respuesta": 305,
+    "unidad": "centímetros",
+    "nota": "Exactamente a 10 pies de altura (3,05 metros sobre el piso)."
+  },
+  {
+    "id": "dep_028",
+    "categoria": "deportes",
+    "dificultad": "medio",
+    "pregunta": "¿Cuántas medallas de oro olímpicas en total ganó el nadador estadounidense Michael Phelps en su carrera?",
+    "respuesta": 23,
+    "unidad": "medallas de oro",
+    "nota": "El deportista más condecorado en la historia de los Juegos con 28 medallas en total."
+  },
+  {
+    "id": "dep_029",
+    "categoria": "deportes",
+    "dificultad": "medio",
+    "pregunta": "¿En qué año ganó la Selección Argentina de básquetbol la histórica medalla de oro en los Juegos de Atenas?",
+    "respuesta": 2004,
+    "unidad": "año",
+    "nota": "La 'Generación Dorada' de Ginóbili, Scola y Nocioni venció a Italia 84-69 en la final."
+  },
+  {
+    "id": "dep_030",
+    "categoria": "deportes",
+    "dificultad": "medio",
+    "pregunta": "¿Cuántos títulos de la Copa Libertadores de América ha ganado el Club Atlético Independiente (el 'Rey de Copas')?",
+    "respuesta": 7,
+    "unidad": "títulos",
+    "nota": "Es el máximo ganador histórico del certamen continental sudamericano."
+  },
+  {
+    "id": "dep_031",
+    "categoria": "deportes",
+    "dificultad": "medio",
+    "pregunta": "¿Cuántos títulos de la UEFA Champions League / Copa de Europa ostenta el Real Madrid (hasta 2024)?",
+    "respuesta": 15,
+    "unidad": "títulos",
+    "nota": "Es el club más laureado de Europa por amplia diferencia tras ganar la 15ª en Wembley."
+  },
+  {
+    "id": "dep_032",
+    "categoria": "deportes",
+    "dificultad": "medio",
+    "pregunta": "¿Cuántos segundos tiene un equipo de básquetbol para lanzar al aro antes de que expire la posesión en FIBA y NBA?",
+    "respuesta": 24,
+    "unidad": "segundos",
+    "nota": "El reloj de 24 segundos fue introducido en la NBA en 1954 para dinamizar el juego."
+  },
+  {
+    "id": "dep_033",
+    "categoria": "deportes",
+    "dificultad": "medio",
+    "pregunta": "¿Cuántos metros de largo mide reglamentariamente una cancha de tenis para partidos individuales?",
+    "respuesta": 2377,
+    "unidad": "centímetros",
+    "nota": "Mide exactamente 78 pies (23,77 metros) de largo por 8,23 metros de ancho."
+  },
+  {
+    "id": "dep_034",
+    "categoria": "deportes",
+    "dificultad": "medio",
+    "pregunta": "¿Cuántos jugadores integran la alineación defensiva en el campo en un partido de béisbol?",
+    "respuesta": 9,
+    "unidad": "jugadores",
+    "nota": "Pitcher, catcher, 4 jugadores de cuadro (infield) y 3 jardineros (outfield)."
+  },
+  {
+    "id": "dep_035",
+    "categoria": "deportes",
+    "dificultad": "medio",
+    "pregunta": "¿En qué año se disputó el Mundial de fútbol de Estados Unidos donde Diego Maradona fue suspendido tras el partido con Nigeria?",
+    "respuesta": 1994,
+    "unidad": "año",
+    "nota": "El Mundial que consagró a Brasil ante Italia por penales en Pasadena."
+  },
+  {
+    "id": "dep_036",
+    "categoria": "deportes",
+    "dificultad": "medio",
+    "pregunta": "¿Cuántos anillos de campeón de la NBA ganó Michael Jordan con los Chicago Bulls?",
+    "respuesta": 6,
+    "unidad": "anillos",
+    "nota": "En dos tricampeonatos: 1991-1993 y 1996-1998, siendo el MVP de las seis finales."
+  },
+  {
+    "id": "dep_037",
+    "categoria": "deportes",
+    "dificultad": "medio",
+    "pregunta": "¿Cuántas curvas tiene el circuito de Monza en Italia, conocido como 'El Templo de la Velocidad' en la F1?",
+    "respuesta": 11,
+    "unidad": "curvas",
+    "nota": "Apenas 11 variantes en sus 5.793 metros de extensión ultrarrápida."
+  },
+  {
+    "id": "dep_038",
+    "categoria": "deportes",
+    "dificultad": "medio",
+    "pregunta": "¿Cuántos puntos en un solo partido de la NBA anotó Wilt Chamberlain en 1962, récord imbatible?",
+    "respuesta": 100,
+    "unidad": "puntos",
+    "nota": "El 2 de marzo de 1962 jugando para los Philadelphia Warriors contra los New York Knicks."
+  },
+  {
+    "id": "dep_039",
+    "categoria": "deportes",
+    "dificultad": "medio",
+    "pregunta": "¿Cuántos títulos de Copa Davis ha ganado el equipo de tenis de Argentina en su historia?",
+    "respuesta": 1,
+    "unidad": "título",
+    "nota": "La histórica conquista de 2016 en Zagreb frente a Croacia tras cuatro finales perdidas."
+  },
+  {
+    "id": "dep_040",
+    "categoria": "deportes",
+    "dificultad": "medio",
+    "pregunta": "¿Cuántos minutos de prórroga (alargue) se disputan divididos en dos tiempos en fútbol tras un empate eliminatorio?",
+    "respuesta": 30,
+    "unidad": "minutos",
+    "nota": "Dos tiempos suplementarios de 15 minutos cada uno antes de la tanda de penales."
+  },
+  {
+    "id": "dep_041",
+    "categoria": "deportes",
+    "dificultad": "medio",
+    "pregunta": "¿Cuántos títulos de Grand Slam en individuales masculinos ostenta Novak Djokovic (hasta 2024)?",
+    "respuesta": 24,
+    "unidad": "títulos",
+    "nota": "El tenista masculino con mayor cantidad de títulos 'majors' en la historia."
+  },
+  {
+    "id": "dep_042",
+    "categoria": "deportes",
+    "dificultad": "medio",
+    "pregunta": "¿En qué año debutó Diego Armando Maradona en la Primera División de Argentinos Juniors con 15 años?",
+    "respuesta": 1976,
+    "unidad": "año",
+    "nota": "El 20 de octubre de 1976 frente a Talleres de Córdoba con la camiseta número 16."
+  },
+  {
+    "id": "dep_043",
+    "categoria": "deportes",
+    "dificultad": "medio",
+    "pregunta": "¿Cuántas medallas doradas olímpicas en atletismo ganó el jamaiquino Usain Bolt en pruebas de velocidad?",
+    "respuesta": 8,
+    "unidad": "medallas de oro",
+    "nota": "Dominó los 100m, 200m y relevos 4x100m en Pekín 2008, Londres 2012 y Río 2016."
+  },
+  {
+    "id": "dep_044",
+    "categoria": "deportes",
+    "dificultad": "medio",
+    "pregunta": "¿A cuántos metros de altura se coloca la red en el centro de una cancha de tenis?",
+    "respuesta": 91,
+    "unidad": "centímetros",
+    "nota": "Mide 3 pies (91,4 cm) en el centro y 1,07 metros en los postes laterales."
+  },
+  {
+    "id": "dep_045",
+    "categoria": "deportes",
+    "dificultad": "medio",
+    "pregunta": "¿Cuántos títulos mundiales de boxeo en categorías distintas ostenta el filipino Manny Pacquiao?",
+    "respuesta": 8,
+    "unidad": "divisiones",
+    "nota": "El único boxeador de la historia en reinar en ocho divisiones de peso diferentes."
+  },
+  {
+    "id": "dep_046",
+    "categoria": "deportes",
+    "dificultad": "medio",
+    "pregunta": "¿En qué año se fundó la NBA (National Basketball Association) en Estados Unidos?",
+    "respuesta": 1946,
+    "unidad": "año",
+    "nota": "Fundada en Nueva York el 6 de junio de 1946 como Basketball Association of America (BAA)."
+  },
+  {
+    "id": "dep_047",
+    "categoria": "deportes",
+    "dificultad": "medio",
+    "pregunta": "¿Cuántos metros de largo mide una cancha oficial de fútbol según las recomendaciones FIFA para partidos internacionales?",
+    "respuesta": 105,
+    "unidad": "metros",
+    "nota": "Las medidas estándar estandarizadas para mundiales son 105 metros de largo por 68 de ancho."
+  },
+  {
+    "id": "dep_048",
+    "categoria": "deportes",
+    "dificultad": "medio",
+    "pregunta": "¿Cuántas victorias consecutivas en Fórmula 1 logró el neerlandés Max Verstappen en la temporada 2023, récord histórico?",
+    "respuesta": 10,
+    "unidad": "carreras",
+    "nota": "Superó la marca de 9 triunfos consecutivos que ostentaba Sebastian Vettel desde 2013."
+  },
+  {
+    "id": "dep_049",
+    "categoria": "deportes",
+    "dificultad": "medio",
+    "pregunta": "¿En qué año Argentina conquistó su primera medalla de oro olímpica en fútbol masculino en Atenas?",
+    "respuesta": 2004,
+    "unidad": "año",
+    "nota": "El equipo de Marcelo Bielsa ganó todos los partidos con gol de Carlos Tevez en la final."
+  },
+  {
+    "id": "dep_050",
+    "categoria": "deportes",
+    "dificultad": "medio",
+    "pregunta": "¿Cuántos jugadores componen el equipo en cancha en balonmano (handball)?",
+    "respuesta": 7,
+    "unidad": "jugadores",
+    "nota": "6 jugadores de campo y un arquero."
+  },
+  {
+    "id": "dep_051",
+    "categoria": "deportes",
+    "dificultad": "dificil",
+    "pregunta": "¿Cuántos goles oficiales en un solo año natural (2012) anotó Lionel Messi, récord Guinness mundial?",
+    "respuesta": 91,
+    "unidad": "goles",
+    "nota": "Superó el histórico récord de 85 goles que el alemán Gerd Müller mantenía desde 1972."
+  },
+  {
+    "id": "dep_052",
+    "categoria": "deportes",
+    "dificultad": "dificil",
+    "pregunta": "¿Cuántos gramos pesa reglamentariamente una pelota de tenis oficial de competición?",
+    "respuesta": 58,
+    "unidad": "gramos",
+    "nota": "La Federación Internacional de Tenis exige un peso de entre 56,0 y 59,4 gramos."
+  },
+  {
+    "id": "dep_053",
+    "categoria": "deportes",
+    "dificultad": "dificil",
+    "pregunta": "¿En qué año se fundó la FIFA en la ciudad de París por representantes de siete asociaciones europeas?",
+    "respuesta": 1904,
+    "unidad": "año",
+    "nota": "El 21 de mayo de 1904 en la sede de la Unión de Sociedades Francesas de Deportes Atléticos."
+  },
+  {
+    "id": "dep_054",
+    "categoria": "deportes",
+    "dificultad": "dificil",
+    "pregunta": "¿Cuántos goles convirtió el francés Just Fontaine en el Mundial de Suecia 1958, récord imbatido en un solo torneo?",
+    "respuesta": 13,
+    "unidad": "goles",
+    "nota": "Marcó 13 tantos en solo 6 partidos disputados durante el certamen."
+  },
+  {
+    "id": "dep_055",
+    "categoria": "deportes",
+    "dificultad": "dificil",
+    "pregunta": "¿Cuántas yardas mide de extremo a extremo un campo de fútbol americano de la NFL (incluyendo las zonas de anotación)?",
+    "respuesta": 120,
+    "unidad": "yardas",
+    "nota": "100 yardas de campo de juego más dos end zones de 10 yardas cada una (unos 109,7 metros)."
+  },
+  {
+    "id": "dep_056",
+    "categoria": "deportes",
+    "dificultad": "dificil",
+    "pregunta": "¿En qué año Ayrton Senna perdió la vida trágicamente en el Gran Premio de San Marino en Imola?",
+    "respuesta": 1994,
+    "unidad": "año",
+    "nota": "El 1 de mayo de 1994 en la fatídica curva de Tamburello a más de 300 km/h."
+  },
+  {
+    "id": "dep_057",
+    "categoria": "deportes",
+    "dificultad": "dificil",
+    "pregunta": "¿Cuántos metros de ancho mide una cancha reglamentaria de básquetbol según las normas FIBA?",
+    "respuesta": 15,
+    "unidad": "metros",
+    "nota": "Tiene 28 metros de longitud por 15 metros de ancho."
+  },
+  {
+    "id": "dep_058",
+    "categoria": "deportes",
+    "dificultad": "dificil",
+    "pregunta": "¿Cuántos triunfos oficiales en carreras de Fórmula 1 acumuló Lewis Hamilton al convertirse en el primero en superar el centenar?",
+    "respuesta": 103,
+    "unidad": "victorias",
+    "nota": "Alcanzó su triunfo 100 en el Gran Premio de Rusia 2021."
+  },
+  {
+    "id": "dep_059",
+    "categoria": "deportes",
+    "dificultad": "dificil",
+    "pregunta": "¿Cuántos días duró el partido de tenis más largo de la historia entre John Isner y Nicolas Mahut en Wimbledon 2010?",
+    "respuesta": 3,
+    "unidad": "días",
+    "nota": "Se jugó a lo largo de 3 días con 11 horas y 5 minutos en cancha (70-68 en el quinto set)."
+  },
+  {
+    "id": "dep_060",
+    "categoria": "deportes",
+    "dificultad": "dificil",
+    "pregunta": "¿En qué año se fundó el Comité Olímpico Internacional (COI) en la Sorbona de París?",
+    "respuesta": 1894,
+    "unidad": "año",
+    "nota": "El 23 de junio de 1894 por iniciativa del barón Pierre de Coubertin."
+  },
+  {
+    "id": "dep_061",
+    "categoria": "deportes",
+    "dificultad": "dificil",
+    "pregunta": "¿Cuántos kilos pesa aproximadamente la barra olímpica masculina de levantamiento de pesas (halterofilia) sin discos?",
+    "respuesta": 20,
+    "unidad": "kilos",
+    "nota": "La barra masculina reglamentaria pesa 20 kg y mide 2,2 metros (la femenina pesa 15 kg)."
+  },
+  {
+    "id": "dep_062",
+    "categoria": "deportes",
+    "dificultad": "dificil",
+    "pregunta": "¿Cuántos títulos de la Serie A de Italia (Scudettos) ha ganado la Juventus de Turín, club más laureado del país?",
+    "respuesta": 36,
+    "unidad": "títulos",
+    "nota": "Ostenta 36 títulos reconocidos oficialmente por la Federación Italiana de Fútbol."
+  },
+  {
+    "id": "dep_063",
+    "categoria": "deportes",
+    "dificultad": "dificil",
+    "pregunta": "¿En qué año Manu Ginóbili ganó su primer anillo de campeón de la NBA con los San Antonio Spurs?",
+    "respuesta": 2003,
+    "unidad": "año",
+    "nota": "En su temporada de novato (rookie), venciendo a New Jersey Nets en las Finales."
+  },
+  {
+    "id": "dep_064",
+    "categoria": "deportes",
+    "dificultad": "dificil",
+    "pregunta": "¿A cuántos metros del aro se encuentra la línea de triple en las canchas de básquetbol FIBA?",
+    "respuesta": 675,
+    "unidad": "centímetros",
+    "nota": "Fijada a 6,75 metros (en la NBA la distancia en la cabecera es de 7,24 metros)."
+  },
+  {
+    "id": "dep_065",
+    "categoria": "deportes",
+    "dificultad": "dificil",
+    "pregunta": "¿Cuántas medallas olímpicas en total ganó la nadadora argentina Jeanette Campbell, primera mujer argentina en subir al podio en Berlín 1936?",
+    "respuesta": 1,
+    "unidad": "medalla",
+    "nota": "Ganó la medalla de plata en los 100 metros libres el 10 de agosto de 1936."
+  },
+  {
+    "id": "dep_066",
+    "categoria": "deportes",
+    "dificultad": "dificil",
+    "pregunta": "¿En qué año se disputó la primera edición de la Copa Libertadores de América, ganada por Peñarol de Uruguay?",
+    "respuesta": 1960,
+    "unidad": "año",
+    "nota": "Originalmente llamada Copa de Campeones de América."
+  },
+  {
+    "id": "dep_067",
+    "categoria": "deportes",
+    "dificultad": "dificil",
+    "pregunta": "¿Cuántos kilómetros de etapa contrarreloj y montaña recorre habitualmente el pelotón en el Tour de Francia?",
+    "respuesta": 3400,
+    "unidad": "kilómetros",
+    "nota": "La distancia total oscila cada año en torno a los 3.400 y 3.500 km a lo largo de 21 etapas."
+  },
+  {
+    "id": "dep_068",
+    "categoria": "deportes",
+    "dificultad": "dificil",
+    "pregunta": "¿En qué año Nadia Comăneci obtuvo el primer '10 perfecto' de la historia de la gimnasia olímpica en Montreal?",
+    "respuesta": 1976,
+    "unidad": "año",
+    "nota": "El tablero electrónico mostró '1.00' porque no estaba programado para registrar un diez."
+  },
+  {
+    "id": "dep_069",
+    "categoria": "deportes",
+    "dificultad": "dificil",
+    "pregunta": "¿Cuántos goles anotó Pelé en partidos oficiales reconocidos por la FIFA a lo largo de su carrera profesional?",
+    "respuesta": 767,
+    "unidad": "goles",
+    "nota": "Aunque en su cuenta personal y amistosos sumaba 1.283 goles, la cifra oficial FIFA es 767."
+  },
+  {
+    "id": "dep_070",
+    "categoria": "deportes",
+    "dificultad": "dificil",
+    "pregunta": "¿Cuántos metros de altura tiene la red de vóley masculino en competiciones oficiales?",
+    "respuesta": 243,
+    "unidad": "centímetros",
+    "nota": "2,43 metros para varones y 2,24 metros para mujeres."
+  },
+  {
+    "id": "dep_071",
+    "categoria": "deportes",
+    "dificultad": "dificil",
+    "pregunta": "¿En qué año Guillermo Vilas ganó su primer título de Grand Slam en Roland Garros aplastando a Brian Gottfried?",
+    "respuesta": 1977,
+    "unidad": "año",
+    "nota": "En 1977 completó su temporada de ensueño ganando también el US Open en Forest Hills."
+  },
+  {
+    "id": "dep_072",
+    "categoria": "deportes",
+    "dificultad": "dificil",
+    "pregunta": "¿Cuántos títulos de Premier League inglesa ha ganado el Manchester United desde la creación del formato en 1992?",
+    "respuesta": 13,
+    "unidad": "títulos",
+    "nota": "Todos ellos bajo la legendaria dirección técnica de Sir Alex Ferguson."
+  },
+  {
+    "id": "dep_073",
+    "categoria": "deportes",
+    "dificultad": "dificil",
+    "pregunta": "¿En qué año se corrió la primera carrera oficial en la historia del Campeonato Mundial de Fórmula 1 en Silverstone?",
+    "respuesta": 1950,
+    "unidad": "año",
+    "nota": "El 13 de mayo de 1950 con victoria del italiano Giuseppe Farina en Alfa Romeo."
+  },
+  {
+    "id": "dep_074",
+    "categoria": "deportes",
+    "dificultad": "dificil",
+    "pregunta": "¿Cuántos juegos en total se disputaron en el set definitivo del histórico partido Isner-Mahut en Wimbledon?",
+    "respuesta": 138,
+    "unidad": "juegos",
+    "nota": "Terminó 70-68 en el quinto set, totalizando 138 games solo en ese parcial."
+  },
+  {
+    "id": "dep_075",
+    "categoria": "deportes",
+    "dificultad": "dificil",
+    "pregunta": "¿En qué año el Leicester City dio la mayor sorpresa del fútbol moderno al salir campeón de la Premier League?",
+    "respuesta": 2016,
+    "unidad": "año",
+    "nota": "Las casas de apuestas pagaban 5.000 a 1 al inicio de la temporada británica."
+  },
+  {
+    "id": "dep_076",
+    "categoria": "deportes",
+    "dificultad": "extremo",
+    "pregunta": "¿A cuántos centímetros por encima del suelo está ubicado el listón en el récord mundial de salto con garrocha de Mondo Duplantis (hasta 2024)?",
+    "respuesta": 626,
+    "unidad": "centímetros",
+    "nota": "Superó los 6,26 metros rompiendo su propia marca mundial en reiteradas ocasiones."
+  },
+  {
+    "id": "dep_077",
+    "categoria": "deportes",
+    "dificultad": "extremo",
+    "pregunta": "¿Cuántas milésimas de segundo demoró Usain Bolt para fijar el récord mundial de los 100 metros llanos en Berlín 2009 (9,58 s)?",
+    "respuesta": 9580,
+    "unidad": "milésimas",
+    "nota": "9 segundos con 58 centésimas (9.580 milésimas de segundo) a una media de 37,58 km/h."
+  },
+  {
+    "id": "dep_078",
+    "categoria": "deportes",
+    "dificultad": "extremo",
+    "pregunta": "¿En qué año el boxeador estadounidense Cassius Clay (Muhammad Ali) ganó la medalla de oro en los Juegos de Roma?",
+    "respuesta": 1960,
+    "unidad": "año",
+    "nota": "El 5 de septiembre de 1960 en la categoría semipesado con apenas 18 años."
+  },
+  {
+    "id": "dep_079",
+    "categoria": "deportes",
+    "dificultad": "extremo",
+    "pregunta": "¿Cuántos gramos pesa reglamentariamente una jabalina utilizada en pruebas masculinas de atletismo olímpico?",
+    "respuesta": 800,
+    "unidad": "gramos",
+    "nota": "Pesa exactamente 800 gramos con una longitud reglamentaria de 2,60 a 2,70 metros."
+  },
+  {
+    "id": "dep_080",
+    "categoria": "deportes",
+    "dificultad": "extremo",
+    "pregunta": "¿En qué año el ciclista belga Eddy Merckx estableció el récord de la hora en el velódromo de Ciudad de México recorriendo 49,431 km?",
+    "respuesta": 1972,
+    "unidad": "año",
+    "nota": "El 25 de octubre de 1972 con una bicicleta de acero tradicional de 5,75 kg."
+  },
+  {
+    "id": "dep_081",
+    "categoria": "deportes",
+    "dificultad": "extremo",
+    "pregunta": "¿Cuántas vueltas al circuito de La Sarthe dan los prototipos líderes en las legendarias 24 Horas de Le Mans aproximadamente?",
+    "respuesta": 397,
+    "unidad": "vueltas",
+    "nota": "El récord de distancia lo tiene Audi con 397 vueltas completadas superando los 5.410 km recorridos."
+  },
+  {
+    "id": "dep_082",
+    "categoria": "deportes",
+    "dificultad": "extremo",
+    "pregunta": "¿Cuántos metros mide la altura oficial del travesaño de un arco de fútbol reglamentario según las Reglas del Juego de la IFAB?",
+    "respuesta": 244,
+    "unidad": "centímetros",
+    "nota": "Exactamente 8 pies de altura (2,44 metros) por 8 yardas de ancho (7,32 metros)."
+  },
+  {
+    "id": "dep_083",
+    "categoria": "deportes",
+    "dificultad": "extremo",
+    "pregunta": "¿En qué año el piloto austríaco Niki Lauda sufrió su espeluznante accidente en Nürburgring Nordschleife envuelto en llamas?",
+    "respuesta": 1976,
+    "unidad": "año",
+    "nota": "El 1 de agosto de 1976; milagrosamente volvió a subirse a una Ferrari 40 días después en Monza."
+  },
+  {
+    "id": "dep_084",
+    "categoria": "deportes",
+    "dificultad": "extremo",
+    "pregunta": "¿Cuántos gramos pesa la bola reglamentaria de bowling (bolos) en su peso máximo permitido de 16 libras?",
+    "respuesta": 7257,
+    "unidad": "gramos",
+    "nota": "16 libras equivalen exactamente a 7,26 kilogramos (7.257 gramos)."
+  },
+  {
+    "id": "dep_085",
+    "categoria": "deportes",
+    "dificultad": "extremo",
+    "pregunta": "¿En qué año el Club Atlético San Lorenzo de Almagro inauguró el Viejo Gasómetro en Avenida La Plata?",
+    "respuesta": 1916,
+    "unidad": "año",
+    "nota": "El 7 de mayo de 1916 con un triunfo 2-1 frente a Estudiantes de La Plata."
+  },
+  {
+    "id": "dep_086",
+    "categoria": "deportes",
+    "dificultad": "extremo",
+    "pregunta": "¿Cuántos puntos sumó Kobe Bryant el 22 de enero de 2006 ante Toronto Raptors, la segunda máxima anotación individual en la NBA?",
+    "respuesta": 81,
+    "unidad": "puntos",
+    "nota": "Encestó 28 de 46 tiros de campo y 18 de 20 tiros libres en el Staples Center."
+  },
+  {
+    "id": "dep_087",
+    "categoria": "deportes",
+    "dificultad": "extremo",
+    "pregunta": "¿En qué año el fondista etíope Abebe Bikila ganó el maratón olímpico de Roma corriendo descalzo?",
+    "respuesta": 1960,
+    "unidad": "año",
+    "nota": "El primer medallista de oro olímpico de África negra corriendo sobre los adoquines de la Vía Apia."
+  },
+  {
+    "id": "dep_088",
+    "categoria": "deportes",
+    "dificultad": "extremo",
+    "pregunta": "¿Cuántos milímetros de diámetro tiene exactamente una pelota oficial de tenis de mesa (ping-pong)?",
+    "respuesta": 40,
+    "unidad": "milímetros",
+    "nota": "Aumentó de 38 mm a 40 mm tras los Juegos Olímpicos de Sídney 2000 para ralentizar el juego."
+  },
+  {
+    "id": "dep_089",
+    "categoria": "deportes",
+    "dificultad": "extremo",
+    "pregunta": "¿En qué año Bob Beamon estableció el legendario 'salto del siglo' de 8,90 metros en los Juegos Olímpicos de México?",
+    "respuesta": 1968,
+    "unidad": "año",
+    "nota": "Superó el récord del mundo anterior por una distancia inverosímil de 55 centímetros."
+  },
+  {
+    "id": "dep_090",
+    "categoria": "deportes",
+    "dificultad": "extremo",
+    "pregunta": "¿Cuántas yardas recorrió Tom Brady en pases a lo largo de su carrera en la NFL, récord de todos los tiempos?",
+    "respuesta": 89214,
+    "unidad": "yardas",
+    "nota": "El quarterback más ganador con 7 anillos de Super Bowl acumuló casi 90.000 yardas por aire."
+  },
+  {
+    "id": "dep_091",
+    "categoria": "deportes",
+    "dificultad": "extremo",
+    "pregunta": "¿En qué año el futbolista argentino José Manuel 'El Charro' Moreno integró La Máquina de River Plate que deslumbró al continente?",
+    "respuesta": 1941,
+    "unidad": "año",
+    "nota": "Muñoz, Moreno, Pedernera, Labruna y Loustau marcaron una era inolvidable."
+  },
+  {
+    "id": "dep_092",
+    "categoria": "deportes",
+    "dificultad": "extremo",
+    "pregunta": "¿Cuántos triunfos oficiales sin derrotas acumuló Rocky Marciano al retirarse invicto como campeón mundial peso pesado?",
+    "respuesta": 49,
+    "unidad": "peleas",
+    "nota": "Récord legendario de 49 triunfos (43 por nocaut) y 0 derrotas establecido entre 1947 y 1955."
+  },
+  {
+    "id": "dep_093",
+    "categoria": "deportes",
+    "dificultad": "extremo",
+    "pregunta": "¿En qué año se jugó el primer partido de fútbol internacional entre selecciones de la historia (Escocia vs Inglaterra)?",
+    "respuesta": 1872,
+    "unidad": "año",
+    "nota": "El 30 de noviembre de 1872 en Partick, Glasgow, finalizando en un empate 0-0 ante 4.000 espectadores."
+  },
+  {
+    "id": "dep_094",
+    "categoria": "deportes",
+    "dificultad": "extremo",
+    "pregunta": "¿Cuántas libras de presión de aire debe tener inflada reglamentariamente una pelota de la NFL (entre 12.5 y 13.5 psi)?",
+    "respuesta": 13,
+    "unidad": "psi",
+    "nota": "El estándar estipulado por las reglas de la NFL ronda las 13 libras por pulgada cuadrada."
+  },
+  {
+    "id": "dep_095",
+    "categoria": "deportes",
+    "dificultad": "extremo",
+    "pregunta": "¿En qué año se fundó el club de fútbol más antiguo del mundo aún en actividad, el Sheffield Football Club de Inglaterra?",
+    "respuesta": 1857,
+    "unidad": "año",
+    "nota": "El 24 de octubre de 1857 por Nathaniel Creswick y William Prest."
+  },
+  {
+    "id": "dep_096",
+    "categoria": "deportes",
+    "dificultad": "extremo",
+    "pregunta": "¿Cuántos metros mide la longitud del carril de aceleración para saltos de trampolín en esquí nórdico de gran colina (K-120)?",
+    "respuesta": 120,
+    "unidad": "metros",
+    "nota": "El 'punto K' fija la distancia donde la pendiente comienza a aplanarse a los 120 metros."
+  },
+  {
+    "id": "dep_097",
+    "categoria": "deportes",
+    "dificultad": "extremo",
+    "pregunta": "¿En qué año se creó la International Football Association Board (IFAB), guardiana de las Reglas del Fútbol?",
+    "respuesta": 1886,
+    "unidad": "año",
+    "nota": "Fundada el 2 de junio de 1886 en Londres por las cuatro asociaciones británicas."
+  },
+  {
+    "id": "dep_098",
+    "categoria": "deportes",
+    "dificultad": "extremo",
+    "pregunta": "¿Cuántas carreras oficiales de Fórmula 1 largó el piloto brasileño Rubens Barrichello a lo largo de sus 19 temporadas?",
+    "respuesta": 322,
+    "unidad": "grandes premios",
+    "nota": "Durante años fue el piloto con mayor cantidad de grandes premios disputados en la categoría reina."
+  },
+  {
+    "id": "dep_099",
+    "categoria": "deportes",
+    "dificultad": "extremo",
+    "pregunta": "¿Cuántos gramos pesa la bola oficial de críquet utilizada en los partidos de Test matches internacionales?",
+    "respuesta": 163,
+    "unidad": "gramos",
+    "nota": "Las reglas del MCC establecen entre 155,9 y 163,0 gramos con centro de corcho envuelto en cuero."
+  },
+  {
+    "id": "dep_100",
+    "categoria": "deportes",
+    "dificultad": "extremo",
+    "pregunta": "¿En qué año el pugilista argentino Carlos Monzón defendió por primera vez su corona mundial frente a Nino Benvenuti en Montecarlo?",
+    "respuesta": 1971,
+    "unidad": "año",
+    "nota": "El 8 de mayo de 1971 por nocaut técnico en el tercer round, iniciando su reinado de 14 defensas exitosas."
+  }
+]

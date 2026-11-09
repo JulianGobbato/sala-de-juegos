@@ -1,0 +1,743 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <meta name="theme-color" content="#0a192f">
+  <meta name="description" content="¡Toco timbre! Me bajo del bondi - Juego de mesa digital de preguntas numéricas, riesgo y apuestas porteñas.">
+  <title>¡Toco timbre! Me bajo del bondi 🚌🔔</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Outfit:wght@400;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Bootstrap 5.3 CSS via CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+  <!-- Estilos Propios -->
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <!-- Canvas de confeti para festejos -->
+  <canvas id="confettiCanvas"></canvas>
+
+  <div class="app-container">
+    <!-- Header Cartelera Colectivo Porteño -->
+    <header class="bondi-header">
+      <div class="bondi-header-top">
+        <div class="linea-badge">
+          <span>🚌</span>
+          <span id="headerLineaText">LÍNEA 60</span>
+        </div>
+        <div class="header-controls">
+          <a href="../index.html" class="btn-hub-link" id="btnBackToHub" title="Volver a la Sala de Juegos" aria-label="Volver a la Sala de Juegos">
+            <span>🏠</span>
+            <span class="d-none d-sm-inline">Sala de Juegos</span>
+          </a>
+          <button type="button" class="btn-icon-subtle" id="btnToggleSound" title="Sonido On/Off" aria-label="Alternar sonido">
+            <span id="soundIcon">🔊</span>
+          </button>
+          <button type="button" class="btn-icon-subtle" id="btnOpenRules" title="Reglas del juego" aria-label="Ver reglas">
+            <span>📖</span>
+          </button>
+          <button type="button" class="btn-icon-subtle" id="btnResetGame" title="Menú del juego / Reiniciar" aria-label="Reiniciar o ir al menú">
+            <span>🔄</span>
+          </button>
+        </div>
+      </div>
+      <div class="cartelera-led">
+        <h1 class="cartelera-text" id="carteleraTitle">¡TOCO TIMBRE! ME BAJO</h1>
+        <div class="cartelera-subtext" id="carteleraSubtitle">DESTINO: LA GLORIA</div>
+      </div>
+    </header>
+
+    <!-- ====================================================================
+         VISTA 1: MENÚ PRINCIPAL
+         ==================================================================== -->
+    <main id="viewMenu" class="view-section active">
+      <div class="hero-bus-banner">
+        <div class="hero-bus-icon">🚌</div>
+        <h2 style="font-family: var(--font-display); font-size: 2.1rem; color: #fff; margin-bottom: 4px; letter-spacing: 1px;">
+          ¡TOCO TIMBRE!
+        </h2>
+        <p style="color: var(--bondi-yellow); font-weight: 700; font-size: 1.05rem; margin-bottom: 8px;">
+          Me bajo del bondi
+        </p>
+        <p style="color: var(--text-muted); font-size: 0.9rem; max-width: 380px; margin: 0 auto 16px;">
+          Inspirado en la mecánica de <em>"Shoot for the Stars"</em>. Acercate a la cifra sin pasarte. Si el chofer derrapa, ¡tocá timbre antes de irte a la banquina!
+        </p>
+      </div>
+
+      <!-- Botón visible: Volver a la Sala de Juegos -->
+      <div class="text-center mb-3">
+        <a href="../index.html" class="btn btn-bondi btn-bondi-secondary" style="display: inline-flex; align-items: center; justify-content: center; gap: 8px; width: auto; padding: 10px 22px; font-size: 0.95rem; border-radius: 999px; text-decoration: none; box-shadow: 0 4px 14px rgba(0,0,0,0.35); border: 1px solid rgba(255,255,255,0.2);">
+          <span>🏠</span>
+          <span style="font-weight: 700;">Volver a la Sala de Juegos</span>
+        </a>
+      </div>
+
+      <!-- Banner de reanudar partida guardada -->
+      <div id="resumeGameCard" class="game-card text-center d-none" style="border: 2px solid var(--bondi-gold); background: rgba(245, 158, 11, 0.1);">
+        <div style="font-size: 1.1rem; font-weight: 700; color: var(--bondi-yellow); margin-bottom: 4px;">
+          💾 Partida activa guardada
+        </div>
+        <p id="resumeGameInfo" style="font-size: 0.88rem; color: #e2e8f0; margin-bottom: 12px;">
+          Ronda en curso detectada en tu dispositivo.
+        </p>
+        <div class="d-flex gap-2 justify-content-center">
+          <button type="button" class="btn btn-bondi btn-bondi-gold" id="btnResumeGame" style="width: auto; padding: 8px 18px; font-size: 1rem;">
+            ▶️ Continuar partida en curso
+          </button>
+          <button type="button" class="btn btn-bondi btn-bondi-secondary" id="btnDiscardSavedGame" style="width: auto; padding: 8px 14px; font-size: 0.9rem;">
+            ✖ Descartar
+          </button>
+        </div>
+      </div>
+
+      <!-- Selección de Modos -->
+      <div class="mode-card" id="btnSelectModeTarjetero">
+        <span class="mode-badge presencial">Modo Presencial</span>
+        <div class="mode-title">
+          <span>🎴</span>
+          <span>El Tarjetero</span>
+        </div>
+        <p style="color: #cbd5e1; font-size: 0.9rem; margin-bottom: 12px;">
+          Mazo de preguntas numéricas en el celular para jugar cara a cara anotando puntos en papel o charlando en la mesa.
+        </p>
+        <div class="text-end">
+          <span style="color: var(--bondi-blue-light); font-weight: 700; font-size: 0.9rem;">Abrir mazo de cartas &rarr;</span>
+        </div>
+      </div>
+
+      <div class="mode-card" id="btnSelectModeDigital">
+        <span class="mode-badge digital">Modo App Completa</span>
+        <div class="mode-title">
+          <span>🎮</span>
+          <span>Partida Digital</span>
+        </div>
+        <p style="color: #cbd5e1; font-size: 0.9rem; margin-bottom: 12px;">
+          La app controla todo: turnos, apuestas, quién es el Chofer, el botón de timbre y calcula los puntos en la tarjeta SUBE.
+        </p>
+        <div class="text-end">
+          <span style="color: var(--bondi-yellow); font-weight: 700; font-size: 0.9rem;">Configurar jugadores y jugar &rarr;</span>
+        </div>
+      </div>
+
+      <!-- Botón de Reglas Rápido -->
+      <div class="text-center mt-3">
+        <button type="button" class="btn btn-link text-decoration-none" id="btnRulesFromMenu" style="color: #94a3b8; font-size: 0.88rem;">
+          ❓ ¿Cómo se juega? Mirá las reglas completas
+        </button>
+      </div>
+    </main>
+
+    <!-- ====================================================================
+         VISTA 2A: CONFIGURACIÓN MODO PRESENCIAL (TARJETERO)
+         ==================================================================== -->
+    <section id="viewTarjeteroSetup" class="view-section">
+      <div class="d-flex align-items-center justify-content-between mb-3">
+        <button type="button" class="btn btn-sm btn-bondi-secondary" id="btnTarjeteroSetupBack">
+          &larr; Volver
+        </button>
+        <span style="font-size: 0.85rem; color: var(--bondi-yellow); font-weight: 700;">CONFIGURAR MAZO</span>
+      </div>
+
+      <div class="game-card">
+        <div class="filter-section-title">
+          <span>1. Categorías del Mazo</span>
+          <div>
+            <button type="button" class="btn btn-link filter-action-link p-0 me-2" id="btnTarjeteroSelectAllCats">Todas</button>
+            <button type="button" class="btn btn-link filter-action-link p-0 text-muted" id="btnTarjeteroClearAllCats">Ninguna</button>
+          </div>
+        </div>
+        <div class="filter-pills-grid" id="tarjeteroCatsContainer">
+          <!-- Generado dinámicamente desde categorias.json -->
+        </div>
+
+        <div class="filter-section-title mt-2">
+          <span>2. Nivel de Dificultad</span>
+          <button type="button" class="btn btn-link filter-action-link p-0" id="btnTarjeteroSelectAllDiffs">Todas</button>
+        </div>
+        <div class="filter-pills-grid" id="tarjeteroDiffsContainer">
+          <!-- Generado dinámicamente desde categorias.json -->
+        </div>
+
+        <div class="filter-section-title mt-3">
+          <span>3. Cantidad de cartas por Categoría/Dificultad</span>
+          <span class="text-muted" style="font-size: 0.78rem;">(Al azar por grupo)</span>
+        </div>
+        <div class="deck-size-grid" id="tarjeteroPerCombContainer">
+          <button type="button" class="deck-size-pill active" data-per="0">Todas las disponibles</button>
+          <button type="button" class="deck-size-pill" data-per="1">1 por combinación</button>
+          <button type="button" class="deck-size-pill" data-per="3">3 por combinación</button>
+          <button type="button" class="deck-size-pill" data-per="5">5 por combinación</button>
+          <button type="button" class="deck-size-pill" data-per="10">10 por combinación</button>
+          <button type="button" class="deck-size-pill" data-per="custom">Personalizado ✍️</button>
+        </div>
+        <div class="custom-per-comb-row mb-3 d-none align-items-center gap-2" id="tarjeteroCustomPerCombRow">
+          <span style="font-size: 0.85rem; color: #cbd5e1;">Cantidad por combinación:</span>
+          <input type="number" class="form-control-bondi text-center" id="tarjeteroCustomPerCombInput" min="1" max="25" value="15" style="width: 80px; padding: 4px 8px;">
+        </div>
+
+        <!-- Contador en vivo del mazo -->
+        <div class="deck-counter-box mb-2">
+          <div style="flex: 1;">
+            <div style="font-size: 0.75rem; color: #94a3b8; text-transform: uppercase; letter-spacing: 0.5px;">Resumen del Mazo</div>
+            <div style="font-size: 0.88rem; color: #f8fafc; font-weight: 600; line-height: 1.35;" id="tarjeteroDeckStatusText">Calculando preguntas...</div>
+          </div>
+          <div class="deck-counter-number ms-2" id="tarjeteroDeckCounterNumber">0</div>
+        </div>
+
+        <!-- Botón para restablecer preguntas vistas -->
+        <div class="text-center mb-3">
+          <button type="button" class="btn-reset-seen" id="btnResetSeenTarjetero" style="display: none;">
+            🔄 Restablecer preguntas vistas (<span id="tarjeteroSeenCount">0</span> ya vistas)
+          </button>
+        </div>
+
+        <button type="button" class="btn-bondi btn-bondi-primary" id="btnStartTarjetero">
+          🎴 ¡Abrir Mazo de Cartas!
+        </button>
+      </div>
+    </section>
+
+    <!-- ====================================================================
+         VISTA 2B: MODO PRESENCIAL (TARJETERO)
+         ==================================================================== -->
+    <section id="viewTarjetero" class="view-section">
+      <div class="d-flex align-items-center justify-content-between mb-3">
+        <div class="d-flex gap-2">
+          <button type="button" class="btn btn-sm btn-bondi-secondary" id="btnTarjeteroBack">
+            &larr; Menú
+          </button>
+          <button type="button" class="btn btn-sm btn-bondi-secondary" id="btnTarjeteroOpenFilters" title="Cambiar filtros del mazo">
+            ⚙️ Mazo
+          </button>
+        </div>
+        <div style="font-size: 0.85rem; color: var(--bondi-yellow); font-weight: 600;" id="tarjeteroProgressText">
+          Tarjeta 1 / 40
+        </div>
+      </div>
+
+      <div class="card-boleto mb-3">
+        <div class="d-flex justify-content-center align-items-center gap-2 mb-3">
+          <span class="badge-category" id="tarjeteroCategory">🇦🇷 Cultura Argentina</span>
+          <span class="badge-difficulty facil" id="tarjeteroDifficulty">🟢 Fácil</span>
+        </div>
+        <h3 class="question-text" id="tarjeteroQuestion">¿En qué año se inauguró el Obelisco?</h3>
+        <div class="unit-hint">
+          Respuesta en: <span class="unit-tag" id="tarjeteroUnit">año</span>
+        </div>
+
+        <!-- Zona de Revelación -->
+        <div id="tarjeteroAnswerContainer" class="d-none">
+          <div class="answer-reveal-box">
+            <div class="answer-label" style="font-size: 0.8rem; color: #94a3b8; text-transform: uppercase;">Respuesta Correcta</div>
+            <div class="answer-number" id="tarjeteroAnswerValue">1936</div>
+            <div class="answer-unit-label" id="tarjeteroAnswerUnitLabel">año</div>
+            <div class="answer-note" id="tarjeteroNote">Dato curioso aquí...</div>
+          </div>
+        </div>
+
+        <button type="button" class="btn-bondi btn-bondi-gold mt-2" id="btnTarjeteroReveal">
+          👁️ Revelar Respuesta
+        </button>
+      </div>
+
+      <div class="d-flex gap-2">
+        <button type="button" class="btn-bondi btn-bondi-primary" id="btnTarjeteroNext">
+          ➡️ Siguiente Pregunta
+        </button>
+      </div>
+
+      <div class="text-center mt-3">
+        <button type="button" class="btn btn-link text-danger text-decoration-none btn-sm" id="btnAbandonTarjetero" style="font-size: 0.82rem; opacity: 0.85;">
+          🚪 Abandonar partida
+        </button>
+      </div>
+    </section>
+
+    <!-- ====================================================================
+         VISTA 3: CONFIGURACIÓN MODO DIGITAL
+         ==================================================================== -->
+    <section id="viewDigitalSetup" class="view-section">
+      <div class="d-flex align-items-center justify-content-between mb-3">
+        <button type="button" class="btn btn-sm btn-bondi-secondary" id="btnSetupBack">
+          &larr; Volver
+        </button>
+        <span style="font-size: 0.85rem; color: var(--bondi-yellow); font-weight: 700;">NUEVA PARTIDA</span>
+      </div>
+
+      <div class="game-card">
+        <h3 style="font-family: var(--font-display); font-size: 1.5rem; color: #fff; margin-bottom: 12px;">
+          1. Cantidad de Rondas
+        </h3>
+        <div class="d-flex gap-2 mb-3">
+          <button type="button" class="btn btn-sm flex-fill round-select-btn btn-bondi-secondary" data-rounds="5">
+            5 Rondas
+          </button>
+          <button type="button" class="btn btn-sm flex-fill round-select-btn btn-bondi-gold active" data-rounds="8">
+            8 Rondas ⭐
+          </button>
+          <button type="button" class="btn btn-sm flex-fill round-select-btn btn-bondi-secondary" data-rounds="12">
+            12 Rondas
+          </button>
+          <button type="button" class="btn btn-sm flex-fill round-select-btn btn-bondi-secondary" data-rounds="0">
+            Libre ♾️
+          </button>
+        </div>
+
+        <div class="d-flex align-items-center justify-content-between mb-2">
+          <h3 style="font-family: var(--font-display); font-size: 1.5rem; color: #fff; margin: 0;">
+            2. Pasajeros (2 a 10)
+          </h3>
+          <button type="button" class="btn btn-sm btn-link text-decoration-none" id="btnRandomizeNames" style="color: var(--bondi-yellow); font-size: 0.85rem; padding: 0;">
+            🎲 Apodos de bondi
+          </button>
+        </div>
+
+        <div id="playersListContainer" class="d-flex flex-column gap-2 mb-3">
+          <!-- Inputs generados por JS -->
+        </div>
+
+        <button type="button" class="btn btn-sm btn-outline-light w-100 mb-4" id="btnAddPlayer">
+          ➕ Agregar otro pasajero
+        </button>
+
+        <!-- Filtros del Mazo de la Partida Digital -->
+        <h3 style="font-family: var(--font-display); font-size: 1.5rem; color: #fff; margin-bottom: 12px;">
+          3. Mazo de Preguntas
+        </h3>
+
+        <div class="filter-section-title">
+          <span>Categorías</span>
+          <div>
+            <button type="button" class="btn btn-link filter-action-link p-0 me-2" id="btnDigitalSelectAllCats">Todas</button>
+            <button type="button" class="btn btn-link filter-action-link p-0 text-muted" id="btnDigitalClearAllCats">Ninguna</button>
+          </div>
+        </div>
+        <div class="filter-pills-grid" id="digitalCatsContainer">
+          <!-- Generado dinámicamente -->
+        </div>
+
+        <div class="filter-section-title mt-2">
+          <span>Dificultad</span>
+          <button type="button" class="btn btn-link filter-action-link p-0" id="btnDigitalSelectAllDiffs">Todas</button>
+        </div>
+        <div class="filter-pills-grid" id="digitalDiffsContainer">
+          <!-- Generado dinámicamente -->
+        </div>
+
+        <div class="filter-section-title mt-3">
+          <span>Cantidad de cartas por Categoría/Dificultad</span>
+          <span class="text-muted" style="font-size: 0.78rem;">(Al azar por grupo)</span>
+        </div>
+        <div class="deck-size-grid" id="digitalPerCombContainer">
+          <button type="button" class="deck-size-pill active" data-per="0">Todas las disponibles</button>
+          <button type="button" class="deck-size-pill" data-per="1">1 por combinación</button>
+          <button type="button" class="deck-size-pill" data-per="3">3 por combinación</button>
+          <button type="button" class="deck-size-pill" data-per="5">5 por combinación</button>
+          <button type="button" class="deck-size-pill" data-per="10">10 por combinación</button>
+          <button type="button" class="deck-size-pill" data-per="custom">Personalizado ✍️</button>
+        </div>
+        <div class="custom-per-comb-row mb-3 d-none align-items-center gap-2" id="digitalCustomPerCombRow">
+          <span style="font-size: 0.85rem; color: #cbd5e1;">Cantidad por combinación:</span>
+          <input type="number" class="form-control-bondi text-center" id="digitalCustomPerCombInput" min="1" max="25" value="15" style="width: 80px; padding: 4px 8px;">
+        </div>
+
+        <!-- Contador en vivo digital -->
+        <div class="deck-counter-box mb-2">
+          <div style="flex: 1;">
+            <div style="font-size: 0.75rem; color: #94a3b8; text-transform: uppercase; letter-spacing: 0.5px;">Resumen del Mazo</div>
+            <div style="font-size: 0.88rem; color: #f8fafc; font-weight: 600; line-height: 1.35;" id="digitalDeckStatusText">Calculando preguntas...</div>
+          </div>
+          <div class="deck-counter-number ms-2" id="digitalDeckCounterNumber">0</div>
+        </div>
+
+        <!-- Botón para restablecer preguntas vistas -->
+        <div class="text-center mb-3">
+          <button type="button" class="btn-reset-seen" id="btnResetSeenDigital" style="display: none;">
+            🔄 Restablecer preguntas vistas (<span id="digitalSeenCount">0</span> ya vistas)
+          </button>
+        </div>
+
+        <button type="button" class="btn-bondi btn-bondi-primary" id="btnStartGame">
+          🚀 ¡Arrancar el Bondi!
+        </button>
+      </div>
+    </section>
+
+    <!-- ====================================================================
+         VISTA 4: PARTIDA DIGITAL (RONDA DE APUESTAS)
+         ==================================================================== -->
+    <section id="viewDigitalGame" class="view-section">
+      <!-- Indicador de ronda & estado -->
+      <div class="d-flex justify-content-between align-items-center mb-2">
+        <span class="badge-custom" style="background: rgba(2, 132, 199, 0.25); color: var(--bondi-blue-light); border: 1px solid rgba(2, 132, 199, 0.4);" id="gameRoundBadge">
+          Ronda 1 de 8
+        </span>
+        <div class="d-flex gap-1 align-items-center">
+          <span class="badge-category" id="gameCategoryBadge">
+            🇦🇷 Cultura Argentina
+          </span>
+          <span class="badge-difficulty facil" id="gameDifficultyBadge">
+            🟢 Fácil
+          </span>
+        </div>
+      </div>
+
+      <!-- Tarjeta de Pregunta -->
+      <div class="game-card mb-2" style="padding: 14px 16px;">
+        <div style="font-size: 0.8rem; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.5px;">Pregunta</div>
+        <div id="gameQuestionText" style="font-weight: 700; font-size: 1.15rem; color: #fff; line-height: 1.35; margin: 4px 0 6px;">
+          ¿Pregunta aquí?
+        </div>
+        <div style="font-size: 0.85rem; color: #cbd5e1;">
+          Unidad de medida: <strong class="unit-tag" id="gameUnitText">año</strong>
+        </div>
+      </div>
+
+      <!-- Cartel de Apuesta Actual -->
+      <div class="bet-display-board">
+        <div class="bet-label" id="betBoardLabel">Número fijado por el Chofer</div>
+        <div class="bet-value-giant" id="betBoardValue">---</div>
+        <div class="bet-unit-small" id="betBoardUnit">esperando número inicial</div>
+      </div>
+
+      <!-- Banner del Chofer actual -->
+      <div class="current-chofer-banner" id="currentChoferBanner">
+        <div>
+          <span>Al volante: </span>
+          <strong id="currentChoferName" style="color: var(--bondi-yellow);">Nadie</strong>
+        </div>
+        <span style="font-size: 0.8rem; color: var(--text-muted);" id="currentChoferStatus">Chofer</span>
+      </div>
+
+      <!-- Grilla de Pasajeros arriba / bajados -->
+      <div style="font-size: 0.78rem; text-transform: uppercase; color: var(--text-muted); letter-spacing: 0.5px; margin-bottom: 6px;">
+        Estado del pasaje:
+      </div>
+      <div class="passengers-container" id="passengersStatusContainer">
+        <!-- Renderizado dinámico -->
+      </div>
+
+      <!-- ==============================================================
+           SUB-FASE A: CHOFER INICIAL INGRESA APUESTA
+           ============================================================== -->
+      <div id="subphaseChoferInitial" class="game-card d-none">
+        <div class="turn-banner mb-3">
+          <div style="font-size: 0.85rem; color: #cbd5e1;">Turno del Chofer de la ronda</div>
+          <div class="turn-player-name" id="initialChoferPlayerName">Jugador 1</div>
+          <div style="font-size: 0.85rem; color: var(--bondi-yellow); margin-top: 2px;">
+            🚌 Vos ponés la primera cifra
+          </div>
+        </div>
+
+        <p style="font-size: 0.9rem; color: #e2e8f0; text-align: center; margin-bottom: 12px;">
+          Ingresá un número que creas que <strong>NO supere</strong> la respuesta real:
+        </p>
+
+        <div class="mb-3">
+          <input type="number" step="any" class="form-control-bondi input-giant-number" id="inputInitialBet" placeholder="0" inputmode="decimal">
+        </div>
+
+        <button type="button" class="btn-bondi btn-bondi-gold" id="btnConfirmInitialBet">
+          🚌 Pisar el acelerador (Fijar número)
+        </button>
+      </div>
+
+      <!-- ==============================================================
+           SUB-FASE B: DECISIÓN DEL PASAJERO DE TURNO
+           ============================================================== -->
+      <div id="subphasePassengerTurn" class="game-card d-none">
+        <div class="turn-banner mb-3">
+          <div style="font-size: 0.82rem; color: #cbd5e1;">Pásale el celu a:</div>
+          <div class="turn-player-name" id="passengerTurnPlayerName">Jugador 2</div>
+          <div style="font-size: 0.82rem; color: #94a3b8; margin-top: 2px;">
+            El Chofer fijó: <strong style="color: var(--bondi-yellow);" id="passengerTurnCurrentBet">1950</strong> <span id="passengerTurnBetUnit">años</span>
+          </div>
+        </div>
+
+        <!-- Contenedor de Botones de Decisión -->
+        <div id="passengerActionButtons" class="d-flex flex-column gap-2">
+          <!-- 1. Agarrar el volante -->
+          <button type="button" class="btn-bondi btn-bondi-primary" id="btnOpenRaiseBet">
+            🛞 Agarrar el volante (Subir número)
+          </button>
+
+          <!-- 2. Quedarme en el bondi -->
+          <button type="button" class="btn-bondi btn-bondi-success" id="btnStayOnBus">
+            🧍 Quedarme en el bondi (Confío)
+          </button>
+
+          <!-- 3. Tocar timbre -->
+          <div class="timbre-button-wrapper">
+            <button type="button" class="btn-timbre" id="btnRingBell">
+              <span class="bell-icon">🔔</span>
+              <span>¡TOCO TIMBRE! ME BAJO</span>
+              <span class="btn-timbre-subtext">El chofer ya se pasó, me bajo acá</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- Formulario desplegable para subir número (🛞) -->
+        <div id="raiseBetFormContainer" class="d-none mt-3 pt-3" style="border-top: 1px dashed rgba(255, 255, 255, 0.2);">
+          <div style="font-size: 0.9rem; color: var(--bondi-blue-light); font-weight: 700; margin-bottom: 6px; text-align: center;">
+            Ingresá un número MAYOR a <span id="raiseMinBetLabel">0</span>:
+          </div>
+          <input type="number" step="any" class="form-control-bondi input-giant-number mb-2" id="inputRaiseBet" placeholder="0" inputmode="decimal">
+          <div class="d-flex gap-2">
+            <button type="button" class="btn-bondi btn-bondi-gold flex-fill" id="btnConfirmRaiseBet">
+              ✅ Confirmar y Ser Chofer
+            </button>
+            <button type="button" class="btn-bondi btn-bondi-secondary" id="btnCancelRaiseBet" style="width: auto; padding: 12px 16px;">
+              ❌
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="text-center mt-3">
+        <button type="button" class="btn btn-link text-danger text-decoration-none btn-sm" id="btnAbandonDigitalGame" style="font-size: 0.82rem; opacity: 0.85;">
+          🚪 Abandonar partida
+        </button>
+      </div>
+    </section>
+
+    <!-- ====================================================================
+         VISTA 5: RESULTADO DE LA RONDA & RESOLUCIÓN
+         ==================================================================== -->
+    <section id="viewDigitalRoundResult" class="view-section">
+      <div class="text-center mb-3">
+        <div style="font-size: 2.2rem;">🛑</div>
+        <h2 style="font-family: var(--font-display); font-size: 1.8rem; color: #fff; margin: 0;">
+          ¡LLEGAMOS A LA PARADA FINAL!
+        </h2>
+        <p style="color: var(--text-muted); font-size: 0.88rem;">
+          Se terminaron las apuestas de esta pregunta.
+        </p>
+      </div>
+
+      <!-- Resumen del viaje -->
+      <div class="game-card mb-3">
+        <div class="d-flex justify-content-between align-items-center mb-2">
+          <span style="font-size: 0.85rem; color: var(--text-muted);">Apuesta Final del Chofer:</span>
+          <span class="badge-custom" style="background: rgba(245, 158, 11, 0.2); color: var(--bondi-yellow);">
+            🚌 <span id="resultChoferName">Juan</span>
+          </span>
+        </div>
+        <div class="text-center py-2" style="background: #020617; border-radius: var(--radius-sm); margin-bottom: 12px;">
+          <div style="font-family: var(--font-display); font-size: 2.8rem; color: var(--bondi-yellow); line-height: 1;" id="resultFinalBet">
+            1986
+          </div>
+          <div style="font-size: 0.85rem; color: #94a3b8;" id="resultFinalUnit">años</div>
+        </div>
+
+        <div style="font-size: 0.85rem; color: #cbd5e1; margin-bottom: 4px;">
+          🧍 Pasajeros que confiaron: <strong id="resultStayedPlayers" style="color: #4ade80;">Nadie</strong>
+        </div>
+        <div style="font-size: 0.85rem; color: #cbd5e1;">
+          🔔 Tocaron timbre: <strong id="resultRungPlayers" style="color: #f87171;">Nadie</strong>
+        </div>
+      </div>
+
+      <!-- Botón para revelar respuesta -->
+      <div id="resultPreRevealAction" class="mb-3">
+        <button type="button" class="btn-bondi btn-bondi-gold" id="btnRevealOfficialAnswer">
+          🔍 Revelar Respuesta Oficial
+        </button>
+      </div>
+
+      <!-- Bloque de Veredicto Revelado -->
+      <div id="resultPostRevealSection" class="d-none">
+        <div class="answer-reveal-box text-center mb-3" id="verdictBox">
+          <div style="font-size: 0.85rem; color: #94a3b8; text-transform: uppercase;">Respuesta Real Oficial</div>
+          <div class="answer-number" id="resultRealAnswer">2022</div>
+          <div class="answer-unit-label" id="resultRealUnit">años</div>
+          <div id="verdictBadgeText" style="font-size: 1.15rem; font-weight: 800; margin-top: 10px; padding: 8px; border-radius: var(--radius-sm);">
+            ¡EL CHOFER NO SE PASÓ!
+          </div>
+          <div class="answer-note" id="resultQuestionNote">
+            Dato curioso histórico...
+          </div>
+        </div>
+
+        <!-- Puntos otorgados en la ronda -->
+        <div class="game-card mb-3">
+          <h4 style="font-family: var(--font-display); font-size: 1.25rem; color: #fff; margin-bottom: 10px;">
+            🪙 Puntos de la Ronda
+          </h4>
+          <div id="roundScoreChangesList" class="d-flex flex-column gap-1">
+            <!-- Items de cambio de puntos -->
+          </div>
+        </div>
+
+        <!-- Tabla Saldo SUBE -->
+        <div class="sube-card">
+          <div class="sube-header">
+            <div class="sube-logo">
+              <span>💳</span> SUBE
+            </div>
+            <div class="sube-chip"></div>
+          </div>
+          <div style="font-size: 0.75rem; color: rgba(255, 255, 255, 0.7); text-transform: uppercase; margin-bottom: 8px; letter-spacing: 0.5px;">
+            Saldo de Posiciones
+          </div>
+          <div id="subeLeaderboardList">
+            <!-- Filas de la SUBE -->
+          </div>
+        </div>
+
+        <!-- Siguiente Ronda o Ver Ganador -->
+        <button type="button" class="btn-bondi btn-bondi-primary" id="btnNextRoundOrFinish">
+          ➡️ Siguiente Ronda
+        </button>
+
+        <div class="text-center mt-2">
+          <button type="button" class="btn btn-link text-danger text-decoration-none btn-sm" id="btnAbandonFromResults" style="font-size: 0.82rem; opacity: 0.85;">
+            🚪 Abandonar partida
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====================================================================
+         VISTA 6: FIN DE PARTIDA & PODIO
+         ==================================================================== -->
+    <section id="viewDigitalGameOver" class="view-section">
+      <div class="text-center mb-3">
+        <div style="font-size: 3rem;">🏆</div>
+        <h2 style="font-family: var(--font-display); font-size: 2.2rem; color: var(--bondi-yellow); margin-bottom: 2px;">
+          ¡EL REY DEL BONDI!
+        </h2>
+        <p style="color: #cbd5e1; font-size: 0.95rem;">
+          Finalizó el recorrido. Conocé al chofer supremo de la línea.
+        </p>
+      </div>
+
+      <!-- Podio de 3 escalones -->
+      <div class="podium-container" id="podiumContainer">
+        <!-- Renderizado por JS: 2do, 1ero, 3ero -->
+      </div>
+
+      <!-- Tarjeta SUBE final con todas las posiciones -->
+      <div class="sube-card mb-3">
+        <div class="sube-header">
+          <div class="sube-logo">
+            <span>💳</span> SALDO FINAL SUBE
+          </div>
+          <div class="sube-chip"></div>
+        </div>
+        <div id="finalLeaderboardList">
+          <!-- Filas finales -->
+        </div>
+      </div>
+
+      <div class="d-flex flex-column gap-2">
+        <button type="button" class="btn-bondi btn-bondi-gold" id="btnPlayAgainSame">
+          🔄 Revancha (Mismos Pasajeros)
+        </button>
+        <button type="button" class="btn-bondi btn-bondi-secondary" id="btnGameOverToMenu">
+          🏠 Volver al Menú Principal
+        </button>
+      </div>
+    </section>
+  </div>
+
+  <!-- ====================================================================
+       MODAL DE REGLAS DEL JUEGO
+       ==================================================================== -->
+  <div class="modal fade" id="rulesModal" tabindex="-1" aria-labelledby="rulesModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+      <div class="modal-content" style="background: #0f172a; color: #fff; border: 2px solid var(--bondi-gold); border-radius: var(--radius-lg);">
+        <div class="modal-header" style="border-bottom: 1px solid rgba(255, 255, 255, 0.1);">
+          <h5 class="modal-title" id="rulesModalLabel" style="font-family: var(--font-display); font-size: 1.5rem; color: var(--bondi-yellow);">
+            📖 Reglamento del Bondi
+          </h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+        </div>
+        <div class="modal-body" style="font-size: 0.92rem; line-height: 1.6;">
+          <h6 style="color: var(--bondi-blue-light); font-weight: 700;">🎯 Objetivo del Juego</h6>
+          <p>
+            Acercarse lo más posible a la respuesta numérica real sin pasarse de largo. Quien maneja el bondi arriesga los puntos; los pasajeros deciden si confían o si se bajan a tiempo.
+          </p>
+
+          <h6 style="color: var(--bondi-blue-light); font-weight: 700; margin-top: 14px;">🛞 Cómo funciona la ronda</h6>
+          <ol class="ps-3 mb-3">
+            <li><strong>El Chofer inicial</strong> ingresa un primer número que crea que no se pasa del valor real.</li>
+            <li>Por turno, cada pasajero que sigue arriba del bondi tiene <strong>3 opciones</strong>:
+              <ul class="ps-3 mt-1">
+                <li><strong>🛞 Agarrar el volante:</strong> Ingresa un número mayor y pasa a ser el nuevo Chofer.</li>
+                <li><strong>🧍 Quedarme en el bondi:</strong> Confía en la cifra actual y se queda arriba.</li>
+                <li><strong>🔔 ¡Toco timbre! Me bajo:</strong> Cree que el Chofer ya se pasó. Se baja en la parada y ya no juega esta pregunta.</li>
+              </ul>
+            </li>
+            <li>La ronda de apuestas termina cuando <strong>todos los que siguen en el bondi eligieron "Quedarme"</strong> ante la última cifra, o cuando <strong>todos tocaron timbre y el Chofer quedó solo</strong>.</li>
+          </ol>
+
+          <h6 style="color: var(--bondi-blue-light); font-weight: 700; margin-top: 14px;">🪙 Sistema de Puntos</h6>
+          <p class="mb-1"><strong>Si el Chofer NO SE PASÓ (&le; respuesta):</strong></p>
+          <ul class="ps-3 mb-2">
+            <li>Si el Chofer quedó solo (todos tocaron timbre): <strong>+6 puntos</strong> para el Chofer.</li>
+            <li>Si hay pasajeros con él: <strong>+3 puntos</strong> para el Chofer y <strong>+2 puntos</strong> para cada pasajero en el bondi.</li>
+            <li><em>Bonus de precisión exacta:</em> Si el Chofer acertó el número exacto, <strong>+2 puntos extra de bonus</strong>.</li>
+            <li>Los que tocaron timbre: <strong>0 puntos</strong>.</li>
+          </ul>
+
+          <p class="mb-1"><strong>Si el Chofer SE PASÓ (&gt; respuesta):</strong></p>
+          <ul class="ps-3 mb-3">
+            <li>El Chofer pierde <strong>-1 punto</strong> por derrapar a la banquina.</li>
+            <li>Los pasajeros que se quedaron arriba: <strong>0 puntos</strong>.</li>
+            <li>Cada pasajero que <strong>tocó timbre</strong>: <strong>+2 puntos</strong> por bajarse a tiempo.</li>
+          </ul>
+
+          <div class="alert alert-warning py-2 mb-0" style="font-size: 0.85rem; background: rgba(245, 158, 11, 0.15); border-color: rgba(245, 158, 11, 0.4); color: #fde68a;">
+            💡 <strong>Consejo criollo:</strong> Si el Chofer pone un número muy alto, ¡tocá timbre sin dudarlo! Pero si todos tocan timbre y el Chofer tenía razón, se llevará los 6 puntos él solo.
+          </div>
+        </div>
+        <div class="modal-footer" style="border-top: 1px solid rgba(255, 255, 255, 0.1);">
+          <button type="button" class="btn btn-bondi btn-bondi-gold w-100" data-bs-dismiss="modal">
+            ¡Entendido, vamos a jugar!
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ====================================================================
+       MODAL DE CONFIRMACIÓN REINICIAR / SALIR
+       ==================================================================== -->
+  <div class="modal fade" id="resetConfirmModal" tabindex="-1" aria-labelledby="resetModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content" style="background: #0f172a; color: #fff; border: 2px solid #ef4444; border-radius: var(--radius-lg);">
+        <div class="modal-header" style="border-bottom: 1px solid rgba(255, 255, 255, 0.1);">
+          <h5 class="modal-title" id="resetModalLabel" style="font-family: var(--font-display); font-size: 1.4rem; color: #f87171;">
+            ⚠️ ¿Finalizar o Salir al Menú?
+          </h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+        </div>
+        <div class="modal-body" style="font-size: 0.95rem;">
+          Si salís al menú o abandonás la partida, se borrará el progreso de la partida en curso. ¿Deseás continuar?
+        </div>
+        <div class="modal-footer" style="border-top: 1px solid rgba(255, 255, 255, 0.1);">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Seguir jugando</button>
+          <button type="button" class="btn btn-danger" id="btnConfirmReset">Sí, abandonar partida</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bootstrap 5.3 JS Bundle via CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+  <!-- Banco Completo de Preguntas Bundle (Garantiza 1.000 preguntas offline y file://) -->
+  <script src="data/preguntas-bundle.js"></script>
+
+  <!-- Gestor Compartido del Hub de Juegos -->
+  <script src="../js/hub-shared.js"></script>
+
+  <!-- Lógica Principal de la App -->
+  <script src="js/app.js"></script>
+</body>
+</html>

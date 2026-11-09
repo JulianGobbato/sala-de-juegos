@@ -1,0 +1,902 @@
+[
+  {
+    "id": "hist_001",
+    "categoria": "historia",
+    "dificultad": "facil",
+    "pregunta": "¿En qué año llegó Cristóbal Colón a las costas de América al mando de las tres carabelas?",
+    "respuesta": 1492,
+    "unidad": "año",
+    "nota": "El 12 de octubre de 1492 arribó a la isla de Guanahaní (Bahamas), bautizada San Salvador."
+  },
+  {
+    "id": "hist_002",
+    "categoria": "historia",
+    "dificultad": "facil",
+    "pregunta": "¿En qué año comenzó la Primera Guerra Mundial tras el magnicidio de Sarajevo?",
+    "respuesta": 1914,
+    "unidad": "año",
+    "nota": "El asesinato del archiduque Francisco Fernando de Austria el 28 de junio desató el conflicto en Europa."
+  },
+  {
+    "id": "hist_003",
+    "categoria": "historia",
+    "dificultad": "facil",
+    "pregunta": "¿En qué año finalizó la Primera Guerra Mundial con la firma del armisticio en Compiègne?",
+    "respuesta": 1918,
+    "unidad": "año",
+    "nota": "El 11 de noviembre de 1918 a las 11 horas de la mañana entró en vigor el cese del fuego."
+  },
+  {
+    "id": "hist_004",
+    "categoria": "historia",
+    "dificultad": "facil",
+    "pregunta": "¿En qué año comenzó la Segunda Guerra Mundial con la invasión nazi a Polonia?",
+    "respuesta": 1939,
+    "unidad": "año",
+    "nota": "El 1 de septiembre de 1939 las tropas de la Wehrmacht cruzaron la frontera polaca."
+  },
+  {
+    "id": "hist_005",
+    "categoria": "historia",
+    "dificultad": "facil",
+    "pregunta": "¿En qué año concluyó la Segunda Guerra Mundial tras la rendición incondicional de Japón?",
+    "respuesta": 1945,
+    "unidad": "año",
+    "nota": "El 2 de septiembre de 1945 a bordo del acorazado estadounidense USS Missouri en la bahía de Tokio."
+  },
+  {
+    "id": "hist_006",
+    "categoria": "historia",
+    "dificultad": "facil",
+    "pregunta": "¿En qué año se produjo la Toma de la Bastilla que dio inicio a la Revolución Francesa?",
+    "respuesta": 1789,
+    "unidad": "año",
+    "nota": "El 14 de julio de 1789 en París, símbolo de la caída del absolutismo monárquico."
+  },
+  {
+    "id": "hist_007",
+    "categoria": "historia",
+    "dificultad": "facil",
+    "pregunta": "¿En qué año se firmó la Declaración de Independencia de los Estados Unidos en Filadelfia?",
+    "respuesta": 1776,
+    "unidad": "año",
+    "nota": "El 4 de julio de 1776 redactada por Thomas Jefferson proclamando la separación de Gran Bretaña."
+  },
+  {
+    "id": "hist_008",
+    "categoria": "historia",
+    "dificultad": "facil",
+    "pregunta": "¿En qué año ocurrió la caída del Muro de Berlín que simbolizaba la Guerra Fría?",
+    "respuesta": 1989,
+    "unidad": "año",
+    "nota": "El 9 de noviembre de 1989 tras 28 años de división de la capital alemana."
+  },
+  {
+    "id": "hist_009",
+    "categoria": "historia",
+    "dificultad": "facil",
+    "pregunta": "¿En qué año el ser humano pisó la Luna por primera vez durante la misión Apolo 11?",
+    "respuesta": 1969,
+    "unidad": "año",
+    "nota": "Neil Armstrong y Buzz Aldrin caminaron sobre el Mar de la Tranquilidad el 20 de julio de 1969."
+  },
+  {
+    "id": "hist_010",
+    "categoria": "historia",
+    "dificultad": "facil",
+    "pregunta": "¿En qué año se hundió el transatlántico británico RMS Titanic tras colisionar con un iceberg?",
+    "respuesta": 1912,
+    "unidad": "año",
+    "nota": "En la madrugada del 15 de abril de 1912 durante su viaje inaugural de Southampton a Nueva York."
+  },
+  {
+    "id": "hist_011",
+    "categoria": "historia",
+    "dificultad": "facil",
+    "pregunta": "¿En qué año triunfó la Revolución Rusa de los bolcheviques liderada por Vladímir Lenin?",
+    "respuesta": 1917,
+    "unidad": "año",
+    "nota": "En noviembre de 1917 (octubre según el calendario juliano) tomando el Palacio de Invierno en Petrogrado."
+  },
+  {
+    "id": "hist_012",
+    "categoria": "historia",
+    "dificultad": "facil",
+    "pregunta": "¿En qué año ocurrió el trágico ataque terrorista contra las Torres Gemelas del World Trade Center en Nueva York?",
+    "respuesta": 2001,
+    "unidad": "año",
+    "nota": "El 11 de septiembre de 2001 perpetrado por 19 secuestradores de Al Qaeda."
+  },
+  {
+    "id": "hist_013",
+    "categoria": "historia",
+    "dificultad": "facil",
+    "pregunta": "¿En qué año cayó la ciudad de Constantinopla ante el Imperio Otomano, marcando el fin de la Edad Media?",
+    "respuesta": 1453,
+    "unidad": "año",
+    "nota": "El 29 de mayo de 1453 conquistada por las tropas del sultán Mehmed II."
+  },
+  {
+    "id": "hist_014",
+    "categoria": "historia",
+    "dificultad": "facil",
+    "pregunta": "¿En qué año se disolvió formalmente la Unión de Repúblicas Socialistas Soviéticas (URSS)?",
+    "respuesta": 1991,
+    "unidad": "año",
+    "nota": "El 26 de diciembre de 1991 tras la renuncia de Mijaíl Gorbachov y los acuerdos de Belavezha."
+  },
+  {
+    "id": "hist_015",
+    "categoria": "historia",
+    "dificultad": "facil",
+    "pregunta": "¿En qué año fue asesinado el presidente estadounidense John F. Kennedy en Dallas, Texas?",
+    "respuesta": 1963,
+    "unidad": "año",
+    "nota": "El 22 de noviembre de 1963 en la Plaza Dealey a bordo de la limusina presidencial descapotable."
+  },
+  {
+    "id": "hist_016",
+    "categoria": "historia",
+    "dificultad": "facil",
+    "pregunta": "¿En qué año se produjo el 'Desembarco de Normandía' (Día D) de las fuerzas aliadas en la costa francesa?",
+    "respuesta": 1944,
+    "unidad": "año",
+    "nota": "El 6 de junio de 1944 bajo la Operación Overlord comandada por Dwight D. Eisenhower."
+  },
+  {
+    "id": "hist_017",
+    "categoria": "historia",
+    "dificultad": "facil",
+    "pregunta": "¿En qué año cayó la bomba atómica sobre la ciudad japonesa de Hiroshima?",
+    "respuesta": 1945,
+    "unidad": "año",
+    "nota": "El 6 de agosto de 1945 lanzada por el bombardero B-29 Enola Gay."
+  },
+  {
+    "id": "hist_018",
+    "categoria": "historia",
+    "dificultad": "facil",
+    "pregunta": "¿En qué año Napoleón Bonaparte fue derrotado definitivamente en la Batalla de Waterloo?",
+    "respuesta": 1815,
+    "unidad": "año",
+    "nota": "El 18 de junio de 1815 frente a las tropas británicas de Wellington y prusianas de Blücher."
+  },
+  {
+    "id": "hist_019",
+    "categoria": "historia",
+    "dificultad": "facil",
+    "pregunta": "¿En qué año triunfó la Revolución Cubana con la huida de Fulgencio Batista y la entrada de Fidel Castro a La Habana?",
+    "respuesta": 1959,
+    "unidad": "año",
+    "nota": "El 1 de enero de 1959 las fuerzas rebeldes consolidaron el poder en la isla."
+  },
+  {
+    "id": "hist_020",
+    "categoria": "historia",
+    "dificultad": "facil",
+    "pregunta": "¿En qué año se fundó la Organización de las Naciones Unidas (ONU) tras la Conferencia de San Francisco?",
+    "respuesta": 1945,
+    "unidad": "año",
+    "nota": "La Carta de las Naciones Unidas entró en vigor el 24 de octubre de 1945."
+  },
+  {
+    "id": "hist_021",
+    "categoria": "historia",
+    "dificultad": "facil",
+    "pregunta": "¿En qué año Nelson Mandela fue liberado tras permanecer 27 años en prisión en Sudáfrica?",
+    "respuesta": 1990,
+    "unidad": "año",
+    "nota": "El 11 de febrero de 1990 saliendo de la prisión de Victor Verster para liderar el fin del Apartheid."
+  },
+  {
+    "id": "hist_022",
+    "categoria": "historia",
+    "dificultad": "facil",
+    "pregunta": "¿En qué año comenzó la Guerra Civil Española con el alzamiento militar contra la Segunda República?",
+    "respuesta": 1936,
+    "unidad": "año",
+    "nota": "El 17 y 18 de julio de 1936, prolongándose hasta la victoria del general Francisco Franco en 1939."
+  },
+  {
+    "id": "hist_023",
+    "categoria": "historia",
+    "dificultad": "facil",
+    "pregunta": "¿En qué año se produjo el 'Crack' financiero de Wall Street que inició la Gran Depresión mundial?",
+    "respuesta": 1929,
+    "unidad": "año",
+    "nota": "El fatídico 'Jueves Negro' del 24 de octubre y el 'Martes Negro' del 29 de octubre de 1929."
+  },
+  {
+    "id": "hist_024",
+    "categoria": "historia",
+    "dificultad": "facil",
+    "pregunta": "¿En qué año se inauguró el Muro de Berlín dividiendo la ciudad oriental y occidental?",
+    "respuesta": 1961,
+    "unidad": "año",
+    "nota": "La noche del 12 al 13 de agosto de 1961 las autoridades comunistas comenzaron a levantar la barrera de alambre y hormigón."
+  },
+  {
+    "id": "hist_025",
+    "categoria": "historia",
+    "dificultad": "facil",
+    "pregunta": "¿En qué año se firmó el Tratado de Versalles que puso fin legal a la Primera Guerra Mundial?",
+    "respuesta": 1919,
+    "unidad": "año",
+    "nota": "El 28 de junio de 1919 en la Galería de los Espejos del Palacio de Versalles."
+  },
+  {
+    "id": "hist_026",
+    "categoria": "historia",
+    "dificultad": "medio",
+    "pregunta": "¿Cuántos años duró en realidad el conflicto armado medieval conocido como la 'Guerra de los Cien Años' entre Francia e Inglaterra?",
+    "respuesta": 116,
+    "unidad": "años",
+    "nota": "Se extendió de 1337 a 1453 con diversas treguas y tratados intermedios."
+  },
+  {
+    "id": "hist_027",
+    "categoria": "historia",
+    "dificultad": "medio",
+    "pregunta": "¿En qué año Julio César fue asesinado en el Senado romano durante los célebres 'Idus de Marzo' (a.C.)?",
+    "respuesta": 44,
+    "unidad": "años antes de Cristo",
+    "nota": "El 15 de marzo del año 44 a.C. apuñalado por una conspiración de senadores liderada por Bruto y Casio."
+  },
+  {
+    "id": "hist_028",
+    "categoria": "historia",
+    "dificultad": "medio",
+    "pregunta": "¿En qué año se produjo el Gran Incendio de Roma durante el principado del emperador Nerón?",
+    "respuesta": 64,
+    "unidad": "año d.C.",
+    "nota": "En julio del año 64 d.C. arrasando diez de los catorce distritos de la urbe romana."
+  },
+  {
+    "id": "hist_029",
+    "categoria": "historia",
+    "dificultad": "medio",
+    "pregunta": "¿En qué año se firmó el Tratado de Tordesillas que repartió el Nuevo Mundo entre las coronas de España y Portugal?",
+    "respuesta": 1494,
+    "unidad": "año",
+    "nota": "El 7 de junio de 1494 trazando una línea a 370 leguas al oeste de las islas de Cabo Verde."
+  },
+  {
+    "id": "hist_030",
+    "categoria": "historia",
+    "dificultad": "medio",
+    "pregunta": "¿En qué año Martín Lutero clavó sus 95 tesis en la iglesia de Wittenberg, iniciando la Reforma Protestante?",
+    "respuesta": 1517,
+    "unidad": "año",
+    "nota": "El 31 de octubre de 1517 cuestionando la venta papal de indulgencias eclesiásticas."
+  },
+  {
+    "id": "hist_031",
+    "categoria": "historia",
+    "dificultad": "medio",
+    "pregunta": "¿Cuántos días duró la llamada 'Crisis de los Misiles' en Cuba entre Estados Unidos y la Unión Soviética en octubre de 1962?",
+    "respuesta": 13,
+    "unidad": "días",
+    "nota": "Del 16 al 28 de octubre de 1962, el momento en que la humanidad estuvo más cerca del holocausto nuclear."
+  },
+  {
+    "id": "hist_032",
+    "categoria": "historia",
+    "dificultad": "medio",
+    "pregunta": "¿En qué año Johannes Gutenberg completó la impresión de su famosa Biblia de 42 líneas con tipos móviles de metal?",
+    "respuesta": 1455,
+    "unidad": "año",
+    "nota": "Hacia febrero de 1455 en Maguncia (Alemania), inaugurando la era de la imprenta moderna."
+  },
+  {
+    "id": "hist_033",
+    "categoria": "historia",
+    "dificultad": "medio",
+    "pregunta": "¿En qué año tuvo lugar la Batalla de Trafalgar donde el almirante Nelson derrotó a la flota franco-española?",
+    "respuesta": 1805,
+    "unidad": "año",
+    "nota": "El 21 de octubre de 1805 consolidando la hegemonía marítima británica por más de un siglo."
+  },
+  {
+    "id": "hist_034",
+    "categoria": "historia",
+    "dificultad": "medio",
+    "pregunta": "¿Cuántos años tenía Alejandro Magno cuando falleció repentinamente en el palacio de Nabucodonosor II en Babilonia?",
+    "respuesta": 32,
+    "unidad": "años",
+    "nota": "Murió en junio del año 323 a.C. tras haber conquistado el mayor imperio conocido de su tiempo."
+  },
+  {
+    "id": "hist_035",
+    "categoria": "historia",
+    "dificultad": "medio",
+    "pregunta": "¿En qué año se produjo la expulsión de los judíos de España decretada por los Reyes Católicos en el Edicto de Granada?",
+    "respuesta": 1492,
+    "unidad": "año",
+    "nota": "El 31 de marzo de 1492, mismo año de la toma de Granada y la llegada de Colón a América."
+  },
+  {
+    "id": "hist_036",
+    "categoria": "historia",
+    "dificultad": "medio",
+    "pregunta": "¿En qué año ocurrió el grave accidente nuclear en la central de Chernobyl (Ucrania soviética)?",
+    "respuesta": 1986,
+    "unidad": "año",
+    "nota": "El 26 de abril de 1986 durante una prueba técnica en el reactor número 4."
+  },
+  {
+    "id": "hist_037",
+    "categoria": "historia",
+    "dificultad": "medio",
+    "pregunta": "¿Cuántos días gobernó Napoleón Bonaparte durante su retorno del exilio conocido como los 'Cien Días'?",
+    "respuesta": 111,
+    "unidad": "días",
+    "nota": "Desde su llegada a París el 20 de marzo de 1815 hasta la segunda restauración de Luis XVIII el 8 de julio."
+  },
+  {
+    "id": "hist_038",
+    "categoria": "historia",
+    "dificultad": "medio",
+    "pregunta": "¿En qué año se fundó la Cruz Roja Internacional por iniciativa del suizo Henry Dunant tras la batalla de Solferino?",
+    "respuesta": 1863,
+    "unidad": "año",
+    "nota": "En febrero de 1863 en Ginebra como Comité Internacional de Socorro a los Militares Heridos."
+  },
+  {
+    "id": "hist_039",
+    "categoria": "historia",
+    "dificultad": "medio",
+    "pregunta": "¿En qué año fue guillotinado el rey Luis XVI de Francia en la Plaza de la Revolución de París?",
+    "respuesta": 1793,
+    "unidad": "año",
+    "nota": "El 21 de enero de 1793 tras ser juzgado por traición por la Convención Nacional."
+  },
+  {
+    "id": "hist_040",
+    "categoria": "historia",
+    "dificultad": "medio",
+    "pregunta": "¿Cuántas tesis teológicas redactó Martín Lutero en su documento fundacional de 1517?",
+    "respuesta": 95,
+    "unidad": "tesis",
+    "nota": "La 'Cuestionamiento sobre el poder y la eficacia de las indulgencias' contaba exactamente con 95 proposiciones."
+  },
+  {
+    "id": "hist_041",
+    "categoria": "historia",
+    "dificultad": "medio",
+    "pregunta": "¿En qué año Hernán Cortés logró la caída definitiva de la capital azteca de México-Tenochtitlan?",
+    "respuesta": 1521,
+    "unidad": "año",
+    "nota": "El 13 de agosto de 1521 tras un prolongado asedio por tierra y agua con bergantines."
+  },
+  {
+    "id": "hist_042",
+    "categoria": "historia",
+    "dificultad": "medio",
+    "pregunta": "¿En qué año concluyó la Guerra de Vietnam con la caída de Saigón ante las fuerzas norvietnamitas?",
+    "respuesta": 1975,
+    "unidad": "año",
+    "nota": "El 30 de abril de 1975 con la caótica evacuación del personal estadounidense en helicópteros."
+  },
+  {
+    "id": "hist_043",
+    "categoria": "historia",
+    "dificultad": "medio",
+    "pregunta": "¿Cuántas plagas bíblicas azotaron a Egipto según el libro del Éxodo antes de la liberación del pueblo hebreo?",
+    "respuesta": 10,
+    "unidad": "plagas",
+    "nota": "Desde las aguas convertidas en sangre hasta la muerte de los primogénitos."
+  },
+  {
+    "id": "hist_044",
+    "categoria": "historia",
+    "dificultad": "medio",
+    "pregunta": "¿En qué año se libró la Batalla de Stalingrado, punto de quiebre decisivo de la Segunda Guerra Mundial en el frente oriental?",
+    "respuesta": 1943,
+    "unidad": "año",
+    "nota": "Concluyó el 2 de febrero de 1943 con la capitulación del mariscal Friedrich Paulus."
+  },
+  {
+    "id": "hist_045",
+    "categoria": "historia",
+    "dificultad": "medio",
+    "pregunta": "¿Cuántos viajes marítimos de exploración realizó Cristóbal Colón a América entre 1492 y 1504?",
+    "respuesta": 4,
+    "unidad": "viajes",
+    "nota": "En 1492, 1493, 1498 y 1502 explorando las Antillas, la costa venezolana y Centroamérica."
+  },
+  {
+    "id": "hist_046",
+    "categoria": "historia",
+    "dificultad": "medio",
+    "pregunta": "¿En qué año se fundó el estado moderno de Israel tras la resolución de la Asamblea General de la ONU?",
+    "respuesta": 1948,
+    "unidad": "año",
+    "nota": "El 14 de mayo de 1948 proclamado por David Ben-Gurión en Tel Aviv."
+  },
+  {
+    "id": "hist_047",
+    "categoria": "historia",
+    "dificultad": "medio",
+    "pregunta": "¿En qué año la aviación japonesa perpetró el ataque sorpresa a la base naval de Pearl Harbor en Hawái?",
+    "respuesta": 1941,
+    "unidad": "año",
+    "nota": "El 7 de diciembre de 1941, 'una fecha que vivirá en la infamia' según Franklin D. Roosevelt."
+  },
+  {
+    "id": "hist_048",
+    "categoria": "historia",
+    "dificultad": "medio",
+    "pregunta": "¿Cuántos emperadores gobernaron Roma en el convulso año 69 d.C. conocido como el 'Año de los Cuatro Emperadores'?",
+    "respuesta": 4,
+    "unidad": "emperadores",
+    "nota": "Galba, Otón, Vitelio y finalmente Vespasiano, quien fundó la dinastía Flavia."
+  },
+  {
+    "id": "hist_049",
+    "categoria": "historia",
+    "dificultad": "medio",
+    "pregunta": "¿En qué año se completó la primera circunnavegación del globo terráqueo con el regreso de la nao Victoria al mando de Juan Sebastián Elcano?",
+    "respuesta": 1522,
+    "unidad": "año",
+    "nota": "El 6 de septiembre de 1522 atracó en Sanlúcar de Barrameda con solo 18 supervivientes de los 240 originales."
+  },
+  {
+    "id": "hist_050",
+    "categoria": "historia",
+    "dificultad": "medio",
+    "pregunta": "¿En qué año murió la reina Victoria del Reino Unido, marcando el fin de la Era Victoriana de 63 años de reinado?",
+    "respuesta": 1901,
+    "unidad": "año",
+    "nota": "El 22 de enero de 1901 a los 81 años en Osborne House en la isla de Wight."
+  },
+  {
+    "id": "hist_051",
+    "categoria": "historia",
+    "dificultad": "dificil",
+    "pregunta": "¿En qué año se firmó la Carta Magna impuesta por los barones rebeldes al rey Juan Sin Tierra en Runnymede?",
+    "respuesta": 1215,
+    "unidad": "año",
+    "nota": "El 15 de junio de 1215, piedra basal del constitucionalismo y los límites al poder monárquico."
+  },
+  {
+    "id": "hist_052",
+    "categoria": "historia",
+    "dificultad": "dificil",
+    "pregunta": "¿Cuántos días duró el devastador asedio militar nazi a la ciudad soviética de Leningrado (San Petersburgo)?",
+    "respuesta": 872,
+    "unidad": "días",
+    "nota": "Desde septiembre de 1941 hasta enero de 1944 provocando más de un millón de víctimas civiles por hambre y frío."
+  },
+  {
+    "id": "hist_053",
+    "categoria": "historia",
+    "dificultad": "dificil",
+    "pregunta": "¿En qué año el arqueólogo británico Howard Carter descubrió la tumba intacta del faraón Tutankamón en el Valle de los Reyes?",
+    "respuesta": 1922,
+    "unidad": "año",
+    "nota": "El 4 de noviembre de 1922 financiado por Lord Carnarvon en la famosa tumba KV62."
+  },
+  {
+    "id": "hist_054",
+    "categoria": "historia",
+    "dificultad": "dificil",
+    "pregunta": "¿En qué año se firmó la Paz de Westfalia que puso fin a la sangrienta Guerra de los Treinta Años en Europa?",
+    "respuesta": 1648,
+    "unidad": "año",
+    "nota": "En octubre de 1648 en Münster y Osnabrück, sentando las bases del orden internacional de estados nación soberanos."
+  },
+  {
+    "id": "hist_055",
+    "categoria": "historia",
+    "dificultad": "dificil",
+    "pregunta": "¿Cuántas repúblicas socialistas soviéticas federadas integraban formalmente la URSS al momento de su desintegración en 1991?",
+    "respuesta": 15,
+    "unidad": "repúblicas",
+    "nota": "Rusia, Ucrania, Bielorrusia, las 3 bálticas, las 3 del Cáucaso y las 5 de Asia Central."
+  },
+  {
+    "id": "hist_056",
+    "categoria": "historia",
+    "dificultad": "dificil",
+    "pregunta": "¿En qué año se produjo el terrible terremoto y posterior tsunami de Lisboa que arrasó la capital portuguesa?",
+    "respuesta": 1755,
+    "unidad": "año",
+    "nota": "El 1 de noviembre de 1755 (Día de Todos los Santos) conmoviendo el pensamiento filosófico ilustrado europeo."
+  },
+  {
+    "id": "hist_057",
+    "categoria": "historia",
+    "dificultad": "dificil",
+    "pregunta": "¿Cuántos artículos y leyes componen el Código de Hammurabi grabado en la estela de diorita negra babilónica?",
+    "respuesta": 282,
+    "unidad": "leyes",
+    "nota": "Una de las obras jurídicas más antiguas conservadas de la humanidad (hacia 1750 a.C.), célebre por la ley del talión."
+  },
+  {
+    "id": "hist_058",
+    "categoria": "historia",
+    "dificultad": "dificil",
+    "pregunta": "¿En qué año Francisco Pizarro capturó al emperador inca Atahualpa en la plaza de Cajamarca?",
+    "respuesta": 1532,
+    "unidad": "año",
+    "nota": "El 16 de noviembre de 1532 en una emboscada con arcabuces y caballos."
+  },
+  {
+    "id": "hist_059",
+    "categoria": "historia",
+    "dificultad": "dificil",
+    "pregunta": "¿Cuántos años reinó el faraón Ramsés II 'El Grande' durante la decimonovena dinastía del Antiguo Egipto?",
+    "respuesta": 66,
+    "unidad": "años",
+    "nota": "Gobernó desde 1279 hasta 1213 a.C., uno de los reinados más longevos y constructores de templos como Abu Simbel."
+  },
+  {
+    "id": "hist_060",
+    "categoria": "historia",
+    "dificultad": "dificil",
+    "pregunta": "¿En qué año se fundó la Orden del Temple (Caballeros Templarios) en Jerusalén tras la Primera Cruzada?",
+    "respuesta": 1119,
+    "unidad": "año",
+    "nota": "Por nueve caballeros franceses liderados por Hugo de Payens para proteger a los peregrinos."
+  },
+  {
+    "id": "hist_061",
+    "categoria": "historia",
+    "dificultad": "dificil",
+    "pregunta": "¿En qué año el papa Urbano II proclamó la Primera Cruzada en el Concilio de Clermont al grito de 'Deus vult'?",
+    "respuesta": 1095,
+    "unidad": "año",
+    "nota": "El 27 de noviembre de 1095 convocando a los príncipes cristianos a reconquistar los Santos Lugares."
+  },
+  {
+    "id": "hist_062",
+    "categoria": "historia",
+    "dificultad": "dificil",
+    "pregunta": "¿Cuántos senadores integraron la conspiración que apuñaló a Julio César en el teatro de Pompeyo en el 44 a.C.?",
+    "respuesta": 60,
+    "unidad": "conspiradores",
+    "nota": "César recibió 23 puñaladas según el informe del médico Antistio, de las cuales solo una en el pecho fue mortal."
+  },
+  {
+    "id": "hist_063",
+    "categoria": "historia",
+    "dificultad": "dificil",
+    "pregunta": "¿En qué año se coronó Carlomagno como Emperador de los Romanos en la Basílica de San Pedro de Roma?",
+    "respuesta": 800,
+    "unidad": "año",
+    "nota": "El día de Navidad del año 800 coronado por el papa León III, restaurando el imperio occidental."
+  },
+  {
+    "id": "hist_064",
+    "categoria": "historia",
+    "dificultad": "dificil",
+    "pregunta": "¿En qué año se inauguró el Coliseo Romano (Anfiteatro Flavio) bajo el reinado del emperador Tito?",
+    "respuesta": 80,
+    "unidad": "año d.C.",
+    "nota": "Con 100 días de festejos, cacerías de fieras y naumaquias (combates navales simulados)."
+  },
+  {
+    "id": "hist_065",
+    "categoria": "historia",
+    "dificultad": "dificil",
+    "pregunta": "¿Cuántos días duró la llamada 'Guerra de los Seis Días' entre Israel y una coalición de estados árabes en 1967?",
+    "respuesta": 6,
+    "unidad": "días",
+    "nota": "Del 5 al 10 de junio de 1967 en la que Israel ocupó la península del Sinaí, Cisjordania y los Altos del Golán."
+  },
+  {
+    "id": "hist_066",
+    "categoria": "historia",
+    "dificultad": "dificil",
+    "pregunta": "¿En qué año finalizó la Guerra de Corea con la firma del armisticio de Panmunjom que fijó el paralelo 38?",
+    "respuesta": 1953,
+    "unidad": "año",
+    "nota": "El 27 de julio de 1953; técnicamente ambos países continúan en estado formal de guerra."
+  },
+  {
+    "id": "hist_067",
+    "categoria": "historia",
+    "dificultad": "dificil",
+    "pregunta": "¿En qué año se abolió formalmente la esclavitud en los Estados Unidos con la aprobación de la Decimotercera Enmienda?",
+    "respuesta": 1865,
+    "unidad": "año",
+    "nota": "El 6 de diciembre de 1865 tras el fin de la Guerra de Secesión y el asesinato de Abraham Lincoln."
+  },
+  {
+    "id": "hist_068",
+    "categoria": "historia",
+    "dificultad": "dificil",
+    "pregunta": "¿Cuántas naves integraban la flota de la 'Armada Invencible' española enviada por Felipe II contra Inglaterra en 1588?",
+    "respuesta": 130,
+    "unidad": "barcos",
+    "nota": "Zarparon 130 embarcaciones con casi 30.000 hombres que sufrieron graves temporales en el canal y las costas escocesas."
+  },
+  {
+    "id": "hist_069",
+    "categoria": "historia",
+    "dificultad": "dificil",
+    "pregunta": "¿En qué año se fundó la ciudad de Constantinopla como nueva capital imperial por el emperador Constantino el Grande?",
+    "respuesta": 330,
+    "unidad": "año d.C.",
+    "nota": "El 11 de mayo del año 330 d.C. sobre la antigua colonia griega de Bizancio."
+  },
+  {
+    "id": "hist_070",
+    "categoria": "historia",
+    "dificultad": "dificil",
+    "pregunta": "¿En qué año se promulgó el Edicto de Milán que otorgó la libertad de culto a los cristianos en el Imperio Romano?",
+    "respuesta": 313,
+    "unidad": "año d.C.",
+    "nota": "Firmado conjuntamente por los emperadores Constantino I y Licinio."
+  },
+  {
+    "id": "hist_071",
+    "categoria": "historia",
+    "dificultad": "dificil",
+    "pregunta": "¿Cuántos días resistió la guarnición texana en el sitio de la misión de El Álamo frente al ejército mexicano de Santa Anna en 1836?",
+    "respuesta": 13,
+    "unidad": "días",
+    "nota": "Del 23 de febrero al 6 de marzo de 1836, muriendo entre los defensores Davy Crockett y Jim Bowie."
+  },
+  {
+    "id": "hist_072",
+    "categoria": "historia",
+    "dificultad": "dificil",
+    "pregunta": "¿En qué año tuvo lugar la Batalla de Poitiers (o Tours) donde Carlos Martel frenó el avance musulmán en Europa?",
+    "respuesta": 732,
+    "unidad": "año d.C.",
+    "nota": "En octubre de 732 deteniendo la expansión del califato omeya hacia el norte de los Pirineos."
+  },
+  {
+    "id": "hist_073",
+    "categoria": "historia",
+    "dificultad": "dificil",
+    "pregunta": "¿En qué año se proclamó la República Popular China por Mao Zedong en la Plaza de Tiananmén?",
+    "respuesta": 1949,
+    "unidad": "año",
+    "nota": "El 1 de octubre de 1949 tras la victoria del Ejército Popular de Liberación en la guerra civil."
+  },
+  {
+    "id": "hist_074",
+    "categoria": "historia",
+    "dificultad": "dificil",
+    "pregunta": "¿Cuántos años gobernó el dictador Porfirio Díaz en México durante el período conocido como el 'Porfiriato'?",
+    "respuesta": 31,
+    "unidad": "años",
+    "nota": "Gobernó el país entre 1876 y 1911 (con un breve paréntesis), hasta el estallido de la Revolución Mexicana."
+  },
+  {
+    "id": "hist_075",
+    "categoria": "historia",
+    "dificultad": "dificil",
+    "pregunta": "¿En qué año se fundó la Liga de las Naciones tras la Conferencia de Paz de París?",
+    "respuesta": 1920,
+    "unidad": "año",
+    "nota": "El 10 de enero de 1920 con sede en Ginebra, precursora directa de la actual ONU."
+  },
+  {
+    "id": "hist_076",
+    "categoria": "historia",
+    "dificultad": "extremo",
+    "pregunta": "¿Cuántos días exactos duró la Comuna de París, el gobierno popular insurreccional de la primavera de 1871?",
+    "respuesta": 72,
+    "unidad": "días",
+    "nota": "Del 18 de marzo al 28 de mayo de 1871, sofocada violentamente en la 'Semana Sangrienta'."
+  },
+  {
+    "id": "hist_077",
+    "categoria": "historia",
+    "dificultad": "extremo",
+    "pregunta": "¿En qué año el visigodo Alarico I protagonizó el histórico saqueo de Roma, el primero en casi 800 años?",
+    "respuesta": 410,
+    "unidad": "año d.C.",
+    "nota": "El 24 de agosto de 410 d.C., suceso que causó un shock apocalíptico en todo el mundo mediterráneo."
+  },
+  {
+    "id": "hist_078",
+    "categoria": "historia",
+    "dificultad": "extremo",
+    "pregunta": "¿Cuántos días demoró la construcción de la gran Pirámide de Keops según estimaciones basadas en registros de Heródoto y egiptología moderna?",
+    "respuesta": 7300,
+    "unidad": "días",
+    "nota": "Unos 20 años de obras continuas (aproximadamente 7.300 días) hacia el 2560 a.C. con más de 2,3 millones de bloques de piedra."
+  },
+  {
+    "id": "hist_079",
+    "categoria": "historia",
+    "dificultad": "extremo",
+    "pregunta": "¿En qué año el emperador Diocleciano instauró el sistema de la Tetrarquía para gobernar el extenso Imperio Romano?",
+    "respuesta": 293,
+    "unidad": "año d.C.",
+    "nota": "El 1 de marzo de 293 d.C. nombrando dos Augustos superiores y dos Césares auxiliares."
+  },
+  {
+    "id": "hist_080",
+    "categoria": "historia",
+    "dificultad": "extremo",
+    "pregunta": "¿Cuántos buques de guerra y transportes participaron en la invasión anfibia del Día D en Normandía el 6 de junio de 1944?",
+    "respuesta": 6939,
+    "unidad": "embarcaciones",
+    "nota": "La mayor armada anfibia combinada de la historia naval militar humana (Operación Neptuno)."
+  },
+  {
+    "id": "hist_081",
+    "categoria": "historia",
+    "dificultad": "extremo",
+    "pregunta": "¿En qué año se fundó el Imperio Aqueménida de Persia por Ciro II el Grande al unificar a medos y persas (a.C.)?",
+    "respuesta": 550,
+    "unidad": "años antes de Cristo",
+    "nota": "Hacia el año 550 a.C. tras derrotar a su abuelo Astiages, rey de los medos."
+  },
+  {
+    "id": "hist_082",
+    "categoria": "historia",
+    "dificultad": "extremo",
+    "pregunta": "¿Cuántas cabezas humanas empaladas ordenó colocar el sultán Mehmed II en las murallas de Constantinopla según crónicas bizantinas?",
+    "respuesta": 4000,
+    "unidad": "cabezas",
+    "nota": "Los relatos de la época dan cuenta de la dureza extrema del asalto final tras 53 días de bombardeo con cañones gigantes."
+  },
+  {
+    "id": "hist_083",
+    "categoria": "historia",
+    "dificultad": "extremo",
+    "pregunta": "¿En qué año el faraón Akenatón trasladó la capital de Egipto a la recién construida ciudad de Ajetatón (Amarna) (a.C.)?",
+    "respuesta": 1346,
+    "unidad": "años antes de Cristo",
+    "nota": "En el quinto año de su reinado para instaurar el culto monoteísta al disco solar Atón."
+  },
+  {
+    "id": "hist_084",
+    "categoria": "historia",
+    "dificultad": "extremo",
+    "pregunta": "¿Cuántos días duró la travesía inicial de Magallanes cruzando el Océano Pacífico sin ver tierra habitable en 1520-1521?",
+    "respuesta": 100,
+    "unidad": "días",
+    "nota": "Tres meses y veinte días padeciendo escorbuto y comiendo serrín y cuero hasta alcanzar la isla de Guam."
+  },
+  {
+    "id": "hist_085",
+    "categoria": "historia",
+    "dificultad": "extremo",
+    "pregunta": "¿En qué año se libró la Batalla de los Campos Cataláunicos donde la coalición de romanos y visigodos frenó a Atila el huno?",
+    "respuesta": 451,
+    "unidad": "año d.C.",
+    "nota": "El 20 de junio del 451 d.C. en la Galia bajo el mando del general romano Flavio Aecio y Teodorico I."
+  },
+  {
+    "id": "hist_086",
+    "categoria": "historia",
+    "dificultad": "extremo",
+    "pregunta": "¿Cuántas legiones romanas completas fueron completamente aniquiladas por las tribus germánicas de Arminio en la Batalla de Teutoburgo en el 9 d.C.?",
+    "respuesta": 3,
+    "unidad": "legiones",
+    "nota": "Las legiones XVII, XVIII y XIX bajo el mando de Publio Quintilio Varo, cuyos números jamás volvieron a usarse."
+  },
+  {
+    "id": "hist_087",
+    "categoria": "historia",
+    "dificultad": "extremo",
+    "pregunta": "¿En qué año el navegante portugués Vasco da Gama arribó al puerto indio de Calicut completando la ruta marítima a la India?",
+    "respuesta": 1498,
+    "unidad": "año",
+    "nota": "El 20 de mayo de 1498 tras circunnavegar el cabo de Buena Esperanza en el sur de África."
+  },
+  {
+    "id": "hist_088",
+    "categoria": "historia",
+    "dificultad": "extremo",
+    "pregunta": "¿Cuántos días estuvo retenido Napoleón Bonaparte en el peñón de la isla de Elba antes de escapar para volver a Francia en 1815?",
+    "respuesta": 300,
+    "unidad": "días",
+    "nota": "Llegó a Elba el 4 de mayo de 1814 y escapó el 26 de febrero de 1815 a bordo del bergantín Inconstant."
+  },
+  {
+    "id": "hist_089",
+    "categoria": "historia",
+    "dificultad": "extremo",
+    "pregunta": "¿En qué año el rey persa Jerjes I invadió Grecia librando las batallas de las Termópilas y Salamina (a.C.)?",
+    "respuesta": 480,
+    "unidad": "años antes de Cristo",
+    "nota": "En el 480 a.C. durante la Segunda Guerra Médica."
+  },
+  {
+    "id": "hist_090",
+    "categoria": "historia",
+    "dificultad": "extremo",
+    "pregunta": "¿Cuántos años gobernó Luis XIV, el 'Rey Sol' de Francia, ostentando el reinado monárquico documentado más largo de la historia?",
+    "respuesta": 72,
+    "unidad": "años",
+    "nota": "Exactamente 72 años y 110 días en el trono francés, desde 1643 hasta su muerte en 1715."
+  },
+  {
+    "id": "hist_091",
+    "categoria": "historia",
+    "dificultad": "extremo",
+    "pregunta": "¿En qué año se firmó el Tratado de Utrecht que puso fin a la Guerra de Sucesión Española y cedió Gibraltar a los británicos?",
+    "respuesta": 1713,
+    "unidad": "año",
+    "nota": "El 11 de abril de 1713 consagrando la llegada de la dinastía de los Borbones con Felipe V."
+  },
+  {
+    "id": "hist_092",
+    "categoria": "historia",
+    "dificultad": "extremo",
+    "pregunta": "¿Cuántos kilómetros de murallas defensivas de piedra rodeaban a la ciudad de Constantinopla en las famosas Murallas Teodosianas?",
+    "respuesta": 6,
+    "unidad": "kilómetros",
+    "nota": "Tenían unos 5,7 km de muralla triple escalonada de tierra que repelió asedios durante más de mil años."
+  },
+  {
+    "id": "hist_093",
+    "categoria": "historia",
+    "dificultad": "extremo",
+    "pregunta": "¿En qué año se fundó la biblioteca imperial de Asurbanipal en Nínive, una de las más antiguas colecciones de tablillas cuneiformes (a.C.)?",
+    "respuesta": 668,
+    "unidad": "años antes de Cristo",
+    "nota": "Hacia el 668 a.C., donde se conservó la versión más completa del Poema de Gilgamesh."
+  },
+  {
+    "id": "hist_094",
+    "categoria": "historia",
+    "dificultad": "extremo",
+    "pregunta": "¿Cuántos hombres componían la mítica guardia de élite persa conocida por los griegos como 'Los Diez Mil Inmortales'?",
+    "respuesta": 10000,
+    "unidad": "guerreros",
+    "nota": "Se les llamaba inmortales porque cualquier baja, herido o muerto era reemplazado inmediatamente para mantener constante la cifra de 10.000."
+  },
+  {
+    "id": "hist_095",
+    "categoria": "historia",
+    "dificultad": "extremo",
+    "pregunta": "¿En qué año se libró la Batalla de Hastings donde Guillermo el Conquistador venció al rey sajón Haroldo II de Inglaterra?",
+    "respuesta": 1066,
+    "unidad": "año d.C.",
+    "nota": "El 14 de octubre de 1066, iniciando la conquista normanda de Inglaterra inmortalizada en el Tapiz de Bayeux."
+  },
+  {
+    "id": "hist_096",
+    "categoria": "historia",
+    "dificultad": "extremo",
+    "pregunta": "¿Cuántos días resistió la fortaleza judía de Masada el asedio de la X Legión romana antes del suicidio colectivo de sus defensores en el 73 d.C.?",
+    "respuesta": 180,
+    "unidad": "días",
+    "nota": "Aproximadamente seis meses de asedio en el desierto de Judea construyendo una colosal rampa de asalto de tierra."
+  },
+  {
+    "id": "hist_097",
+    "categoria": "historia",
+    "dificultad": "extremo",
+    "pregunta": "¿En qué año se descubrieron las ruinas de la ciudadela inca de Machu Picchu para el mundo occidental por Hiram Bingham?",
+    "respuesta": 1911,
+    "unidad": "año",
+    "nota": "El 24 de julio de 1911 guiado por campesinos locales quechuas hasta el santuario en las alturas."
+  },
+  {
+    "id": "hist_098",
+    "categoria": "historia",
+    "dificultad": "extremo",
+    "pregunta": "¿Cuántas naves comandaba el almirante chino Zheng He en su primer gran viaje diplomático y comercial por el Océano Índico en 1405?",
+    "respuesta": 255,
+    "unidad": "embarcaciones",
+    "nota": "Incluía más de 60 'barcos del tesoro' gigantescos de cuatro cubiertas y 27.800 tripulantes."
+  },
+  {
+    "id": "hist_099",
+    "categoria": "historia",
+    "dificultad": "extremo",
+    "pregunta": "¿En qué año se firmó el Tratado de Guadalupe Hidalgo por el cual México cedió más de la mitad de su territorio a los Estados Unidos?",
+    "respuesta": 1848,
+    "unidad": "año",
+    "nota": "El 2 de febrero de 1848 cediendo Alta California, Nuevo México y reconociendo la anexión de Texas a cambio de 15 millones de dólares."
+  },
+  {
+    "id": "hist_100",
+    "categoria": "historia",
+    "dificultad": "extremo",
+    "pregunta": "¿Cuántos días exactos duró el cónclave papal más largo de la historia de la Iglesia católica celebrado en Viterbo (1268-1271)?",
+    "respuesta": 1006,
+    "unidad": "días",
+    "nota": "Casi tres años de encierro forzado por los ciudadanos que llegaron a destapar el techo del palacio hasta que eligieron a Gregorio X."
+  }
+]

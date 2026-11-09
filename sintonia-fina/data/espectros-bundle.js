@@ -1,0 +1,1239 @@
+(function(root) {
+  'use strict';
+  root.ESPECTROS_DATA = {
+  "categorias": [
+    {
+      "id": "cotidiano",
+      "nombre": "Comida y Vida Cotidiana",
+      "icono": "🍔",
+      "color": "#f59e0b"
+    },
+    {
+      "id": "argentina",
+      "nombre": "Bien Argento",
+      "icono": "🇦🇷",
+      "color": "#38bdf8"
+    },
+    {
+      "id": "cultura_pop",
+      "nombre": "Cine, Música y Famosos",
+      "icono": "🎬",
+      "color": "#ec4899"
+    },
+    {
+      "id": "general",
+      "nombre": "Cultura General y Naturaleza",
+      "icono": "🌍",
+      "color": "#10b981"
+    },
+    {
+      "id": "bizarro",
+      "nombre": "Curioso y Bizarro",
+      "icono": "🤯",
+      "color": "#8b5cf6"
+    }
+  ],
+  "espectros": [
+    {
+      "id": "cot_01",
+      "categoria": "cotidiano",
+      "izq": "Frío",
+      "der": "Caliente"
+    },
+    {
+      "id": "cot_02",
+      "categoria": "cotidiano",
+      "izq": "Comida de invierno",
+      "der": "Comida de verano"
+    },
+    {
+      "id": "cot_03",
+      "categoria": "cotidiano",
+      "izq": "Barato",
+      "der": "Caro"
+    },
+    {
+      "id": "cot_04",
+      "categoria": "cotidiano",
+      "izq": "Sabor suave",
+      "der": "Sabor muy fuerte"
+    },
+    {
+      "id": "cot_05",
+      "categoria": "cotidiano",
+      "izq": "Olor feo",
+      "der": "Olor rico"
+    },
+    {
+      "id": "cot_06",
+      "categoria": "cotidiano",
+      "izq": "Fácil de cocinar",
+      "der": "Difícil de cocinar"
+    },
+    {
+      "id": "cot_07",
+      "categoria": "cotidiano",
+      "izq": "Desayuno",
+      "der": "Cena"
+    },
+    {
+      "id": "cot_08",
+      "categoria": "cotidiano",
+      "izq": "Saludable",
+      "der": "Chatarra pura"
+    },
+    {
+      "id": "cot_09",
+      "categoria": "cotidiano",
+      "izq": "Objeto inútil",
+      "der": "Objeto imprescindible"
+    },
+    {
+      "id": "cot_10",
+      "categoria": "cotidiano",
+      "izq": "Dura poco",
+      "der": "Dura toda la vida"
+    },
+    {
+      "id": "cot_11",
+      "categoria": "cotidiano",
+      "izq": "Dulce",
+      "der": "Salado"
+    },
+    {
+      "id": "cot_12",
+      "categoria": "cotidiano",
+      "izq": "Comida de bajón",
+      "der": "Cena gourmet"
+    },
+    {
+      "id": "cot_13",
+      "categoria": "cotidiano",
+      "izq": "Fácil de limpiar",
+      "der": "Pesadilla para lavar"
+    },
+    {
+      "id": "cot_14",
+      "categoria": "cotidiano",
+      "izq": "Ropa incómoda",
+      "der": "Ropa comodísima"
+    },
+    {
+      "id": "cot_15",
+      "categoria": "cotidiano",
+      "izq": "Se come con la mano",
+      "der": "Requiere cubiertos"
+    },
+    {
+      "id": "cot_16",
+      "categoria": "cotidiano",
+      "izq": "Plan de domingo",
+      "der": "Plan de viernes"
+    },
+    {
+      "id": "cot_17",
+      "categoria": "cotidiano",
+      "izq": "Placer culposo",
+      "der": "Orgullo total"
+    },
+    {
+      "id": "cot_18",
+      "categoria": "cotidiano",
+      "izq": "Invento sobrevalorado",
+      "der": "Invento genial"
+    },
+    {
+      "id": "cot_19",
+      "categoria": "cotidiano",
+      "izq": "Rápido de preparar",
+      "der": "Lleva horas"
+    },
+    {
+      "id": "cot_20",
+      "categoria": "cotidiano",
+      "izq": "Comida para niños",
+      "der": "Comida para adultos"
+    },
+    {
+      "id": "cot_21",
+      "categoria": "cotidiano",
+      "izq": "Mala educación",
+      "der": "Buena educación"
+    },
+    {
+      "id": "cot_22",
+      "categoria": "cotidiano",
+      "izq": "Bebida de mañana",
+      "der": "Bebida de noche"
+    },
+    {
+      "id": "cot_23",
+      "categoria": "cotidiano",
+      "izq": "Gasto innecesario",
+      "der": "Inversión necesaria"
+    },
+    {
+      "id": "cot_24",
+      "categoria": "cotidiano",
+      "izq": "Lugar ruidoso",
+      "der": "Lugar silencioso"
+    },
+    {
+      "id": "cot_25",
+      "categoria": "cotidiano",
+      "izq": "Tarea aburrida",
+      "der": "Tarea entretenida"
+    },
+    {
+      "id": "cot_26",
+      "categoria": "cotidiano",
+      "izq": "Se rompe fácil",
+      "der": "Indestructible"
+    },
+    {
+      "id": "cot_27",
+      "categoria": "cotidiano",
+      "izq": "Muy picante",
+      "der": "Nada picante"
+    },
+    {
+      "id": "cot_28",
+      "categoria": "cotidiano",
+      "izq": "Para compartir",
+      "der": "Individual"
+    },
+    {
+      "id": "cot_29",
+      "categoria": "cotidiano",
+      "izq": "Moda ridícula",
+      "der": "Estilo elegante"
+    },
+    {
+      "id": "cot_30",
+      "categoria": "cotidiano",
+      "izq": "Olor a limpio",
+      "der": "Olor a humedad"
+    },
+    {
+      "id": "cot_31",
+      "categoria": "cotidiano",
+      "izq": "Despertarse temprano",
+      "der": "Trasnochar"
+    },
+    {
+      "id": "cot_32",
+      "categoria": "cotidiano",
+      "izq": "Comida pesada",
+      "der": "Comida liviana"
+    },
+    {
+      "id": "cot_33",
+      "categoria": "cotidiano",
+      "izq": "Regalo malo",
+      "der": "Regalo perfecto"
+    },
+    {
+      "id": "cot_34",
+      "categoria": "cotidiano",
+      "izq": "Rápido de aprender",
+      "der": "Lleva años dominar"
+    },
+    {
+      "id": "cot_35",
+      "categoria": "cotidiano",
+      "izq": "Sonido molesto",
+      "der": "Sonido relajante"
+    },
+    {
+      "id": "cot_36",
+      "categoria": "cotidiano",
+      "izq": "Lugar incómodo",
+      "der": "Lugar acogedor"
+    },
+    {
+      "id": "cot_37",
+      "categoria": "cotidiano",
+      "izq": "Hábito antihigiénico",
+      "der": "Manía de limpieza"
+    },
+    {
+      "id": "cot_38",
+      "categoria": "cotidiano",
+      "izq": "Dura para siempre",
+      "der": "Descartable"
+    },
+    {
+      "id": "cot_39",
+      "categoria": "cotidiano",
+      "izq": "Actividad solitaria",
+      "der": "Actividad grupal"
+    },
+    {
+      "id": "cot_40",
+      "categoria": "cotidiano",
+      "izq": "Casero",
+      "der": "Industrial"
+    },
+    {
+      "id": "arg_01",
+      "categoria": "argentina",
+      "izq": "De barrio",
+      "der": "De cheto"
+    },
+    {
+      "id": "arg_02",
+      "categoria": "argentina",
+      "izq": "Plan de domingo",
+      "der": "Plan de sábado noche"
+    },
+    {
+      "id": "arg_03",
+      "categoria": "argentina",
+      "izq": "Bien porteño",
+      "der": "Bien del interior"
+    },
+    {
+      "id": "arg_04",
+      "categoria": "argentina",
+      "izq": "Clásico de kiosco",
+      "der": "Comida de bodegón"
+    },
+    {
+      "id": "arg_05",
+      "categoria": "argentina",
+      "izq": "Amado por todos",
+      "der": "Odiado por todos"
+    },
+    {
+      "id": "arg_06",
+      "categoria": "argentina",
+      "izq": "Costumbre vieja",
+      "der": "Moda nueva"
+    },
+    {
+      "id": "arg_07",
+      "categoria": "argentina",
+      "izq": "De verano en la costa",
+      "der": "De invierno en el sur"
+    },
+    {
+      "id": "arg_08",
+      "categoria": "argentina",
+      "izq": "Infravalorado en asado",
+      "der": "Indispensable en parrilla"
+    },
+    {
+      "id": "arg_09",
+      "categoria": "argentina",
+      "izq": "Mate dulce",
+      "der": "Mate amargo"
+    },
+    {
+      "id": "arg_10",
+      "categoria": "argentina",
+      "izq": "Ídolo indiscutido",
+      "der": "Figura polémica"
+    },
+    {
+      "id": "arg_11",
+      "categoria": "argentina",
+      "izq": "Clásico de fútbol",
+      "der": "Partido aburrido"
+    },
+    {
+      "id": "arg_12",
+      "categoria": "argentina",
+      "izq": "Aperitivo de bodegón",
+      "der": "Trago de boliche"
+    },
+    {
+      "id": "arg_13",
+      "categoria": "argentina",
+      "izq": "Milanesa simple",
+      "der": "Napolitana gigante"
+    },
+    {
+      "id": "arg_14",
+      "categoria": "argentina",
+      "izq": "Canción de cancha",
+      "der": "Himno nacional"
+    },
+    {
+      "id": "arg_15",
+      "categoria": "argentina",
+      "izq": "Frito y grasoso",
+      "der": "Al horno y seco"
+    },
+    {
+      "id": "arg_16",
+      "categoria": "argentina",
+      "izq": "Atado con alambre",
+      "der": "Hecho a la perfección"
+    },
+    {
+      "id": "arg_17",
+      "categoria": "argentina",
+      "izq": "Factura con crema",
+      "der": "Medialuna de grasa"
+    },
+    {
+      "id": "arg_18",
+      "categoria": "argentina",
+      "izq": "Truco mentiroso",
+      "der": "Ajedrez silencioso"
+    },
+    {
+      "id": "arg_19",
+      "categoria": "argentina",
+      "izq": "Postre vigilante",
+      "der": "Flan mixto con dulce"
+    },
+    {
+      "id": "arg_20",
+      "categoria": "argentina",
+      "izq": "Empanada salteña",
+      "der": "Empanada tucumana"
+    },
+    {
+      "id": "arg_21",
+      "categoria": "argentina",
+      "izq": "Rock barrial",
+      "der": "Pop de Palermo"
+    },
+    {
+      "id": "arg_22",
+      "categoria": "argentina",
+      "izq": "Trámite eterno",
+      "der": "Trámite rápido"
+    },
+    {
+      "id": "arg_23",
+      "categoria": "argentina",
+      "izq": "Picada modesta",
+      "der": "Banquete criollo"
+    },
+    {
+      "id": "arg_24",
+      "categoria": "argentina",
+      "izq": "Típico de abuela",
+      "der": "Típico de pibes"
+    },
+    {
+      "id": "arg_25",
+      "categoria": "argentina",
+      "izq": "Feriado patrio",
+      "der": "Día laborable"
+    },
+    {
+      "id": "arg_26",
+      "categoria": "argentina",
+      "izq": "Humor absurdo",
+      "der": "Humor costumbrista"
+    },
+    {
+      "id": "arg_27",
+      "categoria": "argentina",
+      "izq": "Cumbia de los 90",
+      "der": "Trap actual"
+    },
+    {
+      "id": "arg_28",
+      "categoria": "argentina",
+      "izq": "Choripán de cancha",
+      "der": "Lomito gourmet"
+    },
+    {
+      "id": "arg_29",
+      "categoria": "argentina",
+      "izq": "Chamuyo puro",
+      "der": "Verdad comprobada"
+    },
+    {
+      "id": "arg_30",
+      "categoria": "argentina",
+      "izq": "Viaje en bondi",
+      "der": "Viaje en subte"
+    },
+    {
+      "id": "arg_31",
+      "categoria": "argentina",
+      "izq": "Frase de taxista",
+      "der": "Cita de Borges"
+    },
+    {
+      "id": "arg_32",
+      "categoria": "argentina",
+      "izq": "Festejo medido",
+      "der": "Descontrol en Obelisco"
+    },
+    {
+      "id": "arg_33",
+      "categoria": "argentina",
+      "izq": "Orgullo nacional",
+      "der": "Vergüenza nacional"
+    },
+    {
+      "id": "arg_34",
+      "categoria": "argentina",
+      "izq": "Sándwich de miga",
+      "der": "Pizza al molde"
+    },
+    {
+      "id": "arg_35",
+      "categoria": "argentina",
+      "izq": "Sobrevalorado acá",
+      "der": "Infravalorado acá"
+    },
+    {
+      "id": "arg_36",
+      "categoria": "argentina",
+      "izq": "Pueblo chico",
+      "der": "Gran ciudad"
+    },
+    {
+      "id": "arg_37",
+      "categoria": "argentina",
+      "izq": "Pasión deportiva",
+      "der": "Tranquilidad zen"
+    },
+    {
+      "id": "arg_38",
+      "categoria": "argentina",
+      "izq": "Gol agónico",
+      "der": "Goleada tranquila"
+    },
+    {
+      "id": "arg_39",
+      "categoria": "argentina",
+      "izq": "Tango melancólico",
+      "der": "Cuarteto cordobés"
+    },
+    {
+      "id": "arg_40",
+      "categoria": "argentina",
+      "izq": "Mística ganadora",
+      "der": "Mala suerte histórica"
+    },
+    {
+      "id": "pop_01",
+      "categoria": "cultura_pop",
+      "izq": "Sobrevalorado",
+      "der": "Infravalorado"
+    },
+    {
+      "id": "pop_02",
+      "categoria": "cultura_pop",
+      "izq": "Película aburrida",
+      "der": "Película atrapante"
+    },
+    {
+      "id": "pop_03",
+      "categoria": "cultura_pop",
+      "izq": "Canción triste",
+      "der": "Canción para bailar"
+    },
+    {
+      "id": "pop_04",
+      "categoria": "cultura_pop",
+      "izq": "Villano odiable",
+      "der": "Villano querible"
+    },
+    {
+      "id": "pop_05",
+      "categoria": "cultura_pop",
+      "izq": "Juego fácil",
+      "der": "Juego imposible"
+    },
+    {
+      "id": "pop_06",
+      "categoria": "cultura_pop",
+      "izq": "Famoso talentoso",
+      "der": "Famoso por escándalo"
+    },
+    {
+      "id": "pop_07",
+      "categoria": "cultura_pop",
+      "izq": "Clásico inolvidable",
+      "der": "Moda pasajera"
+    },
+    {
+      "id": "pop_08",
+      "categoria": "cultura_pop",
+      "izq": "Película pochoclera",
+      "der": "Cine de autor"
+    },
+    {
+      "id": "pop_09",
+      "categoria": "cultura_pop",
+      "izq": "One-hit wonder",
+      "der": "Banda legendaria"
+    },
+    {
+      "id": "pop_10",
+      "categoria": "cultura_pop",
+      "izq": "Superhéroe poderoso",
+      "der": "Héroe sin poderes"
+    },
+    {
+      "id": "pop_11",
+      "categoria": "cultura_pop",
+      "izq": "Serie corta",
+      "der": "Serie interminable"
+    },
+    {
+      "id": "pop_12",
+      "categoria": "cultura_pop",
+      "izq": "Final perfecto",
+      "der": "Final decepcionante"
+    },
+    {
+      "id": "pop_13",
+      "categoria": "cultura_pop",
+      "izq": "Comedia liviana",
+      "der": "Drama desgarrador"
+    },
+    {
+      "id": "pop_14",
+      "categoria": "cultura_pop",
+      "izq": "Terror psicológico",
+      "der": "Monstruos y sangre"
+    },
+    {
+      "id": "pop_15",
+      "categoria": "cultura_pop",
+      "izq": "Actor camaleónico",
+      "der": "Siempre el mismo papel"
+    },
+    {
+      "id": "pop_16",
+      "categoria": "cultura_pop",
+      "izq": "Juego retro",
+      "der": "Gráficos modernos"
+    },
+    {
+      "id": "pop_17",
+      "categoria": "cultura_pop",
+      "izq": "Secuela innecesaria",
+      "der": "Mejor que la primera"
+    },
+    {
+      "id": "pop_18",
+      "categoria": "cultura_pop",
+      "izq": "Para entrenar",
+      "der": "Para dormir"
+    },
+    {
+      "id": "pop_19",
+      "categoria": "cultura_pop",
+      "izq": "Meme gracioso",
+      "der": "Meme quemadísimo"
+    },
+    {
+      "id": "pop_20",
+      "categoria": "cultura_pop",
+      "izq": "Personaje secundario épico",
+      "der": "Protagonista pesado"
+    },
+    {
+      "id": "pop_21",
+      "categoria": "cultura_pop",
+      "izq": "Doblaje clásico",
+      "der": "Audio original"
+    },
+    {
+      "id": "pop_22",
+      "categoria": "cultura_pop",
+      "izq": "Parodia genial",
+      "der": "Copia barata"
+    },
+    {
+      "id": "pop_23",
+      "categoria": "cultura_pop",
+      "izq": "Banda sonora épica",
+      "der": "Música olvidable"
+    },
+    {
+      "id": "pop_24",
+      "categoria": "cultura_pop",
+      "izq": "Cliffhanger atrapante",
+      "der": "Giro predecible"
+    },
+    {
+      "id": "pop_25",
+      "categoria": "cultura_pop",
+      "izq": "Comunidad sana",
+      "der": "Fandom tóxico"
+    },
+    {
+      "id": "pop_26",
+      "categoria": "cultura_pop",
+      "izq": "Para ver en cine",
+      "der": "Para ver en la cama"
+    },
+    {
+      "id": "pop_27",
+      "categoria": "cultura_pop",
+      "izq": "Efectos prácticos",
+      "der": "CGI excesivo"
+    },
+    {
+      "id": "pop_28",
+      "categoria": "cultura_pop",
+      "izq": "Álbum conceptual",
+      "der": "Hit suelto de radio"
+    },
+    {
+      "id": "pop_29",
+      "categoria": "cultura_pop",
+      "izq": "Juego cooperativo",
+      "der": "Juego competitivo"
+    },
+    {
+      "id": "pop_30",
+      "categoria": "cultura_pop",
+      "izq": "Megaproducción",
+      "der": "Proyecto independiente"
+    },
+    {
+      "id": "pop_31",
+      "categoria": "cultura_pop",
+      "izq": "Villano tonto",
+      "der": "Mente maestra brillante"
+    },
+    {
+      "id": "pop_32",
+      "categoria": "cultura_pop",
+      "izq": "Personaje tierno",
+      "der": "Personaje insoportable"
+    },
+    {
+      "id": "pop_33",
+      "categoria": "cultura_pop",
+      "izq": "Show íntimo acústico",
+      "der": "Mega festival masivo"
+    },
+    {
+      "id": "pop_34",
+      "categoria": "cultura_pop",
+      "izq": "Adaptación fiel",
+      "der": "Arruinó la historia"
+    },
+    {
+      "id": "pop_35",
+      "categoria": "cultura_pop",
+      "izq": "Ficción luminosa",
+      "der": "Distopía oscura"
+    },
+    {
+      "id": "pop_36",
+      "categoria": "cultura_pop",
+      "izq": "Humor inteligente",
+      "der": "Humor tonto y físico"
+    },
+    {
+      "id": "pop_37",
+      "categoria": "cultura_pop",
+      "izq": "Para toda la familia",
+      "der": "Solo para adultos"
+    },
+    {
+      "id": "pop_38",
+      "categoria": "cultura_pop",
+      "izq": "Juego corto e intenso",
+      "der": "Mundo abierto infinito"
+    },
+    {
+      "id": "pop_39",
+      "categoria": "cultura_pop",
+      "izq": "Ídolo de la infancia",
+      "der": "Envejeció muy mal"
+    },
+    {
+      "id": "pop_40",
+      "categoria": "cultura_pop",
+      "izq": "Cover genial",
+      "der": "Destruyó la canción"
+    },
+    {
+      "id": "gen_01",
+      "categoria": "general",
+      "izq": "Lento",
+      "der": "Rápido"
+    },
+    {
+      "id": "gen_02",
+      "categoria": "general",
+      "izq": "Animal tierno",
+      "der": "Animal peligroso"
+    },
+    {
+      "id": "gen_03",
+      "categoria": "general",
+      "izq": "Trabajo tranquilo",
+      "der": "Trabajo estresante"
+    },
+    {
+      "id": "gen_04",
+      "categoria": "general",
+      "izq": "Deporte liviano",
+      "der": "Deporte agotador"
+    },
+    {
+      "id": "gen_05",
+      "categoria": "general",
+      "izq": "Lugar silencioso",
+      "der": "Lugar ruidoso"
+    },
+    {
+      "id": "gen_06",
+      "categoria": "general",
+      "izq": "Invento antiguo",
+      "der": "Invento moderno"
+    },
+    {
+      "id": "gen_07",
+      "categoria": "general",
+      "izq": "Fácil de aprender",
+      "der": "Difícil de dominar"
+    },
+    {
+      "id": "gen_08",
+      "categoria": "general",
+      "izq": "Inofensivo",
+      "der": "Mortal"
+    },
+    {
+      "id": "gen_09",
+      "categoria": "general",
+      "izq": "Muy pesado",
+      "der": "Ultra liviano"
+    },
+    {
+      "id": "gen_10",
+      "categoria": "general",
+      "izq": "Clima helado",
+      "der": "Calor sofocante"
+    },
+    {
+      "id": "gen_11",
+      "categoria": "general",
+      "izq": "Diminuto",
+      "der": "Gigantesco"
+    },
+    {
+      "id": "gen_12",
+      "categoria": "general",
+      "izq": "Común y corriente",
+      "der": "Extraordinario"
+    },
+    {
+      "id": "gen_13",
+      "categoria": "general",
+      "izq": "Poco higiénico",
+      "der": "Esterilizado"
+    },
+    {
+      "id": "gen_14",
+      "categoria": "general",
+      "izq": "Peligro visible",
+      "der": "Amenaza invisible"
+    },
+    {
+      "id": "gen_15",
+      "categoria": "general",
+      "izq": "Herramienta simple",
+      "der": "Máquina compleja"
+    },
+    {
+      "id": "gen_16",
+      "categoria": "general",
+      "izq": "Hábito saludable",
+      "der": "Vicio destructivo"
+    },
+    {
+      "id": "gen_17",
+      "categoria": "general",
+      "izq": "Habilidad natural",
+      "der": "Entrenamiento duro"
+    },
+    {
+      "id": "gen_18",
+      "categoria": "general",
+      "izq": "Fragilísimo",
+      "der": "Irrompible"
+    },
+    {
+      "id": "gen_19",
+      "categoria": "general",
+      "izq": "Superficial",
+      "der": "Profundo"
+    },
+    {
+      "id": "gen_20",
+      "categoria": "general",
+      "izq": "Movimiento suave",
+      "der": "Movimiento brusco"
+    },
+    {
+      "id": "gen_21",
+      "categoria": "general",
+      "izq": "Sonido agudo",
+      "der": "Sonido grave"
+    },
+    {
+      "id": "gen_22",
+      "categoria": "general",
+      "izq": "Luz tenue",
+      "der": "Brillo cegador"
+    },
+    {
+      "id": "gen_23",
+      "categoria": "general",
+      "izq": "Fácil de esconder",
+      "der": "Imposible de ocultar"
+    },
+    {
+      "id": "gen_24",
+      "categoria": "general",
+      "izq": "Pasa desapercibido",
+      "der": "Llama la atención"
+    },
+    {
+      "id": "gen_25",
+      "categoria": "general",
+      "izq": "Fácil de olvidar",
+      "der": "Inolvidable"
+    },
+    {
+      "id": "gen_26",
+      "categoria": "general",
+      "izq": "Causa dolor",
+      "der": "Da alivio"
+    },
+    {
+      "id": "gen_27",
+      "categoria": "general",
+      "izq": "Muy seguro",
+      "der": "Riesgo extremo"
+    },
+    {
+      "id": "gen_28",
+      "categoria": "general",
+      "izq": "Blando y suave",
+      "der": "Duro como piedra"
+    },
+    {
+      "id": "gen_29",
+      "categoria": "general",
+      "izq": "Espacio cerrado",
+      "der": "Aire libre"
+    },
+    {
+      "id": "gen_30",
+      "categoria": "general",
+      "izq": "Actividad relajante",
+      "der": "Pura adrenalina"
+    },
+    {
+      "id": "gen_31",
+      "categoria": "general",
+      "izq": "Invento indispensable",
+      "der": "Invento prescindible"
+    },
+    {
+      "id": "gen_32",
+      "categoria": "general",
+      "izq": "Animal solitario",
+      "der": "Animal de manada"
+    },
+    {
+      "id": "gen_33",
+      "categoria": "general",
+      "izq": "Largo y tedioso",
+      "der": "Corto y dinámico"
+    },
+    {
+      "id": "gen_34",
+      "categoria": "general",
+      "izq": "Predecible",
+      "der": "Totalmente caótico"
+    },
+    {
+      "id": "gen_35",
+      "categoria": "general",
+      "izq": "Barato de mantener",
+      "der": "Carísimo de mantener"
+    },
+    {
+      "id": "gen_36",
+      "categoria": "general",
+      "izq": "Agradable al tacto",
+      "der": "Desagradable al tacto"
+    },
+    {
+      "id": "gen_37",
+      "categoria": "general",
+      "izq": "Da sueño",
+      "der": "Te quita el sueño"
+    },
+    {
+      "id": "gen_38",
+      "categoria": "general",
+      "izq": "Fácil de reparar",
+      "der": "Si se rompe se tira"
+    },
+    {
+      "id": "gen_39",
+      "categoria": "general",
+      "izq": "Tradicional",
+      "der": "Vanguardista"
+    },
+    {
+      "id": "gen_40",
+      "categoria": "general",
+      "izq": "Poca energía",
+      "der": "Energía desbordante"
+    },
+    {
+      "id": "biz_01",
+      "categoria": "bizarro",
+      "izq": "Normal",
+      "der": "Bizarro"
+    },
+    {
+      "id": "biz_02",
+      "categoria": "bizarro",
+      "izq": "Inofensivo",
+      "der": "Turbio"
+    },
+    {
+      "id": "biz_03",
+      "categoria": "bizarro",
+      "izq": "Creíble",
+      "der": "Mito incomprobable"
+    },
+    {
+      "id": "biz_04",
+      "categoria": "bizarro",
+      "izq": "Habilidad inútil",
+      "der": "Superpoder real"
+    },
+    {
+      "id": "biz_05",
+      "categoria": "bizarro",
+      "izq": "Cosa cotidiana",
+      "der": "Récord insólito"
+    },
+    {
+      "id": "biz_06",
+      "categoria": "bizarro",
+      "izq": "Da asco",
+      "der": "Da satisfacción"
+    },
+    {
+      "id": "biz_07",
+      "categoria": "bizarro",
+      "izq": "Broma pesada",
+      "der": "Crimen menor"
+    },
+    {
+      "id": "biz_08",
+      "categoria": "bizarro",
+      "izq": "Extraterrestre",
+      "der": "Terrenal"
+    },
+    {
+      "id": "biz_09",
+      "categoria": "bizarro",
+      "izq": "Vergonzoso",
+      "der": "Orgullo bizarro"
+    },
+    {
+      "id": "biz_10",
+      "categoria": "bizarro",
+      "izq": "Teoría ridícula",
+      "der": "Conspiración real"
+    },
+    {
+      "id": "biz_11",
+      "categoria": "bizarro",
+      "izq": "Objeto maldito",
+      "der": "Amuleto de suerte"
+    },
+    {
+      "id": "biz_12",
+      "categoria": "bizarro",
+      "izq": "Comportamiento excéntrico",
+      "der": "Locura total"
+    },
+    {
+      "id": "biz_13",
+      "categoria": "bizarro",
+      "izq": "Mascota exótica tierna",
+      "der": "Mascota aterradora"
+    },
+    {
+      "id": "biz_14",
+      "categoria": "bizarro",
+      "izq": "Moda bizarra",
+      "der": "Tradición perturbadora"
+    },
+    {
+      "id": "biz_15",
+      "categoria": "bizarro",
+      "izq": "Superstición absurda",
+      "der": "Creer o reventar"
+    },
+    {
+      "id": "biz_16",
+      "categoria": "bizarro",
+      "izq": "Pesadilla infantil",
+      "der": "Miedo de adulto"
+    },
+    {
+      "id": "biz_17",
+      "categoria": "bizarro",
+      "izq": "De culto underground",
+      "der": "Fenómeno viral"
+    },
+    {
+      "id": "biz_18",
+      "categoria": "bizarro",
+      "izq": "Coincidencia loca",
+      "der": "Destino planeado"
+    },
+    {
+      "id": "biz_19",
+      "categoria": "bizarro",
+      "izq": "Comida incomible",
+      "der": "Manjar exótico"
+    },
+    {
+      "id": "biz_20",
+      "categoria": "bizarro",
+      "izq": "Fallo en la matrix",
+      "der": "Explicación simple"
+    },
+    {
+      "id": "biz_21",
+      "categoria": "bizarro",
+      "izq": "Mentira piadosa",
+      "der": "Chamuyo cósmico"
+    },
+    {
+      "id": "biz_22",
+      "categoria": "bizarro",
+      "izq": "Miedo irracional",
+      "der": "Peligro real"
+    },
+    {
+      "id": "biz_23",
+      "categoria": "bizarro",
+      "izq": "Gasto ridículo",
+      "der": "Capricho justificado"
+    },
+    {
+      "id": "biz_24",
+      "categoria": "bizarro",
+      "izq": "Fiebre absurda",
+      "der": "Movimiento cultural"
+    },
+    {
+      "id": "biz_25",
+      "categoria": "bizarro",
+      "izq": "Fantasía delirante",
+      "der": "Real en 10 años"
+    },
+    {
+      "id": "biz_26",
+      "categoria": "bizarro",
+      "izq": "Personaje bizarro querido",
+      "der": "Figura nefasta"
+    },
+    {
+      "id": "biz_27",
+      "categoria": "bizarro",
+      "izq": "Sonido perturbador",
+      "der": "Sonido hipnótico"
+    },
+    {
+      "id": "biz_28",
+      "categoria": "bizarro",
+      "izq": "Pregunta incómoda",
+      "der": "Charla de confianza"
+    },
+    {
+      "id": "biz_29",
+      "categoria": "bizarro",
+      "izq": "Curiosidad inocente",
+      "der": "Obsesión turbia"
+    },
+    {
+      "id": "biz_30",
+      "categoria": "bizarro",
+      "izq": "Secreto tonto",
+      "der": "Secreto a la tumba"
+    },
+    {
+      "id": "biz_31",
+      "categoria": "bizarro",
+      "izq": "Manía inofensiva",
+      "der": "Rareza extrema"
+    },
+    {
+      "id": "biz_32",
+      "categoria": "bizarro",
+      "izq": "Talento freak",
+      "der": "Don bendecido"
+    },
+    {
+      "id": "biz_33",
+      "categoria": "bizarro",
+      "izq": "Comida incomible",
+      "der": "Gusto adquirido"
+    },
+    {
+      "id": "biz_34",
+      "categoria": "bizarro",
+      "izq": "Lugar embrujado",
+      "der": "Sugestión pura"
+    },
+    {
+      "id": "biz_35",
+      "categoria": "bizarro",
+      "izq": "Profecía cumplida",
+      "der": "Casualidad total"
+    },
+    {
+      "id": "biz_36",
+      "categoria": "bizarro",
+      "izq": "Humor negro suave",
+      "der": "Humor pasadísimo"
+    },
+    {
+      "id": "biz_37",
+      "categoria": "bizarro",
+      "izq": "Foto desconcertante",
+      "der": "Obra de arte incomprendida"
+    },
+    {
+      "id": "biz_38",
+      "categoria": "bizarro",
+      "izq": "Situación vergonzosa",
+      "der": "Anécdota gloriosa"
+    },
+    {
+      "id": "biz_39",
+      "categoria": "bizarro",
+      "izq": "Mala espina",
+      "der": "Confianza ciega"
+    },
+    {
+      "id": "biz_40",
+      "categoria": "bizarro",
+      "izq": "Sueño delirante",
+      "der": "Premonición real"
+    }
+  ]
+};
+})(typeof window !== 'undefined' ? window : globalThis);

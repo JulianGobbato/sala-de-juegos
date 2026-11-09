@@ -1,0 +1,902 @@
+[
+  {
+    "id": "cine_001",
+    "categoria": "cine_tv",
+    "dificultad": "facil",
+    "pregunta": "¿En qué año se estrenó la primera película de la saga original de 'Star Wars' (Episodio IV: Una nueva esperanza)?",
+    "respuesta": 1977,
+    "unidad": "año",
+    "nota": "Dirigida por George Lucas, llegó a los cines de Estados Unidos el 25 de mayo de 1977."
+  },
+  {
+    "id": "cine_002",
+    "categoria": "cine_tv",
+    "dificultad": "facil",
+    "pregunta": "¿Cuántos premios Óscar ganó la película 'Titanic' de James Cameron en la ceremonia de 1998?",
+    "respuesta": 11,
+    "unidad": "premios Óscar",
+    "nota": "Empató el récord histórico de Ben-Hur y luego alcanzado por El Retorno del Rey."
+  },
+  {
+    "id": "cine_003",
+    "categoria": "cine_tv",
+    "dificultad": "facil",
+    "pregunta": "¿En qué año se estrenó la película animada 'Toy Story', la primera hecha 100% por computadora?",
+    "respuesta": 1995,
+    "unidad": "año",
+    "nota": "Dirigida por John Lasseter y producida por los estudios Pixar junto a Disney."
+  },
+  {
+    "id": "cine_004",
+    "categoria": "cine_tv",
+    "dificultad": "facil",
+    "pregunta": "¿Cuántas temporadas oficiales tuvo la aclamada serie dramática 'Breaking Bad' protagonizada por Bryan Cranston?",
+    "respuesta": 5,
+    "unidad": "temporadas",
+    "nota": "La quinta y última temporada se dividió en dos tandas de 8 episodios cada una."
+  },
+  {
+    "id": "cine_005",
+    "categoria": "cine_tv",
+    "dificultad": "facil",
+    "pregunta": "¿En qué año se estrenó 'Jurassic Park' (Parque Jurásico), dirigida por Steven Spielberg?",
+    "respuesta": 1993,
+    "unidad": "año",
+    "nota": "Revolucionó los efectos digitales CGI de la mano de Industrial Light & Magic."
+  },
+  {
+    "id": "cine_006",
+    "categoria": "cine_tv",
+    "dificultad": "facil",
+    "pregunta": "¿Cuántos episodios en total tiene la recordada serie argentina 'Los Simuladores' creada por Damián Szifron?",
+    "respuesta": 24,
+    "unidad": "episodios",
+    "nota": "13 episodios en la primera temporada (2002) y 11 en la segunda temporada (2003)."
+  },
+  {
+    "id": "cine_007",
+    "categoria": "cine_tv",
+    "dificultad": "facil",
+    "pregunta": "¿En qué año se estrenó en los cines la innovadora película de ciencia ficción 'The Matrix' de las hermanas Wachowski?",
+    "respuesta": 1999,
+    "unidad": "año",
+    "nota": "Lanzada el 31 de marzo de 1999 popularizando el famoso efecto 'bullet time'."
+  },
+  {
+    "id": "cine_008",
+    "categoria": "cine_tv",
+    "dificultad": "facil",
+    "pregunta": "¿Cuántas temporadas completas se emitieron de la exitosa serie de fantasía 'Game of Thrones' (Juego de Tronos)?",
+    "respuesta": 8,
+    "unidad": "temporadas",
+    "nota": "Emitida por HBO entre 2011 y 2019 con un total de 73 episodios."
+  },
+  {
+    "id": "cine_009",
+    "categoria": "cine_tv",
+    "dificultad": "facil",
+    "pregunta": "¿En qué año se estrenó la película animada 'El Rey León' (The Lion King) de Disney?",
+    "respuesta": 1994,
+    "unidad": "año",
+    "nota": "Uno de los puntos más altos de la era del 'Renacimiento de Disney' con música de Elton John."
+  },
+  {
+    "id": "cine_010",
+    "categoria": "cine_tv",
+    "dificultad": "facil",
+    "pregunta": "¿Cuántas películas cinematográficas componen la trilogía original de 'El Señor de los Anillos' dirigida por Peter Jackson?",
+    "respuesta": 3,
+    "unidad": "películas",
+    "nota": "La Comunidad del Anillo (2001), Las Dos Torres (2002) y El Retorno del Rey (2003)."
+  },
+  {
+    "id": "cine_011",
+    "categoria": "cine_tv",
+    "dificultad": "facil",
+    "pregunta": "¿En qué año se estrenó la primera película de la saga del mago adolescente 'Harry Potter y la piedra filosofal'?",
+    "respuesta": 2001,
+    "unidad": "año",
+    "nota": "Dirigida por Chris Columbus y protagonizada por Daniel Radcliffe, Emma Watson y Rupert Grint."
+  },
+  {
+    "id": "cine_012",
+    "categoria": "cine_tv",
+    "dificultad": "facil",
+    "pregunta": "¿Cuántos episodios tiene la primera temporada de la serie argentina de culto 'Okupas' de Bruno Stagnaro?",
+    "respuesta": 11,
+    "unidad": "episodios",
+    "nota": "Emitida en el año 2000 por Canal 7 y relanzada con éxito internacional en streaming."
+  },
+  {
+    "id": "cine_013",
+    "categoria": "cine_tv",
+    "dificultad": "facil",
+    "pregunta": "¿En qué año se estrenó la película de acción 'Pulp Fiction' (Tiempos violentos) de Quentin Tarantino?",
+    "respuesta": 1994,
+    "unidad": "año",
+    "nota": "Ganó la Palma de Oro en Cannes y el Óscar a Mejor Guion Original."
+  },
+  {
+    "id": "cine_014",
+    "categoria": "cine_tv",
+    "dificultad": "facil",
+    "pregunta": "¿Cuántas temporadas al aire tuvo la histórica comedia estadounidense 'Friends'?",
+    "respuesta": 10,
+    "unidad": "temporadas",
+    "nota": "Emitida entre 1994 y 2004 con 236 capítulos protagonizados por los seis amigos neoyorquinos."
+  },
+  {
+    "id": "cine_015",
+    "categoria": "cine_tv",
+    "dificultad": "facil",
+    "pregunta": "¿En qué año se estrenó la película animada 'Shrek' de DreamWorks que parodió los cuentos de hadas?",
+    "respuesta": 2001,
+    "unidad": "año",
+    "nota": "Ganó el primer premio Óscar a la Mejor Película de Animación de la historia en 2002."
+  },
+  {
+    "id": "cine_016",
+    "categoria": "cine_tv",
+    "dificultad": "facil",
+    "pregunta": "¿Cuántas estatuillas del Óscar ganó 'El Señor de los Anillos: El Retorno del Rey' en 2004 (ganando todas a las que postuló)?",
+    "respuesta": 11,
+    "unidad": "premios Óscar",
+    "nota": "Pleno perfecto de 11 victorias sobre 11 nominaciones, incluyendo Mejor Película."
+  },
+  {
+    "id": "cine_017",
+    "categoria": "cine_tv",
+    "dificultad": "facil",
+    "pregunta": "¿En qué año llegó a los cines la primera película de superhéroes 'Iron Man', iniciando el Universo Cinematográfico de Marvel (MCU)?",
+    "respuesta": 2008,
+    "unidad": "año",
+    "nota": "Protagonizada por Robert Downey Jr. y dirigida por Jon Favreau."
+  },
+  {
+    "id": "cine_018",
+    "categoria": "cine_tv",
+    "dificultad": "facil",
+    "pregunta": "¿Cuántos relatos independientes componen la película coral argentina 'Relatos salvajes' de Damián Szifron?",
+    "respuesta": 6,
+    "unidad": "relatos",
+    "nota": "Pasternak, Las ratas, El más fuerte, Bombita, La propuesta y Hasta que la muerte nos separe."
+  },
+  {
+    "id": "cine_019",
+    "categoria": "cine_tv",
+    "dificultad": "facil",
+    "pregunta": "¿En qué año se estrenó la película 'Volver al Futuro' (Back to the Future) de Robert Zemeckis?",
+    "respuesta": 1985,
+    "unidad": "año",
+    "nota": "Marty McFly viaja al año 1955 a bordo del DeLorean con condensador de flujo."
+  },
+  {
+    "id": "cine_020",
+    "categoria": "cine_tv",
+    "dificultad": "facil",
+    "pregunta": "¿Cuántas películas oficiales de la saga cinematográfica de 'Harry Potter' se produjeron basadas en los 7 libros?",
+    "respuesta": 8,
+    "unidad": "películas",
+    "nota": "El último libro, 'Las Reliquias de la Muerte', fue dividido en dos partes cinematográficas."
+  },
+  {
+    "id": "cine_021",
+    "categoria": "cine_tv",
+    "dificultad": "facil",
+    "pregunta": "¿En qué año se estrenó 'El Padrino' (The Godfather), obra cumbre del cine dirigida por Francis Ford Coppola?",
+    "respuesta": 1972,
+    "unidad": "año",
+    "nota": "Basada en la novela de Mario Puzo y protagonizada por Marlon Brando y Al Pacino."
+  },
+  {
+    "id": "cine_022",
+    "categoria": "cine_tv",
+    "dificultad": "facil",
+    "pregunta": "¿Cuántos episodios integran la miniserie de culto 'Chernobyl' producida por HBO en 2019?",
+    "respuesta": 5,
+    "unidad": "episodios",
+    "nota": "Aclamada mundialmente por su rigor histórico y dramatismo sobre la catástrofe nuclear de 1986."
+  },
+  {
+    "id": "cine_023",
+    "categoria": "cine_tv",
+    "dificultad": "facil",
+    "pregunta": "¿En qué año se estrenó en los cines 'Avatar' de James Cameron, convirtiéndose en la más taquillera de todos los tiempos?",
+    "respuesta": 2009,
+    "unidad": "año",
+    "nota": "Impulsó masivamente la proyección digital en formato 3D en salas de todo el planeta."
+  },
+  {
+    "id": "cine_024",
+    "categoria": "cine_tv",
+    "dificultad": "facil",
+    "pregunta": "¿Cuántos premios Óscar al Mejor Director ha ganado el director estadounidense Steven Spielberg?",
+    "respuesta": 2,
+    "unidad": "premios Óscar",
+    "nota": "Por 'La lista de Schindler' (1993) y 'Rescatando al soldado Ryan' (1998)."
+  },
+  {
+    "id": "cine_025",
+    "categoria": "cine_tv",
+    "dificultad": "facil",
+    "pregunta": "¿En qué año se estrenó 'Nueve reinas', el brillante policial porteño de Fabián Bielinsky?",
+    "respuesta": 2000,
+    "unidad": "año",
+    "nota": "Protagonizada por Ricardo Darín y Gastón Pauls como dos estafadores de poca monta en Buenos Aires."
+  },
+  {
+    "id": "cine_026",
+    "categoria": "cine_tv",
+    "dificultad": "medio",
+    "pregunta": "¿Cuántos minutos dura la versión extendida de 'El Señor de los Anillos: El Retorno del Rey'?",
+    "respuesta": 251,
+    "unidad": "minutos",
+    "nota": "Dura 4 horas y 11 minutos con los créditos completos de la edición especial."
+  },
+  {
+    "id": "cine_027",
+    "categoria": "cine_tv",
+    "dificultad": "medio",
+    "pregunta": "¿En qué año se emitió el primer episodio de 'Los Simpson' como serie independiente (Especial de Navidad)?",
+    "respuesta": 1989,
+    "unidad": "año",
+    "nota": "El 17 de diciembre de 1989 con el episodio 'Simpsons Roasting on an Open Fire'."
+  },
+  {
+    "id": "cine_028",
+    "categoria": "cine_tv",
+    "dificultad": "medio",
+    "pregunta": "¿Cuántos premios Óscar ganó en total Walt Disney a lo largo de su carrera, récord absoluto en la historia de la Academia?",
+    "respuesta": 26,
+    "unidad": "premios Óscar",
+    "nota": "Recibió 22 estatuillas competitivas y 4 premios honoríficos sobre 59 nominaciones."
+  },
+  {
+    "id": "cine_029",
+    "categoria": "cine_tv",
+    "dificultad": "medio",
+    "pregunta": "¿En qué año se estrenó la película de terror y suspenso 'El resplandor' (The Shining) de Stanley Kubrick?",
+    "respuesta": 1980,
+    "unidad": "año",
+    "nota": "Basada libremente en la novela de Stephen King con la icónica actuación de Jack Nicholson."
+  },
+  {
+    "id": "cine_030",
+    "categoria": "cine_tv",
+    "dificultad": "medio",
+    "pregunta": "¿Cuántos episodios tiene en total la serie dramática de mafia 'Los Soprano' (The Sopranos)?",
+    "respuesta": 86,
+    "unidad": "episodios",
+    "nota": "Seis temporadas transmitidas entre 1999 y 2007 que inauguraron la era dorada de la televisión moderna."
+  },
+  {
+    "id": "cine_031",
+    "categoria": "cine_tv",
+    "dificultad": "medio",
+    "pregunta": "¿En qué año se estrenó la comedia de ciencia ficción 'Men in Black' (Hombres de Negro) con Will Smith y Tommy Lee Jones?",
+    "respuesta": 1997,
+    "unidad": "año",
+    "nota": "Fue uno de los mayores éxitos de taquilla del verano cinematográfico de 1997."
+  },
+  {
+    "id": "cine_032",
+    "categoria": "cine_tv",
+    "dificultad": "medio",
+    "pregunta": "¿Cuántas temporadas al aire tuvo la serie de misterio y supervivencia 'Lost' (Perdidos)?",
+    "respuesta": 6,
+    "unidad": "temporadas",
+    "nota": "Transmitida entre 2004 y 2010 acumulando 121 capítulos tras el accidente del vuelo Oceanic 815."
+  },
+  {
+    "id": "cine_033",
+    "categoria": "cine_tv",
+    "dificultad": "medio",
+    "pregunta": "¿En qué año se estrenó 'Tiburón' (Jaws) de Steven Spielberg, considerada la creadora del concepto moderno de 'Blockbuster'?",
+    "respuesta": 1975,
+    "unidad": "año",
+    "nota": "Estrenada el 20 de junio de 1975 aterrorizando a los bañistas de todo el mundo con su banda sonora de John Williams."
+  },
+  {
+    "id": "cine_034",
+    "categoria": "cine_tv",
+    "dificultad": "medio",
+    "pregunta": "¿Cuántos capítulos componen la comedia británica 'The Office' original protagonizada y creada por Ricky Gervais?",
+    "respuesta": 14,
+    "unidad": "episodios",
+    "nota": "Dos temporadas de 6 episodios cada una y un especial navideño de 2 partes."
+  },
+  {
+    "id": "cine_035",
+    "categoria": "cine_tv",
+    "dificultad": "medio",
+    "pregunta": "¿En qué año se estrenó 'La Naranja Mecánica' (A Clockwork Orange) de Stanley Kubrick?",
+    "respuesta": 1971,
+    "unidad": "año",
+    "nota": "Adaptación distópica de la novela homónima de Anthony Burgess con Malcolm McDowell."
+  },
+  {
+    "id": "cine_036",
+    "categoria": "cine_tv",
+    "dificultad": "medio",
+    "pregunta": "¿Cuántos minutos de duración tiene la película 'Titanic' de James Cameron en su corte para salas de cine?",
+    "respuesta": 194,
+    "unidad": "minutos",
+    "nota": "Dura exactamente 3 horas y 14 minutos desde los créditos iniciales hasta el fin."
+  },
+  {
+    "id": "cine_037",
+    "categoria": "cine_tv",
+    "dificultad": "medio",
+    "pregunta": "¿En qué año llegó a los cines la película 'Fight Club' (El club de la pelea) dirigida por David Fincher?",
+    "respuesta": 1999,
+    "unidad": "año",
+    "nota": "Protagonizada por Brad Pitt y Edward Norton, convertida con los años en obra de culto generacional."
+  },
+  {
+    "id": "cine_038",
+    "categoria": "cine_tv",
+    "dificultad": "medio",
+    "pregunta": "¿Cuántos episodios tuvo en total la versión estadounidense de la serie cómica 'The Office' (NBC)?",
+    "respuesta": 201,
+    "unidad": "episodios",
+    "nota": "Nueve temporadas emitidas entre 2005 y 2013 con Steve Carell como Michael Scott."
+  },
+  {
+    "id": "cine_039",
+    "categoria": "cine_tv",
+    "dificultad": "medio",
+    "pregunta": "¿En qué año se estrenó 'El Gran Lebowski' de los hermanos Coen con Jeff Bridges como 'The Dude'?",
+    "respuesta": 1998,
+    "unidad": "año",
+    "nota": "Un clásico de culto absoluto que inspiró hasta su propia filosofía humorística: el dudeísmo."
+  },
+  {
+    "id": "cine_040",
+    "categoria": "cine_tv",
+    "dificultad": "medio",
+    "pregunta": "¿Cuántas películas integran la saga cinematográfica de James Bond producida por Eon Productions (hasta No Time to Die)?",
+    "respuesta": 25,
+    "unidad": "películas",
+    "nota": "Desde Dr. No (1962) con Sean Connery hasta No Time to Die (2021) con Daniel Craig."
+  },
+  {
+    "id": "cine_041",
+    "categoria": "cine_tv",
+    "dificultad": "medio",
+    "pregunta": "¿En qué año se estrenó 'Psicosis' (Psycho) de Alfred Hitchcock con la histórica escena de la ducha?",
+    "respuesta": 1960,
+    "unidad": "año",
+    "nota": "Rodada en blanco y negro con bajo presupuesto para la época, fue un colosal éxito de taquilla."
+  },
+  {
+    "id": "cine_042",
+    "categoria": "cine_tv",
+    "dificultad": "medio",
+    "pregunta": "¿Cuántas temporadas al aire tuvo la serie de ciencia ficción retro 'Stranger Things' de los hermanos Duffer (hasta su temporada 4)?",
+    "respuesta": 4,
+    "unidad": "temporadas",
+    "nota": "Estrenada en 2016 y convertida en uno de los buques insignia del streaming global."
+  },
+  {
+    "id": "cine_043",
+    "categoria": "cine_tv",
+    "dificultad": "medio",
+    "pregunta": "¿En qué año se estrenó 'Interstellar' (Interestelar) de Christopher Nolan con Matthew McConaughey?",
+    "respuesta": 2014,
+    "unidad": "año",
+    "nota": "Con asesoría científica del físico teórico Kip Thorne para recrear el agujero negro Gargantúa."
+  },
+  {
+    "id": "cine_044",
+    "categoria": "cine_tv",
+    "dificultad": "medio",
+    "pregunta": "¿Cuántos premios Óscar al Mejor Actor Principal ha ganado Daniel Day-Lewis, único en la historia con esa cantidad?",
+    "respuesta": 3,
+    "unidad": "premios Óscar",
+    "nota": "Por 'Mi pie izquierdo' (1989), 'Petróleo sangriento' (2007) y 'Lincoln' (2012)."
+  },
+  {
+    "id": "cine_045",
+    "categoria": "cine_tv",
+    "dificultad": "medio",
+    "pregunta": "¿En qué año se estrenó 'Blade Runner' de Ridley Scott, basada en la novela de Philip K. Dick?",
+    "respuesta": 1982,
+    "unidad": "año",
+    "nota": "Ambientada en una futurista Los Ángeles de noviembre de 2019 con Harrison Ford como Rick Deckard."
+  },
+  {
+    "id": "cine_046",
+    "categoria": "cine_tv",
+    "dificultad": "medio",
+    "pregunta": "¿Cuántos episodios componen la serie carcelaria argentina 'El Marginal' a lo largo de sus 5 temporadas?",
+    "respuesta": 43,
+    "unidad": "episodios",
+    "nota": "Creada por Sebastián Ortega e Israel Caetano y ambientada en el penal de San Onofre."
+  },
+  {
+    "id": "cine_047",
+    "categoria": "cine_tv",
+    "dificultad": "medio",
+    "pregunta": "¿En qué año se estrenó la película animada 'Buscando a Nemo' (Finding Nemo) de Pixar?",
+    "respuesta": 2003,
+    "unidad": "año",
+    "nota": "Dirigida por Andrew Stanton, superó los 900 millones de dólares de recaudación."
+  },
+  {
+    "id": "cine_048",
+    "categoria": "cine_tv",
+    "dificultad": "medio",
+    "pregunta": "¿Cuántos minutos de duración tiene '2001: Odisea del espacio' de Stanley Kubrick en su corte final?",
+    "respuesta": 149,
+    "unidad": "minutos",
+    "nota": "Casi dos horas y media de una experiencia sensorial y filosófica sin precedentes en el cine."
+  },
+  {
+    "id": "cine_049",
+    "categoria": "cine_tv",
+    "dificultad": "medio",
+    "pregunta": "¿En qué año se estrenó 'El Gran Dictador' de Charles Chaplin, su primera película completamente sonora?",
+    "respuesta": 1940,
+    "unidad": "año",
+    "nota": "Valiente sátira contra el fascismo y Adolf Hitler lanzada en plena Segunda Guerra Mundial."
+  },
+  {
+    "id": "cine_050",
+    "categoria": "cine_tv",
+    "dificultad": "medio",
+    "pregunta": "¿Cuántos episodios tiene la serie británica 'Peaky Blinders' a lo largo de sus 6 temporadas completas?",
+    "respuesta": 36,
+    "unidad": "episodios",
+    "nota": "Exactamente 6 episodios por cada una de las 6 temporadas que siguen a Tommy Shelby."
+  },
+  {
+    "id": "cine_051",
+    "categoria": "cine_tv",
+    "dificultad": "dificil",
+    "pregunta": "¿Cuántos minutos dura 'El Padrino Parte II' de Francis Ford Coppola?",
+    "respuesta": 202,
+    "unidad": "minutos",
+    "nota": "Dura 3 horas y 22 minutos; ganó 6 premios Óscar incluyendo Mejor Película en 1975."
+  },
+  {
+    "id": "cine_052",
+    "categoria": "cine_tv",
+    "dificultad": "dificil",
+    "pregunta": "¿En qué año se llevó a cabo la primera ceremonia de entrega de los Premios de la Academia (Óscar) en Los Ángeles?",
+    "respuesta": 1929,
+    "unidad": "año",
+    "nota": "El 16 de mayo de 1929 en el Hotel Hollywood Roosevelt ante 270 comensales."
+  },
+  {
+    "id": "cine_053",
+    "categoria": "cine_tv",
+    "dificultad": "dificil",
+    "pregunta": "¿Cuántas nominaciones al Óscar acumula la actriz Meryl Streep, récord absoluto en la historia de la actuación?",
+    "respuesta": 21,
+    "unidad": "nominaciones",
+    "nota": "Ha ganado 3 estatuillas doradas (por Kramer vs. Kramer, La decisión de Sophie y La dama de hierro)."
+  },
+  {
+    "id": "cine_054",
+    "categoria": "cine_tv",
+    "dificultad": "dificil",
+    "pregunta": "¿En qué año se estrenó 'Ciudadano Kane' (Citizen Kane) de Orson Welles, habitual líder de las listas de mejores películas?",
+    "respuesta": 1941,
+    "unidad": "año",
+    "nota": "Welles tenía tan solo 25 años cuando produjo, dirigió y protagonizó este clásico."
+  },
+  {
+    "id": "cine_055",
+    "categoria": "cine_tv",
+    "dificultad": "dificil",
+    "pregunta": "¿Cuántos episodios independientes componen la serie antológica británica 'Black Mirror' hasta su sexta temporada?",
+    "respuesta": 27,
+    "unidad": "episodios",
+    "nota": "Creada por Charlie Brooker para explorar el lado oscuro de la dependencia tecnológica (sin contar la película interactiva)."
+  },
+  {
+    "id": "cine_056",
+    "categoria": "cine_tv",
+    "dificultad": "dificil",
+    "pregunta": "¿En qué año se estrenó en Argentina la película 'La historia oficial', primer filme nacional en ganar el premio Óscar?",
+    "respuesta": 1985,
+    "unidad": "año",
+    "nota": "Dirigida por Luis Puenzo y protagonizada por Norma Aleandro y Héctor Alterio."
+  },
+  {
+    "id": "cine_057",
+    "categoria": "cine_tv",
+    "dificultad": "dificil",
+    "pregunta": "¿Cuántas películas del director Alfred Hitchcock fueron nominadas al Óscar a Mejor Película a lo largo de su carrera?",
+    "respuesta": 4,
+    "unidad": "películas",
+    "nota": "Rebecca (que ganó), Sospecha, Cuéntame tu vida (Spellbound) y Psicosis."
+  },
+  {
+    "id": "cine_058",
+    "categoria": "cine_tv",
+    "dificultad": "dificil",
+    "pregunta": "¿En qué año se estrenó el clásico del cine mudo 'Metrópolis' del director austríaco Fritz Lang?",
+    "respuesta": 1927,
+    "unidad": "año",
+    "nota": "Obra monumental del expresionismo alemán y una de las piedras fundacionales de la ciencia ficción."
+  },
+  {
+    "id": "cine_059",
+    "categoria": "cine_tv",
+    "dificultad": "dificil",
+    "pregunta": "¿Cuántos minutos de duración tiene la película 'Apocalypse Now' en su versión extendida 'Redux' de 2001?",
+    "respuesta": 202,
+    "unidad": "minutos",
+    "nota": "Francis Ford Coppola agregó 49 minutos de escenas inéditas que no estuvieron en el estreno de 1979."
+  },
+  {
+    "id": "cine_060",
+    "categoria": "cine_tv",
+    "dificultad": "dificil",
+    "pregunta": "¿En qué año se estrenó la película animada 'Blancanieves y los siete enanitos', el primer largometraje animado de Disney?",
+    "respuesta": 1937,
+    "unidad": "año",
+    "nota": "Estrenada el 21 de diciembre de 1937 en el Carthay Circle Theatre con enorme éxito."
+  },
+  {
+    "id": "cine_061",
+    "categoria": "cine_tv",
+    "dificultad": "dificil",
+    "pregunta": "¿Cuántas estatuillas del premio Óscar al Mejor Director ganó el cineasta John Ford, récord histórico vigente?",
+    "respuesta": 4,
+    "unidad": "premios Óscar",
+    "nota": "Por El delator (1935), Las viñas de la ira (1940), ¡Qué verde era mi valle! (1941) y El hombre quieto (1952)."
+  },
+  {
+    "id": "cine_062",
+    "categoria": "cine_tv",
+    "dificultad": "dificil",
+    "pregunta": "¿En qué año se fundó el Festival Internacional de Cine de Cannes en la Costa Azul francesa?",
+    "respuesta": 1946,
+    "unidad": "año",
+    "nota": "Planeado para 1939, debió posponerse hasta después del fin de la Segunda Guerra Mundial."
+  },
+  {
+    "id": "cine_063",
+    "categoria": "cine_tv",
+    "dificultad": "dificil",
+    "pregunta": "¿Cuántos días de rodaje exactos le tomó a Stanley Kubrick filmar la mítica película 'Ojos bien cerrados' (Eyes Wide Shut)?",
+    "respuesta": 400,
+    "unidad": "días",
+    "nota": "Figura en el Libro Guinness como el rodaje continuo más largo de la historia del cine comercial."
+  },
+  {
+    "id": "cine_064",
+    "categoria": "cine_tv",
+    "dificultad": "dificil",
+    "pregunta": "¿En qué año se estrenó 'La dolce vita' de Federico Fellini con la recordada escena de la Fontana di Trevi?",
+    "respuesta": 1960,
+    "unidad": "año",
+    "nota": "Protagonizada por Marcello Mastroianni y Anita Ekberg, ganadora de la Palma de Oro en Cannes."
+  },
+  {
+    "id": "cine_065",
+    "categoria": "cine_tv",
+    "dificultad": "dificil",
+    "pregunta": "¿Cuántos episodios conforman la serie animada 'Batman: The Animated Series' emitida en la década de 1990?",
+    "respuesta": 85,
+    "unidad": "episodios",
+    "nota": "Aclamada por su estilo visual 'dark deco' y las voces de Kevin Conroy y Mark Hamill."
+  },
+  {
+    "id": "cine_066",
+    "categoria": "cine_tv",
+    "dificultad": "dificil",
+    "pregunta": "¿En qué año se estrenó la película bélica 'Full Metal Jacket' (Nacido para matar) de Stanley Kubrick?",
+    "respuesta": 1987,
+    "unidad": "año",
+    "nota": "Inmortalizó la implacable actuación de R. Lee Ermey como el sargento de instrucción Hartman."
+  },
+  {
+    "id": "cine_067",
+    "categoria": "cine_tv",
+    "dificultad": "dificil",
+    "pregunta": "¿Cuántos premios Óscar ganó la película 'Parásitos' (Parasite) del director surcoreano Bong Joon-ho en 2020?",
+    "respuesta": 4,
+    "unidad": "premios Óscar",
+    "nota": "Hizo historia como la primera película de habla no inglesa en ganar el Óscar a Mejor Película principal."
+  },
+  {
+    "id": "cine_068",
+    "categoria": "cine_tv",
+    "dificultad": "dificil",
+    "pregunta": "¿En qué año se estrenó 'Taxi Driver' de Martin Scorsese con Robert De Niro?",
+    "respuesta": 1976,
+    "unidad": "año",
+    "nota": "Con guion de Paul Schrader, ganó la Palma de Oro en el Festival de Cannes."
+  },
+  {
+    "id": "cine_069",
+    "categoria": "cine_tv",
+    "dificultad": "dificil",
+    "pregunta": "¿Cuántas nominaciones al Óscar recibió el compositor John Williams a lo largo de su legendaria carrera musical?",
+    "respuesta": 54,
+    "unidad": "nominaciones",
+    "nota": "Es la persona viva más nominada en la historia de los premios de la Academia de Hollywood."
+  },
+  {
+    "id": "cine_070",
+    "categoria": "cine_tv",
+    "dificultad": "dificil",
+    "pregunta": "¿En qué año se estrenó 'El exorcista' (The Exorcist) de William Friedkin conmocionando a las audiencias?",
+    "respuesta": 1973,
+    "unidad": "año",
+    "nota": "Fue la primera película de terror nominada al Óscar a la Mejor Película de la historia."
+  },
+  {
+    "id": "cine_071",
+    "categoria": "cine_tv",
+    "dificultad": "dificil",
+    "pregunta": "¿Cuántos episodios integraron la serie clásica de televisión 'El Chavo del 8' en su período de oro (1973-1980)?",
+    "respuesta": 290,
+    "unidad": "episodios",
+    "nota": "Emitidos de forma independiente antes de pasar a ser un sketch dentro del programa Chespirito."
+  },
+  {
+    "id": "cine_072",
+    "categoria": "cine_tv",
+    "dificultad": "dificil",
+    "pregunta": "¿En qué año se estrenó 'Casablanca' protagonizada por Humphrey Bogart e Ingrid Bergman en plena guerra?",
+    "respuesta": 1942,
+    "unidad": "año",
+    "nota": "Estrenada en Nueva York en noviembre de 1942 para coincidir con la invasión aliada al norte de África."
+  },
+  {
+    "id": "cine_073",
+    "categoria": "cine_tv",
+    "dificultad": "dificil",
+    "pregunta": "¿Cuántas películas del director Quentin Tarantino integran su filmografía oficial declarada como realizador (contando Kill Bill como 1)?",
+    "respuesta": 9,
+    "unidad": "películas",
+    "nota": "Desde Reservoir Dogs (1992) hasta Érase una vez en Hollywood (2019)."
+  },
+  {
+    "id": "cine_074",
+    "categoria": "cine_tv",
+    "dificultad": "dificil",
+    "pregunta": "¿En qué año se estrenó en televisión la serie 'Twin Peaks' de David Lynch y Mark Frost?",
+    "respuesta": 1990,
+    "unidad": "año",
+    "nota": "Con la misteriosa pregunta: '¿Quién mató a Laura Palmer?' revolucionando la narrativa televisiva."
+  },
+  {
+    "id": "cine_075",
+    "categoria": "cine_tv",
+    "dificultad": "dificil",
+    "pregunta": "¿Cuántos minutos dura el plano secuencia inicial continuo de la película 'Sed de mal' (Touch of Evil) de Orson Welles?",
+    "respuesta": 3,
+    "unidad": "minutos",
+    "nota": "Una toma continua de 3 minutos y 20 segundos que sigue la colocación de una bomba en un automóvil."
+  },
+  {
+    "id": "cine_076",
+    "categoria": "cine_tv",
+    "dificultad": "extremo",
+    "pregunta": "¿En qué año los hermanos Auguste y Louis Lumière realizaron la histórica primera proyección pública de cine en París?",
+    "respuesta": 1895,
+    "unidad": "año",
+    "nota": "El 28 de diciembre de 1895 en el Salon Indien du Grand Café proyectando La salida de los obreros."
+  },
+  {
+    "id": "cine_077",
+    "categoria": "cine_tv",
+    "dificultad": "extremo",
+    "pregunta": "¿Cuántos fotogramas por segundo (fps) se fijaron como estándar técnico obligatorio del cine sonoro en 1927?",
+    "respuesta": 24,
+    "unidad": "fotogramas por segundo",
+    "nota": "Permitió la sincronización perfecta y fluida del sonido óptico en la pista lateral del celuloide."
+  },
+  {
+    "id": "cine_078",
+    "categoria": "cine_tv",
+    "dificultad": "extremo",
+    "pregunta": "¿En qué año se estrenó 'El cantor de jazz' (The Jazz Singer), considerada la primera película con sonido sincronizado?",
+    "respuesta": 1927,
+    "unidad": "año",
+    "nota": "El 6 de octubre de 1927 producida por Warner Bros. con el sistema Vitaphone."
+  },
+  {
+    "id": "cine_079",
+    "categoria": "cine_tv",
+    "dificultad": "extremo",
+    "pregunta": "¿Cuántos extras humanos reales contrataron para la monumental escena del funeral en la película 'Gandhi' (1982) de Richard Attenborough?",
+    "respuesta": 300000,
+    "unidad": "extras",
+    "nota": "Récord Guinness para la mayor cantidad de extras convocados en una escena cinematográfica."
+  },
+  {
+    "id": "cine_080",
+    "categoria": "cine_tv",
+    "dificultad": "extremo",
+    "pregunta": "¿En qué año se fundó la Cinemateca Francesa (Cinémathèque Française) por Henri Langlois y Georges Franju?",
+    "respuesta": 1936,
+    "unidad": "año",
+    "nota": "Cuna intelectual donde se formaron los futuros directores de la Nouvelle Vague francesa."
+  },
+  {
+    "id": "cine_081",
+    "categoria": "cine_tv",
+    "dificultad": "extremo",
+    "pregunta": "¿Cuántos minutos de duración tiene la película experimental 'La región central' (1971) de Michael Snow?",
+    "respuesta": 190,
+    "unidad": "minutos",
+    "nota": "Filmada en una montaña desolada de Quebec mediante un brazo mecánico robótico sin humanos."
+  },
+  {
+    "id": "cine_082",
+    "categoria": "cine_tv",
+    "dificultad": "extremo",
+    "pregunta": "¿En qué año el director de fotografía Gregg Toland utilizó por primera vez la técnica del 'foco profundo' (deep focus) en Ciudadano Kane?",
+    "respuesta": 1941,
+    "unidad": "año",
+    "nota": "Permitió mantener nítidos simultáneamente el primer plano, el término medio y el fondo del encuadre."
+  },
+  {
+    "id": "cine_083",
+    "categoria": "cine_tv",
+    "dificultad": "extremo",
+    "pregunta": "¿Cuántos cortes de montaje tiene la famosa escena de la ducha en 'Psicosis' de Alfred Hitchcock en solo 45 segundos de acción?",
+    "respuesta": 78,
+    "unidad": "cortes",
+    "nota": "Hitchcock utilizó 78 ángulos y cortes de montaje ultra rápidos al compás de los chirridos de cuerdas de Bernard Herrmann."
+  },
+  {
+    "id": "cine_084",
+    "categoria": "cine_tv",
+    "dificultad": "extremo",
+    "pregunta": "¿En qué año Georges Méliès estrenó su emblemático cortometraje de ciencia ficción 'Viaje a la Luna' (Le Voyage dans la Lune)?",
+    "respuesta": 1902,
+    "unidad": "año",
+    "nota": "Con la icónica imagen de la cápsula espacial estrellándose en el ojo de la Luna."
+  },
+  {
+    "id": "cine_085",
+    "categoria": "cine_tv",
+    "dificultad": "extremo",
+    "pregunta": "¿Cuántos millones de dólares costó la producción de 'Piratas del Caribe: En mareas misteriosas' (2011), una de las más caras de la historia?",
+    "respuesta": 379,
+    "unidad": "millones de dólares",
+    "nota": "El presupuesto bruto superó los 410 millones, quedando en torno a 379 millones netos con deducciones impositivas."
+  },
+  {
+    "id": "cine_086",
+    "categoria": "cine_tv",
+    "dificultad": "extremo",
+    "pregunta": "¿En qué año se fundó el estudio de animación Studio Ghibli en Tokio por Hayao Miyazaki e Isao Takahata?",
+    "respuesta": 1985,
+    "unidad": "año",
+    "nota": "El 15 de junio de 1985 tras el éxito obtenido con Nausicaä del Valle del Viento."
+  },
+  {
+    "id": "cine_087",
+    "categoria": "cine_tv",
+    "dificultad": "extremo",
+    "pregunta": "¿Cuántos metros de película de 35 mm se utilizan aproximadamente para proyectar una película de 90 minutos a 24 fps?",
+    "respuesta": 2465,
+    "unidad": "metros",
+    "nota": "A razón de 27,4 metros por minuto de proyección en bobinas tradicionales de celuloide."
+  },
+  {
+    "id": "cine_088",
+    "categoria": "cine_tv",
+    "dificultad": "extremo",
+    "pregunta": "¿En qué año se estrenó 'El acorazado Potemkin' de Serguéi Eisenstein con la famosa escena de las escaleras de Odesa?",
+    "respuesta": 1925,
+    "unidad": "año",
+    "nota": "Cátedra viva de teoría del montaje dialéctico estrenada en Moscú en diciembre de 1925."
+  },
+  {
+    "id": "cine_089",
+    "categoria": "cine_tv",
+    "dificultad": "extremo",
+    "pregunta": "¿Cuántas tomas continuas aparentes (editadas para simular un solo plano secuencia) componen la película 'Birdman' de Alejandro G. Iñárritu?",
+    "respuesta": 16,
+    "unidad": "tomas",
+    "nota": "El director de fotografía Emmanuel Lubezki unió con precisión digital unas 16 tomas extensas."
+  },
+  {
+    "id": "cine_090",
+    "categoria": "cine_tv",
+    "dificultad": "extremo",
+    "pregunta": "¿En qué año se estrenó 'El triunfo de la voluntad' de Leni Riefenstahl, tristemente célebre por su técnica propagandística?",
+    "respuesta": 1935,
+    "unidad": "año",
+    "nota": "Filmada durante el congreso del partido nazi en Núremberg en septiembre de 1934."
+  },
+  {
+    "id": "cine_091",
+    "categoria": "cine_tv",
+    "dificultad": "extremo",
+    "pregunta": "¿Cuántas horas dura la versión completa y definitiva de la monumental obra documental 'Shoah' (1985) de Claude Lanzmann?",
+    "respuesta": 9,
+    "unidad": "horas",
+    "nota": "Dura exactamente 9 horas y media (566 minutos) testimoniales sobre el Holocausto."
+  },
+  {
+    "id": "cine_092",
+    "categoria": "cine_tv",
+    "dificultad": "extremo",
+    "pregunta": "¿En qué año se fundó el estudio Metro-Goldwyn-Mayer (MGM) por la fusión liderada por Marcus Loew?",
+    "respuesta": 1924,
+    "unidad": "año",
+    "nota": "El 17 de abril de 1924 adoptando al león 'Leo' como imagen insignia rugiente."
+  },
+  {
+    "id": "cine_093",
+    "categoria": "cine_tv",
+    "dificultad": "extremo",
+    "pregunta": "¿Cuántos días de rodaje en Nueva Zelanda demandó la filmación simultánea de la trilogía completa de 'El Señor de los Anillos'?",
+    "respuesta": 438,
+    "unidad": "días",
+    "nota": "Peter Jackson filmó las tres películas de corrido entre octubre de 1999 y diciembre de 2000."
+  },
+  {
+    "id": "cine_094",
+    "categoria": "cine_tv",
+    "dificultad": "extremo",
+    "pregunta": "¿En qué año se estrenó 'L'Atalante' de Jean Vigo, joya del realismo poético francés?",
+    "respuesta": 1934,
+    "unidad": "año",
+    "nota": "Único largometraje de Vigo, quien falleció trágicamente de tuberculosis a los 29 años pocas semanas después."
+  },
+  {
+    "id": "cine_095",
+    "categoria": "cine_tv",
+    "dificultad": "extremo",
+    "pregunta": "¿Cuántas claquetas o tomas llegó a exigir Stanley Kubrick a Tom Cruise para una simple escena de cruzar una puerta en Eyes Wide Shut?",
+    "respuesta": 95,
+    "unidad": "tomas",
+    "nota": "Kubrick era famoso por su obsesiva repetición para que los actores perdieran toda artificialidad."
+  },
+  {
+    "id": "cine_096",
+    "categoria": "cine_tv",
+    "dificultad": "extremo",
+    "pregunta": "¿En qué año se fundó Pixar Animation Studios como una corporación independiente tras ser adquirida por Steve Jobs?",
+    "respuesta": 1986,
+    "unidad": "año",
+    "nota": "Jobs le compró la división informática a George Lucas por 5 millones de dólares en febrero de 1986."
+  },
+  {
+    "id": "cine_097",
+    "categoria": "cine_tv",
+    "dificultad": "extremo",
+    "pregunta": "¿Cuántos caballos reales participaron en la filmación de la carrera de cuádrigas de 'Ben-Hur' (1959) en los estudios Cinecittà de Roma?",
+    "respuesta": 78,
+    "unidad": "caballos",
+    "nota": "Se importaron de Yugoslavia y se entrenaron durante meses para la histórica secuencia de 9 minutos."
+  },
+  {
+    "id": "cine_098",
+    "categoria": "cine_tv",
+    "dificultad": "extremo",
+    "pregunta": "¿En qué año se estrenó 'El gabinete del doctor Caligari' de Robert Wiene, piedra fundamental del expresionismo alemán?",
+    "respuesta": 1920,
+    "unidad": "año",
+    "nota": "El 26 de febrero de 1920 en Berlín con sus célebres decorados retorcidos y sombras pintadas."
+  },
+  {
+    "id": "cine_099",
+    "categoria": "cine_tv",
+    "dificultad": "extremo",
+    "pregunta": "¿Cuántos metros de altura alcanzaba la réplica a escala real del barco Titanic construida en Rosarito (México) para el rodaje de James Cameron?",
+    "respuesta": 236,
+    "unidad": "metros",
+    "nota": "Construyeron un 90% del tamaño del barco real montado en un tanque hidráulico de 64 millones de litros."
+  },
+  {
+    "id": "cine_100",
+    "categoria": "cine_tv",
+    "dificultad": "extremo",
+    "pregunta": "¿En qué año se proyectó en Buenos Aires la primera exhibición del cinematógrafo Lumière en el Teatro Odeón?",
+    "respuesta": 1896,
+    "unidad": "año",
+    "nota": "El 18 de julio de 1896 por el empresario Eamonn Pyke, tan solo meses después de su debut en París."
+  }
+]

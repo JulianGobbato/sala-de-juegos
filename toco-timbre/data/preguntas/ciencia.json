@@ -1,0 +1,902 @@
+[
+  {
+    "id": "cie_001",
+    "categoria": "ciencia",
+    "dificultad": "facil",
+    "pregunta": "¿Cuántos huesos tiene el esqueleto de un ser humano adulto?",
+    "respuesta": 206,
+    "unidad": "huesos",
+    "nota": "Al nacer tenemos alrededor de 270 huesos, pero varios se van soldando durante el crecimiento."
+  },
+  {
+    "id": "cie_002",
+    "categoria": "ciencia",
+    "dificultad": "facil",
+    "pregunta": "¿A cuántos grados Celsius hierve el agua pura al nivel del mar y presión atmosférica normal?",
+    "respuesta": 100,
+    "unidad": "°C",
+    "nota": "A mayor altitud la presión atmosférica desciende y el agua hierve a menor temperatura."
+  },
+  {
+    "id": "cie_003",
+    "categoria": "ciencia",
+    "dificultad": "facil",
+    "pregunta": "¿Cuántos dientes tiene la dentadura definitiva completa de una persona adulta (incluyendo las muelas del juicio)?",
+    "respuesta": 32,
+    "unidad": "dientes",
+    "nota": "8 incisivos, 4 caninos, 8 premolares y 12 molares."
+  },
+  {
+    "id": "cie_004",
+    "categoria": "ciencia",
+    "dificultad": "facil",
+    "pregunta": "¿Cuántos corazones tiene un pulpo?",
+    "respuesta": 3,
+    "unidad": "corazones",
+    "nota": "Dos bombean sangre hacia las branquias y el tercero la distribuye al resto del organismo."
+  },
+  {
+    "id": "cie_005",
+    "categoria": "ciencia",
+    "dificultad": "facil",
+    "pregunta": "¿Cuántos planetas oficiales componen el Sistema Solar según la Unión Astronómica Internacional?",
+    "respuesta": 8,
+    "unidad": "planetas",
+    "nota": "Mercurio, Venus, Tierra, Marte, Júpiter, Saturno, Urano y Neptuno (Plutón pasó a ser planeta enano en 2006)."
+  },
+  {
+    "id": "cie_006",
+    "categoria": "ciencia",
+    "dificultad": "facil",
+    "pregunta": "¿Cuántos elementos químicos componen la tabla periódica oficial de la IUPAC en la actualidad?",
+    "respuesta": 118,
+    "unidad": "elementos",
+    "nota": "Desde el Hidrógeno (número atómico 1) hasta el Oganesón (número atómico 118)."
+  },
+  {
+    "id": "cie_007",
+    "categoria": "ciencia",
+    "dificultad": "facil",
+    "pregunta": "¿Cuántos pares de cromosomas tiene una célula somática normal en el ser humano?",
+    "respuesta": 23,
+    "unidad": "pares",
+    "nota": "Totalizan 46 cromosomas en total: 22 pares autosómicos y un par de cromosomas sexuales."
+  },
+  {
+    "id": "cie_008",
+    "categoria": "ciencia",
+    "dificultad": "facil",
+    "pregunta": "¿A cuántos miles de kilómetros por segundo viaja aproximadamente la luz en el vacío?",
+    "respuesta": 300,
+    "unidad": "mil km/s",
+    "nota": "La velocidad exacta es de 299.792,458 kilómetros por segundo."
+  },
+  {
+    "id": "cie_009",
+    "categoria": "ciencia",
+    "dificultad": "facil",
+    "pregunta": "¿Cuántas patas tienen los insectos adultos en su estructura corporal básica?",
+    "respuesta": 6,
+    "unidad": "patas",
+    "nota": "Los arácnidos, en cambio, poseen 8 patas y los crustáceos habitualmente 10."
+  },
+  {
+    "id": "cie_010",
+    "categoria": "ciencia",
+    "dificultad": "facil",
+    "pregunta": "¿A cuántos grados Celsius se congela el agua pura a presión atmosférica normal?",
+    "respuesta": 0,
+    "unidad": "°C",
+    "nota": "Punto de solidificación que define el cero en la escala Celsius de temperatura."
+  },
+  {
+    "id": "cie_011",
+    "categoria": "ciencia",
+    "dificultad": "facil",
+    "pregunta": "¿Cuántos días terrestres tarda aproximadamente la Tierra en dar una vuelta completa alrededor del Sol?",
+    "respuesta": 365,
+    "unidad": "días",
+    "nota": "Exactamente 365 días, 5 horas, 48 minutos y 45 segundos, lo que da origen al año bisiesto."
+  },
+  {
+    "id": "cie_012",
+    "categoria": "ciencia",
+    "dificultad": "facil",
+    "pregunta": "¿Cuántas extremidades en total (brazos más tentáculos) tiene un calamar común?",
+    "respuesta": 10,
+    "unidad": "extremidades",
+    "nota": "8 brazos más cortos provistos de ventosas y 2 tentáculos prensiles largos para cazar."
+  },
+  {
+    "id": "cie_013",
+    "categoria": "ciencia",
+    "dificultad": "facil",
+    "pregunta": "¿En qué año Charles Darwin publicó su revolucionario libro 'El origen de las especies'?",
+    "respuesta": 1859,
+    "unidad": "año",
+    "nota": "El 24 de noviembre de 1859 introduciendo la teoría de la evolución mediante selección natural."
+  },
+  {
+    "id": "cie_014",
+    "categoria": "ciencia",
+    "dificultad": "facil",
+    "pregunta": "¿A cuántos kilómetros por hora puede correr un guepardo (chita) en ráfagas cortas de caza?",
+    "respuesta": 120,
+    "unidad": "km/h",
+    "nota": "El mamífero terrestre más veloz de la Tierra, capaz de acelerar de 0 a 100 km/h en solo 3 segundos."
+  },
+  {
+    "id": "cie_015",
+    "categoria": "ciencia",
+    "dificultad": "facil",
+    "pregunta": "¿Cuántos minutos tarda aproximadamente la luz solar en viajar desde el Sol hasta la superficie de la Tierra?",
+    "respuesta": 8,
+    "unidad": "minutos",
+    "nota": "Aproximadamente 8 minutos y 20 segundos para recorrer los 150 millones de kilómetros de distancia."
+  },
+  {
+    "id": "cie_016",
+    "categoria": "ciencia",
+    "dificultad": "facil",
+    "pregunta": "¿Cuántas cámaras o cavidades internas tiene el corazón de los mamíferos y aves?",
+    "respuesta": 4,
+    "unidad": "cavidades",
+    "nota": "Dos aurículas superiores y dos ventrículos inferiores que separan la sangre oxigenada de la desoxigenada."
+  },
+  {
+    "id": "cie_017",
+    "categoria": "ciencia",
+    "dificultad": "facil",
+    "pregunta": "¿En qué año Albert Einstein publicó su Teoría de la Relatividad Especial con la famosa ecuación E = mc²?",
+    "respuesta": 1905,
+    "unidad": "año",
+    "nota": "En su 'Annus Mirabilis' donde también explicó el efecto fotoeléctrico y el movimiento browniano."
+  },
+  {
+    "id": "cie_018",
+    "categoria": "ciencia",
+    "dificultad": "facil",
+    "pregunta": "¿Cuántas vidas le atribuye la creencia popular tradicional a los gatos en el mundo hispanohablante?",
+    "respuesta": 7,
+    "unidad": "vidas",
+    "nota": "En la cultura anglosajona, en cambio, la tradición mitológica afirma que tienen 9 vidas."
+  },
+  {
+    "id": "cie_019",
+    "categoria": "ciencia",
+    "dificultad": "facil",
+    "pregunta": "¿Cuántos días terrestres tarda aproximadamente la Luna en completar una órbita sideral alrededor de la Tierra?",
+    "respuesta": 27,
+    "unidad": "días",
+    "nota": "Tarda exactamente 27,3 días respecto a las estrellas fijas (29,5 días en el ciclo sinódico de fases)."
+  },
+  {
+    "id": "cie_020",
+    "categoria": "ciencia",
+    "dificultad": "facil",
+    "pregunta": "¿En qué año James Watson y Francis Crick descubrieron la estructura de doble hélice del ADN?",
+    "respuesta": 1953,
+    "unidad": "año",
+    "nota": "Publicado en la revista Nature en abril de 1953 apoyados en la famosa Fotografía 51 de Rosalind Franklin."
+  },
+  {
+    "id": "cie_021",
+    "categoria": "ciencia",
+    "dificultad": "facil",
+    "pregunta": "¿Cuántos litros de sangre tiene aproximadamente el cuerpo de un ser humano adulto de peso promedio?",
+    "respuesta": 5,
+    "unidad": "litros",
+    "nota": "Representa cerca del 7% al 8% del peso corporal total de una persona."
+  },
+  {
+    "id": "cie_022",
+    "categoria": "ciencia",
+    "dificultad": "facil",
+    "pregunta": "¿En qué año se clonó con éxito por primera vez a un mamífero a partir de una célula adulta (la oveja Dolly)?",
+    "respuesta": 1996,
+    "unidad": "año",
+    "nota": "Nació el 5 de julio de 1996 en el Instituto Roslin de Edimburgo (Escocia)."
+  },
+  {
+    "id": "cie_023",
+    "categoria": "ciencia",
+    "dificultad": "facil",
+    "pregunta": "¿Cuántas vértebras cervicales tiene el cuello de una jirafa en su esqueleto?",
+    "respuesta": 7,
+    "unidad": "vértebras",
+    "nota": "Tiene exactamente 7 vértebras cervicales, igual que los humanos, ratones y casi todos los mamíferos."
+  },
+  {
+    "id": "cie_024",
+    "categoria": "ciencia",
+    "dificultad": "facil",
+    "pregunta": "¿A cuántos kilómetros por segundo se desplaza la Tierra en su órbita alrededor del Sol?",
+    "respuesta": 30,
+    "unidad": "km/s",
+    "nota": "Su velocidad orbital media es de 29,78 kilómetros por segundo (unos 107.000 km/h)."
+  },
+  {
+    "id": "cie_025",
+    "categoria": "ciencia",
+    "dificultad": "facil",
+    "pregunta": "¿Cuántas patas tienen las arañas y escorpiones?",
+    "respuesta": 8,
+    "unidad": "patas",
+    "nota": "Pertenecen a la clase de los arácnidos, caracterizados por cuatro pares de patas locomotoras."
+  },
+  {
+    "id": "cie_026",
+    "categoria": "ciencia",
+    "dificultad": "medio",
+    "pregunta": "¿Cuántos meses dura el período de gestación de un elefante africano, el más largo entre los mamíferos terrestres?",
+    "respuesta": 22,
+    "unidad": "meses",
+    "nota": "Casi dos años completos (alrededor de 660 días) de gestación en el vientre materno."
+  },
+  {
+    "id": "cie_027",
+    "categoria": "ciencia",
+    "dificultad": "medio",
+    "pregunta": "¿A cuántos grados bajo cero en la escala Celsius se sitúa el 'Cero Absoluto' teórico de la física?",
+    "respuesta": 273,
+    "unidad": "grados bajo cero (-°C)",
+    "nota": "Exactamente -273,15 °C (0 Kelvin), punto donde las partículas carecen de energía cinética térmica."
+  },
+  {
+    "id": "cie_028",
+    "categoria": "ciencia",
+    "dificultad": "medio",
+    "pregunta": "¿Cuántos millones de kilómetros separan en promedio a la Tierra del Sol (una Unidad Astronómica)?",
+    "respuesta": 150,
+    "unidad": "millones de km",
+    "nota": "La distancia media oficial es de 149,6 millones de kilómetros."
+  },
+  {
+    "id": "cie_029",
+    "categoria": "ciencia",
+    "dificultad": "medio",
+    "pregunta": "¿Cuántos metros por segundo es la velocidad del sonido en el aire seco a 20 grados Celsius?",
+    "respuesta": 343,
+    "unidad": "metros por segundo",
+    "nota": "Equivale a 1.235 kilómetros por hora (Mach 1 a nivel del mar)."
+  },
+  {
+    "id": "cie_030",
+    "categoria": "ciencia",
+    "dificultad": "medio",
+    "pregunta": "¿En qué año se lanzó el telescopio espacial Hubble al espacio a bordo del transbordador Discovery?",
+    "respuesta": 1990,
+    "unidad": "año",
+    "nota": "El 24 de abril de 1990 revolucionando la observación astronómica del universo profundo."
+  },
+  {
+    "id": "cie_031",
+    "categoria": "ciencia",
+    "dificultad": "medio",
+    "pregunta": "¿Cuántos huesos componen el cráneo y la cara humana en su totalidad?",
+    "respuesta": 22,
+    "unidad": "huesos",
+    "nota": "8 huesos craneales que protegen el encéfalo y 14 huesos faciales (sin contar los huesecillos del oído)."
+  },
+  {
+    "id": "cie_032",
+    "categoria": "ciencia",
+    "dificultad": "medio",
+    "pregunta": "¿Cuál es el número atómico del Oro (Au) en la tabla periódica de los elementos?",
+    "respuesta": 79,
+    "unidad": "número atómico",
+    "nota": "Posee 79 protones en el núcleo de su átomo, un metal noble de gran densidad y resistencia a la corrosión."
+  },
+  {
+    "id": "cie_033",
+    "categoria": "ciencia",
+    "dificultad": "medio",
+    "pregunta": "¿Cuántos días dura aproximadamente la gestación de un perro doméstico?",
+    "respuesta": 63,
+    "unidad": "días",
+    "nota": "Oscila habitualmente entre los 58 y 68 días (unas nueve semanas de gestación)."
+  },
+  {
+    "id": "cie_034",
+    "categoria": "ciencia",
+    "dificultad": "medio",
+    "pregunta": "¿En qué año el físico alemán Wilhelm Röntgen descubrió los Rayos X de forma accidental?",
+    "respuesta": 1895,
+    "unidad": "año",
+    "nota": "El 8 de noviembre de 1895 experimentando con tubos de rayos catódicos, ganando el primer Nobel de Física en 1901."
+  },
+  {
+    "id": "cie_035",
+    "categoria": "ciencia",
+    "dificultad": "medio",
+    "pregunta": "¿Cuántos metros puede alcanzar de longitud máxima la ballena azul, el animal más grande que jamás habitó la Tierra?",
+    "respuesta": 30,
+    "unidad": "metros",
+    "nota": "Puede alcanzar hasta 30 metros de longitud y pesar cerca de 180 a 200 toneladas métricas."
+  },
+  {
+    "id": "cie_036",
+    "categoria": "ciencia",
+    "dificultad": "medio",
+    "pregunta": "¿Cuál es el número atómico del Carbono (C), base química de toda la vida orgánica conocida?",
+    "respuesta": 6,
+    "unidad": "número atómico",
+    "nota": "Tiene 6 protones y su capacidad de formar 4 enlaces covalentes estables permite una infinita variedad de moléculas."
+  },
+  {
+    "id": "cie_037",
+    "categoria": "ciencia",
+    "dificultad": "medio",
+    "pregunta": "¿En qué año Alexander Fleming descubrió las propiedades antibióticas del hongo Penicillium (la penicilina)?",
+    "respuesta": 1928,
+    "unidad": "año",
+    "nota": "En septiembre de 1928 en el hospital St. Mary de Londres al observar una placa de estafilococos contaminada."
+  },
+  {
+    "id": "cie_038",
+    "categoria": "ciencia",
+    "dificultad": "medio",
+    "pregunta": "¿Cuántos grados Celsius de temperatura superficial tiene aproximadamente la fotosfera del Sol?",
+    "respuesta": 5500,
+    "unidad": "°C",
+    "nota": "Alrededor de 5.500 °C en la superficie visible (aunque en su núcleo supera los 15 millones de grados)."
+  },
+  {
+    "id": "cie_039",
+    "categoria": "ciencia",
+    "dificultad": "medio",
+    "pregunta": "¿Cuántos huesos integran cada una de las manos humanas (incluyendo carpo, metacarpo y falanges)?",
+    "respuesta": 27,
+    "unidad": "huesos",
+    "nota": "8 en la muñeca (carpo), 5 en la palma (metacarpo) y 14 falanges en los dedos."
+  },
+  {
+    "id": "cie_040",
+    "categoria": "ciencia",
+    "dificultad": "medio",
+    "pregunta": "¿En qué año se completó la primera secuenciación completa del Genoma Humano por el consorcio internacional?",
+    "respuesta": 2003,
+    "unidad": "año",
+    "nota": "En abril de 2003 coincidiendo con el 50 aniversario del descubrimiento de la estructura del ADN."
+  },
+  {
+    "id": "cie_041",
+    "categoria": "ciencia",
+    "dificultad": "medio",
+    "pregunta": "¿A cuántos kilómetros sobre la superficie de la Tierra orbita aproximadamente la Estación Espacial Internacional (EEI)?",
+    "respuesta": 400,
+    "unidad": "kilómetros",
+    "nota": "En órbita baja terrestre a una altitud de entre 400 y 420 km y a 28.000 km/h de velocidad."
+  },
+  {
+    "id": "cie_042",
+    "categoria": "ciencia",
+    "dificultad": "medio",
+    "pregunta": "¿Cuántos pares de costillas tiene una persona normalmente en su caja torácica?",
+    "respuesta": 12,
+    "unidad": "pares",
+    "nota": "24 costillas en total: 7 pares verdaderas, 3 pares falsas y 2 pares flotantes."
+  },
+  {
+    "id": "cie_043",
+    "categoria": "ciencia",
+    "dificultad": "medio",
+    "pregunta": "¿Cuál es el número atómico del Hierro (Fe) en la tabla periódica?",
+    "respuesta": 26,
+    "unidad": "número atómico",
+    "nota": "El metal ferromagnético por excelencia, elemento clave en la hemoglobina para transportar oxígeno."
+  },
+  {
+    "id": "cie_044",
+    "categoria": "ciencia",
+    "dificultad": "medio",
+    "pregunta": "¿En qué año Dimitri Mendeléyev presentó la primera versión ordenada de la Tabla Periódica de los Elementos?",
+    "respuesta": 1869,
+    "unidad": "año",
+    "nota": "El 6 de marzo de 1869 ante la Sociedad Química Rusa, prediciendo la existencia de elementos aún no descubiertos."
+  },
+  {
+    "id": "cie_045",
+    "categoria": "ciencia",
+    "dificultad": "medio",
+    "pregunta": "¿Cuántos días dura aproximadamente la gestación de un gato doméstico?",
+    "respuesta": 65,
+    "unidad": "días",
+    "nota": "El período de gestación felina suele variar entre los 64 y 67 días."
+  },
+  {
+    "id": "cie_046",
+    "categoria": "ciencia",
+    "dificultad": "medio",
+    "pregunta": "¿Cuántos kilómetros por segundo es la velocidad de escape necesaria para abandonar la gravedad de la Tierra?",
+    "respuesta": 11,
+    "unidad": "km/s",
+    "nota": "Aproximadamente 11,2 km/s (unos 40.320 km/h) sin contar la fricción atmosférica."
+  },
+  {
+    "id": "cie_047",
+    "categoria": "ciencia",
+    "dificultad": "medio",
+    "pregunta": "¿En qué año el telescopio espacial James Webb (JWST) fue lanzado al espacio por la NASA y la ESA?",
+    "respuesta": 2021,
+    "unidad": "año",
+    "nota": "El 25 de diciembre de 2021 a bordo de un cohete Ariane 5 rumbo al punto de Lagrange L2."
+  },
+  {
+    "id": "cie_048",
+    "categoria": "ciencia",
+    "dificultad": "medio",
+    "pregunta": "¿Cuántos estómagos o compartimentos gástricos digestivos tienen las vacas y animales rumiantes?",
+    "respuesta": 4,
+    "unidad": "compartimentos",
+    "nota": "Rumen (panza), retículo (bonete), omaso (librillo) y abomaso (cuajar)."
+  },
+  {
+    "id": "cie_049",
+    "categoria": "ciencia",
+    "dificultad": "medio",
+    "pregunta": "¿Cuál es el número atómico de la Plata (Ag) en la tabla periódica?",
+    "respuesta": 47,
+    "unidad": "número atómico",
+    "nota": "Es el elemento químico con la mayor conductividad eléctrica y térmica de todos los metales conocidos."
+  },
+  {
+    "id": "cie_050",
+    "categoria": "ciencia",
+    "dificultad": "medio",
+    "pregunta": "¿En qué año Marie Curie se convirtió en la primera persona en ganar dos premios Nobel en disciplinas distintas?",
+    "respuesta": 1911,
+    "unidad": "año",
+    "nota": "Ganó el Nobel de Física en 1903 y el Nobel de Química en 1911 por el aislamiento del radio y polonio."
+  },
+  {
+    "id": "cie_051",
+    "categoria": "ciencia",
+    "dificultad": "dificil",
+    "pregunta": "¿A cuántos metros de profundidad alcanzó a perforar el Pozo Superprofundo de Kola en Rusia, el más hondo excavado por el hombre?",
+    "respuesta": 12262,
+    "unidad": "metros",
+    "nota": "Alcanzó 12,2 km de profundidad en 1989; las obras se detuvieron al toparse con temperaturas de más de 180 °C."
+  },
+  {
+    "id": "cie_052",
+    "categoria": "ciencia",
+    "dificultad": "dificil",
+    "pregunta": "¿Cuántos kilómetros de circunferencia tiene el Gran Colisionador de Hadrones (LHC) del CERN bajo la frontera franco-suiza?",
+    "respuesta": 27,
+    "unidad": "kilómetros",
+    "nota": "El acelerador de partículas más potente del planeta a 100 metros bajo tierra."
+  },
+  {
+    "id": "cie_053",
+    "categoria": "ciencia",
+    "dificultad": "dificil",
+    "pregunta": "¿En qué año se confirmó experimentalmente en el CERN el descubrimiento del Bosón de Higgs ('la partícula de Dios')?",
+    "respuesta": 2012,
+    "unidad": "año",
+    "nota": "El 4 de julio de 2012 confirmado por los detectores ATLAS y CMS con una certeza de 5 sigmas."
+  },
+  {
+    "id": "cie_054",
+    "categoria": "ciencia",
+    "dificultad": "dificil",
+    "pregunta": "¿Cuántos huesos componen el esqueleto de cada pie humano?",
+    "respuesta": 26,
+    "unidad": "huesos",
+    "nota": "7 en el tarso, 5 en el metatarso y 14 falanges en los dedos del pie."
+  },
+  {
+    "id": "cie_055",
+    "categoria": "ciencia",
+    "dificultad": "dificil",
+    "pregunta": "¿Cuál es el número atómico del Uranio (U), el elemento natural primordial para la fisión nuclear?",
+    "respuesta": 92,
+    "unidad": "número atómico",
+    "nota": "El elemento natural más pesado y con mayor número de protones que se encuentra en la corteza terrestre."
+  },
+  {
+    "id": "cie_056",
+    "categoria": "ciencia",
+    "dificultad": "dificil",
+    "pregunta": "¿Cuántos millones de años atrás se produjo la extinción masiva de los dinosaurios no aviares por el impacto de Chicxulub?",
+    "respuesta": 66,
+    "unidad": "millones de años",
+    "nota": "El límite Cretácico-Paleógeno (K-Pg) fechado hace 66 millones de años en la península de Yucatán."
+  },
+  {
+    "id": "cie_057",
+    "categoria": "ciencia",
+    "dificultad": "dificil",
+    "pregunta": "¿A cuántos hercios (Hz) de frecuencia mínima puede escuchar el oído humano sano en condiciones óptimas?",
+    "respuesta": 20,
+    "unidad": "Hz",
+    "nota": "El rango audible humano típico abarca desde los 20 Hz (graves) hasta los 20.000 Hz (agudos)."
+  },
+  {
+    "id": "cie_058",
+    "categoria": "ciencia",
+    "dificultad": "dificil",
+    "pregunta": "¿En qué año se detectaron por primera vez en la historia las ondas gravitacionales predichas por Einstein por el observatorio LIGO?",
+    "respuesta": 2015,
+    "unidad": "año",
+    "nota": "El 14 de septiembre de 2015 originadas por la fusión de dos agujeros negros masivos."
+  },
+  {
+    "id": "cie_059",
+    "categoria": "ciencia",
+    "dificultad": "dificil",
+    "pregunta": "¿Cuántas lunas o satélites naturales confirmados oficialmente tiene el planeta Júpiter (hasta 2024)?",
+    "respuesta": 95,
+    "unidad": "lunas",
+    "nota": "Encabezadas por las cuatro lunas galileanas mayores: Ío, Europa, Ganímedes y Calisto."
+  },
+  {
+    "id": "cie_060",
+    "categoria": "ciencia",
+    "dificultad": "dificil",
+    "pregunta": "¿A cuántos metros bajo el agua desciende el límite superior de la 'Zona Abisal' oceánica?",
+    "respuesta": 4000,
+    "unidad": "metros",
+    "nota": "Se extiende desde los 4.000 hasta los 6.000 metros de profundidad en oscuridad total y temperaturas gélidas."
+  },
+  {
+    "id": "cie_061",
+    "categoria": "ciencia",
+    "dificultad": "dificil",
+    "pregunta": "¿Cuál es el número atómico del Plomo (Pb) en la tabla periódica?",
+    "respuesta": 82,
+    "unidad": "número atómico",
+    "nota": "Es el elemento estable más pesado de la tabla periódica; todos los elementos con Z > 82 son radiactivos."
+  },
+  {
+    "id": "cie_062",
+    "categoria": "ciencia",
+    "dificultad": "dificil",
+    "pregunta": "¿Cuántos días dura el período de gestación de un canguro rojo hembra antes de que la cría trepe a la bolsa marsupial?",
+    "respuesta": 33,
+    "unidad": "días",
+    "nota": "Apenas un mes; la cría nace diminuta como un poroto y completa su desarrollo mamando en el marsupio."
+  },
+  {
+    "id": "cie_063",
+    "categoria": "ciencia",
+    "dificultad": "dificil",
+    "pregunta": "¿En qué año Isaac Newton publicó sus 'Philosophiae Naturalis Principia Mathematica' con la Ley de Gravitación Universal?",
+    "respuesta": 1687,
+    "unidad": "año",
+    "nota": "El 5 de julio de 1687 con el estímulo financiero de Edmond Halley."
+  },
+  {
+    "id": "cie_064",
+    "categoria": "ciencia",
+    "dificultad": "dificil",
+    "pregunta": "¿Cuántos ojos compuestos y simples (ocelos) tiene habitualmente una abeja obrera?",
+    "respuesta": 5,
+    "unidad": "ojos",
+    "nota": "Dos grandes ojos compuestos laterales y tres pequeños ocelos frontales para detectar luz ultravioleta."
+  },
+  {
+    "id": "cie_065",
+    "categoria": "ciencia",
+    "dificultad": "dificil",
+    "pregunta": "¿A cuántos grados Kelvin equivale el Cero Absoluto de temperatura en la física termodinámica?",
+    "respuesta": 0,
+    "unidad": "Kelvin",
+    "nota": "Propuesta por Lord Kelvin en 1848 sin valores negativos en la escala."
+  },
+  {
+    "id": "cie_066",
+    "categoria": "ciencia",
+    "dificultad": "dificil",
+    "pregunta": "¿En qué año Max Planck introdujo la constante que lleva su nombre (h), inaugurando la Física Cuántica?",
+    "respuesta": 1900,
+    "unidad": "año",
+    "nota": "El 14 de diciembre de 1900 al postular que la energía se emite en paquetes discretos llamados 'cuantos'."
+  },
+  {
+    "id": "cie_067",
+    "categoria": "ciencia",
+    "dificultad": "dificil",
+    "pregunta": "¿Cuántas pulsaciones por minuto puede alcanzar el corazón de un colibrí en pleno vuelo activo?",
+    "respuesta": 1200,
+    "unidad": "latidos por minuto",
+    "nota": "Uno de los ritmos metabólicos más acelerados del reino animal con más de 20 latidos por segundo."
+  },
+  {
+    "id": "cie_068",
+    "categoria": "ciencia",
+    "dificultad": "dificil",
+    "pregunta": "¿Cuántos días terrestres dura un año completo en el planeta Mercurio durante su órbita alrededor del Sol?",
+    "respuesta": 88,
+    "unidad": "días",
+    "nota": "Es el planeta más veloz del Sistema Solar completando su traslación en apenas 87,97 días terrestres."
+  },
+  {
+    "id": "cie_069",
+    "categoria": "ciencia",
+    "dificultad": "dificil",
+    "pregunta": "¿Cuál es el número atómico del Mercurio (Hg), el único metal líquido a temperatura ambiente?",
+    "respuesta": 80,
+    "unidad": "número atómico",
+    "nota": "Se mantiene en estado líquido a temperatura ambiente debido a efectos relativistas en sus electrones 6s."
+  },
+  {
+    "id": "cie_070",
+    "categoria": "ciencia",
+    "dificultad": "dificil",
+    "pregunta": "¿En qué año la sonda espacial Voyager 1 cruzó la heliopausa y se convirtió en el primer objeto humano en ingresar al espacio interestelar?",
+    "respuesta": 2012,
+    "unidad": "año",
+    "nota": "En agosto de 2012 a más de 18.000 millones de kilómetros de distancia del Sol."
+  },
+  {
+    "id": "cie_071",
+    "categoria": "ciencia",
+    "dificultad": "dificil",
+    "pregunta": "¿Cuántos años vive en promedio una tortuga gigante de las Galápagos en su hábitat natural?",
+    "respuesta": 150,
+    "unidad": "años",
+    "nota": "Algunos ejemplares célebres como 'Harriet' han superado los 175 años de edad comprobada."
+  },
+  {
+    "id": "cie_072",
+    "categoria": "ciencia",
+    "dificultad": "dificil",
+    "pregunta": "¿A cuántos kilómetros por hora descienden los vientos dentro de los huracanes de Categoría 5 en la escala Saffir-Simpson (más de)?",
+    "respuesta": 252,
+    "unidad": "km/h",
+    "nota": "Superan los 252 km/h con efectos catastróficos y olas de tormenta destructivas."
+  },
+  {
+    "id": "cie_073",
+    "categoria": "ciencia",
+    "dificultad": "dificil",
+    "pregunta": "¿En qué año se erradicó oficialmente la Viruela en el mundo gracias a la campaña global de vacunación de la OMS?",
+    "respuesta": 1980,
+    "unidad": "año",
+    "nota": "El 8 de mayo de 1980, la primera enfermedad infecciosa humana erradicada por completo de la faz de la Tierra."
+  },
+  {
+    "id": "cie_074",
+    "categoria": "ciencia",
+    "dificultad": "dificil",
+    "pregunta": "¿Cuántos tentáculos tiene una medusa avispa de mar (Chironex fleckeri), el animal marino más venenoso del planeta?",
+    "respuesta": 60,
+    "unidad": "tentáculos",
+    "nota": "Hasta 60 tentáculos de hasta 3 metros de largo capaces de matar a un humano en cuestión de minutos."
+  },
+  {
+    "id": "cie_075",
+    "categoria": "ciencia",
+    "dificultad": "dificil",
+    "pregunta": "¿Cuál es el número atómico del Cobre (Cu), elemento metálico dúctil y excelente conductor?",
+    "respuesta": 29,
+    "unidad": "número atómico",
+    "nota": "Posee 29 protones en el núcleo y fue uno de los primeros metales fundidos en la Edad del Cobre."
+  },
+  {
+    "id": "cie_076",
+    "categoria": "ciencia",
+    "dificultad": "extremo",
+    "pregunta": "¿Cuántos millones de años tiene el fósil de homínido 'Lucy' (Australopithecus afarensis) descubierto en Etiopía en 1974?",
+    "respuesta": 3,
+    "unidad": "millones de años",
+    "nota": "Datada en 3,2 millones de años por Donald Johanson mientras escuchaba 'Lucy in the Sky with Diamonds'."
+  },
+  {
+    "id": "cie_077",
+    "categoria": "ciencia",
+    "dificultad": "extremo",
+    "pregunta": "¿A cuántos hercios (Hz) vibraba el diapasón de referencia del laboratorio de Lord Kelvin cuando definió el tono patrón acústico en 1880?",
+    "respuesta": 435,
+    "unidad": "Hz",
+    "nota": "El antiguo 'diapasón normal francés' fijaba el La en 435 Hz antes de pasar a los 440 Hz en 1939."
+  },
+  {
+    "id": "cie_078",
+    "categoria": "ciencia",
+    "dificultad": "extremo",
+    "pregunta": "¿Cuántas piezas o placas tectónicas mayores componen la litosfera de la Tierra?",
+    "respuesta": 7,
+    "unidad": "placas mayores",
+    "nota": "Norteamericana, Sudamericana, del Pacífico, Africana, Euroasiática, Indoaustraliana y Antártica."
+  },
+  {
+    "id": "cie_079",
+    "categoria": "ciencia",
+    "dificultad": "extremo",
+    "pregunta": "¿En qué año se tomó la primera fotografía real de la sombra de un agujero negro supermasivo (M87*) por el consorcio EHT?",
+    "respuesta": 2019,
+    "unidad": "año",
+    "nota": "El 10 de abril de 2019 revelada al mundo mediante interferometría de muy larga base."
+  },
+  {
+    "id": "cie_080",
+    "categoria": "ciencia",
+    "dificultad": "extremo",
+    "pregunta": "¿Cuántos kilos pesa aproximadamente el corazón de una ballena azul adulta?",
+    "respuesta": 180,
+    "unidad": "kilos",
+    "nota": "Tiene el tamaño aproximado de un auto pequeño y bombea más de 220 litros de sangre por latido."
+  },
+  {
+    "id": "cie_081",
+    "categoria": "ciencia",
+    "dificultad": "extremo",
+    "pregunta": "¿Cuál es la masa atómica estándar del Hidrógeno redondeada al número entero más próximo?",
+    "respuesta": 1,
+    "unidad": "uma",
+    "nota": "1,008 uma, el átomo más simple del universo compuesto por un solo protón y un electrón."
+  },
+  {
+    "id": "cie_082",
+    "categoria": "ciencia",
+    "dificultad": "extremo",
+    "pregunta": "¿Cuántos millones de pares de bases químicas de nucleótidos (A, T, C, G) componen el ADN del genoma humano haploide?",
+    "respuesta": 3200,
+    "unidad": "millones de pares de bases",
+    "nota": "Aproximadamente 3.200 millones de letras químicas distribuidas a lo largo de los 23 cromosomas."
+  },
+  {
+    "id": "cie_083",
+    "categoria": "ciencia",
+    "dificultad": "extremo",
+    "pregunta": "¿En qué año Carl Sagan y la NASA enviaron el disco de oro 'Golden Record' con sonidos e imágenes de la Tierra a bordo de las Voyager?",
+    "respuesta": 1977,
+    "unidad": "año",
+    "nota": "En agosto y septiembre de 1977 con música de Bach, Chuck Berry y saludos en 55 idiomas."
+  },
+  {
+    "id": "cie_084",
+    "categoria": "ciencia",
+    "dificultad": "extremo",
+    "pregunta": "¿A cuántos metros de profundidad máxima pueden sumergirse los cachalotes cazando calamares gigantes en el abismo?",
+    "respuesta": 3000,
+    "unidad": "metros",
+    "nota": "Pueden aguantar la respiración hasta por 90 minutos y soportar presiones aplastantes de 300 atmósferas."
+  },
+  {
+    "id": "cie_085",
+    "categoria": "ciencia",
+    "dificultad": "extremo",
+    "pregunta": "¿Cuál es el número atómico del Wolframio (Tungsteno) (W), metal con el punto de fusión más alto de la tabla periódica (3.422 °C)?",
+    "respuesta": 74,
+    "unidad": "número atómico",
+    "nota": "Utilizado históricamente para los filamentos incandescentes de las bombillas eléctricas."
+  },
+  {
+    "id": "cie_086",
+    "categoria": "ciencia",
+    "dificultad": "extremo",
+    "pregunta": "¿Cuántos corazones tiene una lombriz de tierra común?",
+    "respuesta": 5,
+    "unidad": "arcos aórticos (corazones)",
+    "nota": "Posee 5 pares de arcos aórticos musculares que bombean sangre a través de sus vasos dorsales y ventrales."
+  },
+  {
+    "id": "cie_087",
+    "categoria": "ciencia",
+    "dificultad": "extremo",
+    "pregunta": "¿En qué año se descubrió el asteroide Ceres, el primer objeto descubierto en el cinturón de asteroides por Giuseppe Piazzi?",
+    "respuesta": 1801,
+    "unidad": "año",
+    "nota": "El 1 de enero de 1801 en el observatorio astronómico de Palermo (Sicilia)."
+  },
+  {
+    "id": "cie_088",
+    "categoria": "ciencia",
+    "dificultad": "extremo",
+    "pregunta": "¿Cuántos millones de años de antigüedad tienen los estromatolitos fósiles más antiguos conocidos, primeras evidencias de vida en la Tierra?",
+    "respuesta": 3500,
+    "unidad": "millones de años",
+    "nota": "Estructuras minerales creadas por colonias de cianobacterias fotosintéticas en Australia occidental."
+  },
+  {
+    "id": "cie_089",
+    "categoria": "ciencia",
+    "dificultad": "extremo",
+    "pregunta": "¿A cuántos grados Celsius se eleva la temperatura estimada en el centro del núcleo interno de hierro de la Tierra?",
+    "respuesta": 6000,
+    "unidad": "°C",
+    "nota": "Tan caliente como la superficie del Sol pero mantenido en estado sólido por presiones de 3,6 millones de atmósferas."
+  },
+  {
+    "id": "cie_090",
+    "categoria": "ciencia",
+    "dificultad": "extremo",
+    "pregunta": "¿Cuál es el número atómico del Polonio (Po), elemento radiactivo descubierto por Marie y Pierre Curie en 1898?",
+    "respuesta": 84,
+    "unidad": "número atómico",
+    "nota": "Bautizado en honor a Polonia, la patria natal de Marie Sklodowska Curie."
+  },
+  {
+    "id": "cie_091",
+    "categoria": "ciencia",
+    "dificultad": "extremo",
+    "pregunta": "¿Cuántas veces por segundo baten sus alas las moscas domésticas en vuelo habitual?",
+    "respuesta": 200,
+    "unidad": "aleteos por segundo",
+    "nota": "El rápido aleteo genera el característico zumbido auditivo de unos 200 hercios de tono."
+  },
+  {
+    "id": "cie_092",
+    "categoria": "ciencia",
+    "dificultad": "extremo",
+    "pregunta": "¿En qué año el químico ruso Dmitri Mendeléyev predijo las propiedades del 'eka-aluminio', descubierto años después como Galio?",
+    "respuesta": 1871,
+    "unidad": "año",
+    "nota": "El descubrimiento del galio en 1875 por Lecoq de Boisbaudran demostró la brillantez predictiva de la tabla periódica."
+  },
+  {
+    "id": "cie_093",
+    "categoria": "ciencia",
+    "dificultad": "extremo",
+    "pregunta": "¿A cuántos metros por segundo al cuadrado se redondea comúnmente la aceleración de la gravedad estándar en la superficie terrestre (9,8 m/s²)?",
+    "respuesta": 10,
+    "unidad": "m/s² enteros",
+    "nota": "El valor internacional convencional exacto es de 9,80665 m/s²."
+  },
+  {
+    "id": "cie_094",
+    "categoria": "ciencia",
+    "dificultad": "extremo",
+    "pregunta": "¿Cuántos millones de neuronas tiene aproximadamente el cerebro de un pulpo, distribuidas en dos tercios en sus propios tentáculos?",
+    "respuesta": 500,
+    "unidad": "millones de neuronas",
+    "nota": "Cada tentáculo puede tomar decisiones sensoriales de forma semi-independiente del cerebro central."
+  },
+  {
+    "id": "cie_095",
+    "categoria": "ciencia",
+    "dificultad": "extremo",
+    "pregunta": "¿En qué año se sintetizó por primera vez el elemento químico Fermio (Fm, Z=100) en los restos de la primera explosión termonuclear 'Ivy Mike'?",
+    "respuesta": 1952,
+    "unidad": "año",
+    "nota": "En noviembre de 1952 en el atolón de Enewetak, bautizado en honor a Enrico Fermi."
+  },
+  {
+    "id": "cie_096",
+    "categoria": "ciencia",
+    "dificultad": "extremo",
+    "pregunta": "¿Cuántos días dura el ciclo de rotación sobre su eje del Sol en su zona ecuatorial?",
+    "respuesta": 25,
+    "unidad": "días terrestres",
+    "nota": "Por tratarse de una masa de plasma gaseoso rota diferencialmente: 25 días en el ecuador y 35 en los polos."
+  },
+  {
+    "id": "cie_097",
+    "categoria": "ciencia",
+    "dificultad": "extremo",
+    "pregunta": "¿A cuántos miles de millones de años luz se encuentra la galaxia más lejana observada por el telescopio espacial James Webb (JADES-GS-z14-0)?",
+    "respuesta": 13,
+    "unidad": "miles de millones de años luz",
+    "nota": "Observada tal como era apenas 290 millones de años después del Big Bang."
+  },
+  {
+    "id": "cie_098",
+    "categoria": "ciencia",
+    "dificultad": "extremo",
+    "pregunta": "¿Cuál es el número atómico del Francio (Fr), el elemento natural más inestable y raro de la corteza terrestre?",
+    "respuesta": 87,
+    "unidad": "número atómico",
+    "nota": "Se calcula que en todo momento no hay más de 30 gramos de francio en toda la corteza de la Tierra."
+  },
+  {
+    "id": "cie_099",
+    "categoria": "ciencia",
+    "dificultad": "extremo",
+    "pregunta": "¿Cuántas papilas gustativas tiene aproximadamente la lengua de un ser humano adulto promedio?",
+    "respuesta": 10000,
+    "unidad": "papilas gustativas",
+    "nota": "Se renuevan naturalmente cada dos semanas pero van disminuyendo con la edad avanzada."
+  },
+  {
+    "id": "cie_100",
+    "categoria": "ciencia",
+    "dificultad": "extremo",
+    "pregunta": "¿En qué año se anunció la creación del primer organismo sintético autorreplicable con genoma diseñado por computadora (Mycoplasma mycoides JCVI-syn1.0)?",
+    "respuesta": 2010,
+    "unidad": "año",
+    "nota": "En mayo de 2010 por el equipo liderado por el genetista Craig Venter en el J. Craig Venter Institute."
+  }
+]

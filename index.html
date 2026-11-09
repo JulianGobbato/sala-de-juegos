@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#090d16">
+  <meta name="description" content="Hub de Juegos de Mesa Digitales para jugar entre amigos y en pantalla de TV.">
+  <title>🎲 Sala de Juegos | Hub de Juegos de Mesa</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Bootstrap 5.3 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Estilos del Hub -->
+  <link rel="stylesheet" href="css/hub.css">
+</head>
+<body>
+
+  <!-- ====================================================================
+       BARRA SUPERIOR / LIVING TV HEADER
+       ==================================================================== -->
+  <header class="hub-header">
+    <div class="container d-flex justify-content-between align-items-center">
+      <div class="hub-brand">
+        <span class="hub-brand-icon">🎲</span>
+        <div>
+          <h1 class="hub-title">SALA DE JUEGOS</h1>
+          <p class="hub-subtitle">Hub de Juegos de Mesa</p>
+        </div>
+      </div>
+
+      <div class="d-flex align-items-center gap-2">
+        <button type="button" class="btn-tv-fullscreen" id="btnToggleFullscreen" title="Alternar Pantalla Completa para TV">
+          <span id="fsIcon">📺</span>
+          <span id="fsLabel" class="d-none d-sm-inline">Pantalla Completa</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ====================================================================
+       CONTENIDO PRINCIPAL
+       ==================================================================== -->
+  <main class="container">
+
+    <!-- PANEL SUPERIOR: LA MESA (JUGADORES) -->
+    <section class="table-panel" aria-labelledby="tableTitle">
+      <div class="table-panel-header">
+        <div class="table-title-wrap">
+          <span style="font-size: 1.8rem;">🛋️</span>
+          <div>
+            <h2 class="table-title" id="tableTitle">LA MESA DE JUEGO</h2>
+            <div class="d-flex align-items-center gap-2 mt-1">
+              <span class="table-badge-count" id="playerCountBadge">0 jugadores</span>
+              <span style="color: var(--hub-text-muted); font-size: 0.82rem;" id="playerLimitNotice">(Mesa recomendada: 2 a 10)</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="table-actions">
+          <button type="button" class="btn-table-action btn-shuffle" id="btnShufflePlayers" title="Mezcla el orden de turnos aleatoriamente">
+            <span>🎲</span>
+            <span>Mezclar turnos</span>
+          </button>
+          <button type="button" class="btn-table-action" id="btnDefaultPlayers" title="Cargar la mesa de 6 amigos estándar">
+            <span>👥</span>
+            <span>Cargar 6 amigos</span>
+          </button>
+          <button type="button" class="btn-table-action" id="btnClearPlayers" title="Vaciar la mesa">
+            <span>🗑️</span>
+            <span>Vaciar</span>
+          </button>
+        </div>
+      </div>
+
+      <!-- Formulario para agregar participante -->
+      <form id="addPlayerForm" class="add-player-bar" autocomplete="off" onsubmit="return false;">
+        <input 
+          type="text" 
+          id="newPlayerInput" 
+          class="input-player-name" 
+          placeholder="Nombre del amigo (ej. Martín, Sole, Tito...)" 
+          maxlength="18"
+          aria-label="Nombre del nuevo jugador"
+        >
+        <button type="submit" class="btn-add-player" id="btnAddPlayer">
+          <span>➕</span>
+          <span>Sumar a la mesa</span>
+        </button>
+      </form>
+
+      <!-- Lista / Grilla de fichas de jugadores -->
+      <div class="players-chips-grid" id="playersChipsContainer">
+        <!-- Renderizado dinámicamente -->
+      </div>
+    </section>
+
+    <!-- GRILLA DE JUEGOS (CARTELERA) -->
+    <section class="games-section" aria-labelledby="gamesSectionTitle">
+      <div class="section-header d-flex justify-content-between align-items-end">
+        <div>
+          <h2 class="section-title" id="gamesSectionTitle">CARTELERA DE JUEGOS</h2>
+          <p class="section-subtitle">Elegí a qué jugar en esta ronda con los participantes de la mesa</p>
+        </div>
+      </div>
+
+      <div class="games-grid">
+        <!-- TARJETA 1 (ACTIVO): ¡TOCO TIMBRE! -->
+        <article class="game-card card-active">
+          <div class="game-card-top">
+            <div class="game-icon-badge" style="background: rgba(245, 158, 11, 0.15); border-color: rgba(245, 158, 11, 0.35);">
+              🚌
+            </div>
+            <span class="status-badge available">🟢 Listo para jugar</span>
+          </div>
+
+          <h3 class="game-title">¡TOCO TIMBRE! ME BAJO DEL BONDI</h3>
+          
+          <div>
+            <span class="game-meta-badge">2 a 10 jugadores | Trivia de aproximación</span>
+          </div>
+
+          <p class="game-desc">
+            Trivia porteña de riesgo numérico y apuestas de subida y bajada de pasajeros. Subite al 60, acercate a la cifra sin pasarte y tocá timbre antes de derrapar en la banquina.
+          </p>
+
+          <div class="game-tags">
+            <span class="game-tag">1.000 Preguntas</span>
+            <span class="game-tag">Modo Tarjetero y App</span>
+            <span class="game-tag">Sonidos Web Audio</span>
+            <span class="game-tag">Mesa Sincronizada</span>
+          </div>
+
+          <div class="mt-auto">
+            <a href="toco-timbre/index.html" class="btn-game-action btn-play-primary" id="btnPlayTocoTimbre">
+              <span>▶️</span>
+              <span>Jugar ¡Toco Timbre!</span>
+            </a>
+          </div>
+        </article>
+
+        <!-- TARJETA 2 (ACTIVO): SINTONÍA FINA -->
+        <article class="game-card card-active" style="border-color: rgba(139, 92, 246, 0.45); background: radial-gradient(circle at 90% 10%, rgba(139, 92, 246, 0.12) 0%, rgba(18, 25, 41, 0.85) 60%);">
+          <div class="game-card-top">
+            <div class="game-icon-badge" style="background: rgba(139, 92, 246, 0.2); border-color: rgba(139, 92, 246, 0.4);">
+              📻
+            </div>
+            <span class="status-badge available" style="background: rgba(139, 92, 246, 0.2); color: #c084fc; border-color: rgba(139, 92, 246, 0.45); box-shadow: 0 0 12px rgba(139, 92, 246, 0.3);">🟢 Listo para jugar</span>
+          </div>
+
+          <h3 class="game-title">SINTONÍA FINA</h3>
+
+          <div>
+            <span class="game-meta-badge">2 a 10 jugadores | Telepatía y extremos</span>
+          </div>
+
+          <p class="game-desc">
+            Inspirado en <em>Wavelength</em>. Un juego social de telepatía y calibración mental en equipo para acertar dónde se ubica la aguja secreta en un dial entre dos conceptos opuestos.
+          </p>
+
+          <div class="game-tags">
+            <span class="game-tag">200 Espectros</span>
+            <span class="game-tag">TV + 1 Celular Remoto</span>
+            <span class="game-tag">WebRTC PeerJS</span>
+            <span class="game-tag">Sonidos Web Audio</span>
+          </div>
+
+          <div class="mt-auto">
+            <a href="sintonia-fina/index.html" class="btn-game-action btn-play-primary" style="background: linear-gradient(135deg, #8b5cf6, #6366f1); color: #fff; box-shadow: 0 6px 20px rgba(139, 92, 246, 0.45);">
+              <span>▶️</span>
+              <span>Jugar Sintonía Fina</span>
+            </a>
+          </div>
+        </article>
+
+        <!-- TARJETA 3 (ESTRUCTURA LISTA): ¡EN UNA VUELTA! -->
+        <article class="game-card">
+          <div class="game-card-top">
+            <div class="game-icon-badge" style="background: rgba(16, 185, 129, 0.15); border-color: rgba(16, 185, 129, 0.35);">
+              🔄
+            </div>
+            <span class="status-badge coming-soon">🚧 Próximamente</span>
+          </div>
+
+          <h3 class="game-title">¡EN UNA VUELTA!</h3>
+
+          <div>
+            <span class="game-meta-badge">Cooperativo 2 a 8 jugadores | Conexión de palabras</span>
+          </div>
+
+          <p class="game-desc">
+            Inspirado en la mecánica de <em>Just One</em>. Juego cooperativo de deducción de conceptos rápidos en una sola vuelta de la mesa, donde las pistas repetidas se anulan antes de que el adivinador las vea.
+          </p>
+
+          <div class="game-tags">
+            <span class="game-tag">Cooperativo</span>
+            <span class="game-tag">Rápido & Dinámico</span>
+            <span class="game-tag">Pistas secretas</span>
+            <span class="game-tag">Módulo Conectado</span>
+          </div>
+
+          <div class="mt-auto">
+            <a href="en-una-vuelta/index.html" class="btn-game-action btn-play-secondary">
+              <span>🔄</span>
+              <span>Ver concepto / Sala</span>
+            </a>
+          </div>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <!-- PIE DE PÁGINA -->
+  <footer class="hub-footer text-center">
+    <div class="container">
+      <p class="mb-1">🎲 <strong>Hub de Juegos de Mesa</strong> &mdash; Pensado para jugar en el living, TV y smartphones.</p>
+      <p class="text-secondary small mb-0">Los participantes se sincronizan automáticamente entre todos los juegos.</p>
+    </div>
+  </footer>
+
+  <!-- SCRIPT COMPARTIDO DEL HUB -->
+  <script src="js/hub-shared.js"></script>
+
+  <!-- LÓGICA DE CONTROL DEL HUB -->
+  <script>
+    (function() {
+      'use strict';
+
+      // Elementos del DOM
+      const chipsContainer = document.getElementById('playersChipsContainer');
+      const countBadge = document.getElementById('playerCountBadge');
+      const addForm = document.getElementById('addPlayerForm');
+      const newPlayerInput = document.getElementById('newPlayerInput');
+      const btnShuffle = document.getElementById('btnShufflePlayers');
+      const btnDefault = document.getElementById('btnDefaultPlayers');
+      const btnClear = document.getElementById('btnClearPlayers');
+      const btnToggleFs = document.getElementById('btnToggleFullscreen');
+      const fsIcon = document.getElementById('fsIcon');
+      const fsLabel = document.getElementById('fsLabel');
+
+      // -----------------------------------------------------------------------
+      // RENDERIZADO DE LA MESA DE JUGADORES
+      // -----------------------------------------------------------------------
+      function renderTablePlayers() {
+        if (!window.HubShared) return;
+        const players = window.HubShared.getHubPlayers(true);
+
+        // Actualizar contador
+        const total = players.length;
+        countBadge.textContent = `${total} ${total === 1 ? 'jugador' : 'jugadores'}`;
+
+        if (total === 0) {
+          chipsContainer.innerHTML = '<div class="players-empty-msg">No hay participantes en la mesa. Escribí un nombre arriba o hacé clic en "Cargar 6 amigos".</div>';
+          return;
+        }
+
+        chipsContainer.innerHTML = '';
+        players.forEach((p, idx) => {
+          const chip = document.createElement('div');
+          chip.className = 'player-chip';
+          chip.innerHTML = `
+            <span class="player-chip-order">#${idx + 1}</span>
+            <span class="player-chip-emoji">${p.emoji || '👤'}</span>
+            <span class="player-chip-name">${escapeHtml(p.name)}</span>
+            <button type="button" class="player-chip-remove" title="Quitar a ${escapeHtml(p.name)} de la mesa" data-idx="${idx}">✕</button>
+          `;
+
+          // Evento quitar jugador
+          const removeBtn = chip.querySelector('.player-chip-remove');
+          removeBtn.addEventListener('click', (e) => {
+            e.stopPropagation();
+            window.HubShared.removeHubPlayer(idx);
+            renderTablePlayers();
+          });
+
+          chipsContainer.appendChild(chip);
+        });
+      }
+
+      function escapeHtml(str) {
+        const div = document.createElement('div');
+        div.textContent = str || '';
+        return div.innerHTML;
+      }
+
+      // -----------------------------------------------------------------------
+      // EVENTOS DE AGREGAR / EDITAR MESA
+      // -----------------------------------------------------------------------
+      addForm.addEventListener('submit', (e) => {
+        e.preventDefault();
+        const name = newPlayerInput.value.trim();
+        if (!name) return;
+
+        const current = window.HubShared.getHubPlayers(false);
+        if (current.length >= window.HubShared.MAX_PLAYERS) {
+          alert(`La mesa admite hasta un máximo de ${window.HubShared.MAX_PLAYERS} jugadores.`);
+          return;
+        }
+
+        window.HubShared.addHubPlayer(name);
+        newPlayerInput.value = '';
+        renderTablePlayers();
+        newPlayerInput.focus();
+      });
+
+      btnShuffle.addEventListener('click', () => {
+        window.HubShared.shuffleHubPlayers();
+        renderTablePlayers();
+        // Animación de agitación visual
+        chipsContainer.style.transition = 'transform 0.15s ease';
+        chipsContainer.style.transform = 'scale(0.98)';
+        setTimeout(() => {
+          chipsContainer.style.transform = 'scale(1)';
+        }, 150);
+      });
+
+      btnDefault.addEventListener('click', () => {
+        window.HubShared.resetHubPlayersToDefault();
+        renderTablePlayers();
+      });
+
+      btnClear.addEventListener('click', () => {
+        if (confirm('¿Vaciar la mesa de participantes?')) {
+          window.HubShared.clearHubPlayers();
+          renderTablePlayers();
+        }
+      });
+
+      // Escuchar cambios sincronizados desde otras pestañas o ventanas
+      window.addEventListener('storage', (e) => {
+        if (e.key === window.HubShared.STORAGE_KEY) {
+          renderTablePlayers();
+        }
+      });
+
+      window.addEventListener('hubPlayersChanged', () => {
+        renderTablePlayers();
+      });
+
+      // -----------------------------------------------------------------------
+      // PANTALLA COMPLETA (FULLSCREEN API PARA TV)
+      // -----------------------------------------------------------------------
+      function isFullscreen() {
+        return !!(
+          document.fullscreenElement ||
+          document.webkitFullscreenElement ||
+          document.mozFullScreenElement ||
+          document.msFullscreenElement
+        );
+      }
+
+      function toggleFullscreen() {
+        if (!isFullscreen()) {
+          const docEl = document.documentElement;
+          if (docEl.requestFullscreen) {
+            docEl.requestFullscreen().catch(err => console.warn('Error fullscreen:', err));
+          } else if (docEl.webkitRequestFullscreen) {
+            docEl.webkitRequestFullscreen();
+          } else if (docEl.mozRequestFullScreen) {
+            docEl.mozRequestFullScreen();
+          } else if (docEl.msRequestFullscreen) {
+            docEl.msRequestFullscreen();
+          }
+        } else {
+          if (document.exitFullscreen) {
+            document.exitFullscreen().catch(err => console.warn('Error exit fullscreen:', err));
+          } else if (document.webkitExitFullscreen) {
+            document.webkitExitFullscreen();
+          } else if (document.mozCancelFullScreen) {
+            document.mozCancelFullScreen();
+          } else if (document.msExitFullscreen) {
+            document.msExitFullscreen();
+          }
+        }
+      }
+
+      function updateFullscreenUI() {
+        const inFs = isFullscreen();
+        if (inFs) {
+          fsIcon.textContent = '🪟';
+          if (fsLabel) fsLabel.textContent = 'Salir de Pantalla Completa';
+          btnToggleFs.title = 'Salir de Pantalla Completa';
+        } else {
+          fsIcon.textContent = '📺';
+          if (fsLabel) fsLabel.textContent = 'Pantalla Completa';
+          btnToggleFs.title = 'Alternar Pantalla Completa para TV';
+        }
+      }
+
+      btnToggleFs.addEventListener('click', toggleFullscreen);
+
+      document.addEventListener('fullscreenchange', updateFullscreenUI);
+      document.addEventListener('webkitfullscreenchange', updateFullscreenUI);
+      document.addEventListener('mozfullscreenchange', updateFullscreenUI);
+      document.addEventListener('MSFullscreenChange', updateFullscreenUI);
+
+      // Iniciar
+      renderTablePlayers();
+    })();
+  </script>
+</body>
+</html>

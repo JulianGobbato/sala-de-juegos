@@ -1,0 +1,902 @@
+[
+  {
+    "id": "biz_001",
+    "categoria": "bizarro",
+    "dificultad": "facil",
+    "pregunta": "¿Cuántos dedos en total (sumando manos y pies) tiene una persona con polidactilia estándar de un dedo extra por extremidad?",
+    "respuesta": 24,
+    "unidad": "dedos",
+    "nota": "La polidactilia clásica más frecuente añade un sexto dedo en cada extremidad, sumando 6 por miembro (24 en total)."
+  },
+  {
+    "id": "biz_002",
+    "categoria": "bizarro",
+    "dificultad": "facil",
+    "pregunta": "¿Cuántas horas seguidas duró el récord Guinness del beso más largo del mundo, logrado en Tailandia en 2013?",
+    "respuesta": 58,
+    "unidad": "horas",
+    "nota": "Ekkachai y Laksana Tiranarat se besaron durante 58 horas, 35 minutos y 58 segundos sin dormir ni sentarse."
+  },
+  {
+    "id": "biz_003",
+    "categoria": "bizarro",
+    "dificultad": "facil",
+    "pregunta": "¿Cuántos años cumplidos tenía la persona más longeva confirmada de la historia humana (la francesa Jeanne Calment)?",
+    "respuesta": 122,
+    "unidad": "años",
+    "nota": "Jeanne Calment nació en 1875 y falleció en 1997 a los 122 años y 164 días."
+  },
+  {
+    "id": "biz_004",
+    "categoria": "bizarro",
+    "dificultad": "facil",
+    "pregunta": "¿Cuántos hot dogs completos (salchicha con pan) comió Joey Chestnut en solo 10 minutos para su récord mundial en 2021?",
+    "respuesta": 76,
+    "unidad": "hot dogs",
+    "nota": "Lo logró en el famoso concurso anual del 4 de julio en Coney Island, batiendo su propia marca mundial."
+  },
+  {
+    "id": "biz_005",
+    "categoria": "bizarro",
+    "dificultad": "facil",
+    "pregunta": "¿Cuántos corazones tiene en su cuerpo un pulpo común?",
+    "respuesta": 3,
+    "unidad": "corazones",
+    "nota": "Tienen dos corazones branquiales que bombean sangre a las branquias y un corazón sistémico central que la bombea al resto del cuerpo."
+  },
+  {
+    "id": "biz_006",
+    "categoria": "bizarro",
+    "dificultad": "facil",
+    "pregunta": "¿Cuántas horas seguidas pasó voluntariamente despierto Randy Gardner en 1964, récord mundial científico sin estimulantes?",
+    "respuesta": 264,
+    "unidad": "horas",
+    "nota": "Fueron exactamente 11 días completos despierto para un experimento de la Universidad de Stanford."
+  },
+  {
+    "id": "biz_007",
+    "categoria": "bizarro",
+    "dificultad": "facil",
+    "pregunta": "¿Cuántas vidas le atribuye la cultura popular anglosajona a un gato (a diferencia de las 7 tradicionales en español)?",
+    "respuesta": 9,
+    "unidad": "vidas",
+    "nota": "En los países de habla inglesa, la leyenda popular sostiene que los gatos tienen nueve vidas ('nine lives')."
+  },
+  {
+    "id": "biz_008",
+    "categoria": "bizarro",
+    "dificultad": "facil",
+    "pregunta": "¿Cuántas remeras (camisetas) puestas al mismo tiempo vistió el canadiense Ted Hastings para un récord Guinness en 2019?",
+    "respuesta": 260,
+    "unidad": "remeras",
+    "nota": "Necesitó remeras que iban desde talle M hasta 20XL para que entraran una sobre otra."
+  },
+  {
+    "id": "biz_009",
+    "categoria": "bizarro",
+    "dificultad": "facil",
+    "pregunta": "¿Cuántos días estuvieron atrapados bajo tierra los 33 mineros chilenos en la mina San José en 2010 antes del rescate?",
+    "respuesta": 69,
+    "unidad": "días",
+    "nota": "Fueron rescatados sanos y salvos a través de la cápsula Fénix 2 tras más de dos meses a 700 metros de profundidad."
+  },
+  {
+    "id": "biz_010",
+    "categoria": "bizarro",
+    "dificultad": "facil",
+    "pregunta": "¿Cuántos ojos tiene una abeja obrera típica (sumando los dos compuestos y los tres ocelos frontales)?",
+    "respuesta": 5,
+    "unidad": "ojos",
+    "nota": "Tienen 2 ojos compuestos grandes para visión general y 3 ojos simples u ocelos en la parte superior de la cabeza para detectar luz."
+  },
+  {
+    "id": "biz_011",
+    "categoria": "bizarro",
+    "dificultad": "facil",
+    "pregunta": "¿Cuántas cavidades estomacales (comúnmente llamadas estómagos) tiene una vaca?",
+    "respuesta": 4,
+    "unidad": "estómagos",
+    "nota": "El estómago de los rumiantes se divide en cuatro cámaras: rumen, retículo, omaso y abomaso."
+  },
+  {
+    "id": "biz_012",
+    "categoria": "bizarro",
+    "dificultad": "facil",
+    "pregunta": "¿En qué año se declaró la insólita 'Guerra del Emú' en Australia, donde el ejército combatió con ametralladoras a miles de aves?",
+    "respuesta": 1932,
+    "unidad": "año",
+    "nota": "Los emúes destrozaban cultivos de trigo; tras gastar miles de municiones con escaso éxito, el ejército se retiró derrotado."
+  },
+  {
+    "id": "biz_013",
+    "categoria": "bizarro",
+    "dificultad": "facil",
+    "pregunta": "¿Cuántos minutos duró la guerra más corta de la historia humana (el conflicto Anglo-Zanzibariano en 1896)?",
+    "respuesta": 38,
+    "unidad": "minutos",
+    "nota": "La Marina Real británica bombardeó el palacio del sultán de Zanzíbar; la rendición se produjo a los 38 minutos."
+  },
+  {
+    "id": "biz_014",
+    "categoria": "bizarro",
+    "dificultad": "facil",
+    "pregunta": "¿Cuántos meses sobrevivió con vida el famoso pollo Mike decapitado en Colorado (EE.UU.) en 1945?",
+    "respuesta": 18,
+    "unidad": "meses",
+    "nota": "El hacha no cortó la arteria carótida ni el tronco encefálico basal que controla funciones vitales; su dueño lo alimentaba con un gotero."
+  },
+  {
+    "id": "biz_015",
+    "categoria": "bizarro",
+    "dificultad": "facil",
+    "pregunta": "¿Cuántos cerebros (ganglios nerviosos segmentarios independientes) tiene una sanguijuela?",
+    "respuesta": 32,
+    "unidad": "cerebros",
+    "nota": "El sistema nervioso de la sanguijuela está dividido en 32 segmentos corporales, cada uno con su propio ganglio de procesamiento."
+  },
+  {
+    "id": "biz_016",
+    "categoria": "bizarro",
+    "dificultad": "facil",
+    "pregunta": "¿Cuántos dedos en total tenía el gato canadiense Jake, poseedor del récord Guinness de polidactilia felina?",
+    "respuesta": 28,
+    "unidad": "dedos",
+    "nota": "Tenía 7 garras en cada una de sus cuatro patas, cuando un gato común tiene 18 dedos en total."
+  },
+  {
+    "id": "biz_017",
+    "categoria": "bizarro",
+    "dificultad": "facil",
+    "pregunta": "¿Cuántos años cumplidos vivió el perro pastor australiano Bluey, uno de los perros más longevos documentados?",
+    "respuesta": 29,
+    "unidad": "años",
+    "nota": "Bluey vivió entre 1910 y 1939 trabajando como perro pastor en Victoria, Australia, alcanzando 29 años y 5 meses."
+  },
+  {
+    "id": "biz_018",
+    "categoria": "bizarro",
+    "dificultad": "facil",
+    "pregunta": "¿Cuántas horas dura aproximadamente el vuelo comercial sin escalas más largo del mundo (Singapur a Nueva York JFK)?",
+    "respuesta": 19,
+    "unidad": "horas",
+    "nota": "Opera con Airbus A350-900ULR de Singapore Airlines y recorre más de 15.300 km en casi 19 horas de vuelo ininterrumpido."
+  },
+  {
+    "id": "biz_019",
+    "categoria": "bizarro",
+    "dificultad": "facil",
+    "pregunta": "¿Cuántos centímetros de estatura medía Robert Wadlow, la persona más alta registrada en la historia humana?",
+    "respuesta": 272,
+    "unidad": "centímetros",
+    "nota": "Medía 2,72 metros (8 pies 11 pulgadas) debido a una hiperplasia de la glándula pituitaria."
+  },
+  {
+    "id": "biz_020",
+    "categoria": "bizarro",
+    "dificultad": "facil",
+    "pregunta": "¿Cuántos centímetros de altura medía Chandra Bahadur Dangi de Nepal, el adulto más bajo jamás documentado?",
+    "respuesta": 54,
+    "unidad": "centímetros",
+    "nota": "Medía exactamente 54,6 centímetros y pesaba apenas 14,5 kilos al ser medido por el Libro Guinness."
+  },
+  {
+    "id": "biz_021",
+    "categoria": "bizarro",
+    "dificultad": "facil",
+    "pregunta": "¿Cuántos días completos puede llegar a sobrevivir una cucaracha común decapitada antes de morir de deshidratación?",
+    "respuesta": 9,
+    "unidad": "días",
+    "nota": "Respiran por espiráculos en todo el cuerpo y no tienen presión sanguínea alta; mueren por no poder beber agua."
+  },
+  {
+    "id": "biz_022",
+    "categoria": "bizarro",
+    "dificultad": "facil",
+    "pregunta": "¿Cuántas bolas de helado apiladas en un solo cucurucho sostuvo Dimitri Panciera en Italia para batir el récord Guinness?",
+    "respuesta": 125,
+    "unidad": "bolas",
+    "nota": "Logró mantenerlas en equilibrio sin derrames durante el tiempo reglamentario exigido por los jueces."
+  },
+  {
+    "id": "biz_023",
+    "categoria": "bizarro",
+    "dificultad": "facil",
+    "pregunta": "¿Cuántos dientes o cerdas aserradas microscópicas tiene un mosquito común en su probóscide para perforar la piel?",
+    "respuesta": 47,
+    "unidad": "dientes",
+    "nota": "Posee 47 bordes afilados microscópicos en sus maxilares que utiliza como sierra para acceder a los capilares sanguíneos."
+  },
+  {
+    "id": "biz_024",
+    "categoria": "bizarro",
+    "dificultad": "facil",
+    "pregunta": "¿En qué año se fundó oficialmente el 'Reino de Redonda', una micronación literaria insólita en una isla deshabitada del Caribe?",
+    "respuesta": 1865,
+    "unidad": "año",
+    "nota": "Fue reclamada por Matthew Dowdy Shiell y sus monarcas posteriores fueron célebres novelistas y poetas británicos y españoles."
+  },
+  {
+    "id": "biz_025",
+    "categoria": "bizarro",
+    "dificultad": "facil",
+    "pregunta": "¿Cuántas personas lograron entrar juntas dentro de un clásico Volkswagen Escarabajo (Fusca) en un récord mundial?",
+    "respuesta": 20,
+    "unidad": "personas",
+    "nota": "Ocurrió en México en 2008 cuando 20 personas se acomodaron dentro del habitáculo cerrando todas las puertas."
+  },
+  {
+    "id": "biz_026",
+    "categoria": "bizarro",
+    "dificultad": "medio",
+    "pregunta": "¿Cuántos años cumplió la tortuga gigante Jonathan en 2024 en la isla de Santa Elena, siendo el animal terrestre vivo más viejo?",
+    "respuesta": 192,
+    "unidad": "años",
+    "nota": "Se calcula que nació hacia 1832; ha vivido a lo largo de reinados de ocho monarcas británicos y 40 presidentes estadounidenses."
+  },
+  {
+    "id": "biz_027",
+    "categoria": "bizarro",
+    "dificultad": "medio",
+    "pregunta": "¿Cuántos metros de altura alcanzó la torre de piezas de Lego más alta jamás construida (en Milán y Tel Aviv)?",
+    "respuesta": 35,
+    "unidad": "metros",
+    "nota": "Superó los 35 metros de altura empleando más de 500.000 ladrillos plásticos unidos por grúas especiales."
+  },
+  {
+    "id": "biz_028",
+    "categoria": "bizarro",
+    "dificultad": "medio",
+    "pregunta": "¿Cuántas latas de gaseosa/cerveza llenas aplastó con la cabeza en un solo minuto el récord Ahmed Tafzi?",
+    "respuesta": 43,
+    "unidad": "latas",
+    "nota": "El atleta germano-argelino utiliza una técnica de cabezazos descendentes sobre una mesa metálica."
+  },
+  {
+    "id": "biz_029",
+    "categoria": "bizarro",
+    "dificultad": "medio",
+    "pregunta": "¿Cuántos kilómetros por hora alcanzó el récord Guinness del inodoro motorizado más veloz del mundo (creado por Colin Furze)?",
+    "respuesta": 88,
+    "unidad": "km/h",
+    "nota": "El inventor británico le adaptó un motor de moto de 140 cc y caja de 4 velocidades con descarga funcional."
+  },
+  {
+    "id": "biz_030",
+    "categoria": "bizarro",
+    "dificultad": "medio",
+    "pregunta": "¿Cuántos clavos de acero dobló con los dientes en un minuto el atleta de fuerza luxemburgués Georges Christen?",
+    "respuesta": 35,
+    "unidad": "clavos",
+    "nota": "Dobla clavos de carpintería de gran calibre en forma de 'U' sujetándolos únicamente con su mandíbula."
+  },
+  {
+    "id": "biz_031",
+    "categoria": "bizarro",
+    "dificultad": "medio",
+    "pregunta": "¿Cuántos días consecutivos se necesitaron para terminar el partido de tenis Isner vs Mahut en Wimbledon 2010?",
+    "respuesta": 3,
+    "unidad": "días",
+    "nota": "Se interrumpió dos veces por falta de luz natural y duró en total 11 horas y 5 minutos de juego real."
+  },
+  {
+    "id": "biz_032",
+    "categoria": "bizarro",
+    "dificultad": "medio",
+    "pregunta": "¿Cuántos games (juegos) se disputaron exclusivamente en el quinto y decisivo set de ese histórico Isner vs Mahut?",
+    "respuesta": 138,
+    "unidad": "games",
+    "nota": "El quinto set terminó 70 a 68 a favor de John Isner, un récord absoluto e irrepetible tras el cambio de reglas de desempate."
+  },
+  {
+    "id": "biz_033",
+    "categoria": "bizarro",
+    "dificultad": "medio",
+    "pregunta": "¿Cuántas horas seguidas cantó karaoke el italiano Leonardo Polverelli para batir el récord mundial de canto ininterrumpido?",
+    "respuesta": 101,
+    "unidad": "horas",
+    "nota": "Cantó 1.295 canciones diferentes durante más de 4 días seguidos con solo descansos de 5 minutos reglamentarios por hora."
+  },
+  {
+    "id": "biz_034",
+    "categoria": "bizarro",
+    "dificultad": "medio",
+    "pregunta": "¿Cuántos minutos seguidos permaneció el neerlandés Wim Hof ('Iceman') sumergido en hielo hasta el cuello en su récord de 2011?",
+    "respuesta": 112,
+    "unidad": "minutos",
+    "nota": "Estuvo 1 hora y 52 minutos cubierto de cubos de hielo controlando su temperatura corporal mediante técnicas de respiración."
+  },
+  {
+    "id": "biz_035",
+    "categoria": "bizarro",
+    "dificultad": "medio",
+    "pregunta": "¿Cuántos años duró oficialmente la 'Guerra de las Islas Sorlingas' entre Países Bajos y las islas inglesas, sin un solo disparo?",
+    "respuesta": 335,
+    "unidad": "años",
+    "nota": "Iniciada en 1651 durante la guerra civil inglesa, se olvidó firmar la paz hasta que un historiador la formalizó en 1986."
+  },
+  {
+    "id": "biz_036",
+    "categoria": "bizarro",
+    "dificultad": "medio",
+    "pregunta": "¿Cuántos caracoles vivos logró ponerse sobre la cara durante 10 segundos el niño Fin Keheler para romper el récord?",
+    "respuesta": 43,
+    "unidad": "caracoles",
+    "nota": "Superó la marca anterior cubriéndose mejillas, frente, nariz y mentón con moluscos vivos."
+  },
+  {
+    "id": "biz_037",
+    "categoria": "bizarro",
+    "dificultad": "medio",
+    "pregunta": "¿Cuántos tatuajes de Homero Simpson tiene el neozelandés Lee Weir en su brazo izquierdo, batiendo un récord Guinness?",
+    "respuesta": 41,
+    "unidad": "tatuajes",
+    "nota": "Muestran a Homero en diversas facetas: rosquillero, astronauta, Jack Torrance, zombi y monje budista."
+  },
+  {
+    "id": "biz_038",
+    "categoria": "bizarro",
+    "dificultad": "medio",
+    "pregunta": "¿Cuántos metros de distancia voló el avión de papel que ostenta el récord mundial Guinness de alcance (arrojado en 2023)?",
+    "respuesta": 88,
+    "unidad": "metros",
+    "nota": "Dillon Ruble, Garrett Jensen y Nathaniel Erickson lograron que su diseño volara 88,31 metros en Crown Point, Indiana."
+  },
+  {
+    "id": "biz_039",
+    "categoria": "bizarro",
+    "dificultad": "medio",
+    "pregunta": "¿Cuántos segundos exactos redondeados es el récord mundial humano de resolución de un cubo de Rubik 3x3 (por Max Park en 2023)?",
+    "respuesta": 3,
+    "unidad": "segundos",
+    "nota": "Max Park detuvo el cronómetro en 3,13 segundos, superando los 3,47 segundos del chino Yusheng Du."
+  },
+  {
+    "id": "biz_040",
+    "categoria": "bizarro",
+    "dificultad": "medio",
+    "pregunta": "¿Cuántas manzanas frescas partió por la mitad con sus bíceps en un minuto la atleta Linsey Lindberg ('Mama Lou')?",
+    "respuesta": 10,
+    "unidad": "manzanas",
+    "nota": "Coloca las manzanas en el pliegue del codo y flexiona el brazo hasta aplastarlas y partirlas por la mitad."
+  },
+  {
+    "id": "biz_041",
+    "categoria": "bizarro",
+    "dificultad": "medio",
+    "pregunta": "¿Cuántos metros de largo sumaban las uñas de ambas manos de Lee Redmond antes de perderlas en un choque en 2009?",
+    "respuesta": 8,
+    "unidad": "metros",
+    "nota": "No se las cortaba desde 1979 y alcanzaron una longitud combinada de 8,65 metros (la uña del pulgar medía 90 cm)."
+  },
+  {
+    "id": "biz_042",
+    "categoria": "bizarro",
+    "dificultad": "medio",
+    "pregunta": "¿Cuántas horas de duración tiene la película experimental sueca 'Ambiancé' (2020) del director Anders Weberg?",
+    "respuesta": 720,
+    "unidad": "horas",
+    "nota": "Dura exactamente 30 días seguidos de proyección continua ininterrumpida."
+  },
+  {
+    "id": "biz_043",
+    "categoria": "bizarro",
+    "dificultad": "medio",
+    "pregunta": "¿Cuántas sandías partió por la mitad con una katana sobre el abdomen de una persona en un minuto el plusmarquista Ashrita Furman?",
+    "respuesta": 26,
+    "unidad": "sandías",
+    "nota": "Un voluntario yacía sobre una mesa mientras Furman cortaba las sandías con extrema precisión milimétrica."
+  },
+  {
+    "id": "biz_044",
+    "categoria": "bizarro",
+    "dificultad": "medio",
+    "pregunta": "¿Cuántos perros paseó simultáneamente con correa una sola persona para romper el récord mundial de paseador en Canadá?",
+    "respuesta": 36,
+    "unidad": "perros",
+    "nota": "Mitchell Rudy paseó 36 perros de refugio a lo largo de un kilómetro completo para promover la adopción canina."
+  },
+  {
+    "id": "biz_045",
+    "categoria": "bizarro",
+    "dificultad": "medio",
+    "pregunta": "¿Cuántos piercings corporales permanentes tiene el alemán Rolf Buchholz, poseedor del récord masculino del planeta?",
+    "respuesta": 453,
+    "unidad": "piercings",
+    "nota": "Posee más de 150 en los labios y rostro y más de 270 en la zona púbica, además de cuernos subdermales de teflón."
+  },
+  {
+    "id": "biz_046",
+    "categoria": "bizarro",
+    "dificultad": "medio",
+    "pregunta": "¿Cuántos dientes naturales desarrollados en boca tenía el indio Vijay Kumar, récord Guinness de mayor dentadura humana?",
+    "respuesta": 37,
+    "unidad": "dientes",
+    "nota": "Presentaba 5 dientes supernumerarios funcionales por encima de los 32 habituales de una dentadura adulta."
+  },
+  {
+    "id": "biz_047",
+    "categoria": "bizarro",
+    "dificultad": "medio",
+    "pregunta": "¿Cuántas copas de vino de vidrio logró sostener apiladas en la boca con un soporte Reymond Celona sin que cayeran?",
+    "respuesta": 39,
+    "unidad": "copas",
+    "nota": "Las colocó en una bandeja con pie sostenida exclusivamente con su mandíbula durante más de 10 segundos."
+  },
+  {
+    "id": "biz_048",
+    "categoria": "bizarro",
+    "dificultad": "medio",
+    "pregunta": "¿Cuántos años cumplió en 2024 la construcción ininterrumpida de la basílica de la Sagrada Familia en Barcelona (iniciada en 1882)?",
+    "respuesta": 142,
+    "unidad": "años",
+    "nota": "Diseñada por Antoni Gaudí, su finalización oficial está prevista hacia el centenario de su muerte en 2026."
+  },
+  {
+    "id": "biz_049",
+    "categoria": "bizarro",
+    "dificultad": "medio",
+    "pregunta": "¿Cuántos metros de altura tiene la montaña rusa de madera más alta del planeta (T Express en Everland, Corea del Sur)?",
+    "respuesta": 60,
+    "unidad": "metros",
+    "nota": "Mide 56 metros de caída principal y 60 metros en su estructura superior con 77 grados de inclinación."
+  },
+  {
+    "id": "biz_050",
+    "categoria": "bizarro",
+    "dificultad": "medio",
+    "pregunta": "¿Cuántas cucharitas de postre logró mantener pegadas a su rostro por succión al mismo tiempo Dalibor Jablanovic?",
+    "respuesta": 31,
+    "unidad": "cucharitas",
+    "nota": "El serbio logra adherir cucharas metálicas a nariz, frente, mejillas y mentón mediante vacío superficial."
+  },
+  {
+    "id": "biz_051",
+    "categoria": "bizarro",
+    "dificultad": "dificil",
+    "pregunta": "¿Cuántas velas de cumpleaños encendidas sopló y apagó de un solo soplido Mike Buytas en su récord mundial?",
+    "respuesta": 1227,
+    "unidad": "velas",
+    "nota": "Estaban colocadas sobre una torta gigante de varios niveles; llenó sus pulmones y las apagó todas al instante."
+  },
+  {
+    "id": "biz_052",
+    "categoria": "bizarro",
+    "dificultad": "dificil",
+    "pregunta": "¿Cuántos fideos espagueti individuales cocidos comió con tenedor en solo 3 minutos la comedora Michelle Lesco?",
+    "respuesta": 405,
+    "unidad": "fideos",
+    "nota": "Comió un fideo largo por vez a una velocidad promedio de más de 2 fideos enteros por segundo."
+  },
+  {
+    "id": "biz_053",
+    "categoria": "bizarro",
+    "dificultad": "dificil",
+    "pregunta": "¿Cuántos huevos crudos de gallina en equilibrio logró sostener en el dorso de una sola mano el turco Ibrahim Dogan?",
+    "respuesta": 24,
+    "unidad": "huevos",
+    "nota": "Los apiló formando una pirámide sobre el dorso de la palma sin que ninguno cayera ni se rompiera."
+  },
+  {
+    "id": "biz_054",
+    "categoria": "bizarro",
+    "dificultad": "dificil",
+    "pregunta": "¿Cuántos kilos pesó la calabaza más pesada registrada en la historia de la agricultura (cultivada por Travis Gienger en 2023)?",
+    "respuesta": 1247,
+    "unidad": "kilos",
+    "nota": "Bautizada 'Michael Jordan', pesó exactamente 1.246,9 kilos en el pesaje del Campeonato Mundial de Half Moon Bay."
+  },
+  {
+    "id": "biz_055",
+    "categoria": "bizarro",
+    "dificultad": "dificil",
+    "pregunta": "¿Cuántas cucharas de metal logró equilibrar en todo su cuerpo simultáneamente el georgiano Etibar Elchiyev ('Hombre Imán')?",
+    "respuesta": 53,
+    "unidad": "cucharas",
+    "nota": "Afirma generar magnetismo bioeléctrico, aunque la ciencia explica el fenómeno por fricción y tensión cutánea."
+  },
+  {
+    "id": "biz_056",
+    "categoria": "bizarro",
+    "dificultad": "dificil",
+    "pregunta": "¿Cuántas botellas de cerveza con chapa metálica destapó con los dientes en un solo minuto el indio Murali K.C.?",
+    "respuesta": 68,
+    "unidad": "botellas",
+    "nota": "Destapó más de una botella por segundo usando sus premolares ante la fiscalización de jueces internacionales."
+  },
+  {
+    "id": "biz_057",
+    "categoria": "bizarro",
+    "dificultad": "dificil",
+    "pregunta": "¿Cuántas rotaciones completas sobre sí mismo dio una persona suspendida en el aire colgada de un taladro eléctrico en un minuto?",
+    "respuesta": 148,
+    "unidad": "giros",
+    "nota": "The Huy Giang logró este mareante récord en Alemania agarrado a una cuerda acoplada al mandril de un taladro industrial."
+  },
+  {
+    "id": "biz_058",
+    "categoria": "bizarro",
+    "dificultad": "dificil",
+    "pregunta": "¿Cuántas horas ininterrumpidas duró el 'subatón' en vivo en Twitch de Ludwig Ahgren en 2021 donde cada suscriptor sumaba segundos?",
+    "respuesta": 744,
+    "unidad": "horas",
+    "nota": "Estuvo en vivo exactamente 31 días seguidos (744 horas), durmiendo y comiendo frente a cámara hasta alcanzar el límite fijado."
+  },
+  {
+    "id": "biz_059",
+    "categoria": "bizarro",
+    "dificultad": "dificil",
+    "pregunta": "¿Cuántas palabras por minuto logró pronunciar Fran Capo, catalogada por Guinness como la mujer más rápida del mundo al hablar?",
+    "respuesta": 603,
+    "unidad": "palabras",
+    "nota": "Leyó un texto del siglo XVII pronunciando 603,32 palabras en 54 segundos en los estudios de televisión de Nueva York."
+  },
+  {
+    "id": "biz_060",
+    "categoria": "bizarro",
+    "dificultad": "dificil",
+    "pregunta": "¿Cuántos millones de litros de agua contiene la piscina gigante del complejo San Alfonso del Mar en Chile?",
+    "respuesta": 250,
+    "unidad": "millones de litros",
+    "nota": "Mide más de un kilómetro de largo y cubre 8 hectáreas con agua de mar filtrada y tratada cristalinamente."
+  },
+  {
+    "id": "biz_061",
+    "categoria": "bizarro",
+    "dificultad": "dificil",
+    "pregunta": "¿Cuántos días sobrevivió solo en una balsa de madera en el Atlántico el marinero chino Poon Lim en 1942?",
+    "respuesta": 133,
+    "unidad": "días",
+    "nota": "Bebía agua de lluvia, sangre de aves marinas y peces que atrapaba con clavos doblados de la balsa."
+  },
+  {
+    "id": "biz_062",
+    "categoria": "bizarro",
+    "dificultad": "dificil",
+    "pregunta": "¿Cuántas dominadas de barra (pull-ups) realizó el japonés Kenta Adachi en 24 horas para romper el récord Guinness en 2024?",
+    "respuesta": 8940,
+    "unidad": "dominadas",
+    "nota": "Mantuvo un ritmo constante con breves pausas de masajes para batir la histórica marca anterior por más de 300 repeticiones."
+  },
+  {
+    "id": "biz_063",
+    "categoria": "bizarro",
+    "dificultad": "dificil",
+    "pregunta": "¿Cuántos escarbadientes (palillos de dientes) se incrustó en su barba el estadounidense Joel Strasser para batir su récord?",
+    "respuesta": 3500,
+    "unidad": "escarbadientes",
+    "nota": "Tardó más de 3 horas en colocarlos cuidadosamente uno a uno sin que cayeran de su vello facial."
+  },
+  {
+    "id": "biz_064",
+    "categoria": "bizarro",
+    "dificultad": "dificil",
+    "pregunta": "¿Cuántas horas seguidas jugó videojuegos sin dormir el australiano Okan Kaya en su maratón de Call of Duty en 2012?",
+    "respuesta": 135,
+    "unidad": "horas",
+    "nota": "Estuvo más de 5 días y medio jugando online con solo pausas acumuladas de 10 minutos cada pocas horas autorizadas por Guinness."
+  },
+  {
+    "id": "biz_065",
+    "categoria": "bizarro",
+    "dificultad": "dificil",
+    "pregunta": "¿Cuántos rollos de papel higiénico logró equilibrar sobre su cabeza el británico John Farnworth sin usar las manos?",
+    "respuesta": 82,
+    "unidad": "rollos",
+    "nota": "Los apiló verticalmente en una sola columna tambaleante y los sostuvo durante los 10 segundos reglamentarios."
+  },
+  {
+    "id": "biz_066",
+    "categoria": "bizarro",
+    "dificultad": "dificil",
+    "pregunta": "¿Cuántos saltos en paracaídas desde avioneta realizó Jay Stokes en solo 24 horas para el récord mundial?",
+    "respuesta": 640,
+    "unidad": "saltos",
+    "nota": "Promedió un salto cada 2 minutos y 15 segundos subiendo y bajando en rotación constante con múltiples aviones en Indiana."
+  },
+  {
+    "id": "biz_067",
+    "categoria": "bizarro",
+    "dificultad": "dificil",
+    "pregunta": "¿Cuántas personas bailaron coordinadas la coreografía de 'Thriller' de Michael Jackson en el Zócalo de México en 2009?",
+    "respuesta": 13597,
+    "unidad": "personas",
+    "nota": "Fue certificado por Guinness como el baile sincronizado de música pop más multitudinario jamás registrado."
+  },
+  {
+    "id": "biz_068",
+    "categoria": "bizarro",
+    "dificultad": "dificil",
+    "pregunta": "¿Cuántos metros de profundidad vertical tiene la cueva Veryovkina en Abjasia, la cueva natural más profunda del mundo?",
+    "respuesta": 2212,
+    "unidad": "metros",
+    "nota": "Los espeleólogos tardan más de una semana de descenso con cuerdas para alcanzar el sifón terminal a 2,2 km bajo tierra."
+  },
+  {
+    "id": "biz_069",
+    "categoria": "bizarro",
+    "dificultad": "dificil",
+    "pregunta": "¿Cuántos pisos de altura tenía el castillo de cartas de póker más alto construido sin pegamento por Bryan Berg?",
+    "respuesta": 64,
+    "unidad": "pisos",
+    "nota": "Midiò casi 8 metros de altura y requirió semanas de colocación milimétrica conteniendo la respiración."
+  },
+  {
+    "id": "biz_070",
+    "categoria": "bizarro",
+    "dificultad": "dificil",
+    "pregunta": "¿Cuántos días tardó Erden Eruç en completar la primera vuelta al mundo impulsada 100% por energía humana (a remo, bici y a pie)?",
+    "respuesta": 1836,
+    "unidad": "días",
+    "nota": "Fueron más de 5 años ininterrumpidos cruzando tres océanos a remo y miles de kilómetros en bicicleta entre 2007 y 2012."
+  },
+  {
+    "id": "biz_071",
+    "categoria": "bizarro",
+    "dificultad": "dificil",
+    "pregunta": "¿Cuántas monedas de 1 yen logró apilar verticalmente en una sola columna en equilibrio el japonés Taishi Ishikado?",
+    "respuesta": 3118,
+    "unidad": "monedas",
+    "nota": "Logró una torre finísima de aluminio que desafió cualquier corriente de aire en una habitación hermética."
+  },
+  {
+    "id": "biz_072",
+    "categoria": "bizarro",
+    "dificultad": "dificil",
+    "pregunta": "¿Cuántas horas seguidas duró el abrazo ininterrumpido más largo certificado por Guinness (por Ron O'Neil y Joe Allison)?",
+    "respuesta": 36,
+    "unidad": "horas",
+    "nota": "Permanecieron abrazados de pie durante día y medio sin soltarse ni dormir en un centro comercial de Inglaterra."
+  },
+  {
+    "id": "biz_073",
+    "categoria": "bizarro",
+    "dificultad": "dificil",
+    "pregunta": "¿Cuántas copas de cristal formaron la pirámide de champaña más grande del mundo montada en Dubái en 2021?",
+    "respuesta": 54740,
+    "unidad": "copas",
+    "nota": "Construida por Moët & Chandon y el hotel Atlantis The Palm, medía más de 8 metros de alto."
+  },
+  {
+    "id": "biz_074",
+    "categoria": "bizarro",
+    "dificultad": "dificil",
+    "pregunta": "¿Cuántas hamburguesas Big Mac había comido Donald Gorske en Wisconsin al certificar su hito de 30.000 hamburguesas en 2018?",
+    "respuesta": 30000,
+    "unidad": "Big Macs",
+    "nota": "Come en promedio 2 Big Macs por día desde 1972 y guarda cada recibo y envoltorio de cartón en su casa."
+  },
+  {
+    "id": "biz_075",
+    "categoria": "bizarro",
+    "dificultad": "dificil",
+    "pregunta": "¿Cuántos metros de largo medía el cigarrillo puro de tabaco más largo del mundo, enrollado por José Castelar en La Habana?",
+    "respuesta": 90,
+    "unidad": "metros",
+    "nota": "Mide casi una cuadra de largo y requirió decenas de kilos de las mejores hojas de tabaco cubano."
+  },
+  {
+    "id": "biz_076",
+    "categoria": "bizarro",
+    "dificultad": "extremo",
+    "pregunta": "¿Cuántas flexiones de brazos (push-ups) completó en una sola hora el atleta Daniel Scali para el récord Guinness en 2022?",
+    "respuesta": 3249,
+    "unidad": "flexiones",
+    "nota": "Mantuvo un promedio sobrehumano de más de 54 flexiones completas por minuto durante 60 minutos seguidos."
+  },
+  {
+    "id": "biz_077",
+    "categoria": "bizarro",
+    "dificultad": "extremo",
+    "pregunta": "¿Cuántos kilos de abejas vivas cubrieron el cuerpo del apicultor chino Gao Bingguo para batir el récord de 'manto de abejas'?",
+    "respuesta": 109,
+    "unidad": "kilos",
+    "nota": "Se calcula que eran más de 1,1 millones de abejas posadas sobre él; recibió más de 2.000 picaduras durante el desafío."
+  },
+  {
+    "id": "biz_078",
+    "categoria": "bizarro",
+    "dificultad": "extremo",
+    "pregunta": "¿Cuántas bicicletas completas desarmó y comió masticando metal el francés Michel Lotito ('Monsieur Mangetout') a lo largo de su vida?",
+    "respuesta": 18,
+    "unidad": "bicicletas",
+    "nota": "Tenía un revestimiento estomacal del doble de grosor de lo normal y tomaba aceite mineral para ayudar a ingerir pedazos de metal."
+  },
+  {
+    "id": "biz_079",
+    "categoria": "bizarro",
+    "dificultad": "extremo",
+    "pregunta": "¿Cuántos años tardó Michel Lotito en comerse un avión liviano completo (un Cessna 150) cortado en trocitos entre 1978 y 1980?",
+    "respuesta": 2,
+    "unidad": "años",
+    "nota": "Fue ingiriendo tornillos, chapas de aluminio y cables mezclados con sus alimentos cotidianos a lo largo de 24 meses."
+  },
+  {
+    "id": "biz_080",
+    "categoria": "bizarro",
+    "dificultad": "extremo",
+    "pregunta": "¿Cuántas latas de aluminio de gaseosa vacías aplastó con el codo en un solo minuto el alemán Muhammad Kahrimanovic?",
+    "respuesta": 148,
+    "unidad": "latas",
+    "nota": "Conocido como 'Hammerhands', aplasta latas apoyadas sobre una mesa descargando golpes secos de codo."
+  },
+  {
+    "id": "biz_081",
+    "categoria": "bizarro",
+    "dificultad": "extremo",
+    "pregunta": "¿Cuántos caracoles de tierra compitieron en el Campeonato Mundial de Carreras de Caracoles de Congham (Inglaterra) en 2019?",
+    "respuesta": 175,
+    "unidad": "caracoles",
+    "nota": "El torneo se realiza anualmente sobre un mantel húmedo circular con un radio de 33 centímetros."
+  },
+  {
+    "id": "biz_082",
+    "categoria": "bizarro",
+    "dificultad": "extremo",
+    "pregunta": "¿Cuántos segundos tardó el caracol más veloz de la historia (llamado Archie en 1995) en recorrer dicho circuito de 33 cm?",
+    "respuesta": 132,
+    "unidad": "segundos",
+    "nota": "Completó la pista en 2 minutos y 12 segundos, una velocidad insólita para los estándares de los gasterópodos."
+  },
+  {
+    "id": "biz_083",
+    "categoria": "bizarro",
+    "dificultad": "extremo",
+    "pregunta": "¿Cuántas personas disfrazadas de Pikachu se congregaron simultáneamente en Yokohama en el desfile récord de The Pokémon Company?",
+    "respuesta": 1000,
+    "unidad": "Pikachus",
+    "nota": "Mil botargas idénticas marcharon por el puerto japonés durante el festival anual 'Pikachu Outbreak'."
+  },
+  {
+    "id": "biz_084",
+    "categoria": "bizarro",
+    "dificultad": "extremo",
+    "pregunta": "¿Cuántos metros de longitud medía la cola de vestido de novia más larga del mundo, confeccionada en Caudry (Francia)?",
+    "respuesta": 8095,
+    "unidad": "metros",
+    "nota": "Medía más de 8 kilómetros de tela de encaje y necesitó decenas de voluntarios para ser desplegada en un parque."
+  },
+  {
+    "id": "biz_085",
+    "categoria": "bizarro",
+    "dificultad": "extremo",
+    "pregunta": "¿Cuántos metros de longitud tenía la pista de brasas calientes al rojo vivo que cruzó descalzo Jurg Montiel sin quemarse?",
+    "respuesta": 72,
+    "unidad": "metros",
+    "nota": "Caminó a paso veloz y constante sobre carbones ardientes a más de 500 °C aprovechando el efecto de baja conductividad térmica de la ceniza."
+  },
+  {
+    "id": "biz_086",
+    "categoria": "bizarro",
+    "dificultad": "extremo",
+    "pregunta": "¿Cuántas ratoneras con resorte activo disparó y frenó con la lengua en solo un minuto Tom Bloomquist?",
+    "respuesta": 36,
+    "unidad": "trampas",
+    "nota": "Colocó las trampas para ratones frente a su rostro y las activó cazándolas con la lengua una a una."
+  },
+  {
+    "id": "biz_087",
+    "categoria": "bizarro",
+    "dificultad": "extremo",
+    "pregunta": "¿Cuántos centímetros de diámetro medía el globo de chicle más grande inflado por la boca (por Chad Fell en 2004 sin usar manos)?",
+    "respuesta": 50,
+    "unidad": "centímetros",
+    "nota": "Infló un globo de 50,8 cm (20 pulgadas) usando tres piezas de chicle Dubble Bubble en Alabama."
+  },
+  {
+    "id": "biz_088",
+    "categoria": "bizarro",
+    "dificultad": "extremo",
+    "pregunta": "¿Cuántas jarras de cerveza de 1 litro de vidrio llenas cargó juntas durante 40 metros el mozo Oliver Strümpfel en Alemania?",
+    "respuesta": 29,
+    "unidad": "jarras",
+    "nota": "Cargó más de 70 kilos entre cerveza y vidrio grueso sin derramar más del 10% permitido por los jueces."
+  },
+  {
+    "id": "biz_089",
+    "categoria": "bizarro",
+    "dificultad": "extremo",
+    "pregunta": "¿Cuántas horas seguidas convivió el sudafricano David Jones dentro de una habitación vidriada con 40 serpientes altamente venenosas?",
+    "respuesta": 288,
+    "unidad": "horas",
+    "nota": "Fueron 12 días completos durmiendo y alimentándose junto a cobras y mambas para recaudar fondos de caridad."
+  },
+  {
+    "id": "biz_090",
+    "categoria": "bizarro",
+    "dificultad": "extremo",
+    "pregunta": "¿Cuántas botellas de gaseosa dietética con pastillas de menta estallaron al unísono en el récord de géiseres en México?",
+    "respuesta": 4334,
+    "unidad": "botellas",
+    "nota": "Miles de personas tiraron caramelos Mentos simultáneamente en botellas de Coca-Cola provocando una lluvia de espuma gigante."
+  },
+  {
+    "id": "biz_091",
+    "categoria": "bizarro",
+    "dificultad": "extremo",
+    "pregunta": "¿Cuántos platos de porcelana para comer rompió de un cabezazo contra una mesa en solo un minuto el atleta Kevin Shelley?",
+    "respuesta": 46,
+    "unidad": "platos",
+    "nota": "Utiliza la frente protegida únicamente con una vincha fina rompiendo pilas de platos cerámicos."
+  },
+  {
+    "id": "biz_092",
+    "categoria": "bizarro",
+    "dificultad": "extremo",
+    "pregunta": "¿Cuántas bolas de bowling (bolos) estándar logró apilar verticalmente una sobre otra sin ningún adhesivo Brian Pankey?",
+    "respuesta": 3,
+    "unidad": "bolas",
+    "nota": "Mantuvo tres esferas pulidas de casi 7 kilos cada una en perfecto equilibrio sobre una superficie plana."
+  },
+  {
+    "id": "biz_093",
+    "categoria": "bizarro",
+    "dificultad": "extremo",
+    "pregunta": "¿Cuántos fósforos de madera encendidos logró apagar con la lengua en la boca en un minuto el atleta Ashrita Furman?",
+    "respuesta": 37,
+    "unidad": "fósforos",
+    "nota": "Apagaba cada cerilla encendida cerrando los labios sobre ella a una velocidad de más de un fósforo cada 2 segundos."
+  },
+  {
+    "id": "biz_094",
+    "categoria": "bizarro",
+    "dificultad": "extremo",
+    "pregunta": "¿En cuántos clubes profesionales de fútbol diferentes jugó oficialmente Sebastián 'El Loco' Abreu, récord Guinness mundial?",
+    "respuesta": 32,
+    "unidad": "clubes",
+    "nota": "Jugó en 11 países distintos (incluyendo San Lorenzo, River, Botafogo, Tecos, Rosario Central y Boston River) a lo largo de 26 años."
+  },
+  {
+    "id": "biz_095",
+    "categoria": "bizarro",
+    "dificultad": "extremo",
+    "pregunta": "¿Cuántas horas ininterrumpidas duró la sesión de DJ más larga de la historia (realizada por el DJ nigeriano Obi en Lagos)?",
+    "respuesta": 240,
+    "unidad": "horas",
+    "nota": "Fueron 10 días completos pasando música con descansos médicos monitoreados de 20 minutos cada día."
+  },
+  {
+    "id": "biz_096",
+    "categoria": "bizarro",
+    "dificultad": "extremo",
+    "pregunta": "¿Cuántos kilos pesó la bola de bandas elásticas de goma más grande del mundo, creada por Joel Waul en Florida?",
+    "respuesta": 4097,
+    "unidad": "kilos",
+    "nota": "Contiene más de 700.000 gomitas elásticas superpuestas y midió más de 2 metros de altura en su jardín."
+  },
+  {
+    "id": "biz_097",
+    "categoria": "bizarro",
+    "dificultad": "extremo",
+    "pregunta": "¿Cuántos años tenía el mensaje dentro de una botella de vidrio más antiguo jamás encontrado en el mar antes de ser abierto?",
+    "respuesta": 132,
+    "unidad": "años",
+    "nota": "Fue arrojada por un barco alemán en 1886 como experimento oceanográfico y hallada en una playa de Australia en 2018."
+  },
+  {
+    "id": "biz_098",
+    "categoria": "bizarro",
+    "dificultad": "extremo",
+    "pregunta": "¿Cuántas copas de vidrio logró hacer cantar con los dedos frotando sus bordes al mismo tiempo Guy Martin?",
+    "respuesta": 40,
+    "unidad": "copas",
+    "nota": "Armó un órgano de copas afinadas con agua para interpretar una melodía completa ante el asombro del público."
+  },
+  {
+    "id": "biz_099",
+    "categoria": "bizarro",
+    "dificultad": "extremo",
+    "pregunta": "¿Cuántos metros de altura medía el muñeco de nieve más alto jamás construido ('Rie-Marie' en Bethel, Maine, EE.UU.)?",
+    "respuesta": 37,
+    "unidad": "metros",
+    "nota": "Pesó más de 6.000 toneladas de nieve y utilizaron neumáticos de tractor como botones y árboles como brazos."
+  },
+  {
+    "id": "biz_100",
+    "categoria": "bizarro",
+    "dificultad": "extremo",
+    "pregunta": "¿Cuántos días consecutivos permaneció enterrado vivo voluntariamente el faquir checo Zdenek Zahradka en una caja de madera sin comida?",
+    "respuesta": 10,
+    "unidad": "días",
+    "nota": "Estuvo sumergido bajo tierra con un tubo de aireación durante 10 días completos respirando con calma para batir la marca mundial."
+  }
+]

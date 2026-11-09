@@ -1,0 +1,902 @@
+[
+  {
+    "id": "mus_001",
+    "categoria": "musica",
+    "dificultad": "facil",
+    "pregunta": "¿Cuántas teclas en total tiene un piano acústico estándar tradicional?",
+    "respuesta": 88,
+    "unidad": "teclas",
+    "nota": "52 teclas blancas para notas naturales y 36 teclas negras para sostenidos y bemoles."
+  },
+  {
+    "id": "mus_002",
+    "categoria": "musica",
+    "dificultad": "facil",
+    "pregunta": "¿Cuántas cuerdas tiene una guitarra española o acústica estándar?",
+    "respuesta": 6,
+    "unidad": "cuerdas",
+    "nota": "Afinadas habitualmente de grave a agudo en Mi, La, Re, Sol, Si y Mi."
+  },
+  {
+    "id": "mus_003",
+    "categoria": "musica",
+    "dificultad": "facil",
+    "pregunta": "¿En qué año se celebró el legendario festival de música y paz de Woodstock en el estado de Nueva York?",
+    "respuesta": 1969,
+    "unidad": "año",
+    "nota": "Del 15 al 18 de agosto de 1969 reuniendo a más de 400.000 personas en la granja de Max Yasgur."
+  },
+  {
+    "id": "mus_004",
+    "categoria": "musica",
+    "dificultad": "facil",
+    "pregunta": "¿Cuántos integrantes fijos tuvo el cuarteto británico 'The Beatles'?",
+    "respuesta": 4,
+    "unidad": "músicos",
+    "nota": "John Lennon, Paul McCartney, George Harrison y Ringo Starr."
+  },
+  {
+    "id": "mus_005",
+    "categoria": "musica",
+    "dificultad": "facil",
+    "pregunta": "¿En qué año se lanzó el álbum 'Thriller' de Michael Jackson, el disco más vendido de la historia de la música?",
+    "respuesta": 1982,
+    "unidad": "año",
+    "nota": "El 30 de noviembre de 1982 producido por Quincy Jones, con más de 70 millones de copias vendidas."
+  },
+  {
+    "id": "mus_006",
+    "categoria": "musica",
+    "dificultad": "facil",
+    "pregunta": "¿Cuántas cuerdas tiene un violín clásico tradicional de concierto?",
+    "respuesta": 4,
+    "unidad": "cuerdas",
+    "nota": "Afinadas en intervalos de quintas justas: Sol, Re, La y Mi."
+  },
+  {
+    "id": "mus_007",
+    "categoria": "musica",
+    "dificultad": "facil",
+    "pregunta": "¿En qué año falleció el rey del rock and roll Elvis Presley en su mansión Graceland de Memphis?",
+    "respuesta": 1977,
+    "unidad": "año",
+    "nota": "El 16 de agosto de 1977 a los 42 años de edad."
+  },
+  {
+    "id": "mus_008",
+    "categoria": "musica",
+    "dificultad": "facil",
+    "pregunta": "¿Cuántas líneas horizontales paralelas componen un pentagrama musical tradicional?",
+    "respuesta": 5,
+    "unidad": "líneas",
+    "nota": "Entre las 5 líneas se forman 4 espacios para ubicar las notas y silencios."
+  },
+  {
+    "id": "mus_009",
+    "categoria": "musica",
+    "dificultad": "facil",
+    "pregunta": "¿En qué año se realizó el mega concierto benéfico 'Live Aid' simultáneamente en Londres y Filadelfia?",
+    "respuesta": 1985,
+    "unidad": "año",
+    "nota": "El 13 de julio de 1985 con la histórica e inolvidable actuación de Queen liderada por Freddie Mercury."
+  },
+  {
+    "id": "mus_010",
+    "categoria": "musica",
+    "dificultad": "facil",
+    "pregunta": "¿Cuántas sinfonías completas compuso el maestro Ludwig van Beethoven?",
+    "respuesta": 9,
+    "unidad": "sinfonías",
+    "nota": "La Novena Sinfonía incluye en su cuarto movimiento el célebre 'Himno a la Alegría' de Schiller."
+  },
+  {
+    "id": "mus_011",
+    "categoria": "musica",
+    "dificultad": "facil",
+    "pregunta": "¿En qué año fue asesinado John Lennon frente al edificio Dakota de Nueva York?",
+    "respuesta": 1980,
+    "unidad": "año",
+    "nota": "El 8 de diciembre de 1980 por disparos de Mark David Chapman."
+  },
+  {
+    "id": "mus_012",
+    "categoria": "musica",
+    "dificultad": "facil",
+    "pregunta": "¿Cuántas notas musicales naturales básicas integran la escala diatónica tradicional occidental?",
+    "respuesta": 7,
+    "unidad": "notas",
+    "nota": "Do, Re, Mi, Fa, Sol, La y Si."
+  },
+  {
+    "id": "mus_013",
+    "categoria": "musica",
+    "dificultad": "facil",
+    "pregunta": "¿En qué año se lanzó el álbum 'Nevermind' de Nirvana que catapultó el movimiento grunge a nivel mundial?",
+    "respuesta": 1991,
+    "unidad": "año",
+    "nota": "El 24 de septiembre de 1991 con el hit arrollador 'Smells Like Teen Spirit'."
+  },
+  {
+    "id": "mus_014",
+    "categoria": "musica",
+    "dificultad": "facil",
+    "pregunta": "¿Cuántos conciertos consecutivos brindó la banda británica Coldplay en el Estadio River Plate en 2022, récord absoluto?",
+    "respuesta": 10,
+    "unidad": "recitales",
+    "nota": "Reunieron a más de 600.000 espectadores superando el récord previo de Roger Waters."
+  },
+  {
+    "id": "mus_015",
+    "categoria": "musica",
+    "dificultad": "facil",
+    "pregunta": "¿En qué año se lanzó el álbum 'The Dark Side of the Moon' de Pink Floyd?",
+    "respuesta": 1973,
+    "unidad": "año",
+    "nota": "El 1 de marzo de 1973, manteniéndose más de 950 semanas en la lista Billboard 200."
+  },
+  {
+    "id": "mus_016",
+    "categoria": "musica",
+    "dificultad": "facil",
+    "pregunta": "¿Cuántas cuerdas tiene un bajo eléctrico tradicional?",
+    "respuesta": 4,
+    "unidad": "cuerdas",
+    "nota": "Afinadas en Mi, La, Re y Sol, coincidentes con las cuatro cuerdas más graves de la guitarra."
+  },
+  {
+    "id": "mus_017",
+    "categoria": "musica",
+    "dificultad": "facil",
+    "pregunta": "¿En qué año se separó oficialmente la banda Patricio Rey y sus Redonditos de Ricota tras el recital de Córdoba?",
+    "respuesta": 2001,
+    "unidad": "año",
+    "nota": "Su último show fue el 4 de agosto de 2001 en el Estadio Chateau Carreras de Córdoba."
+  },
+  {
+    "id": "mus_018",
+    "categoria": "musica",
+    "dificultad": "facil",
+    "pregunta": "¿Cuántos conciertos en el Estadio River Plate dio Roger Waters en su gira de 'The Wall' en 2012?",
+    "respuesta": 9,
+    "unidad": "recitales",
+    "nota": "Convocó a más de 400.000 personas en marzo de 2012 marcando un hito en Argentina."
+  },
+  {
+    "id": "mus_019",
+    "categoria": "musica",
+    "dificultad": "facil",
+    "pregunta": "¿En qué año se lanzó la plataforma de videos musicales MTV en Estados Unidos con el tema 'Video Killed the Radio Star'?",
+    "respuesta": 1981,
+    "unidad": "año",
+    "nota": "El 1 de agosto de 1981 cambiando para siempre la difusión de la música pop y rock."
+  },
+  {
+    "id": "mus_020",
+    "categoria": "musica",
+    "dificultad": "facil",
+    "pregunta": "¿Cuántos miembros fundadores integraron la mítica banda británica 'Queen' en 1970?",
+    "respuesta": 4,
+    "unidad": "músicos",
+    "nota": "Freddie Mercury, Brian May, Roger Taylor y John Deacon."
+  },
+  {
+    "id": "mus_021",
+    "categoria": "musica",
+    "dificultad": "facil",
+    "pregunta": "¿En qué año falleció el astro de la música pop Michael Jackson en Los Ángeles?",
+    "respuesta": 2009,
+    "unidad": "año",
+    "nota": "El 25 de junio de 2009 a los 50 años en vísperas de su gira 'This Is It'."
+  },
+  {
+    "id": "mus_022",
+    "categoria": "musica",
+    "dificultad": "facil",
+    "pregunta": "¿Cuántas cuerdas tiene un ukelele estándar tradicional hawaiano?",
+    "respuesta": 4,
+    "unidad": "cuerdas",
+    "nota": "Afinadas comúnmente en Sol, Do, Mi y La."
+  },
+  {
+    "id": "mus_023",
+    "categoria": "musica",
+    "dificultad": "facil",
+    "pregunta": "¿En qué año falleció Gustavo Cerati tras haber permanecido cuatro años en coma?",
+    "respuesta": 2014,
+    "unidad": "año",
+    "nota": "El 4 de septiembre de 2014 en la Clínica Alcla de Buenos Aires a los 55 años."
+  },
+  {
+    "id": "mus_024",
+    "categoria": "musica",
+    "dificultad": "facil",
+    "pregunta": "¿Cuántos álbumes de estudio oficiales lanzó la banda 'The Beatles' en el Reino Unido entre 1963 y 1970?",
+    "respuesta": 12,
+    "unidad": "álbumes",
+    "nota": "Desde 'Please Please Me' (1963) hasta 'Let It Be' (1970)."
+  },
+  {
+    "id": "mus_025",
+    "categoria": "musica",
+    "dificultad": "facil",
+    "pregunta": "¿En qué año se estrenó 'Bohemian Rhapsody' de Queen en el álbum A Night at the Opera?",
+    "respuesta": 1975,
+    "unidad": "año",
+    "nota": "El 31 de octubre de 1975 como sencillo de casi 6 minutos sin estribillo tradicional."
+  },
+  {
+    "id": "mus_026",
+    "categoria": "musica",
+    "dificultad": "medio",
+    "pregunta": "¿En qué año se llevó a cabo el mítico recital de despedida de Soda Stereo 'El Último Concierto' en River Plate ('Gracias totales')?",
+    "respuesta": 1997,
+    "unidad": "año",
+    "nota": "El 20 de septiembre de 1997 con la célebre frase final inmortalizada por Gustavo Cerati."
+  },
+  {
+    "id": "mus_027",
+    "categoria": "musica",
+    "dificultad": "medio",
+    "pregunta": "¿Cuántos millones de copias vendidas certificadas acumula aproximadamente el álbum 'Back in Black' de AC/DC?",
+    "respuesta": 50,
+    "unidad": "millones de copias",
+    "nota": "Es el segundo álbum más vendido de la historia detrás de Thriller de Michael Jackson."
+  },
+  {
+    "id": "mus_028",
+    "categoria": "musica",
+    "dificultad": "medio",
+    "pregunta": "¿En qué año nació el prolífico compositor austriaco Wolfgang Amadeus Mozart en Salzburgo?",
+    "respuesta": 1756,
+    "unidad": "año",
+    "nota": "El 27 de enero de 1756; a los cinco años ya componía sus primeras piezas musicales."
+  },
+  {
+    "id": "mus_029",
+    "categoria": "musica",
+    "dificultad": "medio",
+    "pregunta": "¿Cuántos recitales brindaron The Rolling Stones en el Estadio River Plate durante su primera visita histórica en 1995?",
+    "respuesta": 5,
+    "unidad": "recitales",
+    "nota": "En febrero de 1995 en el marco de la gira Voodoo Lounge Tour ante 300.000 fanáticos."
+  },
+  {
+    "id": "mus_030",
+    "categoria": "musica",
+    "dificultad": "medio",
+    "pregunta": "¿En qué año se lanzó el álbum debut de rock nacional argentino 'La Balsa' de Los Gatos?",
+    "respuesta": 1967,
+    "unidad": "año",
+    "nota": "El 3 de julio de 1967 compuesta por Litto Nebbia y Tanguito en el baño de La Perla del Once."
+  },
+  {
+    "id": "mus_031",
+    "categoria": "musica",
+    "dificultad": "medio",
+    "pregunta": "¿Cuántos años tenía Kurt Cobain al fallecer trágicamente en abril de 1994, uniéndose al 'Club de los 27'?",
+    "respuesta": 27,
+    "unidad": "años",
+    "nota": "La misma edad a la que fallecieron Jimi Hendrix, Janis Joplin, Jim Morrison y Amy Winehouse."
+  },
+  {
+    "id": "mus_032",
+    "categoria": "musica",
+    "dificultad": "medio",
+    "pregunta": "¿En qué año se publicó el álbum 'Artaud' de Pescado Rabioso liderado por Luis Alberto Spinetta?",
+    "respuesta": 1973,
+    "unidad": "año",
+    "nota": "Inspirado en el poeta francés Antonin Artaud con su célebre sobre octogonal irregular verde y amarillo."
+  },
+  {
+    "id": "mus_033",
+    "categoria": "musica",
+    "dificultad": "medio",
+    "pregunta": "¿Cuántos millones de personas asistieron al concierto gratuito de Rod Stewart en la playa de Copacabana en Año Nuevo de 1994?",
+    "respuesta": 3500000,
+    "unidad": "espectadores",
+    "nota": "Figura en el Libro Guinness de los Récords como el concierto de rock gratuito más multitudinario jamás registrado."
+  },
+  {
+    "id": "mus_034",
+    "categoria": "musica",
+    "dificultad": "medio",
+    "pregunta": "¿En qué año se lanzó el exitoso álbum 'Clics Modernos' de Charly García grabado en Nueva York?",
+    "respuesta": 1983,
+    "unidad": "año",
+    "nota": "Publicado el 5 de noviembre de 1983 con joyas como 'Nos siguen pegando abajo' y 'Los dinosaurios'."
+  },
+  {
+    "id": "mus_035",
+    "categoria": "musica",
+    "dificultad": "medio",
+    "pregunta": "¿Cuántas cuerdas tiene un arpa de orquesta clásica de concierto moderna de pedal?",
+    "respuesta": 47,
+    "unidad": "cuerdas",
+    "nota": "Cuenta con 47 cuerdas y 7 pedales para alterar las notas musicales cromáticamente."
+  },
+  {
+    "id": "mus_036",
+    "categoria": "musica",
+    "dificultad": "medio",
+    "pregunta": "¿En qué año se realizó el concierto de The Beatles en la azotea del edificio de Apple Corps en Londres?",
+    "respuesta": 1969,
+    "unidad": "año",
+    "nota": "El 30 de enero de 1969; fue la última aparición musical pública en vivo del grupo."
+  },
+  {
+    "id": "mus_037",
+    "categoria": "musica",
+    "dificultad": "medio",
+    "pregunta": "¿Cuántos integrantes componían la legendaria superbanda argentina Serú Girán?",
+    "respuesta": 4,
+    "unidad": "músicos",
+    "nota": "Charly García, David Lebón, Pedro Aznar y Oscar Moro."
+  },
+  {
+    "id": "mus_038",
+    "categoria": "musica",
+    "dificultad": "medio",
+    "pregunta": "¿En qué año se lanzó 'Oktubre', segundo álbum de estudio de Patricio Rey y sus Redonditos de Ricota?",
+    "respuesta": 1986,
+    "unidad": "año",
+    "nota": "Con arte de tapa de Rocambole y temas emblemáticos como 'Ji ji ji' y 'Fuegos de octubre'."
+  },
+  {
+    "id": "mus_039",
+    "categoria": "musica",
+    "dificultad": "medio",
+    "pregunta": "¿Cuántas teclas blancas para notas naturales tiene un piano clásico estándar?",
+    "respuesta": 52,
+    "unidad": "teclas blancas",
+    "nota": "52 blancas y 36 negras completan las 88 teclas del teclado reglamentario."
+  },
+  {
+    "id": "mus_040",
+    "categoria": "musica",
+    "dificultad": "medio",
+    "pregunta": "¿En qué año se fundó la histórica banda británica The Rolling Stones en Londres?",
+    "respuesta": 1962,
+    "unidad": "año",
+    "nota": "Mick Jagger, Keith Richards, Brian Jones, Ian Stewart y Dick Taylor tocaron por primera vez en el Marquee Club."
+  },
+  {
+    "id": "mus_041",
+    "categoria": "musica",
+    "dificultad": "medio",
+    "pregunta": "¿Cuántos minutos y segundos dura la versión original de 'Bohemian Rhapsody' (5 minutos y 55 segundos = 355 segundos)?",
+    "respuesta": 355,
+    "unidad": "segundos",
+    "nota": "Casi 6 minutos de duración desafiando las imposiciones radiales de la época."
+  },
+  {
+    "id": "mus_042",
+    "categoria": "musica",
+    "dificultad": "medio",
+    "pregunta": "¿En qué año nació el genio de la música clásica Johann Sebastian Bach en Eisenach (Alemania)?",
+    "respuesta": 1685,
+    "unidad": "año",
+    "nota": "El 31 de marzo de 1685, en el mismo año que nacieron también Händel y Scarlatti."
+  },
+  {
+    "id": "mus_043",
+    "categoria": "musica",
+    "dificultad": "medio",
+    "pregunta": "¿Cuántos recitales realizó Soda Stereo en el Estadio River Plate en su gira de regreso 'Me Verás Volver' en 2007?",
+    "respuesta": 6,
+    "unidad": "recitales",
+    "nota": "Reunieron a más de 390.000 fanáticos en Núñez rompiendo el récord de 5 River que tenía The Rolling Stones."
+  },
+  {
+    "id": "mus_044",
+    "categoria": "musica",
+    "dificultad": "medio",
+    "pregunta": "¿En qué año se fundó la icónica banda de heavy metal Metallica en Los Ángeles por James Hetfield y Lars Ulrich?",
+    "respuesta": 1981,
+    "unidad": "año",
+    "nota": "En octubre de 1981 a raíz de un aviso clasificado publicado por Lars en el periódico The Recycler."
+  },
+  {
+    "id": "mus_045",
+    "categoria": "musica",
+    "dificultad": "medio",
+    "pregunta": "¿Cuántos compases dura habitualmente la estructura armónica tradicional del Blues clásico?",
+    "respuesta": 12,
+    "unidad": "compases",
+    "nota": "El célebre 'blues de doce compases' basado en los acordes de tónica, subdominante y dominante."
+  },
+  {
+    "id": "mus_046",
+    "categoria": "musica",
+    "dificultad": "medio",
+    "pregunta": "¿En qué año se lanzó el álbum 'Abbey Road' de The Beatles con su famosa foto cruzando la senda peatonal?",
+    "respuesta": 1969,
+    "unidad": "año",
+    "nota": "Publicado el 26 de septiembre de 1969, el último que grabaron juntos como banda unida."
+  },
+  {
+    "id": "mus_047",
+    "categoria": "musica",
+    "dificultad": "medio",
+    "pregunta": "¿Cuántas cuerdas dobles tiene un charango andino tradicional?",
+    "respuesta": 10,
+    "unidad": "cuerdas",
+    "nota": "Organizadas en 5 órdenes o pares de cuerdas afinadas habitualmente en Sol, Do, Mi, La y Mi."
+  },
+  {
+    "id": "mus_048",
+    "categoria": "musica",
+    "dificultad": "medio",
+    "pregunta": "¿En qué año se lanzó el disco 'El amor después del amor' de Fito Páez, el más vendido del rock nacional argentino?",
+    "respuesta": 1992,
+    "unidad": "año",
+    "nota": "Superó el millón cien mil placas vendidas con canciones dedicadas a Cecilia Roth."
+  },
+  {
+    "id": "mus_049",
+    "categoria": "musica",
+    "dificultad": "medio",
+    "pregunta": "¿Cuántas notas musicales componen una escala pentatónica tradicional?",
+    "respuesta": 5,
+    "unidad": "notas",
+    "nota": "Muy utilizada en el blues, rock y músicas tradicionales de Oriente y los Andes."
+  },
+  {
+    "id": "mus_050",
+    "categoria": "musica",
+    "dificultad": "medio",
+    "pregunta": "¿En qué año falleció el compositor de tango Astor Piazzolla en Buenos Aires?",
+    "respuesta": 1992,
+    "unidad": "año",
+    "nota": "El 4 de julio de 1992 a los 71 años, revolucionario indiscutido de la música ciudadana."
+  },
+  {
+    "id": "mus_051",
+    "categoria": "musica",
+    "dificultad": "dificil",
+    "pregunta": "¿A cuántos hercios (Hz) de frecuencia vibratoria se estableció el estándar internacional de afinación para la nota La4 (A440)?",
+    "respuesta": 440,
+    "unidad": "Hz",
+    "nota": "Adoptado por la Organización Internacional de Normalización (ISO 16) en 1955."
+  },
+  {
+    "id": "mus_052",
+    "categoria": "musica",
+    "dificultad": "dificil",
+    "pregunta": "¿Cuántas sinfonías completas compuso el prolífico maestro austríaco Franz Joseph Haydn, el 'Padre de la Sinfonía'?",
+    "respuesta": 104,
+    "unidad": "sinfonías",
+    "nota": "Catalogadas oficialmente por Anthony van Hoboken en el catálogo Hoboken."
+  },
+  {
+    "id": "mus_053",
+    "categoria": "musica",
+    "dificultad": "dificil",
+    "pregunta": "¿En qué año se celebró el célebre recital de The Police en el Estadio Obras de Buenos Aires que inauguró las visitas del rock internacional?",
+    "respuesta": 1980,
+    "unidad": "año",
+    "nota": "En diciembre de 1980 con Sting, Andy Summers y Stewart Copeland en plena dictadura militar."
+  },
+  {
+    "id": "mus_054",
+    "categoria": "musica",
+    "dificultad": "dificil",
+    "pregunta": "¿Cuántos conciertos ofreció Taylor Swift en el Estadio River Plate en noviembre de 2023 durante su gira 'The Eras Tour'?",
+    "respuesta": 3,
+    "unidad": "recitales",
+    "nota": "El 9, 11 y 12 de noviembre de 2023 con entradas agotadas en cuestión de horas."
+  },
+  {
+    "id": "mus_055",
+    "categoria": "musica",
+    "dificultad": "dificil",
+    "pregunta": "¿En qué año el grupo sueco ABBA ganó el Festival de Eurovisión en Brighton con el hit 'Waterloo'?",
+    "respuesta": 1974,
+    "unidad": "año",
+    "nota": "El 6 de abril de 1974 iniciando su arrolladora carrera internacional de éxitos."
+  },
+  {
+    "id": "mus_056",
+    "categoria": "musica",
+    "dificultad": "dificil",
+    "pregunta": "¿Cuántos instrumentos de cuerda (violines, violas y violonchelos) construidos por Antonio Stradivari sobreviven aproximadamente hoy?",
+    "respuesta": 650,
+    "unidad": "instrumentos",
+    "nota": "Construyó más de 1.100 instrumentos en Cremona, de los cuales sobreviven unos 650 ejemplares de valor incalculable."
+  },
+  {
+    "id": "mus_057",
+    "categoria": "musica",
+    "dificultad": "dificil",
+    "pregunta": "¿En qué año se estrenó 'La consagración de la primavera' de Igor Stravinski provocando un tumulto y pelea en el teatro de París?",
+    "respuesta": 1913,
+    "unidad": "año",
+    "nota": "El 29 de mayo de 1913 en el Théâtre des Champs-Élysées con coreografía de Vaslav Nijinsky."
+  },
+  {
+    "id": "mus_058",
+    "categoria": "musica",
+    "dificultad": "dificil",
+    "pregunta": "¿Cuántas canciones compuso en total el músico de blues Robert Johnson en sus legendarias grabaciones de 1936 y 1937?",
+    "respuesta": 29,
+    "unidad": "canciones",
+    "nota": "Apenas 29 temas registrados antes de su muerte a los 27 años, base del mito de su pacto con el diablo."
+  },
+  {
+    "id": "mus_059",
+    "categoria": "musica",
+    "dificultad": "dificil",
+    "pregunta": "¿En qué año la banda de rock británica Led Zeppelin lanzó su cuarto álbum de estudio sin título (Led Zeppelin IV) con 'Stairway to Heaven'?",
+    "respuesta": 1971,
+    "unidad": "año",
+    "nota": "El 8 de noviembre de 1971 con los cuatro símbolos esotéricos de los miembros."
+  },
+  {
+    "id": "mus_060",
+    "categoria": "musica",
+    "dificultad": "dificil",
+    "pregunta": "¿Cuántos conciertos en el Estadio Maracaná de Río de Janeiro ofreció Paul McCartney en 1990 reuniendo a 184.000 personas en una sola noche?",
+    "respuesta": 1,
+    "unidad": "recital",
+    "nota": "El 21 de abril de 1990 marcó el récord mundial Guinness de asistencia a un concierto de un artista solista con entrada paga."
+  },
+  {
+    "id": "mus_061",
+    "categoria": "musica",
+    "dificultad": "dificil",
+    "pregunta": "¿En qué año nació el virtuoso guitarrista de rock Jimi Hendrix en Seattle?",
+    "respuesta": 1942,
+    "unidad": "año",
+    "nota": "Nació el 27 de noviembre de 1942 como Johnny Allen Hendrix."
+  },
+  {
+    "id": "mus_062",
+    "categoria": "musica",
+    "dificultad": "dificil",
+    "pregunta": "¿Cuántas cantatas religiosas y profanas compuso Johann Sebastian Bach que hayan sobrevivido hasta nuestros días?",
+    "respuesta": 209,
+    "unidad": "cantatas",
+    "nota": "Se estima que compuso cerca de 300, pero casi un centenar se han perdido con los siglos."
+  },
+  {
+    "id": "mus_063",
+    "categoria": "musica",
+    "dificultad": "dificil",
+    "pregunta": "¿En qué año se celebró la primera edición del Festival de Cosquín de música folclórica en la provincia de Córdoba?",
+    "respuesta": 1961,
+    "unidad": "año",
+    "nota": "En enero de 1961 sobre la Ruta Nacional 38 con las célebres 'Nueve Lunas de Cosquín'."
+  },
+  {
+    "id": "mus_064",
+    "categoria": "musica",
+    "dificultad": "dificil",
+    "pregunta": "¿Cuántos temas integran el mítico álbum doble 'The Wall' de Pink Floyd lanzado en 1979?",
+    "respuesta": 26,
+    "unidad": "temas",
+    "nota": "13 temas en el primer disco y 13 temas en el segundo, con la ópera rock conceptual de Roger Waters."
+  },
+  {
+    "id": "mus_065",
+    "categoria": "musica",
+    "dificultad": "dificil",
+    "pregunta": "¿En qué año se fundó la histórica casa discográfica Motown Records en Detroit por Berry Gordy Jr.?",
+    "respuesta": 1959,
+    "unidad": "año",
+    "nota": "El 12 de enero de 1959 impulsando a figuras como Stevie Wonder, Marvin Gaye y The Jackson 5."
+  },
+  {
+    "id": "mus_066",
+    "categoria": "musica",
+    "dificultad": "dificil",
+    "pregunta": "¿Cuántas variaciones componen las famosas 'Variaciones Goldberg' (BWV 988) para clavecín de J. S. Bach?",
+    "respuesta": 30,
+    "unidad": "variaciones",
+    "nota": "Un aria inicial, 30 variaciones canónicas y el aria da capo final."
+  },
+  {
+    "id": "mus_067",
+    "categoria": "musica",
+    "dificultad": "dificil",
+    "pregunta": "¿En qué año el grupo británico Iron Maiden lanzó su trascendental álbum 'The Number of the Beast' con Bruce Dickinson?",
+    "respuesta": 1982,
+    "unidad": "año",
+    "nota": "El 22 de marzo de 1982 encabezando la Nueva Ola del Heavy Metal Británico (NWOBHM)."
+  },
+  {
+    "id": "mus_068",
+    "categoria": "musica",
+    "dificultad": "dificil",
+    "pregunta": "¿Cuántos discos de estudio editó la legendaria banda británica The Police durante su carrera?",
+    "respuesta": 5,
+    "unidad": "álbumes",
+    "nota": "Outlandos d'Amour, Reggatta de Blanc, Zenyatta Mondatta, Ghost in the Machine y Synchronicity."
+  },
+  {
+    "id": "mus_069",
+    "categoria": "musica",
+    "dificultad": "dificil",
+    "pregunta": "¿En qué año se lanzó el álbum 'Appetite for Destruction' de Guns N' Roses?",
+    "respuesta": 1987,
+    "unidad": "año",
+    "nota": "El 21 de julio de 1987, debut discográfico más vendido de la historia con más de 30 millones de copias."
+  },
+  {
+    "id": "mus_070",
+    "categoria": "musica",
+    "dificultad": "dificil",
+    "pregunta": "¿Cuántos compases dura la famosa pieza de música conceptual '4′33″' de silencio absoluto de John Cage?",
+    "respuesta": 3,
+    "unidad": "movimientos",
+    "nota": "Dividida en tres movimientos en los que los intérpretes no tocan ninguna nota de sus instrumentos."
+  },
+  {
+    "id": "mus_071",
+    "categoria": "musica",
+    "dificultad": "dificil",
+    "pregunta": "¿En qué año debutó The Rolling Stones en Buenos Aires en el recordado primer recital de su visita?",
+    "respuesta": 1995,
+    "unidad": "año",
+    "nota": "El 9 de febrero de 1995 abriendo con 'Not Fade Away' ante el delirio de la multitud."
+  },
+  {
+    "id": "mus_072",
+    "categoria": "musica",
+    "dificultad": "dificil",
+    "pregunta": "¿Cuántos canales o pistas de audio tenía la consola analógica con la que The Beatles grabó 'Sgt. Pepper's' en Abbey Road?",
+    "respuesta": 4,
+    "unidad": "pistas",
+    "nota": "Grabado íntegramente en consolas de solo 4 pistas mediante la técnica de reducción de mezclas (bouncing)."
+  },
+  {
+    "id": "mus_073",
+    "categoria": "musica",
+    "dificultad": "dificil",
+    "pregunta": "¿En qué año Bob Dylan fue abucheado por tocar por primera vez con guitarra eléctrica en el Newport Folk Festival?",
+    "respuesta": 1965,
+    "unidad": "año",
+    "nota": "El 25 de julio de 1965 electrificando el folk acompañado por la Paul Butterfield Blues Band."
+  },
+  {
+    "id": "mus_074",
+    "categoria": "musica",
+    "dificultad": "dificil",
+    "pregunta": "¿Cuántas óperas completas compuso el célebre compositor italiano Giacomo Puccini?",
+    "respuesta": 12,
+    "unidad": "óperas",
+    "nota": "Entre ellas La Bohème, Tosca, Madama Butterfly y la inconclusa Turandot."
+  },
+  {
+    "id": "mus_075",
+    "categoria": "musica",
+    "dificultad": "dificil",
+    "pregunta": "¿En qué año se lanzó el álbum 'Superficie de Placer' de Virus, obra cumbre del synth-pop argentino?",
+    "respuesta": 1987,
+    "unidad": "año",
+    "nota": "Grabado en Río de Janeiro, el último álbum con Federico Moura como líder antes de su fallecimiento."
+  },
+  {
+    "id": "mus_076",
+    "categoria": "musica",
+    "dificultad": "extremo",
+    "pregunta": "¿Cuántos conciertos en vivo verificados ofreció Franz Liszt durante su gira de furor por Europa conocida como la 'Lisztomanía' (1839-1847)?",
+    "respuesta": 1000,
+    "unidad": "conciertos",
+    "nota": "Desató el primer fenómeno masivo de histeria fanática documentado en la historia de la música."
+  },
+  {
+    "id": "mus_077",
+    "categoria": "musica",
+    "dificultad": "extremo",
+    "pregunta": "¿En qué año se estrenó la Sinfonía n.º 9 en re menor, op. 125 de Beethoven en el Kärntnertortheater de Viena?",
+    "respuesta": 1824,
+    "unidad": "año",
+    "nota": "El 7 de mayo de 1824 con Beethoven completamente sordo teniendo que ser girado para ver los aplausos."
+  },
+  {
+    "id": "mus_078",
+    "categoria": "musica",
+    "dificultad": "extremo",
+    "pregunta": "¿Cuántos fuelles o pliegues de cuero tiene habitualmente un bandoneón de tango estándar de 71 teclas?",
+    "respuesta": 14,
+    "unidad": "pliegues",
+    "nota": "Consta de 14 o 15 pliegues reforzados en las esquinas con cantoneras metálicas."
+  },
+  {
+    "id": "mus_079",
+    "categoria": "musica",
+    "dificultad": "extremo",
+    "pregunta": "¿En qué año Bartolomeo Cristofori inventó en Florencia el 'gravicembalo col piano e forte', predecesor directo del piano moderno?",
+    "respuesta": 1700,
+    "unidad": "año",
+    "nota": "Permitió por primera vez graduar la intensidad del sonido según la fuerza con que se presionan las teclas."
+  },
+  {
+    "id": "mus_080",
+    "categoria": "musica",
+    "dificultad": "extremo",
+    "pregunta": "¿Cuántos tubos sonoros tiene el Gran Órgano de tubos de la Sala Sinfónica del Centro Cultural Kirchner (CCK) en Buenos Aires?",
+    "respuesta": 3600,
+    "unidad": "tubos",
+    "nota": "Construido en Alemania por el taller Johannes Klais Orgelbau con cuatro teclados y 56 registros."
+  },
+  {
+    "id": "mus_081",
+    "categoria": "musica",
+    "dificultad": "extremo",
+    "pregunta": "¿En qué año se fundó el sello discográfico independiente Factory Records en Mánchester por Tony Wilson (Joy Division, New Order)?",
+    "respuesta": 1978,
+    "unidad": "año",
+    "nota": "Cuna del post-punk y la música electrónica de club británica que administró The Haçienda."
+  },
+  {
+    "id": "mus_082",
+    "categoria": "musica",
+    "dificultad": "extremo",
+    "pregunta": "¿Cuántos compases exactos dura la obra orquestal 'Bolero' de Maurice Ravel con su implacable crescendo?",
+    "respuesta": 340,
+    "unidad": "compases",
+    "nota": "Consta de un ostinato rítmico repetido 169 veces en la caja clara a lo largo de unos 15 minutos."
+  },
+  {
+    "id": "mus_083",
+    "categoria": "musica",
+    "dificultad": "extremo",
+    "pregunta": "¿En qué año se patentó el sistema de grabación en disco plano de 78 RPM inventado por Emile Berliner?",
+    "respuesta": 1887,
+    "unidad": "año",
+    "nota": "El gramófono de Berliner reemplazó rápidamente al cilindro de fonógrafo de Edison."
+  },
+  {
+    "id": "mus_084",
+    "categoria": "musica",
+    "dificultad": "extremo",
+    "pregunta": "¿Cuántos metros de cinta magnética de bobina abierta se requerían para grabar 30 minutos de música a 15 pulgadas por segundo (ips)?",
+    "respuesta": 686,
+    "unidad": "metros",
+    "nota": "A velocidad profesional de estudio (38,1 cm por segundo) se utilizaban casi 700 metros de cinta de 2 pulgadas."
+  },
+  {
+    "id": "mus_085",
+    "categoria": "musica",
+    "dificultad": "extremo",
+    "pregunta": "¿En qué año Giuseppe Verdi estrenó su ópera 'Aída' en la Ópera Khedivial de El Cairo para celebrar la apertura del Canal de Suez?",
+    "respuesta": 1871,
+    "unidad": "año",
+    "nota": "El 24 de diciembre de 1871 tras retrasarse los decorados por el asedio de París en la guerra franco-prusiana."
+  },
+  {
+    "id": "mus_086",
+    "categoria": "musica",
+    "dificultad": "extremo",
+    "pregunta": "¿Cuántas voces polifónicas independientes se entrelazan en el célebre motete 'Spem in alium' de Thomas Tallis compuesto hacia 1570?",
+    "respuesta": 40,
+    "unidad": "voces",
+    "nota": "Escrito para 8 coros de 5 voces cada uno, cumbre máxima de la polifonía renacentista inglesa."
+  },
+  {
+    "id": "mus_087",
+    "categoria": "musica",
+    "dificultad": "extremo",
+    "pregunta": "¿En qué año se creó el primer sintetizador analógico Moog comercial por Robert Moog en Nueva York?",
+    "respuesta": 1964,
+    "unidad": "año",
+    "nota": "Presentado en la convención de la AES (Audio Engineering Society) en octubre de 1964."
+  },
+  {
+    "id": "mus_088",
+    "categoria": "musica",
+    "dificultad": "extremo",
+    "pregunta": "¿Cuántas horas dura aproximadamente la representación continua de la tetralogía de óperas 'El anillo del nibelungo' de Richard Wagner?",
+    "respuesta": 15,
+    "unidad": "horas",
+    "nota": "El oro del Rin, La valquiria, Sigfrido y El ocaso de los dioses suman más de 15 horas de música orquestal."
+  },
+  {
+    "id": "mus_089",
+    "categoria": "musica",
+    "dificultad": "extremo",
+    "pregunta": "¿En qué año se inauguró el mítico club de jazz 'Birdland' en Broadway en honor a Charlie 'Bird' Parker?",
+    "respuesta": 1949,
+    "unidad": "año",
+    "nota": "El 15 de diciembre de 1949 en el número 1678 de Broadway con Parker, Stan Getz y Miles Davis."
+  },
+  {
+    "id": "mus_090",
+    "categoria": "musica",
+    "dificultad": "extremo",
+    "pregunta": "¿Cuántos días exactos demoró George Frideric Handel en componer la partitura completa de su colosal oratorio 'El Mesías' en 1741?",
+    "respuesta": 24,
+    "unidad": "días",
+    "nota": "Comenzó el 22 de agosto y terminó las 259 páginas de música el 14 de septiembre en un estado de trance febril."
+  },
+  {
+    "id": "mus_091",
+    "categoria": "musica",
+    "dificultad": "extremo",
+    "pregunta": "¿En qué año el físico e inventor ruso Lev Theremin inventó el 'theremín', el primer instrumento musical electrónico que se toca sin contacto físico?",
+    "respuesta": 1920,
+    "unidad": "año",
+    "nota": "Patentado en Estados Unidos en 1928, opera controlando la frecuencia y volumen con el movimiento de las manos cerca de dos antenas."
+  },
+  {
+    "id": "mus_092",
+    "categoria": "musica",
+    "dificultad": "extremo",
+    "pregunta": "¿Cuántos espectadores pagos presenciaron el mítico concierto de The Beatles en el Shea Stadium de Nueva York en agosto de 1965?",
+    "respuesta": 55600,
+    "unidad": "espectadores",
+    "nota": "Inauguró la era de los conciertos masivos de rock en estadios abiertos de béisbol."
+  },
+  {
+    "id": "mus_093",
+    "categoria": "musica",
+    "dificultad": "extremo",
+    "pregunta": "¿En qué año se comercializó el primer reproductor de discos compactos (CD) de audio en el mundo, el Sony CDP-101 en Japón?",
+    "respuesta": 1982,
+    "unidad": "año",
+    "nota": "El 1 de octubre de 1982 con la edición del álbum '52nd Street' de Billy Joel."
+  },
+  {
+    "id": "mus_094",
+    "categoria": "musica",
+    "dificultad": "extremo",
+    "pregunta": "¿Cuántos compases dura el célebre tema de jazz instrumental 'Take Five' del Dave Brubeck Quartet, escrito en el inusual compás de 5/4?",
+    "respuesta": 104,
+    "unidad": "compases",
+    "nota": "Compuesto por el saxofonista Paul Desmond e incluido en el álbum 'Time Out' de 1959."
+  },
+  {
+    "id": "mus_095",
+    "categoria": "musica",
+    "dificultad": "extremo",
+    "pregunta": "¿En qué año se fundó la mítica casa de guitarras eléctricas Fender por Leo Fender en Fullerton, California?",
+    "respuesta": 1946,
+    "unidad": "año",
+    "nota": "Creadora de modelos legendarios que definieron la música moderna como la Telecaster y la Stratocaster."
+  },
+  {
+    "id": "mus_096",
+    "categoria": "musica",
+    "dificultad": "extremo",
+    "pregunta": "¿Cuántas canciones y lieder compuso en su breve vida de 31 años el maestro austríaco Franz Schubert?",
+    "respuesta": 600,
+    "unidad": "canciones",
+    "nota": "Compuso más de 600 lieder además de siete sinfonías completas y música de cámara antes de morir en 1828."
+  },
+  {
+    "id": "mus_097",
+    "categoria": "musica",
+    "dificultad": "extremo",
+    "pregunta": "¿En qué año se transmitió por televisión vía satélite el histórico concierto 'Aloha from Hawaii Via Satellite' de Elvis Presley?",
+    "respuesta": 1973,
+    "unidad": "año",
+    "nota": "El 14 de enero de 1973 visto por más de mil millones de personas en más de 40 países."
+  },
+  {
+    "id": "mus_098",
+    "categoria": "musica",
+    "dificultad": "extremo",
+    "pregunta": "¿Cuántos millones de dólares recaudó la gira 'The Eras Tour' de Taylor Swift, convirtiéndose en la primera gira en superar los mil millones de dólares?",
+    "respuesta": 1039,
+    "unidad": "millones de dólares",
+    "nota": "Estimada por Pollstar en más de 1.039 millones de dólares en sus primeros 60 conciertos de 2023."
+  },
+  {
+    "id": "mus_099",
+    "categoria": "musica",
+    "dificultad": "extremo",
+    "pregunta": "¿En qué año se fundó la discográfica alemana Deutsche Grammophon por Emile Berliner en Hannover?",
+    "respuesta": 1898,
+    "unidad": "año",
+    "nota": "Es el sello discográfico de música clásica más antiguo en funcionamiento ininterrumpido del planeta."
+  },
+  {
+    "id": "mus_100",
+    "categoria": "musica",
+    "dificultad": "extremo",
+    "pregunta": "¿Cuántos compases dura el virtuoso solo de batería de John Bonham en el tema 'Moby Dick' grabado por Led Zeppelin?",
+    "respuesta": 180,
+    "unidad": "compases",
+    "nota": "En vivo Bonham solía extender el solo hasta por más de 20 o 30 minutos de duración."
+  }
+]

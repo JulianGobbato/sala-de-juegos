@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <meta name="theme-color" content="#090915">
+  <meta name="description" content="Sintonía Fina - Juego de mesa digital de telepatía y calibración mental en equipo. Inspirado en Wavelength.">
+  <title>📻 Sintonía Fina | Sala de Juegos</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Outfit:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+
+  <!-- Bootstrap 5.3 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Estilos Propios -->
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- Canvas de Confeti -->
+  <canvas id="confettiCanvas"></canvas>
+
+  <!-- ====================================================================
+       HEADER SUPERIOR UNIVERSAL
+       ==================================================================== -->
+  <header class="game-header d-flex justify-content-between align-items-center">
+    <div class="brand-wrap">
+      <span class="brand-icon">📻</span>
+      <div>
+        <h1 class="brand-title">SINTONÍA FINA</h1>
+      </div>
+    </div>
+
+    <div class="d-flex align-items-center gap-2">
+      <button type="button" class="header-btn btn-sound-toggle" title="Sonido On/Off">
+        <span>🔊</span>
+      </button>
+      <button type="button" class="header-btn d-none d-md-inline-flex" id="btnToggleFullscreen" title="Pantalla Completa">
+        <span id="fsIcon">📺</span>
+      </button>
+      <a href="../index.html" class="header-btn" title="Volver al Hub Principal">
+        <span>🏠</span>
+        <span class="d-none d-sm-inline">Volver a la Sala</span>
+      </a>
+    </div>
+  </header>
+
+  <!-- ====================================================================
+       VISTA 1: MENÚ PRINCIPAL / SELECCIÓN DE ROL
+       ==================================================================== -->
+  <main id="viewMenu" class="view-container active">
+    <div class="menu-hero">
+      <div class="menu-badge">2 a 10 jugadores | Telepatía y extremos</div>
+      <h2 class="menu-title">SINTONÍA FINA</h2>
+      <p class="menu-subtitle">
+        Inspirado en <em>Wavelength</em>. Calibrá la frecuencia de tu equipo dando pistas precisas para ubicar el dial entre dos extremos opuestos.
+      </p>
+
+      <div class="mode-cards-grid">
+        <!-- ROL 1: PANTALLA TV -->
+        <div class="mode-card-select highlight" id="btnSelectRoleTv">
+          <div class="mode-card-icon">📺</div>
+          <h3 class="mode-card-title">Abrir como Pantalla TV</h3>
+          <p class="mode-card-desc">
+            Anfitrión visual para proyectar en la televisión del living o monitor grande. Muestra el gran dial, los conceptos gigantes y el marcador en vivo.
+          </p>
+          <div class="btn-mode-cta">
+            ▶️ Abrir en la TV (Generar QR)
+          </div>
+        </div>
+
+        <!-- ROL 2: CELULAR CONTROL REMOTO -->
+        <div class="mode-card-select" id="btnSelectRoleRemote">
+          <div class="mode-card-icon">📱</div>
+          <h3 class="mode-card-title">Conectar Celular Remoto</h3>
+          <p class="mode-card-desc">
+            Usá este teléfono como el único control de la mesa. Se va pasando de mano en mano para mirar el objetivo en secreto y mover la aguja.
+          </p>
+          <div class="btn-mode-cta">
+            🔗 Vincular a la TV
+          </div>
+        </div>
+
+        <!-- ROL 3: UN SOLO DISPOSITIVO -->
+        <div class="mode-card-select" id="btnSelectRoleSingle">
+          <div class="mode-card-icon">🛋️</div>
+          <h3 class="mode-card-title">Jugar en 1 solo dispositivo</h3>
+          <p class="mode-card-desc">
+            Ideal si juegan compartiendo una sola notebook, tablet o celular en la mesa con el objetivo tapable en pantalla.
+          </p>
+          <div class="btn-mode-cta">
+            🎲 Jugar aquí mismo
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- ====================================================================
+       VISTA 2: PANTALLA TV (HOST VISUAL)
+       ==================================================================== -->
+  <div id="viewTv" class="view-container">
+    <div class="tv-layout">
+      
+      <!-- Barra superior: Marcador y Ronda -->
+      <div class="tv-top-bar">
+        <!-- Marcador Competitivo -->
+        <div class="tv-score-box" id="tvScoreBoxComp">
+          <div class="team-score-card team-blue active-turn" id="teamCardBlue">
+            <div>
+              <div class="team-name-tag text-info">EQUIPO AZUL</div>
+              <small class="text-muted">Puntos</small>
+            </div>
+            <div class="team-points-number" id="tvScoreBlue">0</div>
+          </div>
+
+          <div style="font-size: 1.5rem; color: #475569; font-weight: 800;">VS</div>
+
+          <div class="team-score-card team-red" id="teamCardRed">
+            <div>
+              <div class="team-name-tag text-danger">EQUIPO ROJO</div>
+              <small class="text-muted">Puntos</small>
+            </div>
+            <div class="team-points-number" id="tvScoreRed">0</div>
+          </div>
+        </div>
+
+        <!-- Marcador Cooperativo -->
+        <div class="tv-score-box d-none" id="tvScoreBoxCoop">
+          <div>
+            <div class="team-name-tag text-warning">PUNTOS COOPERATIVOS</div>
+            <small class="text-muted">Récord grupal</small>
+          </div>
+          <div class="team-points-number text-warning" id="tvCoopScoreVal">0</div>
+        </div>
+
+        <!-- Indicador de ronda -->
+        <div class="tv-round-info" id="tvRoundIndicator">
+          Ronda 1
+        </div>
+      </div>
+
+      <!-- Banner de Locutor de turno -->
+      <div class="tv-turn-banner">
+        <div>
+          <span class="text-muted me-2">Locutor de la ronda:</span>
+          <span class="tv-locutor-name" id="tvLocutorName">🎤 Locutor</span>
+        </div>
+        <div class="tv-phase-text" id="tvPhaseStatus">
+          Fase 1: Pensando pista
+        </div>
+      </div>
+
+      <!-- Conceptos Extremos (Izquierda vs Derecha) -->
+      <div class="concepts-row">
+        <div class="concept-card left">
+          <span class="concept-arrow text-info">⬅️</span>
+          <h2 class="concept-text" id="tvConceptLeft">Comida de invierno</h2>
+        </div>
+
+        <div class="concept-category-tag" id="tvCategoryTag">
+          Cotidiano
+        </div>
+
+        <div class="concept-card right">
+          <span class="concept-arrow text-danger">➡️</span>
+          <h2 class="concept-text" id="tvConceptRight">Comida de verano</h2>
+        </div>
+      </div>
+
+      <!-- EL GRAN DIAL SEMICIRCULAR (SVG) -->
+      <div class="dial-stage">
+        <svg class="dial-svg" viewBox="0 0 500 280">
+          <defs>
+            <!-- Gradiente marco exterior del velocímetro -->
+            <linearGradient id="bezelGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+              <stop offset="0%" stop-color="#334155" />
+              <stop offset="50%" stop-color="#1e293b" />
+              <stop offset="100%" stop-color="#0f172a" />
+            </linearGradient>
+
+            <!-- Gradiente cortina cerrada -->
+            <radialGradient id="curtainGrad" cx="50%" cy="100%" r="90%">
+              <stop offset="0%" stop-color="#2a2050" />
+              <stop offset="70%" stop-color="#14112c" />
+              <stop offset="100%" stop-color="#0a0818" />
+            </radialGradient>
+
+            <!-- Sombra de la aguja -->
+            <filter id="needleShadow" x="-20%" y="-20%" width="140%" height="140%">
+              <feDropShadow dx="0" dy="4" stdDeviation="5" flood-color="#f43f5e" flood-opacity="0.6"/>
+            </filter>
+          </defs>
+
+          <!-- 1. Fondo del Dial Semicircular (Centro exacto en 250, 240) -->
+          <path d="M 35,240 A 215,215 0 0,1 465,240 L 445,240 A 195,195 0 0,0 55,240 Z" fill="url(#bezelGrad)" stroke="#475569" stroke-width="2" />
+          <path d="M 50,240 A 200,200 0 0,1 450,240 L 340,240 A 90,90 0 0,0 160,240 Z" fill="#0a0e1a" stroke="#334155" stroke-width="1.5" />
+
+          <!-- Ticks decorativos de grados -->
+          <g stroke="rgba(255,255,255,0.22)" stroke-width="1.5">
+            <line x1="250" y1="40" x2="250" y2="55" />
+            <line x1="108.6" y1="98.6" x2="119.2" y2="109.2" />
+            <line x1="391.4" y1="98.6" x2="380.8" y2="109.2" />
+            <line x1="50" y1="240" x2="65" y2="240" />
+            <line x1="450" y1="240" x2="435" y2="240" />
+          </g>
+
+          <!-- 2. Sector Objetivo [2][3][4][3][2] (Oculto al 100% por defecto) -->
+          <g id="target-wedges" style="display: none; opacity: 0;"></g>
+
+          <!-- 3. CORTINA CERRADA (Se abre en la Fase 4) -->
+          <g id="tvDialCurtain" class="dial-curtain">
+            <path d="M 45,240 A 205,205 0 0,1 455,240 L 335,240 A 85,85 0 0,0 165,240 Z" fill="url(#curtainGrad)" stroke="#475569" stroke-width="2" />
+            <text x="250" y="165" text-anchor="middle" font-size="12" fill="#64748b" font-weight="bold" letter-spacing="2">OBJETIVO OCULTO</text>
+          </g>
+
+          <!-- 4. AGUJA INTERACTIVA (Base en 250, 240 apuntando a 250, 65) -->
+          <g id="tvNeedleGroup" filter="url(#needleShadow)">
+            <!-- Vástago de la aguja -->
+            <polygon points="246,240 254,240 252,72 250,60 248,72" fill="#f43f5e" />
+            <!-- Línea de contraste central -->
+            <line x1="250" y1="225" x2="250" y2="65" stroke="#ffffff" stroke-width="1.5" />
+            <!-- Puntero superior brillante -->
+            <circle cx="250" cy="65" r="4.5" fill="#fde047" stroke="#b45309" stroke-width="1.5" />
+          </g>
+
+          <!-- 5. Centro / Pivot del Dial (Por encima de la base de la aguja en el orden DOM) -->
+          <g id="dial-pivot">
+            <circle cx="250" cy="240" r="28" fill="#1e293b" stroke="#64748b" stroke-width="3" />
+            <circle cx="250" cy="240" r="14" fill="#f43f5e" />
+            <circle cx="250" cy="240" r="4" fill="#ffffff" />
+          </g>
+        </svg>
+
+        <!-- Indicador de apuesta rival -->
+        <div id="tvRivalBetBadge" class="rival-bet-indicator d-none">
+          Apuesta Rival
+        </div>
+      </div>
+
+      <!-- Ticker inferior de estado -->
+      <div class="tv-ticker-bar" id="tvStatusTicker">
+        Cargando estado de la sintonía...
+      </div>
+
+      <!-- Controles para el modo "Un solo dispositivo" -->
+      <div id="singleDeviceControls" class="mt-4 p-3 bg-dark border border-secondary rounded-3 d-none">
+        <div id="singleControlsContent"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ====================================================================
+       VISTA 3: CELULAR CONTROL REMOTO (1 SOLO CELULAR)
+       ==================================================================== -->
+  <div id="viewRemote" class="view-container">
+    <div class="remote-layout">
+      <!-- Barra de estado celular -->
+      <div class="remote-status-header">
+        <div class="d-flex align-items-center">
+          <span class="connection-dot" id="remoteConnDot"></span>
+          <span style="font-weight: 700; font-size: 0.9rem;" id="remoteConnLabel">Conectando...</span>
+        </div>
+        <div class="badge bg-dark border border-secondary px-2 py-1" style="font-size: 0.85rem;">
+          Sala: <strong class="text-warning" id="remoteRoomCodeDisplay">----</strong>
+        </div>
+      </div>
+
+      <!-- Contenedor dinámico de fase -->
+      <div id="remotePhaseContainer">
+        <!-- Renderizado dinámicamente según state.phase -->
+      </div>
+    </div>
+  </div>
+
+  <!-- ====================================================================
+       MODAL DE VINCULACIÓN QR PARA LA TV
+       ==================================================================== -->
+  <div id="tvConnectModal" class="tv-connect-overlay d-none">
+    <div class="tv-connect-card">
+      <div style="font-size: 2.8rem; margin-bottom: 8px;">📺 ➔ 📱</div>
+      <h2 style="font-family: var(--font-display); font-size: 2.4rem; letter-spacing: 1px; margin-bottom: 6px;">
+        VINCULAR CONTROL REMOTO
+      </h2>
+      <p style="color: var(--text-muted); font-size: 1rem; margin-bottom: 12px;">
+        Escaneá este código QR con la cámara de <strong>un solo celular</strong>. Se usará como control para toda la juntada.
+      </p>
+
+      <div class="tv-qr-box" id="tvQrContainer">
+        <!-- Canvas generado por QRCode.js -->
+      </div>
+
+      <div>
+        <span style="color: var(--text-muted); font-size: 0.88rem; text-transform: uppercase; letter-spacing: 1px;">
+          O ingresá este código en tu celular:
+        </span>
+        <br>
+        <span class="tv-room-code-badge" id="tvRoomCodeText">----</span>
+      </div>
+
+      <div class="mt-2 text-secondary small">
+        ⚡ <em>Escaneo único: apenas se conecte, este cartel desaparecerá automáticamente.</em>
+      </div>
+    </div>
+  </div>
+
+  <!-- ====================================================================
+       LIBRERÍAS Y SCRIPTS
+       ==================================================================== -->
+  <!-- PeerJS WebRTC para conexión TV <-> Celular sin backend -->
+  <script src="https://unpkg.com/peerjs@1.5.4/dist/peerjs.min.js"></script>
+
+  <!-- Generador de Código QR en Canvas -->
+  <script src="https://cdn.jsdelivr.net/npm/qrcodejs@1.0.0/qrcode.min.js"></script>
+
+  <!-- Banco de 200 Espectros Bundle (Garantiza funcionamiento offline y file://) -->
+  <script src="data/espectros-bundle.js"></script>
+
+  <!-- Gestor de Jugadores Compartido del Hub -->
+  <script src="../js/hub-shared.js"></script>
+
+  <!-- Lógica Principal del Juego -->
+  <script src="js/app.js"></script>
+</body>
+</html>
